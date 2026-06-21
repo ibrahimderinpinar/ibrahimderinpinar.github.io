@@ -57,11 +57,9 @@
         gap: 14px;
         min-width: 0;
       }
-      .brand-logo {
-        flex: 0 0 auto;
-      }
+      .brand-logo { flex: 0 0 auto; }
       .brand-logo img {
-        width: 178px;
+        width: 220px;
         height: auto;
       }
       .brand-text {
@@ -141,30 +139,6 @@
         font-size: 0.94rem;
         font-weight: 600;
       }
-      .credentials {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-        margin-top: 24px;
-      }
-      .credential {
-        background: rgba(255, 255, 255, 0.92);
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 14px 18px;
-        min-width: 240px;
-        flex: 1 1 240px;
-      }
-      .credential strong {
-        display: block;
-        color: var(--accent);
-        font-size: 1rem;
-        margin-bottom: 4px;
-      }
-      .credential span {
-        color: var(--muted);
-        font-size: 0.92rem;
-      }
       .buttons {
         display: flex;
         flex-wrap: wrap;
@@ -221,6 +195,31 @@
         font-size: 0.94rem;
       }
 
+      .hero-credentials {
+        margin-top: 18px;
+      }
+      .hero-credentials .credentials {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .credential {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px 18px;
+      }
+      .credential strong {
+        display: block;
+        color: var(--accent);
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .credential span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
       section { padding: 18px 0; }
       .section-card { padding: 28px; }
       .section-title {
@@ -271,19 +270,15 @@
         gap: 16px;
       }
       .contact-grid a { text-decoration: underline; }
-      .footer-logo-note {
-        color: rgba(255,255,255,0.78);
-        font-size: 0.9rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
+
       .site-footer {
         margin-top: 10px;
-        background: linear-gradient(180deg, #173455 0%, #10253f 100%);
-        color: #fff;
+        background: linear-gradient(180deg, #edf3fa 0%, #e3ebf4 100%);
+        color: #132238;
+        border-top: 1px solid rgba(19, 34, 56, 0.08);
       }
       .footer-inner {
-        padding: 42px 0 44px;
+        padding: 48px 0 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -292,12 +287,18 @@
         text-align: center;
       }
       .footer-mark img {
-        width: 320px;
+        width: 360px;
         height: auto;
         display: block;
       }
+      .footer-logo-note {
+        color: rgba(19, 34, 56, 0.72);
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
       .footer-copy {
-        color: rgba(255, 255, 255, 0.88);
+        color: rgba(19, 34, 56, 0.78);
         font-size: 1rem;
       }
 
@@ -324,18 +325,14 @@
         .buttons .btn {
           width: 100%;
         }
-        .credentials {
-          flex-direction: column;
-        }
-        .credential {
-          min-width: auto;
-          width: 100%;
-        }
         .brand-logo img {
-          width: 120px;
+          width: 150px;
         }
         .footer-mark img {
-          width: 220px;
+          width: 260px;
+        }
+        .hero-credentials .credentials {
+          grid-template-columns: 1fr;
         }
         h1 {
           font-size: clamp(2.15rem, 10vw, 3.6rem);
@@ -377,21 +374,6 @@
             </p>
             <div class="bar-association">İstanbul Barosu’na Temmuz 2014’ten beri kayıtlıdır.</div>
 
-            <div class="credentials">
-              <div class="credential">
-                <strong>PhD</strong>
-                <span>Özel Hukuk · Bahçeşehir Üniversitesi</span>
-              </div>
-              <div class="credential">
-                <strong>LL.M.</strong>
-                <span>International Commercial Law · Brunel University of London</span>
-              </div>
-              <div class="credential">
-                <strong>MCIArb</strong>
-                <span>Chartered Institute of Arbitrators</span>
-              </div>
-            </div>
-
             <div class="buttons">
               <a class="btn primary" href="#iletisim">İletişim</a>
               <a class="btn" href="#egitim">Akademik Geçmiş</a>
@@ -404,6 +386,23 @@
             <div class="hero-overlay">
               <strong>Av. Dr. İbrahim Nuri Derinpınar</strong>
               <span>PhD • LL.M. • MCIArb</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap hero-credentials">
+          <div class="credentials">
+            <div class="credential">
+              <strong>PhD</strong>
+              <span>Özel Hukuk · Bahçeşehir Üniversitesi</span>
+            </div>
+            <div class="credential">
+              <strong>LL.M.</strong>
+              <span>International Commercial Law · Brunel University of London</span>
+            </div>
+            <div class="credential">
+              <strong>MCIArb</strong>
+              <span>Chartered Institute of Arbitrators</span>
             </div>
           </div>
         </div>
