@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar kişisel kariyer sitesi" />
+    <title>Av. Dr. İbrahim Nuri Derinpınar</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --panel: rgba(255, 255, 255, 0.84);
+        --text: #0f172a;
+        --muted: #5b6476;
+        --line: rgba(15, 23, 42, 0.08);
+        --accent: #1f3a5f;
+        --shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
+        --radius: 28px;
+        --max: 1180px;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(31, 58, 95, 0.08), transparent 26%),
+          radial-gradient(circle at top right, rgba(140, 107, 46, 0.08), transparent 22%),
+          linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+        line-height: 1.6;
+      }
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+      .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(255, 255, 255, 0.74);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--line);
+      }
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 16px 0;
+      }
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      .nav {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .nav a:hover { color: var(--accent); }
+
+      .hero { padding: 34px 0 18px; }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .hero-copy,
+      .hero-card,
+      .section-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+      .hero-copy { padding: 34px; }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(31, 58, 95, 0.12);
+        color: var(--accent);
+        background: rgba(31, 58, 95, 0.05);
+        font-size: 0.92rem;
+        margin-bottom: 18px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 5vw, 4.9rem);
+        line-height: 0.98;
+        letter-spacing: -0.05em;
+      }
+      .lead {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        max-width: 65ch;
+      }
+
+      .credentials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 24px;
+      }
+      .credential {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 14px 18px;
+        min-width: 240px;
+        flex: 1 1 240px;
+      }
+      .credential strong {
+        display: block;
+        color: var(--accent);
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .credential span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 26px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 18px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.9);
+        transition: transform 0.18s ease, border-color 0.18s ease;
+        font-weight: 600;
+      }
+      .btn:hover { transform: translateY(-1px); border-color: rgba(31, 58, 95, 0.24); }
+      .btn.primary {
+        background: linear-gradient(135deg, var(--accent), #294d7c);
+        color: #fff;
+        border-color: transparent;
+      }
+      .hero-photo {
+        margin-top: 24px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 28px;
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        background: rgba(255, 255, 255, 0.92);
+      }
+      .portrait {
+        width: 100%;
+        display: block;
+        aspect-ratio: 16 / 9;
+        max-height: 420px;
+        object-fit: cover;
+        object-position: center 22%;
+      }
+      .photo-caption {
+        padding: 16px 18px 18px;
+        border-top: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.9);
+      }
+      .photo-caption strong {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .photo-caption span {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      section { padding: 18px 0; }
+      .section-card { padding: 28px; }
+      .section-title {
+        margin: 0 0 14px;
+        font-size: 1.38rem;
+        letter-spacing: -0.02em;
+      }
+      .section-text { color: var(--muted); margin: 0; }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .item {
+        padding: 18px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--line);
+      }
+      .item h3,
+      .item h4 { margin: 0 0 8px; font-size: 1.03rem; }
+      .meta { color: var(--muted); font-size: 0.94rem; margin-bottom: 8px; }
+      .chip-row { display: flex; flex-wrap: wrap; gap: 10px; }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(31, 58, 95, 0.06);
+        border: 1px solid rgba(31, 58, 95, 0.08);
+        color: var(--accent);
+        font-size: 0.93rem;
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .contact-grid a { text-decoration: underline; }
+      footer {
+        padding: 34px 0 46px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 920px) {
+        .hero-grid, .grid-2, .contact-grid { grid-template-columns: 1fr; }
+        .topbar-inner { flex-direction: column; align-items: flex-start; }
+      }
+
+      @media (max-width: 640px) {
+        .hero-copy, .section-card { padding: 20px; }
+        .buttons { flex-direction: column; }
+        .buttons .btn { width: 100%; }
+        .credentials { flex-direction: column; }
+        .credential { min-width: auto; width: 100%; }
+        .portrait { aspect-ratio: 4 / 3; }
+        h1 { font-size: clamp(2.15rem, 10vw, 3.6rem); }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <div class="brand">Av. Dr. İbrahim Nuri Derinpınar</div>
+        <nav class="nav" aria-label="Birincil">
+          <a href="#hakkimda">Hakkımda</a>
+          <a href="#egitim">Eğitim</a>
+          <a href="#deneyim">Deneyim</a>
+          <a href="#uzmanlik">Uzmanlık</a>
+          <a href="#iletisim">İletişim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">Avukat · PhD · LL.M. · Uluslararası Ticaret Hukuku · Tahkim</div>
+            <h1>Av. Dr. İbrahim Nuri Derinpınar</h1>
+            <p class="lead">
+              Ticaret hukuku, sözleşmeler hukuku, rekabet hukuku, uluslararası ticaret hukuku ve tahkim alanlarında
+              faaliyet gösteren; akademik araştırma ile mesleki pratiği bir araya getiren avukat ve hukukçudur.
+            </p>
+            <p class="lead">
+              Temmuz 2014'ten beri İstanbul Barosu'na kayıtlıdır.
+            </p>
+
+            <div class="hero-photo">
+              <img class="portrait" src="IMG_3478.PNG" alt="Av. Dr. İbrahim Nuri Derinpınar portre fotoğrafı" />
+              <div class="photo-caption">
+                <strong>Av. Dr. İbrahim Nuri Derinpınar</strong>
+                <span>Temmuz 2014'ten beri İstanbul Barosu'na kayıtlı avukat · PhD • LL.M. • MCIArb</span>
+              </div>
+            </div>
+
+            <div class="credentials">
+              <div class="credential">
+                <strong>PhD</strong>
+                <span>Private Law · Bahçeşehir Üniversitesi</span>
+              </div>
+              <div class="credential">
+                <strong>LL.M.</strong>
+                <span>International Commercial Law · Brunel University of London</span>
+              </div>
+              <div class="credential">
+                <strong>MCIArb</strong>
+                <span>Chartered Institute of Arbitrators</span>
+              </div>
+            </div>
+
+            <div class="buttons">
+              <a class="btn primary" href="#iletisim">İletişim</a>
+              <a class="btn" href="#egitim">Akademik Geçmiş</a>
+              <a class="btn" href="https://www.linkedin.com/in/ibrahim-nuri-derinpınar-lawyer" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hakkimda">
+        <div class="wrap section-card">
+          <h2 class="section-title">Hakkımda</h2>
+          <p class="section-text">
+            İbrahim Nuri Derinpınar, İstanbul Barosu’na Temmuz 2014'ten beri kayıtlı avukat olup ticaret hukuku,
+            şirketler hukuku, sözleşmeler hukuku, rekabet hukuku ve uluslararası ticaret hukuku alanlarında mesleki
+            faaliyet göstermektedir. Akademik ve mesleki birikimini, uyuşmazlık çözümü, kurumsal danışmanlık ve
+            uluslararası ticari ilişkiler alanlarında uygulamaktadır.
+          </p>
+          <br />
+          <p class="section-text">
+            İstanbul Üniversitesi Hukuk Fakültesi’nden mezun olduktan sonra Brunel University of London’da Uluslararası
+            Ticaret Hukuku alanında LL.M. eğitimini üstün başarıyla tamamlamış; LSE bünyesinde ticaret hukuku ve
+            rekabet hukuku üzerine akademik çalışmalar yürütmüştür. Bahçeşehir Üniversitesi Özel Hukuk Doktora
+            Programı kapsamında doktora tezini <strong>"E-sporcu Sözleşmesi"</strong> konusu üzerine hazırlamıştır.
+          </p>
+        </div>
+      </section>
+
+      <section id="egitim">
+        <div class="wrap section-card">
+          <h2 class="section-title">Eğitim</h2>
+          <div class="grid-2">
+            <div class="item">
+              <h3>Bahçeşehir Üniversitesi</h3>
+              <div class="meta">Özel Hukuk Doktora Programı · 2018–2026</div>
+              <p>Doktora Tezi: <em>E-sporcu Sözleşmesi</em></p>
+            </div>
+            <div class="item">
+              <h3>Brunel University of London</h3>
+              <div class="meta">LL.M. International Commercial Law · 2016–2017 · Merit</div>
+              <p><em>Continuing Legal Uncertainty and Complexity in the Field of International Multimodal Transport Liability</em></p>
+            </div>
+            <div class="item">
+              <h3>İstanbul Üniversitesi Hukuk Fakültesi</h3>
+              <div class="meta">2008–2012</div>
+              <p>Hukuk lisans eğitimi.</p>
+            </div>
+            <div class="item">
+              <h3>London School of Economics and Political Science (LSE)</h3>
+              <div class="meta">Commercial Law · Competition Law and Policy · 2016</div>
+              <p>Commercial Law: B+ · Competition Law and Policy: A-.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap section-card">
+          <h2 class="section-title">Sertifikalar ve Akademik Programlar</h2>
+          <div class="chip-row">
+            <span class="chip">CIArb · MCIArb · 2018</span>
+            <span class="chip">Istanbul Bilgi University · Practical Competition Law</span>
+            <span class="chip">Hilderstone College · CEFR B2.2</span>
+            <span class="chip">Legal English Programme</span>
+            <span class="chip">LSE Summer School Programme</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="deneyim">
+        <div class="wrap section-card">
+          <h2 class="section-title">Mesleki Deneyim</h2>
+          <div class="grid-2">
+            <div class="item">
+              <h3>Kurucu · Derinpınar Hukuk ve Danışmanlık</h3>
+              <div class="meta">Ocak 2018 – Halen · Bakırköy, İstanbul</div>
+              <p>Ticari ve bireysel müvekkillere yönelik hukuk danışmanlığı ve dava takibi.</p>
+            </div>
+            <div class="item">
+              <h3>Hukuk Müşaviri · Penteks İplik Sanayi ve Ticaret A.Ş.</h3>
+              <div class="meta">Ocak 2018 – Nisan 2026 · Malatya</div>
+              <p>Şirket içi hukuk danışmanlığı ve ticari süreçlerin yönetimi.</p>
+            </div>
+            <div class="item">
+              <h3>Associate · Reisbey Law Office</h3>
+              <div class="meta">Mayıs 2017 – Kasım 2017 · İstanbul</div>
+              <p>Uluslararası ticari tahkim dosyaları ve hukuki mütalaalar üzerine çalışma.</p>
+            </div>
+            <div class="item">
+              <h3>Stajyer Avukat · Doğan Law Office</h3>
+              <div class="meta">Ağustos 2012 – Eylül 2013</div>
+              <p>Sözleşmeler, şirket kuruluşu, tasfiye, dava hazırlığı ve hukuki araştırma.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="uzmanlik">
+        <div class="wrap section-card">
+          <h2 class="section-title">Uzmanlık Alanları</h2>
+          <div class="chip-row">
+            <span class="chip">Ticaret Hukuku</span>
+            <span class="chip">Sözleşmeler Hukuku</span>
+            <span class="chip">Rekabet Hukuku</span>
+            <span class="chip">Uluslararası Tahkim</span>
+            <span class="chip">Şirketler Hukuku</span>
+            <span class="chip">İnternet Hukuku</span>
+            <span class="chip">E-spor Hukuku</span>
+            <span class="chip">Uyuşmazlık Çözümü</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="akademik-calismalar">
+        <div class="wrap section-card">
+          <h2 class="section-title">Akademik Çalışmalar</h2>
+          <div class="grid-2">
+            <div class="item">
+              <h3>Doktora Tezi</h3>
+              <div class="meta">Bahçeşehir Üniversitesi Özel Hukuk Doktora Programı</div>
+              <p><strong>E-sporcu Sözleşmesi</strong></p>
+              <p>E-sporcu ile kulüp arasındaki hukuki ilişkinin sözleşmesel yapısını, tarafların hak ve yükümlülüklerini ve Türk özel hukuku bakımından ortaya çıkan sorunları incelemektedir.</p>
+            </div>
+            <div class="item">
+              <h3>Yüksek Lisans Tezi</h3>
+              <div class="meta">Brunel University of London</div>
+              <p><strong>Continuing Legal Uncertainty and Complexity in the Field of International Multimodal Transport Liability</strong></p>
+              <p>Uluslararası multimodal taşımacılıkta taşıyıcının sorumluluğuna ilişkin hukuki belirsizlikleri ve farklı uluslararası düzenlemeler arasındaki ilişkiyi incelemektedir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim">
+        <div class="wrap section-card">
+          <h2 class="section-title">İletişim</h2>
+          <div class="contact-grid">
+            <div class="item">
+              <h4>E-posta</h4>
+              <p><a href="mailto:ibrahim@derinpinar.av.tr">ibrahim@derinpinar.av.tr</a></p>
+            </div>
+            <div class="item">
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/ibrahim-nuri-derinpınar-lawyer" target="_blank" rel="noreferrer">linkedin.com/in/ibrahim-nuri-derinpınar-lawyer</a></p>
+            </div>
+            <div class="item">
+              <h4>Konum</h4>
+              <p>İstanbul, Türkiye</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2026 Av. Dr. İbrahim Nuri Derinpınar</footer>
+  </body>
+</html>
