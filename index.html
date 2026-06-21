@@ -61,7 +61,7 @@
         flex: 0 0 auto;
       }
       .brand-logo img {
-        width: 84px;
+        width: 112px;
         height: auto;
       }
       .brand-text {
@@ -271,10 +271,27 @@
         gap: 16px;
       }
       .contact-grid a { text-decoration: underline; }
-      footer {
-        padding: 34px 0 46px;
+      .site-footer {
+        margin-top: 10px;
+        background: linear-gradient(180deg, #0b1e37 0%, #08162a 100%);
+        color: #fff;
+      }
+      .footer-inner {
+        padding: 34px 0 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
         text-align: center;
-        color: var(--muted);
+      }
+      .footer-mark img {
+        width: 190px;
+        height: auto;
+        display: block;
+      }
+      .footer-copy {
+        color: rgba(255, 255, 255, 0.88);
         font-size: 0.95rem;
       }
 
@@ -289,7 +306,7 @@
           align-items: flex-start;
         }
         .hero-card {
-          order: -1;
+          
         }
       }
 
@@ -312,7 +329,7 @@
           width: 100%;
         }
         .brand-logo img {
-          width: 66px;
+          width: 84px;
         }
         h1 {
           font-size: clamp(2.15rem, 10vw, 3.6rem);
@@ -531,8 +548,13 @@
       </section>
     </main>
 
-    <footer>
-      © 2026 Av. Dr. İbrahim Nuri Derinpınar
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-mark">
+          <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
+        </div>
+        <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
+      </div>
     </footer>
   </body>
 </html>
