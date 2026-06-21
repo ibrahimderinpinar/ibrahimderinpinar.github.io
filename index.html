@@ -61,7 +61,7 @@
         flex: 0 0 auto;
       }
       .brand-logo img {
-        width: 112px;
+        width: 178px;
         height: auto;
       }
       .brand-text {
@@ -84,7 +84,7 @@
         flex-wrap: wrap;
         gap: 18px;
         color: var(--muted);
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
       .nav a:hover { color: var(--accent); }
 
@@ -271,13 +271,19 @@
         gap: 16px;
       }
       .contact-grid a { text-decoration: underline; }
+      .footer-logo-note {
+        color: rgba(255,255,255,0.78);
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
       .site-footer {
         margin-top: 10px;
-        background: linear-gradient(180deg, #0b1e37 0%, #08162a 100%);
+        background: linear-gradient(180deg, #173455 0%, #10253f 100%);
         color: #fff;
       }
       .footer-inner {
-        padding: 34px 0 36px;
+        padding: 42px 0 44px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -286,13 +292,13 @@
         text-align: center;
       }
       .footer-mark img {
-        width: 190px;
+        width: 320px;
         height: auto;
         display: block;
       }
       .footer-copy {
         color: rgba(255, 255, 255, 0.88);
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
 
       @media (max-width: 920px) {
@@ -304,9 +310,6 @@
         .topbar-inner {
           flex-direction: column;
           align-items: flex-start;
-        }
-        .hero-card {
-          
         }
       }
 
@@ -329,7 +332,10 @@
           width: 100%;
         }
         .brand-logo img {
-          width: 84px;
+          width: 120px;
+        }
+        .footer-mark img {
+          width: 220px;
         }
         h1 {
           font-size: clamp(2.15rem, 10vw, 3.6rem);
@@ -553,6 +559,7 @@
         <div class="footer-mark">
           <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
         </div>
+        <div class="footer-logo-note">Derinpınar Law & Consultancy</div>
         <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
       </div>
     </footer>
