@@ -8,7 +8,7 @@
     <style>
       :root {
         --bg: #f7f8fc;
-        --panel: rgba(255, 255, 255, 0.86);
+        --panel: rgba(255, 255, 255, 0.88);
         --text: #132238;
         --muted: #59657a;
         --line: rgba(19, 34, 56, 0.08);
@@ -54,13 +54,16 @@
       .brand {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 16px;
         min-width: 0;
       }
-      .brand-logo { flex: 0 0 auto; }
+      .brand-logo {
+        flex: 0 0 auto;
+      }
       .brand-logo img {
-        width: 220px;
+        width: 230px;
         height: auto;
+        display: block;
       }
       .brand-text {
         display: flex;
@@ -273,12 +276,12 @@
 
       .site-footer {
         margin-top: 10px;
-        background: linear-gradient(180deg, #edf3fa 0%, #e3ebf4 100%);
+        background: #ffffff;
         color: #132238;
         border-top: 1px solid rgba(19, 34, 56, 0.08);
       }
       .footer-inner {
-        padding: 48px 0 50px;
+        padding: 50px 0 56px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -287,7 +290,7 @@
         text-align: center;
       }
       .footer-mark img {
-        width: 360px;
+        width: 430px;
         height: auto;
         display: block;
       }
@@ -326,10 +329,10 @@
           width: 100%;
         }
         .brand-logo img {
-          width: 150px;
+          width: 180px;
         }
         .footer-mark img {
-          width: 260px;
+          width: 300px;
         }
         .hero-credentials .credentials {
           grid-template-columns: 1fr;
