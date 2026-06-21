@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Official professional profile of Av. Dr. Ibrahim Nuri Derinpınar" />
+    <meta name="description" content="Professional profile of Av. Dr. Ibrahim Nuri Derinpınar" />
     <title>Av. Dr. Ibrahim Nuri Derinpınar</title>
     <style>
       :root {
-        --bg: #0f172a;
-        --bg-soft: #111c33;
-        --card: rgba(255, 255, 255, 0.06);
-        --card-strong: rgba(255, 255, 255, 0.1);
-        --text: #f8fafc;
-        --muted: #cbd5e1;
-        --accent: #c9a227;
-        --line: rgba(255, 255, 255, 0.14);
-        --max: 1100px;
-        --shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
-        --radius: 24px;
+        --bg: #f5f7fb;
+        --panel: rgba(255, 255, 255, 0.82);
+        --panel-strong: #ffffff;
+        --text: #0f172a;
+        --muted: #5b6578;
+        --line: rgba(15, 23, 42, 0.08);
+        --accent: #1f3a5f;
+        --accent-2: #8c6b2e;
+        --shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
+        --radius: 28px;
+        --max: 1180px;
       }
 
       * { box-sizing: border-box; }
@@ -26,78 +26,109 @@
         margin: 0;
         font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         background:
-          radial-gradient(circle at top left, rgba(201, 162, 39, 0.16), transparent 30%),
-          linear-gradient(180deg, #08101f 0%, var(--bg) 100%);
+          radial-gradient(circle at top left, rgba(31, 58, 95, 0.08), transparent 26%),
+          radial-gradient(circle at top right, rgba(140, 107, 46, 0.08), transparent 22%),
+          linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
         color: var(--text);
         line-height: 1.6;
       }
+
       a { color: inherit; text-decoration: none; }
-      img { max-width: 100%; display: block; }
+      img { display: block; max-width: 100%; }
       .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
 
-      .nav {
+      .topbar {
         position: sticky;
         top: 0;
         z-index: 50;
-        backdrop-filter: blur(14px);
-        background: rgba(8, 16, 31, 0.72);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.74);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--line);
       }
-      .nav-inner {
+      .topbar-inner {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        gap: 16px;
+        justify-content: space-between;
+        gap: 20px;
         padding: 16px 0;
       }
       .brand {
         font-weight: 700;
-        letter-spacing: 0.03em;
-        font-size: 0.95rem;
+        letter-spacing: 0.02em;
       }
-      .menu {
+      .nav {
         display: flex;
+        gap: 18px;
         flex-wrap: wrap;
-        gap: 16px;
         color: var(--muted);
         font-size: 0.95rem;
       }
-      .menu a:hover { color: var(--accent); }
+      .nav a:hover { color: var(--accent); }
 
       .hero {
-        padding: 56px 0 28px;
+        padding: 34px 0 18px;
       }
       .hero-grid {
         display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1.12fr 0.88fr;
         gap: 28px;
-        align-items: center;
+        align-items: stretch;
+      }
+      .hero-copy,
+      .hero-card,
+      .section-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+      .hero-copy {
+        padding: 34px;
       }
       .eyebrow {
         display: inline-flex;
         align-items: center;
         gap: 10px;
         padding: 8px 14px;
-        border: 1px solid rgba(201, 162, 39, 0.35);
         border-radius: 999px;
-        background: rgba(201, 162, 39, 0.08);
-        color: #f7e7a0;
-        font-size: 0.9rem;
+        border: 1px solid rgba(31, 58, 95, 0.12);
+        color: var(--accent);
+        background: rgba(31, 58, 95, 0.05);
+        font-size: 0.92rem;
         margin-bottom: 18px;
       }
       h1 {
         margin: 0;
-        font-size: clamp(2.3rem, 5vw, 4.6rem);
-        line-height: 1.02;
-        letter-spacing: -0.04em;
+        font-size: clamp(2.4rem, 5vw, 4.9rem);
+        line-height: 0.98;
+        letter-spacing: -0.05em;
       }
-      .subtitle {
+      .lead {
         margin: 18px 0 0;
         color: var(--muted);
-        font-size: clamp(1rem, 1.6vw, 1.15rem);
-        max-width: 62ch;
+        font-size: 1.05rem;
+        max-width: 65ch;
       }
-      .cta-row {
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .stat {
+        padding: 16px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid var(--line);
+      }
+      .stat strong {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+        color: var(--accent);
+      }
+      .stat span { color: var(--muted); font-size: 0.93rem; }
+      .buttons {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
@@ -107,132 +138,140 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
         padding: 12px 18px;
         border-radius: 999px;
         border: 1px solid var(--line);
-        background: rgba(255, 255, 255, 0.04);
-        color: var(--text);
-        transition: 0.2s ease;
+        background: rgba(255, 255, 255, 0.9);
+        transition: transform 0.18s ease, border-color 0.18s ease;
+        font-weight: 600;
       }
-      .btn:hover { transform: translateY(-1px); border-color: rgba(201, 162, 39, 0.5); }
+      .btn:hover { transform: translateY(-1px); border-color: rgba(31, 58, 95, 0.24); }
       .btn.primary {
-        background: linear-gradient(135deg, var(--accent), #f2d36d);
-        color: #111827;
-        font-weight: 700;
+        background: linear-gradient(135deg, var(--accent), #294d7c);
+        color: #fff;
         border-color: transparent;
       }
 
-      .portrait-card {
-        position: relative;
-        border-radius: 28px;
+      .hero-card {
         overflow: hidden;
-        background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-        border: 1px solid rgba(255,255,255,0.12);
-        box-shadow: var(--shadow);
+        position: relative;
+        min-height: 100%;
       }
-      .portrait-card img {
+      .portrait {
         width: 100%;
+        height: 100%;
         aspect-ratio: 4 / 5;
         object-fit: cover;
         object-position: center top;
       }
-      .portrait-caption {
+      .hero-overlay {
         position: absolute;
-        left: 16px;
-        right: 16px;
-        bottom: 16px;
-        padding: 14px 16px;
-        border-radius: 18px;
-        background: rgba(8, 16, 31, 0.78);
-        border: 1px solid rgba(255,255,255,0.12);
-        color: var(--text);
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        padding: 18px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
       }
-      .portrait-caption strong { display: block; }
-      .portrait-caption span { color: var(--muted); font-size: 0.95rem; }
+      .hero-overlay strong { display: block; font-size: 1rem; }
+      .hero-overlay span { color: var(--muted); font-size: 0.94rem; }
 
-      section { padding: 28px 0; }
+      section { padding: 18px 0; }
+      .section-card {
+        padding: 28px;
+      }
       .section-title {
-        font-size: 1.35rem;
-        margin: 0 0 16px;
+        margin: 0 0 14px;
+        font-size: 1.38rem;
         letter-spacing: -0.02em;
       }
-      .section-card {
-        background: var(--card);
-        border: 1px solid rgba(255,255,255,0.08);
-        border-radius: var(--radius);
-        padding: 24px;
-        box-shadow: var(--shadow);
-      }
+      .section-text { color: var(--muted); margin: 0; }
+
       .grid-2 {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
+        gap: 16px;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
       }
       .item {
         padding: 18px;
-        border-radius: 18px;
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--line);
       }
-      .item h3, .item h4 {
+      .item h3,
+      .item h4 {
         margin: 0 0 8px;
-        font-size: 1.05rem;
+        font-size: 1.03rem;
       }
-      .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 8px; }
-      .tags {
+      .meta {
+        color: var(--muted);
+        font-size: 0.94rem;
+        margin-bottom: 8px;
+      }
+      .chip-row {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
       }
-      .tag {
+      .chip {
         display: inline-flex;
         align-items: center;
         padding: 8px 12px;
         border-radius: 999px;
-        background: rgba(201, 162, 39, 0.12);
-        border: 1px solid rgba(201, 162, 39, 0.24);
-        color: #f7e7a0;
-        font-size: 0.92rem;
+        background: rgba(31, 58, 95, 0.06);
+        border: 1px solid rgba(31, 58, 95, 0.08);
+        color: var(--accent);
+        font-size: 0.93rem;
       }
       .list {
         margin: 0;
         padding-left: 18px;
         color: var(--muted);
       }
-      .contact {
+      .contact-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 16px;
       }
-      .contact .item a {
-        color: #fff;
-        text-decoration: underline;
-        text-decoration-color: rgba(201, 162, 39, 0.5);
-      }
+      .contact-grid a { text-decoration: underline; }
       footer {
-        padding: 36px 0 48px;
-        color: var(--muted);
+        padding: 34px 0 46px;
         text-align: center;
+        color: var(--muted);
         font-size: 0.95rem;
       }
 
-      @media (max-width: 900px) {
-        .hero-grid, .grid-2, .contact { grid-template-columns: 1fr; }
-        .nav-inner { flex-direction: column; align-items: flex-start; }
+      @media (max-width: 920px) {
+        .hero-grid,
+        .grid-2,
+        .grid-3,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .topbar-inner { flex-direction: column; align-items: flex-start; }
       }
       @media (max-width: 640px) {
-        .hero { padding-top: 32px; }
-        .section-card { padding: 18px; }
-        .menu { gap: 12px; }
+        .hero-copy,
+        .section-card {
+          padding: 20px;
+        }
+        .stats { grid-template-columns: 1fr; }
+        h1 { font-size: clamp(2.15rem, 10vw, 3.6rem); }
       }
     </style>
   </head>
   <body>
-    <header class="nav">
-      <div class="wrap nav-inner">
+    <header class="topbar">
+      <div class="wrap topbar-inner">
         <div class="brand">Av. Dr. İbrahim Nuri Derinpınar</div>
-        <nav class="menu" aria-label="Primary">
+        <nav class="nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#academic">Academic</a>
           <a href="#experience">Experience</a>
@@ -245,26 +284,42 @@
     <main>
       <section class="hero">
         <div class="wrap hero-grid">
-          <div>
+          <div class="hero-copy">
             <div class="eyebrow">Attorney at Law · PhD in Private Law · International Commercial Law</div>
             <h1>Av. Dr. İbrahim Nuri Derinpınar</h1>
-            <p class="subtitle">
-              Istanbul-based lawyer and legal professional with experience across commercial law,
-              contract law, competition law, arbitration, legal consultancy, and e-sports law.
-              Focused on practical dispute resolution, international commercial matters, and academic legal research.
+            <p class="lead">
+              Istanbul-based attorney and doctoral researcher with a practice and academic focus on commercial law,
+              contract law, competition law, arbitration, corporate matters, and the legal framework of emerging sectors.
+              His work connects legal practice, cross-border commercial disputes, and research-led legal analysis.
             </p>
-            <div class="cta-row">
+
+            <div class="stats">
+              <div class="stat">
+                <strong>14+ Years</strong>
+                <span>Legal practice and consultancy</span>
+              </div>
+              <div class="stat">
+                <strong>LL.M.</strong>
+                <span>Brunel University of London</span>
+              </div>
+              <div class="stat">
+                <strong>PhD</strong>
+                <span>Bahçeşehir University</span>
+              </div>
+            </div>
+
+            <div class="buttons">
               <a class="btn primary" href="#contact">Contact</a>
+              <a class="btn" href="#academic">Academic Background</a>
               <a class="btn" href="https://www.linkedin.com/in/ibrahim-nuri-derinpınar-lawyer" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn" href="#academic">View Academic Background</a>
             </div>
           </div>
 
-          <div class="portrait-card">
-            <img src="IMG_3478.PNG" alt="Av. Dr. İbrahim Nuri Derinpınar portrait" />
-            <div class="portrait-caption">
+          <div class="hero-card">
+            <img class="portrait" src="IMG_3478.PNG" alt="Av. Dr. İbrahim Nuri Derinpınar portrait" />
+            <div class="hero-overlay">
               <strong>Professional Profile</strong>
-              <span>Commercial Law · Arbitration · Competition Law · Consultancy</span>
+              <span>Commercial Law · Arbitration · Competition Law · E-Sports Law</span>
             </div>
           </div>
         </div>
@@ -273,12 +328,11 @@
       <section id="about">
         <div class="wrap section-card">
           <h2 class="section-title">About</h2>
-          <p>
-            İbrahim Nuri Derinpınar is an attorney and doctoral researcher whose work bridges legal practice,
-            academic inquiry, and international commercial matters. His background includes law practice,
-            consultancy, arbitration-oriented studies, competition law, and cross-border commercial law analysis.
-            He has developed particular interest in dispute resolution, contractual matters, corporate governance,
-            internet law, and the legal dimensions of emerging sectors such as e-sports.
+          <p class="section-text">
+            İbrahim Nuri Derinpınar is an attorney and doctoral researcher whose profile combines legal practice,
+            international commercial law training, arbitration-oriented study, and academic research in private law.
+            He has developed a practice-centered understanding of disputes, contracts, corporate governance, and
+            cross-border legal matters, with a particular interest in the legal dimensions of e-sports.
           </p>
         </div>
       </section>
@@ -290,7 +344,7 @@
             <div class="item">
               <h3>Bahçeşehir University</h3>
               <div class="meta">PhD in Private Law · 2018–2026</div>
-              <p>Thesis: <em>E-sporcu Sözleşmesi</em></p>
+              <p>Thesis: <em>The E-Sports Player Contract: A Private Law Perspective</em></p>
             </div>
             <div class="item">
               <h3>Brunel University of London</h3>
@@ -316,12 +370,12 @@
       <section>
         <div class="wrap section-card">
           <h2 class="section-title">Certifications & Training</h2>
-          <div class="tags">
-            <span class="tag">CIArb · MCIArb · 2018</span>
-            <span class="tag">Istanbul Bilgi University · Practical Competition Law</span>
-            <span class="tag">Hilderstone College · CEFR B2.2</span>
-            <span class="tag">Legal English Programme</span>
-            <span class="tag">LSE Summer School Programme</span>
+          <div class="chip-row">
+            <span class="chip">CIArb · MCIArb · 2018</span>
+            <span class="chip">Istanbul Bilgi University · Practical Competition Law</span>
+            <span class="chip">Hilderstone College · CEFR B2.2</span>
+            <span class="chip">Legal English Programme</span>
+            <span class="chip">LSE Summer School Programme</span>
           </div>
         </div>
       </section>
@@ -343,7 +397,7 @@
             <div class="item">
               <h3>Legal Counsel · Penteks İplik Sanayi ve Ticaret A.Ş.</h3>
               <div class="meta">Jan 2018 – Apr 2026 · Malatya</div>
-              <p>In-house legal support across corporate and commercial legal matters.</p>
+              <p>In-house legal support across corporate and commercial matters.</p>
             </div>
             <div class="item">
               <h3>Associate · Reisbey Law Office</h3>
@@ -362,15 +416,15 @@
       <section id="expertise">
         <div class="wrap section-card">
           <h2 class="section-title">Expertise</h2>
-          <div class="tags">
-            <span class="tag">Commercial Law</span>
-            <span class="tag">Contract Law</span>
-            <span class="tag">Competition Law</span>
-            <span class="tag">International Arbitration</span>
-            <span class="tag">Corporate Law</span>
-            <span class="tag">Internet Law</span>
-            <span class="tag">E-Sports Law</span>
-            <span class="tag">Dispute Resolution</span>
+          <div class="chip-row">
+            <span class="chip">Commercial Law</span>
+            <span class="chip">Contract Law</span>
+            <span class="chip">Competition Law</span>
+            <span class="chip">International Arbitration</span>
+            <span class="chip">Corporate Law</span>
+            <span class="chip">Internet Law</span>
+            <span class="chip">E-Sports Law</span>
+            <span class="chip">Dispute Resolution</span>
           </div>
         </div>
       </section>
@@ -378,7 +432,7 @@
       <section id="contact">
         <div class="wrap section-card">
           <h2 class="section-title">Contact</h2>
-          <div class="contact">
+          <div class="contact-grid">
             <div class="item">
               <h4>Email</h4>
               <p><a href="mailto:ibrahim@derinpinar.av.tr">ibrahim@derinpinar.av.tr</a></p>
@@ -396,8 +450,6 @@
       </section>
     </main>
 
-    <footer>
-      © 2026 Av. Dr. İbrahim Nuri Derinpınar
-    </footer>
+    <footer>© 2026 Av. Dr. İbrahim Nuri Derinpınar</footer>
   </body>
 </html>
