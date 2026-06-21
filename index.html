@@ -3,37 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Av. Dr. İbrahim Nuri Derinpınar kişisel kariyer sitesi"
-    />
+    <meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar kişisel kariyer sitesi" />
     <title>Av. Dr. İbrahim Nuri Derinpınar</title>
     <style>
       :root {
-        --bg: #f6f7fb;
-        --panel: rgba(255, 255, 255, 0.84);
-        --text: #0f172a;
-        --muted: #5b6476;
-        --line: rgba(15, 23, 42, 0.08);
+        --bg: #f7f8fc;
+        --panel: rgba(255, 255, 255, 0.86);
+        --text: #132238;
+        --muted: #59657a;
+        --line: rgba(19, 34, 56, 0.08);
         --accent: #1f3a5f;
-        --accent-2: #8c6b2e;
-        --shadow: 0 24px 70px rgba(15, 23, 42, 0.1);
+        --accent-2: #c89b3c;
+        --shadow: 0 24px 70px rgba(19, 34, 56, 0.10);
         --radius: 28px;
         --max: 1180px;
       }
 
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
-
       body {
         margin: 0;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
         background:
           radial-gradient(circle at top left, rgba(31, 58, 95, 0.08), transparent 26%),
-          radial-gradient(circle at top right, rgba(140, 107, 46, 0.08), transparent 22%),
+          radial-gradient(circle at top right, rgba(200, 155, 60, 0.10), transparent 22%),
           linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
-        line-height: 1.6;
       }
 
       a { color: inherit; text-decoration: none; }
@@ -44,11 +40,10 @@
         position: sticky;
         top: 0;
         z-index: 50;
-        background: rgba(255, 255, 255, 0.74);
+        background: rgba(255, 255, 255, 0.78);
         backdrop-filter: blur(16px);
         border-bottom: 1px solid var(--line);
       }
-
       .topbar-inner {
         display: flex;
         align-items: center;
@@ -56,59 +51,50 @@
         gap: 20px;
         padding: 14px 0;
       }
-
-      .brand-branding {
+      .brand {
         display: flex;
         align-items: center;
         gap: 14px;
         min-width: 0;
       }
-
-      .brand-logo img {
-        width: 72px;
-        height: auto;
-        display: block;
+      .brand-logo {
+        flex: 0 0 auto;
       }
-
+      .brand-logo img {
+        width: 84px;
+        height: auto;
+      }
       .brand-text {
         display: flex;
         flex-direction: column;
         gap: 2px;
         min-width: 0;
       }
-
       .brand-name {
-        font-weight: 700;
-        letter-spacing: 0.02em;
+        font-weight: 800;
         line-height: 1.1;
+        letter-spacing: 0.01em;
       }
-
       .brand-subtitle {
-        font-size: 0.92rem;
         color: var(--muted);
+        font-size: 0.92rem;
       }
-
       .nav {
         display: flex;
-        gap: 18px;
         flex-wrap: wrap;
+        gap: 18px;
         color: var(--muted);
         font-size: 0.95rem;
       }
-
       .nav a:hover { color: var(--accent); }
 
-      .hero {
-        padding: 34px 0 18px;
-      }
-
+      .hero { padding: 34px 0 18px; }
       .hero-grid {
         display: grid;
-        grid-template-columns: 1.12fr 0.88fr;
+        grid-template-columns: 1.1fr 0.9fr;
         gap: 28px;
         align-items: stretch;
       }
-
       .hero-copy,
       .hero-card,
       .section-card {
@@ -117,9 +103,7 @@
         border-radius: var(--radius);
         box-shadow: var(--shadow);
       }
-
       .hero-copy { padding: 34px; }
-
       .eyebrow {
         display: inline-flex;
         align-items: center;
@@ -132,21 +116,18 @@
         font-size: 0.92rem;
         margin-bottom: 18px;
       }
-
       h1 {
         margin: 0;
         font-size: clamp(2.4rem, 5vw, 4.9rem);
         line-height: 0.98;
         letter-spacing: -0.05em;
       }
-
       .lead {
         margin: 18px 0 0;
         color: var(--muted);
         font-size: 1.05rem;
-        max-width: 65ch;
+        max-width: 62ch;
       }
-
       .bar-association {
         margin-top: 14px;
         display: inline-flex;
@@ -160,14 +141,12 @@
         font-size: 0.94rem;
         font-weight: 600;
       }
-
       .credentials {
         display: flex;
         flex-wrap: wrap;
         gap: 14px;
         margin-top: 24px;
       }
-
       .credential {
         background: rgba(255, 255, 255, 0.92);
         border: 1px solid var(--line);
@@ -176,26 +155,22 @@
         min-width: 240px;
         flex: 1 1 240px;
       }
-
       .credential strong {
         display: block;
         color: var(--accent);
         font-size: 1rem;
         margin-bottom: 4px;
       }
-
       .credential span {
         color: var(--muted);
         font-size: 0.92rem;
       }
-
       .buttons {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
         margin-top: 26px;
       }
-
       .btn {
         display: inline-flex;
         align-items: center;
@@ -207,12 +182,7 @@
         transition: transform 0.18s ease, border-color 0.18s ease;
         font-weight: 600;
       }
-
-      .btn:hover {
-        transform: translateY(-1px);
-        border-color: rgba(31, 58, 95, 0.24);
-      }
-
+      .btn:hover { transform: translateY(-1px); border-color: rgba(31, 58, 95, 0.24); }
       .btn.primary {
         background: linear-gradient(135deg, var(--accent), #294d7c);
         color: #fff;
@@ -223,80 +193,68 @@
         overflow: hidden;
         position: relative;
         min-height: 100%;
-        display: flex;
-        flex-direction: column;
       }
-
       .portrait {
         width: 100%;
         aspect-ratio: 4 / 5;
         object-fit: cover;
         object-position: center top;
       }
-
       .hero-overlay {
-        margin: 0 18px 18px;
-        margin-top: -34px;
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
         padding: 18px;
         border-radius: 22px;
-        background: rgba(255, 255, 255, 0.88);
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        background: rgba(12, 25, 43, 0.86);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         backdrop-filter: blur(12px);
+        color: #fff;
       }
-
       .hero-overlay strong {
         display: block;
         font-size: 1rem;
       }
-
       .hero-overlay span {
-        color: var(--muted);
+        color: rgba(255, 255, 255, 0.78);
         font-size: 0.94rem;
       }
 
       section { padding: 18px 0; }
-
       .section-card { padding: 28px; }
-
       .section-title {
         margin: 0 0 14px;
         font-size: 1.38rem;
         letter-spacing: -0.02em;
       }
-
       .section-text { color: var(--muted); margin: 0; }
-
       .grid-2 {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
       }
-
       .item {
         padding: 18px;
         border-radius: 22px;
         background: rgba(255, 255, 255, 0.92);
         border: 1px solid var(--line);
       }
-
       .item h3,
       .item h4 {
         margin: 0 0 8px;
         font-size: 1.03rem;
       }
-
       .meta {
         color: var(--muted);
         font-size: 0.94rem;
         margin-bottom: 8px;
       }
-
       .chip-row {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
       }
-
       .chip {
         display: inline-flex;
         align-items: center;
@@ -307,32 +265,17 @@
         color: var(--accent);
         font-size: 0.93rem;
       }
-
       .contact-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 16px;
       }
-
       .contact-grid a { text-decoration: underline; }
-
       footer {
         padding: 34px 0 46px;
         text-align: center;
         color: var(--muted);
         font-size: 0.95rem;
-      }
-
-      .footer-mark {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 12px;
-      }
-
-      .footer-mark img {
-        width: 48px;
-        height: auto;
-        opacity: 0.96;
       }
 
       @media (max-width: 920px) {
@@ -341,10 +284,12 @@
         .contact-grid {
           grid-template-columns: 1fr;
         }
-
         .topbar-inner {
           flex-direction: column;
           align-items: flex-start;
+        }
+        .hero-card {
+          order: -1;
         }
       }
 
@@ -353,28 +298,22 @@
         .section-card {
           padding: 20px;
         }
-
         .buttons {
           flex-direction: column;
         }
-
         .buttons .btn {
           width: 100%;
         }
-
         .credentials {
           flex-direction: column;
         }
-
         .credential {
           min-width: auto;
           width: 100%;
         }
-
         .brand-logo img {
-          width: 58px;
+          width: 66px;
         }
-
         h1 {
           font-size: clamp(2.15rem, 10vw, 3.6rem);
         }
@@ -384,16 +323,15 @@
   <body>
     <header class="topbar">
       <div class="wrap topbar-inner">
-        <div class="brand-branding">
+        <div class="brand">
           <a class="brand-logo" href="#top" aria-label="DLC ana sayfa">
-            <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy" />
+            <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
           </a>
           <div class="brand-text">
             <div class="brand-name">Av. Dr. İbrahim Nuri Derinpınar</div>
             <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
           </div>
         </div>
-
         <nav class="nav" aria-label="Birincil">
           <a href="#hakkimda">Hakkımda</a>
           <a href="#egitim">Eğitim</a>
@@ -408,17 +346,13 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow">Avukat • PhD • LL.M. • Uluslararası Ticaret Hukuku</div>
+            <div class="eyebrow">Avukat • PhD • LL.M. • Uluslararası Ticaret Hukuku • Tahkim</div>
             <h1>Av. Dr. İbrahim Nuri Derinpınar</h1>
-
             <p class="lead">
               Ticaret hukuku, sözleşmeler hukuku, rekabet hukuku, uluslararası ticaret hukuku ve tahkim alanlarında
               faaliyet gösteren; akademik araştırma ile mesleki pratiği bir araya getiren avukat ve hukukçudur.
             </p>
-
-            <div class="bar-association">
-              İstanbul Barosu’na Temmuz 2014’ten beri kayıtlıdır.
-            </div>
+            <div class="bar-association">İstanbul Barosu’na Temmuz 2014’ten beri kayıtlıdır.</div>
 
             <div class="credentials">
               <div class="credential">
@@ -456,10 +390,10 @@
         <div class="wrap section-card">
           <h2 class="section-title">Hakkımda</h2>
           <p class="section-text">
-            İbrahim Nuri Derinpınar, İstanbul Barosu’na kayıtlı avukat olup ticaret hukuku, şirketler hukuku,
-            sözleşmeler hukuku, rekabet hukuku ve uluslararası ticaret hukuku alanlarında mesleki faaliyet göstermektedir.
-            Akademik ve mesleki birikimini, uyuşmazlık çözümü, kurumsal danışmanlık ve uluslararası ticari ilişkiler
-            alanlarında uygulamaktadır.
+            İbrahim Nuri Derinpınar, İstanbul Barosu’na Temmuz 2014’ten beri kayıtlı avukat olup ticaret hukuku,
+            şirketler hukuku, sözleşmeler hukuku, rekabet hukuku ve uluslararası ticaret hukuku alanlarında mesleki
+            faaliyet göstermektedir. Akademik ve mesleki birikimini, uyuşmazlık çözümü, kurumsal danışmanlık ve
+            uluslararası ticari ilişkiler alanlarında uygulamaktadır.
           </p>
           <br />
           <p class="section-text">
@@ -517,7 +451,7 @@
           <h2 class="section-title">Mesleki Deneyim</h2>
           <div class="grid-2">
             <div class="item">
-              <h3>Kurucu · Derinpınar Hukuk ve Danışmanlık</h3>
+              <h3>Kurucu Avukat · Derinpınar Hukuk ve Danışmanlık</h3>
               <div class="meta">Ocak 2018 – Halen · Bakırköy, İstanbul</div>
               <p>Ticari ve bireysel müvekkillere yönelik hukuk danışmanlığı ve dava takibi.</p>
             </div>
@@ -598,10 +532,7 @@
     </main>
 
     <footer>
-      <div class="footer-mark">
-        <img src="ind-monogram.png" alt="IND monogram" />
-      </div>
-      <div>© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
+      © 2026 Av. Dr. İbrahim Nuri Derinpınar
     </footer>
   </body>
 </html>
