@@ -13,7 +13,6 @@
         --muted: #5b6476;
         --line: rgba(15, 23, 42, 0.08);
         --accent: #1f3a5f;
-        --accent-2: #8c6b2e;
         --shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
         --radius: 28px;
         --max: 1180px;
@@ -176,14 +175,8 @@
         border: 1px solid rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(12px);
       }
-      .hero-overlay strong {
-        display: block;
-        font-size: 1rem;
-      }
-      .hero-overlay span {
-        color: var(--muted);
-        font-size: 0.94rem;
-      }
+      .hero-overlay strong { display: block; font-size: 1rem; }
+      .hero-overlay span { color: var(--muted); font-size: 0.94rem; }
 
       section { padding: 18px 0; }
       .section-card { padding: 28px; }
@@ -205,20 +198,9 @@
         border: 1px solid var(--line);
       }
       .item h3,
-      .item h4 {
-        margin: 0 0 8px;
-        font-size: 1.03rem;
-      }
-      .meta {
-        color: var(--muted);
-        font-size: 0.94rem;
-        margin-bottom: 8px;
-      }
-      .chip-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
+      .item h4 { margin: 0 0 8px; font-size: 1.03rem; }
+      .meta { color: var(--muted); font-size: 0.94rem; margin-bottom: 8px; }
+      .chip-row { display: flex; flex-wrap: wrap; gap: 10px; }
       .chip {
         display: inline-flex;
         align-items: center;
@@ -243,20 +225,12 @@
       }
 
       @media (max-width: 920px) {
-        .hero-grid,
-        .grid-2,
-        .contact-grid {
-          grid-template-columns: 1fr;
-        }
-        .topbar-inner {
-          flex-direction: column;
-          align-items: flex-start;
-        }
+        .hero-grid, .grid-2, .contact-grid { grid-template-columns: 1fr; }
+        .topbar-inner { flex-direction: column; align-items: flex-start; }
       }
 
       @media (max-width: 640px) {
-        .hero-copy,
-        .section-card { padding: 20px; }
+        .hero-copy, .section-card { padding: 20px; }
         .buttons { flex-direction: column; }
         .buttons .btn { width: 100%; }
         .credentials { flex-direction: column; }
@@ -283,7 +257,7 @@
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow">Avukat · Doktor · Uluslararası Ticaret Hukuku · Tahkim</div>
+            <div class="eyebrow">Avukat · PhD · LL.M. · Uluslararası Ticaret Hukuku · Tahkim</div>
             <h1>Av. Dr. İbrahim Nuri Derinpınar</h1>
             <p class="lead">
               Ticaret hukuku, sözleşmeler hukuku, rekabet hukuku, uluslararası ticaret hukuku ve tahkim alanlarında
@@ -292,7 +266,7 @@
 
             <div class="credentials">
               <div class="credential">
-                <strong>Doktora</strong>
+                <strong>PhD</strong>
                 <span>Özel Hukuk · Bahçeşehir Üniversitesi</span>
               </div>
               <div class="credential">
@@ -316,7 +290,7 @@
             <img class="portrait" src="IMG_3478.PNG" alt="Av. Dr. İbrahim Nuri Derinpınar portre fotoğrafı" />
             <div class="hero-overlay">
               <strong>Av. Dr. İbrahim Nuri Derinpınar</strong>
-              <span>LL.M. • Doktora • MCIArb</span>
+              <span>PhD • LL.M. • MCIArb</span>
             </div>
           </div>
         </div>
