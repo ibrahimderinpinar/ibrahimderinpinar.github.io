@@ -65,9 +65,8 @@
       .hero { padding: 34px 0 18px; }
       .hero-grid {
         display: grid;
-        grid-template-columns: 1.12fr 0.88fr;
+        grid-template-columns: 1fr;
         gap: 28px;
-        align-items: stretch;
       }
       .hero-copy,
       .hero-card,
@@ -151,32 +150,37 @@
         color: #fff;
         border-color: transparent;
       }
-
-      .hero-card {
+      .hero-photo {
+        margin-top: 24px;
         overflow: hidden;
         position: relative;
-        min-height: 100%;
+        border-radius: 28px;
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        background: rgba(255, 255, 255, 0.92);
       }
       .portrait {
         width: 100%;
-        height: 100%;
-        aspect-ratio: 4 / 5;
+        display: block;
+        aspect-ratio: 16 / 9;
+        max-height: 420px;
         object-fit: cover;
-        object-position: center top;
+        object-position: center 22%;
       }
-      .hero-overlay {
-        position: absolute;
-        left: 18px;
-        right: 18px;
-        bottom: 18px;
-        padding: 18px;
-        border-radius: 22px;
-        background: rgba(255, 255, 255, 0.84);
-        border: 1px solid rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(12px);
+      .photo-caption {
+        padding: 16px 18px 18px;
+        border-top: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.9);
       }
-      .hero-overlay strong { display: block; font-size: 1rem; }
-      .hero-overlay span { color: var(--muted); font-size: 0.94rem; }
+      .photo-caption strong {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      .photo-caption span {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
 
       section { padding: 18px 0; }
       .section-card { padding: 28px; }
@@ -235,6 +239,7 @@
         .buttons .btn { width: 100%; }
         .credentials { flex-direction: column; }
         .credential { min-width: auto; width: 100%; }
+        .portrait { aspect-ratio: 4 / 3; }
         h1 { font-size: clamp(2.15rem, 10vw, 3.6rem); }
       }
     </style>
@@ -263,11 +268,22 @@
               Ticaret hukuku, sözleşmeler hukuku, rekabet hukuku, uluslararası ticaret hukuku ve tahkim alanlarında
               faaliyet gösteren; akademik araştırma ile mesleki pratiği bir araya getiren avukat ve hukukçudur.
             </p>
+            <p class="lead">
+              Temmuz 2014'ten beri İstanbul Barosu'na kayıtlıdır.
+            </p>
+
+            <div class="hero-photo">
+              <img class="portrait" src="IMG_3478.PNG" alt="Av. Dr. İbrahim Nuri Derinpınar portre fotoğrafı" />
+              <div class="photo-caption">
+                <strong>Av. Dr. İbrahim Nuri Derinpınar</strong>
+                <span>Temmuz 2014'ten beri İstanbul Barosu'na kayıtlı avukat · PhD • LL.M. • MCIArb</span>
+              </div>
+            </div>
 
             <div class="credentials">
               <div class="credential">
                 <strong>PhD</strong>
-                <span>Özel Hukuk · Bahçeşehir Üniversitesi</span>
+                <span>Private Law · Bahçeşehir Üniversitesi</span>
               </div>
               <div class="credential">
                 <strong>LL.M.</strong>
@@ -285,14 +301,6 @@
               <a class="btn" href="https://www.linkedin.com/in/ibrahim-nuri-derinpınar-lawyer" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
           </div>
-
-          <div class="hero-card">
-            <img class="portrait" src="IMG_3478.PNG" alt="Av. Dr. İbrahim Nuri Derinpınar portre fotoğrafı" />
-            <div class="hero-overlay">
-              <strong>Av. Dr. İbrahim Nuri Derinpınar</strong>
-              <span>PhD • LL.M. • MCIArb</span>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -300,10 +308,10 @@
         <div class="wrap section-card">
           <h2 class="section-title">Hakkımda</h2>
           <p class="section-text">
-            İbrahim Nuri Derinpınar, İstanbul Barosu’na kayıtlı avukat olup ticaret hukuku, şirketler hukuku,
-            sözleşmeler hukuku, rekabet hukuku ve uluslararası ticaret hukuku alanlarında mesleki faaliyet
-            göstermektedir. Akademik ve mesleki birikimini, uyuşmazlık çözümü, kurumsal danışmanlık ve uluslararası
-            ticari ilişkiler alanlarında uygulamaktadır.
+            İbrahim Nuri Derinpınar, İstanbul Barosu’na Temmuz 2014'ten beri kayıtlı avukat olup ticaret hukuku,
+            şirketler hukuku, sözleşmeler hukuku, rekabet hukuku ve uluslararası ticaret hukuku alanlarında mesleki
+            faaliyet göstermektedir. Akademik ve mesleki birikimini, uyuşmazlık çözümü, kurumsal danışmanlık ve
+            uluslararası ticari ilişkiler alanlarında uygulamaktadır.
           </p>
           <br />
           <p class="section-text">
@@ -364,11 +372,6 @@
               <h3>Kurucu · Derinpınar Hukuk ve Danışmanlık</h3>
               <div class="meta">Ocak 2018 – Halen · Bakırköy, İstanbul</div>
               <p>Ticari ve bireysel müvekkillere yönelik hukuk danışmanlığı ve dava takibi.</p>
-            </div>
-            <div class="item">
-              <h3>Avukat · İstanbul Barosu</h3>
-              <div class="meta">Temmuz 2014 – Halen · İstanbul</div>
-              <p>Dava, danışmanlık, sözleşme ve uyuşmazlık çözümü alanlarında aktif mesleki faaliyet.</p>
             </div>
             <div class="item">
               <h3>Hukuk Müşaviri · Penteks İplik Sanayi ve Ticaret A.Ş.</h3>
