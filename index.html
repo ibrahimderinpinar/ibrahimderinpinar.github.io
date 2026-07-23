@@ -358,6 +358,131 @@ pointer-events:none;
 }
 .hero-card{transition:.35s ease}
 .hero-card:hover{transform:translateY(-6px)}
+  .menu-toggle{
+
+display:none;
+
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+color:#1f3a5f;
+
+padding:0;
+
+}
+
+.mobile-overlay{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.35);
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.3s;
+
+z-index:9998;
+
+}
+
+.mobile-overlay.active{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+.mobile-menu{
+
+position:fixed;
+
+top:0;
+
+right:-100%;
+
+width:82%;
+
+max-width:340px;
+
+height:100vh;
+
+background:#fff;
+
+padding:80px 35px;
+
+display:flex;
+
+flex-direction:column;
+
+box-shadow:-15px 0 40px rgba(0,0,0,.18);
+
+transition:.35s ease;
+
+z-index:9999;
+
+}
+
+.mobile-menu.active{
+
+right:0;
+
+}
+
+.mobile-menu a{
+
+font-size:1.35rem;
+
+font-weight:600;
+
+color:#132238;
+
+margin:18px 0;
+
+text-decoration:none;
+
+}
+
+.close-menu{
+
+position:absolute;
+
+top:22px;
+
+right:22px;
+
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+padding:0;
+
+}
+
+@media(max-width:768px){
+
+.nav{
+
+display:none;
+
+}
+
+.menu-toggle{
+
+display:block;
+
+}
+
+}
 </style>
 
 </head>
@@ -373,6 +498,25 @@ pointer-events:none;
             <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
           </div>
         </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+width="30"
+height="30"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
+
+<line x1="3" y1="6" x2="21" y2="6"/>
+<line x1="3" y1="12" x2="21" y2="12"/>
+<line x1="3" y1="18" x2="21" y2="18"/>
+
+</svg>
+
+</button>
         <nav class="nav" aria-label="Birincil">
           <a href="#hakkimda">Hakkımda</a>
           <a href="#egitim">Eğitim</a>
@@ -382,7 +526,42 @@ pointer-events:none;
         </nav>
       </div>
     </header>
+<div class="mobile-overlay" id="mobileOverlay"></div>
 
+<div class="mobile-menu" id="mobileMenu">
+
+<button class="close-menu" id="closeMenu">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+width="34"
+height="34"
+viewBox="0 0 24 24"
+fill="none"
+stroke="currentColor"
+stroke-width="2"
+stroke-linecap="round"
+stroke-linejoin="round">
+
+<line x1="18" y1="6" x2="6" y2="18"/>
+<line x1="6" y1="6" x2="18" y2="18"/>
+
+</svg>
+
+</button>
+
+<a href="#hakkimda">Hakkımda</a>
+
+<a href="#egitim">Eğitim</a>
+
+<a href="#deneyim">Deneyim</a>
+
+<a href="#uzmanlik">Uzmanlık</a>
+
+<a href="#akademik-calismalar">Akademik Çalışmalar</a>
+
+<a href="#iletisim">İletişim</a>
+
+</div>
     <main id="top">
       <section class="hero">
         <div class="wrap hero-grid">
@@ -600,5 +779,48 @@ pointer-events:none;
         <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
       </div>
     </footer>
+    <script>
+
+const menu=document.getElementById("mobileMenu");
+
+const overlay=document.getElementById("mobileOverlay");
+
+document.getElementById("menuToggle").onclick=function(){
+
+menu.classList.add("active");
+
+overlay.classList.add("active");
+
+}
+
+document.getElementById("closeMenu").onclick=function(){
+
+menu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+}
+
+overlay.onclick=function(){
+
+menu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+}
+
+document.querySelectorAll(".mobile-menu a").forEach(function(item){
+
+item.onclick=function(){
+
+menu.classList.remove("active");
+
+overlay.classList.remove("active");
+
+}
+
+});
+
+</script>
   </body>
 </html>
