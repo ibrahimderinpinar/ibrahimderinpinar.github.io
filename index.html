@@ -358,7 +358,8 @@ pointer-events:none;
 }
 .hero-card{transition:.35s ease}
 .hero-card:hover{transform:translateY(-6px)}
-  .menu-toggle{
+  
+.menu-toggle{
 
 display:none;
 
@@ -371,6 +372,26 @@ cursor:pointer;
 color:#1f3a5f;
 
 padding:0;
+
+width:42px;
+
+height:42px;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+@media(max-width:768px){
+
+.nav{
+display:none;
+}
+
+.menu-toggle{
+display:flex;
+}
 
 }
 
@@ -413,7 +434,13 @@ width:82%;
 max-width:340px;
 
 height:100vh;
-
+  
+overflow-y:auto; 
+  
+padding-top:calc(80px + env(safe-area-inset-top));
+  
+padding-bottom:env(safe-area-inset-bottom);
+  
 background:#fff;
 
 padding:80px 35px;
