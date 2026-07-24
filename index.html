@@ -546,7 +546,7 @@ stroke-linejoin="round">
           <a href="#egitim">Eğitim</a>
           <a href="#deneyim">Deneyim</a>
           <a href="#uzmanlik">Uzmanlık</a>
-          <a href="#iletisim">Bize Ulaşın</a>
+          <a href="#iletisim">İletişim</a>
         </nav>
       </div>
     </header>
@@ -583,7 +583,7 @@ stroke-linejoin="round">
 
 <a href="#akademik-calismalar">Akademik Çalışmalar</a>
 
-<a href="#iletisim">Bize Ulaşın</a>
+<a href="#iletisim">İletişim</a>
 
 </div>
     <main id="top">
@@ -599,7 +599,7 @@ stroke-linejoin="round">
             <div class="buttons">
               <a class="btn primary"
    href="mailto:ibrahim@derinpinar.av.tr?subject=Hukuki%20Danışmanlık%20Talebi&body=Sayın%20Av.%20Dr.%20İbrahim%20Nuri%20Derinpınar,%0A%0A">
-   Bize Ulaşın</a>
+   İletişim</a>
               <a class="btn" href="#egitim">Akademik Geçmiş</a>
               <a class="btn" href="https://www.linkedin.com/in/ibrahim-nuri-derinpınar-lawyer" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
@@ -759,7 +759,7 @@ stroke-linejoin="round">
 
       <section id="iletisim">
         <div class="wrap section-card">
-          <h2 class="section-title">Bize Ulaşın</h2>
+          <h2 class="section-title">İletişim</h2>
           <div class="contact-grid">
             <div class="item">
               <h4>E-posta</h4>
@@ -825,30 +825,13 @@ document.body.style.overflow="";
 
 document.querySelectorAll(".mobile-menu a").forEach(function(item){
 
-item.addEventListener("click", function(e){
-
-const target=this.getAttribute("href");
+item.onclick=function(){
 
 menu.classList.remove("active");
+
 overlay.classList.remove("active");
+
 document.body.style.overflow="";
-
-if(target && target.startsWith("#")){
-
-e.preventDefault();
-
-setTimeout(function(){
-
-const section=document.querySelector(target);
-
-if(section){
-section.scrollIntoView({
-behavior:"smooth",
-block:"start"
-});
-}
-
-},300);
 
 }
 
