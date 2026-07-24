@@ -825,13 +825,30 @@ document.body.style.overflow="";
 
 document.querySelectorAll(".mobile-menu a").forEach(function(item){
 
-item.onclick=function(){
+item.addEventListener("click", function(e){
+
+const target=this.getAttribute("href");
 
 menu.classList.remove("active");
-
 overlay.classList.remove("active");
-
 document.body.style.overflow="";
+
+if(target && target.startsWith("#")){
+
+e.preventDefault();
+
+setTimeout(function(){
+
+const section=document.querySelector(target);
+
+if(section){
+section.scrollIntoView({
+behavior:"smooth",
+block:"start"
+});
+}
+
+},300);
 
 }
 
