@@ -823,37 +823,59 @@ document.body.style.overflow="";
   
 }
 
-document.querySelectorAll(".mobile-menu a").forEach(function(item){
+const menu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("mobileOverlay");
 
-item.addEventListener("click", function(e){
+document.getElementById("menuToggle").onclick = function () {
+    menu.classList.add("active");
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+};
 
-const target=this.getAttribute("href");
+document.getElementById("closeMenu").onclick = function () {
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+};
 
-menu.classList.remove("active");
-overlay.classList.remove("active");
-document.body.style.overflow="";
+overlay.onclick = function () {
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+};
 
-if(target && target.startsWith("#")){
+document.querySelectorAll(".mobile-menu a").forEach(function (item) {
 
-e.preventDefault();
+    item.addEventListener("click", function (e) {
 
-setTimeout(function(){
+        const target = this.getAttribute("href");
 
-const section=document.querySelector(target);
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
 
-if(section){
-section.scrollIntoView({
-behavior:"smooth",
-block:"start"
+        if (target && target.startsWith("#")) {
+
+            e.preventDefault();
+
+            setTimeout(function () {
+
+                const section = document.querySelector(target);
+
+                if (section) {
+                    section.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
+
+            }, 300);
+
+        }
+
+    });
+
 });
-}
-
-},300);
-
-}
-
-});
-
 </script>
   </body>
 </html>
