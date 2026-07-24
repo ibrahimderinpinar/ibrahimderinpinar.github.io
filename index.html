@@ -823,59 +823,37 @@ document.body.style.overflow="";
   
 }
 
-const menu = document.getElementById("mobileMenu");
-const overlay = document.getElementById("mobileOverlay");
+document.querySelectorAll(".mobile-menu a").forEach(function(item){
 
-document.getElementById("menuToggle").onclick = function () {
-    menu.classList.add("active");
-    overlay.classList.add("active");
-    document.body.style.overflow = "hidden";
-};
+item.addEventListener("click", function(e){
 
-document.getElementById("closeMenu").onclick = function () {
-    menu.classList.remove("active");
-    overlay.classList.remove("active");
-    document.body.style.overflow = "";
-};
+const target=this.getAttribute("href");
 
-overlay.onclick = function () {
-    menu.classList.remove("active");
-    overlay.classList.remove("active");
-    document.body.style.overflow = "";
-};
+menu.classList.remove("active");
+overlay.classList.remove("active");
+document.body.style.overflow="";
 
-document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+if(target && target.startsWith("#")){
 
-    item.addEventListener("click", function (e) {
+e.preventDefault();
 
-        const target = this.getAttribute("href");
+setTimeout(function(){
 
-        menu.classList.remove("active");
-        overlay.classList.remove("active");
-        document.body.style.overflow = "";
+const section=document.querySelector(target);
 
-        if (target && target.startsWith("#")) {
+if(section){
+section.scrollIntoView({
+behavior:"smooth",
+block:"start"
+});
+}
 
-            e.preventDefault();
+},300);
 
-            setTimeout(function () {
-
-                const section = document.querySelector(target);
-
-                if (section) {
-                    section.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                }
-
-            }, 300);
-
-        }
-
-    });
+}
 
 });
+
 </script>
   </body>
 </html>
