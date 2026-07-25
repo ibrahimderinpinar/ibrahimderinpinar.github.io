@@ -1,649 +1,1180 @@
-<section class="hero">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur? | Derinpınar Hukuk</title>
+    <style>
+        :root {
+            --primary: #1f2d47;
+            --primary-light: #2d3e54;
+            --accent: #c9a961;
+            --accent-light: #e8dcc4;
+            --text: #1a1a1a;
+            --text-muted: #666;
+            --bg-light: #f9f7f3;
+            --bg-white: #ffffff;
+            --border: #e8e3dd;
+            --success: #4caf50;
+            
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+            
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-    <div class="wrap hero-grid">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <div class="hero-copy">
+        html {
+            scroll-behavior: smooth;
+        }
 
-            <div class="eyebrow">
-                Şirketler Hukuku • Ticaret Hukuku
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            color: var(--text);
+            background: var(--bg-white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--bg-white);
+            padding: 60px 20px;
+            margin-bottom: 80px;
+        }
+
+        .hero-grid {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .meta a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .meta a:hover {
+            color: var(--accent-light);
+            text-decoration: underline;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+        }
+
+        .lead {
+            font-size: 18px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.95);
+            max-width: 600px;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        .chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .chip {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: var(--bg-white);
+            padding: 8px 16px;
+            border-radius: var(--radius-md);
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: inline-block;
+        }
+
+        /* ============================================
+           MAIN CONTENT
+           ============================================ */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        /* ============================================
+           HEADINGS
+           ============================================ */
+        h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 40px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 24px;
+            margin-top: 48px;
+            color: var(--primary);
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--accent);
+            letter-spacing: -0.3px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: clamp(18px, 2.5vw, 22px);
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 16px;
+            margin-top: 24px;
+            color: var(--primary);
+            letter-spacing: -0.2px;
+        }
+
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        p {
+            font-size: 18px;
+            line-height: 1.9;
+            margin-bottom: 24px;
+            color: var(--text);
+            text-align: justify;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        /* ============================================
+           LISTS
+           ============================================ */
+        ul, ol {
+            margin: 32px 0;
+            padding-left: 0;
+        }
+
+        ul li, ol li {
+            margin-bottom: 12px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text);
+        }
+
+        ul li {
+            margin-left: 28px;
+            list-style: none;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: -20px;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        ol li {
+            margin-left: 28px;
+            list-style: decimal;
+            list-style-position: outside;
+        }
+
+        ol {
+            counter-reset: item;
+        }
+
+        /* ============================================
+           SEPARATOR
+           ============================================ */
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                var(--border) 20%, 
+                var(--border) 80%, 
+                transparent 100%);
+            margin: 60px 0;
+        }
+
+        /* ============================================
+           NOTE BOXES
+           ============================================ */
+        .note {
+            background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.04) 100%);
+            border-left: 4px solid var(--accent);
+            border-radius: var(--radius-lg);
+            padding: 28px 28px;
+            margin: 40px 0;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(201, 169, 97, 0.2);
+            border-left: 4px solid var(--accent);
+        }
+
+        .note strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+        }
+
+        .note p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 0;
+            color: var(--text);
+        }
+
+        .note ul, .note ol {
+            margin: 16px 0 0 0;
+        }
+
+        .note li {
+            font-size: 16px;
+            color: var(--text);
+        }
+
+        /* ============================================
+           TABLES
+           ============================================ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            box-shadow: var(--shadow-md);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        thead {
+            background: var(--primary);
+            color: var(--bg-white);
+        }
+
+        thead th {
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            text-transform: none;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        tbody tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        tbody tr:hover {
+            background: rgba(201, 169, 97, 0.08);
+            box-shadow: inset 0 0 0 1px var(--accent);
+        }
+
+        tbody td {
+            padding: 16px 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        /* ============================================
+           BUTTONS
+           ============================================ */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border: none;
+            border-radius: var(--radius-md);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .btn.primary {
+            background: var(--primary);
+            color: var(--bg-white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn.primary:hover {
+            background: var(--primary-light);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .btn.primary:active {
+            transform: translateY(0);
+        }
+
+        /* ============================================
+           TABLE OF CONTENTS
+           ============================================ */
+        .toc-container {
+            background: linear-gradient(135deg, rgba(201, 169, 97, 0.12) 0%, rgba(201, 169, 97, 0.06) 100%);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(201, 169, 97, 0.2);
+        }
+
+        .toc-container h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .toc-container ol {
+            margin: 0;
+        }
+
+        .toc-container li {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        /* ============================================
+           SECTION CARD (INTRO)
+           ============================================ */
+        .section-card {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: clamp(24px, 4vw, 32px);
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+
+        .section-text {
+            font-size: 18px;
+            line-height: 1.9;
+            color: var(--text);
+            text-align: justify;
+            margin-bottom: 24px;
+        }
+
+        /* ============================================
+           LINKS
+           ============================================ */
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            border-bottom: 1px solid transparent;
+        }
+
+        a:hover {
+            color: var(--primary);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+                margin-bottom: 60px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .lead {
+                font-size: 16px;
+            }
+
+            .article-container {
+                padding: 0 16px;
+            }
+
+            section {
+                margin-bottom: 60px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.8;
+            }
+
+            ul li, ol li {
+                font-size: 16px;
+                line-height: 1.7;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+
+            h2 {
+                font-size: 22px;
+                margin-bottom: 20px;
+                margin-top: 40px;
+            }
+
+            h3 {
+                font-size: 18px;
+                margin-bottom: 14px;
+            }
+
+            .note {
+                padding: 20px 20px;
+                border-left: 3px solid var(--accent);
+            }
+
+            .note strong {
+                font-size: 13px;
+            }
+
+            .note p {
+                font-size: 15px;
+            }
+
+            table {
+                font-size: 14px;
+                margin: 32px 0;
+            }
+
+            thead th {
+                padding: 14px 12px;
+                font-size: 13px;
+            }
+
+            tbody td {
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            .toc-container {
+                padding: 24px;
+            }
+
+            .toc-container h3 {
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+
+            .toc-container li {
+                font-size: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 14px 20px;
+            }
+
+            hr {
+                margin: 48px 0;
+            }
+
+            .chip-row {
+                gap: 10px;
+            }
+
+            .chip {
+                font-size: 12px;
+                padding: 6px 14px;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            .section-text {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 32px 16px;
+                margin-bottom: 48px;
+            }
+
+            .hero h1 {
+                font-size: 22px;
+            }
+
+            .lead {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
+            .article-container {
+                padding: 0 16px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 16px;
+            }
+
+            h1 {
+                font-size: 20px;
+                margin-bottom: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-top: 32px;
+                margin-bottom: 16px;
+                padding-bottom: 12px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            ul li, ol li {
+                font-size: 15px;
+                line-height: 1.6;
+                margin-bottom: 8px;
+            }
+
+            .meta {
+                flex-direction: column;
+                gap: 4px;
+                font-size: 13px;
+            }
+
+            .eyebrow {
+                font-size: 11px;
+                margin-bottom: 12px;
+            }
+
+            .chip {
+                font-size: 11px;
+                padding: 5px 12px;
+            }
+
+            .note {
+                padding: 16px;
+                border-radius: var(--radius-md);
+                margin: 24px 0;
+            }
+
+            .note strong {
+                font-size: 12px;
+            }
+
+            .note p {
+                font-size: 14px;
+            }
+
+            table {
+                font-size: 13px;
+                margin: 24px 0;
+            }
+
+            thead th {
+                padding: 12px 8px;
+                font-size: 12px;
+            }
+
+            tbody td {
+                padding: 10px 8px;
+                font-size: 13px;
+            }
+
+            .toc-container {
+                padding: 20px;
+                margin: 24px 0;
+            }
+
+            .toc-container h3 {
+                font-size: 15px;
+                margin-bottom: 12px;
+            }
+
+            .toc-container li {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+
+            hr {
+                margin: 40px 0;
+            }
+
+            section {
+                margin-bottom: 48px;
+            }
+        }
+
+        /* ============================================
+           PRINT STYLES
+           ============================================ */
+        @media print {
+            .hero {
+                background: var(--primary);
+                color: var(--bg-white);
+            }
+
+            .hero a {
+                color: var(--accent);
+            }
+
+            a {
+                color: var(--primary);
+                text-decoration: underline;
+            }
+
+            .btn {
+                display: none;
+            }
+
+            table {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+
+            .note {
+                page-break-inside: avoid;
+            }
+
+            section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <span class="eyebrow">Şirketler Hukuku • Ticaret Hukuku</span>
+
+                <div class="meta">
+                    <a href="index.html">Ana Sayfa</a>
+                    &nbsp;›&nbsp;
+                    <a href="makaleler.html">Makaleler</a>
+                    &nbsp;›&nbsp;
+                    <span>Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur?</span>
+                </div>
+
+                <h1>Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur?</h1>
+
+                <p class="lead">
+                    Olağan genel kurulun süresinde yapılmaması şirketin sona ermesine yol açmaz.
+                    Ancak yönetim kurulunun sorumluluğu, azlık pay sahiplerinin hakları ve
+                    mahkemeye başvuru yolları bakımından önemli hukuki sonuçlar doğurabilir.
+                </p>
+
+                <div class="chip-row">
+                    <span class="chip">📅 25 Temmuz 2026</span>
+                    <span class="chip">📖 8 Dakika Okuma</span>
+                    <span class="chip">⚖️ Şirketler Hukuku</span>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="meta" style="margin-bottom:18px;color:var(--muted);">
+    <!-- MAIN CONTENT -->
+    <article class="article-container">
+        <!-- INTRO SECTION -->
+        <section>
+            <h2>Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur?</h2>
 
-                <a href="index.html">Ana Sayfa</a>
-
-                &nbsp;›&nbsp;
-
-                <a href="makaleler.html">Makaleler</a>
-
-                &nbsp;›&nbsp;
-
-                Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur?
-
-            </div>
-
-            <h1>
-
-                Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur?
-
-            </h1>
-
-            <p class="lead">
-
-                Olağan genel kurulun süresinde yapılmaması şirketin sona ermesine yol açmaz.
-                Ancak yönetim kurulunun sorumluluğu, azlık pay sahiplerinin hakları ve
-                mahkemeye başvuru yolları bakımından önemli hukuki sonuçlar doğurabilir.
-
+            <p class="section-text">
+                Bu makalede anonim şirketlerde olağan genel kurulun süresinde yapılmamasının hukuki sonuçları, yönetim kurulunun sorumluluğu ve pay sahiplerinin başvurabileceği hukuki yollar Türk Ticaret Kanunu çerçevesinde detaylı olarak incelenecektir.
             </p>
 
-            <div class="chip-row" style="margin-top:25px;">
+            <hr>
 
-                <span class="chip">📅 25 Temmuz 2026</span>
-
-                <span class="chip">📖 8 Dakika Okuma</span>
-
-                <span class="chip">⚖️ Şirketler Hukuku</span>
-
+            <!-- TABLE OF CONTENTS -->
+            <div class="toc-container">
+                <h3>İçindekiler</h3>
+                <ol>
+                    <li>Genel Kurulun Yapılma Zorunluluğu</li>
+                    <li>Genel Kurulun Süresinde Yapılmamasının Sonuçları</li>
+                    <li>Yönetim Kurulunun Sorumluluğu</li>
+                    <li>Azlığın Genel Kurul Çağrısı Talebi</li>
+                    <li>45 Gün İçinde Çağrı Yapılmaması</li>
+                    <li>Mahkemeye Başvuru</li>
+                    <li>Uygulamada İzlenecek Yol</li>
+                    <li>Sonuç</li>
+                    <li>Sık Sorulan Sorular</li>
+                </ol>
             </div>
 
-<section>
-
-<div class="wrap section-card">
-
-<h2 class="section-title">
-
-Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur?
-
-</h2>
-
-<p class="section-text">
-
-Bu makalede anonim şirketlerde olağan genel kurulun süresinde yapılmamasının hukuki sonuçları, yönetim kurulunun sorumluluğu ve pay sahiplerinin başvurabileceği hukuki yollar Türk Ticaret Kanunu hükümleri çerçevesinde incelenmektedir.
-
-</p>
-
-<hr style="margin:30px 0;border:none;border-top:1px solid rgba(19,34,56,.08);">
-
-<h3>İçindekiler</h3>
-
-<ol>
-
-<li>Genel Kurulun Yapılma Zorunluluğu</li>
-
-<li>Genel Kurulun Süresinde Yapılmamasının Sonuçları</li>
-
-<li>Yönetim Kurulunun Sorumluluğu</li>
-
-<li>Azlığın Genel Kurul Çağrısı Talebi</li>
-
-<li>45 Gün İçinde Çağrı Yapılmaması</li>
-
-<li>Mahkemeye Başvuru</li>
-
-<li>Uygulamada İzlenecek Yol</li>
-
-<li>Sonuç</li>
-
-<li>Sık Sorulan Sorular</li>
-
-</ol>
-
-<hr style="margin:30px 0;border:none;border-top:1px solid rgba(19,34,56,.08);">
-
-<h2>Giriş</h2>
-
-<p>
-
-Anonim şirketlerde genel kurul, pay sahiplerinin şirket yönetimine katılmasını sağlayan ve şirket iradesinin oluştuğu en önemli organdır. Finansal tabloların görüşülmesi, yönetim kurulunun faaliyetlerinin değerlendirilmesi, yönetim kurulunun ibrası, kâr dağıtımı ve organ seçimleri gibi temel kararlar genel kurul tarafından alınmaktadır.
-
-</p>
-
-<p>
-
-Türk Ticaret Kanunu, olağan genel kurulun faaliyet döneminin sona ermesini izleyen üç ay içerisinde yapılmasını zorunlu tutmuştur. Uygulamada ise yönetim kurulunun uzun süre genel kurulu toplantıya çağırmaması nedeniyle pay sahiplerinin çeşitli hukuki başvuru yollarına ihtiyaç duyduğu görülmektedir.
-
-</p>
-<h2>1. Genel Kurulun Yapılma Zorunluluğu</h2>
-
-<p>
-
-6102 sayılı Türk Ticaret Kanunu'nun 409. maddesine göre anonim şirketlerde olağan genel kurul, her faaliyet döneminin sona ermesini izleyen <strong>üç ay içerisinde</strong> yapılmalıdır.
-
-</p>
-
-<p>
-
-Olağan genel kurulda özellikle;
-
-</p>
-
-<ul>
-
-<li>Finansal tablolar görüşülür.</li>
-
-<li>Yönetim kurulunun yıllık faaliyet raporu değerlendirilir.</li>
-
-<li>Yönetim kurulunun ibrası karara bağlanır.</li>
-
-<li>Kâr dağıtımı hakkında karar verilir.</li>
-
-<li>Görev süresi dolan yönetim kurulu üyeleri seçilir.</li>
-
-<li>Şirket faaliyetleri hakkında pay sahipleri bilgi alır.</li>
-
-</ul>
-
-<p>
-
-Kanunun öngördüğü bu süre yalnızca şekli bir düzenleme olmayıp şirket yönetiminin şeffaflığı ve pay sahiplerinin yönetime katılma hakkının korunması amacı taşımaktadır.
-
-</p>
-
-<div class="note">
-
-<strong>Kanuni Dayanak</strong><br>
-
-TTK m.409 uyarınca olağan genel kurul her faaliyet döneminin sona ermesini izleyen üç ay içinde yapılmalıdır.
-
-</div>
-
-<hr>
-
-<h2>2. Genel Kurulun Süresinde Yapılmamasının Sonuçları</h2>
-
-<p>
-
-Genel kurulun süresinde yapılmaması şirketin kendiliğinden sona ermesine veya ticaret sicilinden silinmesine yol açmaz. Ancak bu durum, yönetim kurulunun kanundan doğan yükümlülüğünü yerine getirmediğini gösterir ve çeşitli hukuki sonuçlar doğurabilir.
-
-</p>
-
-<p>
-
-Özellikle;
-
-</p>
-
-<ul>
-
-<li>Pay sahiplerinin bilgi alma ve denetim hakları gecikir.</li>
-
-<li>Finansal tablolar genel kurul tarafından onaylanamaz.</li>
-
-<li>Yönetim kurulunun ibrası gerçekleştirilemez.</li>
-
-<li>Yeni yönetim kurulu seçimi yapılamayabilir.</li>
-
-<li>Azlık pay sahiplerinin özel çağrı hakları doğabilir.</li>
-
-<li>Mahkemeden kayyım atanması talep edilebilir.</li>
-
-<li>Yönetim kurulu üyelerinin sorumluluğu gündeme gelebilir.</li>
-
-</ul>
-
-<p>
-
-Bu nedenle kanun koyucu yalnızca genel kurulun yapılmasını emretmekle yetinmemiş, yönetim kurulunun çağrı yükümlülüğünü yerine getirmemesi hâlinde pay sahiplerine çeşitli hukuki başvuru yolları tanımıştır.
-
-</p>
-
-<div class="note">
-
-<strong>Uygulamada</strong><br>
-
-Mahkemeler, uzun süre genel kurul yapılmamasını tek başına fesih sebebi olarak değil; pay sahiplerinin kanundan doğan haklarını kullanmasını engelleyen bir durum olarak değerlendirmektedir. Bu nedenle çözüm öncelikle TTK m.411 ve TTK m.412 hükümlerinde öngörülen çağrı mekanizmalarının işletilmesidir.
-
-</div>
-
-<hr>
-
-<h2>3. Yönetim Kurulunun Sorumluluğu</h2>
-
-<p>
-
-Genel kurulu süresinde toplantıya çağırmak yönetim kurulunun kanundan doğan asli görevlerinden biridir. Bu yükümlülüğün ihlali hâlinde yönetim kurulu üyeleri, Türk Ticaret Kanunu'nun 553. maddesi kapsamında kusurları oranında şirkete, pay sahiplerine ve alacaklılara karşı sorumlu tutulabilir.
-
-</p>
-
-<p>
-
-Özellikle genel kurulun yapılmaması nedeniyle şirketin zarara uğraması, pay sahiplerinin haklarını kullanamaması veya şirket yönetiminin uzun süre hukuki denetim dışında kalması durumunda tazminat sorumluluğu gündeme gelebilir.
-
-</p>
-
-<div class="note">
-
-<strong>Kanuni Dayanak</strong><br>
-
-TTK m.553 uyarınca yönetim kurulu üyeleri, kanundan ve esas sözleşmeden doğan yükümlülüklerini kusurlarıyla ihlal etmeleri hâlinde meydana gelen zararlardan sorumludur.
-
-</div>
-
-<hr>
-<h2>4. Azlığın Genel Kurul Çağrısı Talebi (TTK m. 411)</h2>
-
-<p>
-
-Türk Ticaret Kanunu'nun 411. maddesi, yönetim kurulunun genel kurulu toplantıya çağırmaması ihtimaline karşı azlık pay sahiplerine özel bir başvuru hakkı tanımaktadır. Bu düzenleme, şirket yönetiminin keyfî davranışlarını önlemeyi ve pay sahiplerinin yönetime katılım hakkını güvence altına almayı amaçlamaktadır.
-
-</p>
-
-<p>
-
-Halka açık olmayan anonim şirketlerde sermayenin en az <strong>yüzde onuna</strong>, halka açık şirketlerde ise en az <strong>yüzde beşine</strong> sahip bulunan pay sahipleri, yönetim kurulundan yazılı olarak genel kurulun toplantıya çağrılmasını talep edebilirler.
-
-</p>
-
-<p>
-
-Talepte;
-
-</p>
-
-<ul>
-
-<li>Toplantı çağrısının yapılması istendiği açıkça belirtilmelidir.</li>
-
-<li>Toplantının gerekçesi gösterilmelidir.</li>
-
-<li>Görüşülmesi istenen gündem maddeleri somut şekilde yazılmalıdır.</li>
-
-</ul>
-
-<p>
-
-Uygulamada bu talebin noter aracılığıyla gönderilmesi ispat kolaylığı sağlamaktadır. Kanunda noter şartı bulunmamakla birlikte, ileride açılabilecek davalarda talebin yönetim kuruluna ulaştığının ispatı bakımından noter ihtarnamesi en güvenli yöntemdir.
-
-</p>
-
-<div class="note">
-
-<strong>Uygulama Notu</strong><br>
-
-Talebin e-posta ile gönderilmesi mümkün olmakla birlikte, noter ihtarnamesi kullanılması uyuşmazlık hâlinde önemli bir ispat kolaylığı sağlar.
-
-</div>
-
-<p>
-
-Yönetim kurulunun bu talep üzerine vereceği karar, pay sahiplerinin izleyeceği hukuki yolu doğrudan etkilemektedir. Çünkü kanun, talebin reddedilmesi ile kabul edilmesine rağmen yerine getirilmemesi hâllerini farklı şekilde düzenlemiştir.
-
-</p>
-
-<hr>
-
-<h2>5. Yönetim Kurulunun Talebi Kabul Etmesine Rağmen 45 Gün İçinde Çağrı Yapmaması (TTK m.411/4)</h2>
-
-<p>
-
-Uygulamada en sık karşılaşılan durumlardan biri, yönetim kurulunun azlığın talebini kabul etmesine rağmen genel kurul toplantısını fiilen gerçekleştirmemesidir.
-
-</p>
-
-<p>
-
-Türk Ticaret Kanunu'nun 411. maddesinin dördüncü fıkrası bu ihtimali özel olarak düzenlemiştir.
-
-</p>
-
-<p>
-
-Buna göre yönetim kurulu çağrı talebini kabul ettiği hâlde <strong>45 gün içerisinde</strong> genel kurul toplantısını yapmaz veya çağrıyı gerçekleştirmezse, çağrı hakkı doğrudan talepte bulunan pay sahiplerine geçmektedir.
-
-</p>
-
-<p>
-
-Bu durumda artık mahkemeye başvurulmasına gerek bulunmamaktadır. Azlık pay sahipleri genel kurulu kendileri toplantıya çağırabilirler.
-
-</p>
-
-<div class="note">
-
-<strong>Önemli Ayrım</strong><br>
-
-TTK m.411/4 kapsamında mahkemeden kayyım atanması söz konusu değildir. Yönetim kurulu talebi kabul etmiş olduğundan çağrı yetkisi doğrudan azlık pay sahiplerine geçmektedir.
-
-</div>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Durum</th>
-
-<th>Sonuç</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>Talep kabul edildi.</td>
-
-<td>Yönetim kurulunun çağrı yapması beklenir.</td>
-
-</tr>
-
-<tr>
-
-<td>45 gün geçti.</td>
-
-<td>Azlık doğrudan genel kurulu toplantıya çağırabilir.</td>
-
-</tr>
-
-<tr>
-
-<td>Mahkemeye başvuru gerekir mi?</td>
-
-<td>Hayır.</td>
-
-</tr>
-
-<tr>
-
-<td>Kayyım atanır mı?</td>
-
-<td>Hayır.</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<hr>
-<h2>6. Yönetim Kurulunun Çağrı Yapmaması Hâlinde Mahkemeye Başvuru (TTK m. 412)</h2>
-
-<p>
-
-Yönetim kurulunun azlığın çağrı talebini reddetmesi veya talebe hiç cevap vermemesi hâlinde uygulanacak hüküm Türk Ticaret Kanunu'nun 412. maddesidir.
-
-</p>
-
-<p>
-
-Bu durumda azlık pay sahipleri, şirket merkezinin bulunduğu yerdeki Asliye Ticaret Mahkemesine başvurarak genel kurulun toplantıya çağrılmasını talep edebilirler.
-
-</p>
-
-<p>
-
-Mahkeme, başvurunun kanuni şartları taşıdığı kanaatine varırsa genel kurulun yapılmasına karar verir ve çağrıyı gerçekleştirmek üzere kayyım veya çağrı yapmaya yetkili bir kişi görevlendirebilir.
-
-</p>
-
-<p>
-
-Görevlendirilen kişi;
-
-</p>
-
-<ul>
-
-<li>Toplantı tarihini belirler.</li>
-
-<li>Kanuni çağrı ilanlarını yapar.</li>
-
-<li>Gündemi yayımlar.</li>
-
-<li>Toplantının usulüne uygun şekilde gerçekleştirilmesini sağlar.</li>
-
-</ul>
-
-<div class="note">
-
-<strong>TTK m.411 ile TTK m.412 Arasındaki Fark</strong>
-
-<ul>
-
-<li><strong>Talep kabul edildi fakat 45 gün içinde çağrı yapılmadıysa:</strong> Azlık doğrudan çağrı yapabilir (TTK m.411/4).</li>
-
-<li><strong>Talep reddedildi veya hiç cevap verilmediyse:</strong> Asliye Ticaret Mahkemesine başvurulması gerekir (TTK m.412).</li>
-
-</ul>
-
-</div>
-
-<p>
-
-Uygulamada bu iki hükmün karıştırılması sıkça görülmektedir. Oysa mahkemeye başvurulmasının gerekip gerekmediği tamamen yönetim kurulunun azlık talebine verdiği cevaba göre belirlenmektedir.
-
-</p>
-
-<p>
-
-Bu nedenle noter ihtarnamesi, yönetim kurulunun cevabı ve 45 günlük sürenin doğru şekilde takip edilmesi hak kaybı yaşanmaması bakımından büyük önem taşımaktadır.
-
-</p>
-
-<hr>
-
-<h2>7. Uygulamada İzlenecek Hukuki Yol</h2>
-
-<p>
-
-Anonim şirketlerde olağan genel kurulun süresinde yapılmaması hâlinde izlenecek yol, yönetim kurulunun azlık pay sahiplerinin talebine verdiği cevaba göre değişmektedir. Hak kaybı yaşanmaması için aşağıdaki sıranın takip edilmesi tavsiye edilir.
-
-</p>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Aşama</th>
-
-<th>Yapılması Gereken İşlem</th>
-
-<th>Hukuki Dayanak</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>1</td>
-
-<td>Yönetim kuruluna noter aracılığıyla genel kurul çağrısı talebi gönderilir.</td>
-
-<td>TTK m.411</td>
-
-</tr>
-
-<tr>
-
-<td>2</td>
-
-<td>Yönetim kurulunun cevabı beklenir.</td>
-
-<td>TTK m.411</td>
-
-</tr>
-
-<tr>
-
-<td>3</td>
-
-<td>Talep reddedilir veya cevap verilmezse Asliye Ticaret Mahkemesine başvurulur.</td>
-
-<td>TTK m.412</td>
-
-</tr>
-
-<tr>
-
-<td>4</td>
-
-<td>Talep kabul edilmiş olmasına rağmen 45 gün içinde çağrı yapılmazsa azlık pay sahipleri genel kurulu doğrudan toplantıya çağırabilir.</td>
-
-<td>TTK m.411/4</td>
-
-</tr>
-
-<tr>
-
-<td>5</td>
-
-<td>Mahkeme gerekli görürse çağrıyı yapmak üzere kayyım veya yetkili kişi görevlendirir.</td>
-
-<td>TTK m.412</td>
-
-</tr>
-
-<tr>
-
-<td>6</td>
-
-<td>Genel kurul yapılır ve alınan kararlar ticaret siciline tescil edilir.</td>
-
-<td>TTK ve ilgili mevzuat</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<div class="note">
-
-<strong>Pratik Tavsiye</strong><br>
-
-Genel kurul çağrısına ilişkin noter ihtarnameleri, tebligatlar ve teslim kayıtları mutlaka saklanmalıdır. Bu belgeler olası bir yargılama sürecinde en önemli deliller arasında yer alacaktır.
-
-</div>
-
-<hr>
-<h2>Sonuç</h2>
-
-<p>
-
-Anonim şirketlerde olağan genel kurulun faaliyet döneminin sona ermesini izleyen üç ay içerisinde yapılması kanuni bir zorunluluktur. Bu yükümlülüğün yerine getirilmemesi şirketin kendiliğinden sona ermesine yol açmasa da, pay sahiplerinin yönetime katılma hakkını zedeleyebilmekte ve yönetim kurulunun sorumluluğunu gündeme getirebilmektedir.
-
-</p>
-
-<p>
-
-Kanun koyucu, bu tür durumlarda özellikle azlık pay sahiplerini korumak amacıyla Türk Ticaret Kanunu'nun 411 ve 412. maddelerinde etkili başvuru yolları öngörmüştür. Yönetim kurulunun talebi reddetmesi veya sessiz kalması hâlinde mahkemeye başvurulması gerekirken, talebin kabul edilmesine rağmen kırk beş gün içinde çağrı yapılmaması durumunda azlık pay sahipleri genel kurulu doğrudan toplantıya çağırma hakkına sahiptir.
-
-</p>
-
-<p>
-
-Her somut olayın özellikleri farklı olabileceğinden, hak kaybı yaşanmaması için sürecin ticaret hukuku alanında uzman bir avukat eşliğinde yürütülmesi önem taşımaktadır.
-
-</p>
-
-<hr>
-
-<h2>Sık Sorulan Sorular</h2>
-
-<h3>Genel kurul en geç ne zaman yapılmalıdır?</h3>
-
-<p>
-
-Olağan genel kurul, faaliyet döneminin sona ermesini izleyen üç ay içerisinde yapılmalıdır (TTK m.409).
-
-</p>
-
-<h3>Genel kurul yapılmazsa şirket kapanır mı?</h3>
-
-<p>
-
-Hayır. Genel kurulun süresinde yapılmaması şirketin kendiliğinden sona ermesine neden olmaz. Ancak yönetim kurulunun sorumluluğu doğabilir ve pay sahipleri kanuni başvuru yollarını kullanabilir.
-
-</p>
-
-<h3>Azlık pay sahipleri genel kurulu doğrudan toplantıya çağırabilir mi?</h3>
-
-<p>
-
-Evet. Yönetim kurulu çağrı talebini kabul ettiği hâlde kırk beş gün içerisinde çağrı yapmazsa, TTK m.411/4 uyarınca azlık pay sahipleri genel kurulu doğrudan toplantıya çağırabilir.
-
-</p>
-
-<h3>Mahkemeye hangi durumda başvurulur?</h3>
-
-<p>
-
-Yönetim kurulunun çağrı talebini reddetmesi veya hiç cevap vermemesi hâlinde Asliye Ticaret Mahkemesine başvurulur.
-
-</p>
-
-<h3>Kayyım her olayda atanır mı?</h3>
-
-<p>
-
-Hayır. Kayyım veya çağrıyı yapacak kişinin görevlendirilmesi mahkemenin değerlendirmesine bağlıdır. TTK m.411/4 kapsamındaki durumda ise kayyım atanması söz konusu değildir.
-
-</p>
-
-<h3>Yönetim kurulu üyeleri sorumlu olabilir mi?</h3>
-
-<p>
-
-Evet. Kanundan doğan yükümlülüklerin kusurlu şekilde ihlal edilmesi nedeniyle zarar doğması hâlinde yönetim kurulu üyeleri TTK m.553 kapsamında sorumlu tutulabilir.
-
-</p>
-
-<hr>
-
-<h2>İlgili Mevzuat</h2>
-
-<ul>
-
-<li>6102 sayılı Türk Ticaret Kanunu m.409</li>
-
-<li>6102 sayılı Türk Ticaret Kanunu m.410</li>
-
-<li>6102 sayılı Türk Ticaret Kanunu m.411</li>
-
-<li>6102 sayılı Türk Ticaret Kanunu m.412</li>
-
-<li>6102 sayılı Türk Ticaret Kanunu m.414</li>
-
-<li>6102 sayılı Türk Ticaret Kanunu m.553</li>
-
-</ul>
-
-<hr>
-
-<div class="note">
-
-<strong>Bilgilendirme</strong><br>
-
-Bu makale genel bilgilendirme amacıyla hazırlanmıştır. Her somut olayın kendine özgü özellikleri bulunduğundan, hukuki uyuşmazlıklarda profesyonel hukuki danışmanlık alınması tavsiye edilir.
-
-</div>
-<hr>
-
-<div class="note">
-
-<strong>Hukuki Danışmanlık</strong><br>
-
-Anonim şirketlerde genel kurulun süresinde yapılmaması, azlık haklarının kullanılması, yönetim kurulunun sorumluluğu veya genel kurul çağrısı süreçleri hakkında hukuki destek almak için bizimle iletişime geçebilirsiniz.
-
-<br><br>
-
-<a class="btn primary"
-href="mailto:ibrahim@derinpinar.av.tr?subject=Genel%20Kurul%20Hakk%C4%B1nda%20Hukuki%20Dan%C4%B1%C5%9Fmanl%C4%B1k">
-
-Hukuki Danışmanlık Talep Edin
-
-</a>
-
-</div>
-
-</div>
-
-</section>
+            <hr>
+
+            <!-- INTRODUCTION -->
+            <h2>Giriş</h2>
+
+            <p>
+                Anonim şirketlerde genel kurul, pay sahiplerinin şirket yönetimine katılmasını sağlayan ve şirket iradesinin oluştuğu en önemli organdır. Finansal tabloların görüşülmesi, yönetim kurulunun faaliyetlerinin denetlenmesi ve şirketin temel kararlarının alınması genel kurulun görevleri arasında yer almaktadır.
+            </p>
+
+            <p>
+                Türk Ticaret Kanunu, olağan genel kurulun faaliyet döneminin sona ermesini izleyen üç ay içerisinde yapılmasını zorunlu tutmuştur. Uygulamada ise yönetim kurulunun uzun süre genel kurulu toplantıya çağırmaması veya çağrı yükümlülüğünü yerine getirmemesi durumuyla sıkça karşılaşılmaktadır. Bu durumda pay sahipleri ve özellikle azlık pay sahipleri hangi hukuki yolları takip edebilirler? Mahkemeye başvurabilirler mi? Bu sorular ticaret hukuku uygulaması açısından oldukça önemli sonuçlar doğurmaktadır.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 1 -->
+        <section>
+            <h2>1. Genel Kurulun Yapılma Zorunluluğu</h2>
+
+            <p>
+                6102 sayılı Türk Ticaret Kanunu'nun 409. maddesine göre anonim şirketlerde olağan genel kurul, her faaliyet döneminin sona ermesini izleyen <strong>üç ay içerisinde</strong> yapılmalıdır.
+            </p>
+
+            <p>Olağan genel kurulda özellikle;</p>
+
+            <ul>
+                <li>Finansal tablolar görüşülür.</li>
+                <li>Yönetim kurulunun yıllık faaliyet raporu değerlendirilir.</li>
+                <li>Yönetim kurulunun ibrası karara bağlanır.</li>
+                <li>Kâr dağıtımı hakkında karar verilir.</li>
+                <li>Görev süresi dolan yönetim kurulu üyeleri seçilir.</li>
+                <li>Şirket faaliyetleri hakkında pay sahipleri bilgi alır.</li>
+            </ul>
+
+            <p>
+                Kanunun öngördüğü bu süre yalnızca şekli bir düzenleme olmayıp şirket yönetiminin şeffaflığı ve pay sahiplerinin yönetime katılma hakkının korunması amacı taşımaktadır.
+            </p>
+
+            <div class="note">
+                <strong>Kanuni Dayanak</strong>
+                <p>TTK m.409 uyarınca olağan genel kurul her faaliyet döneminin sona ermesini izleyen üç ay içinde yapılmalıdır.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 2 -->
+        <section>
+            <h2>2. Genel Kurulun Süresinde Yapılmamasının Sonuçları</h2>
+
+            <p>
+                Genel kurulun süresinde yapılmaması şirketin kendiliğinden sona ermesine veya ticaret sicilinden silinmesine yol açmaz. Ancak bu durum, yönetim kurulunun kanundan doğan yükümlülüğünü yerine getirmemesi nedeniyle önemli hukuki sonuçlar doğurmaktadır.
+            </p>
+
+            <p>Özellikle;</p>
+
+            <ul>
+                <li>Pay sahiplerinin bilgi alma ve denetim hakları gecikir.</li>
+                <li>Finansal tablolar genel kurul tarafından onaylanamaz.</li>
+                <li>Yönetim kurulunun ibrası gerçekleştirilemez.</li>
+                <li>Yeni yönetim kurulu seçimi yapılamayabilir.</li>
+                <li>Azlık pay sahiplerinin özel çağrı hakları doğabilir.</li>
+                <li>Mahkemeden kayyım atanması talep edilebilir.</li>
+                <li>Yönetim kurulu üyelerinin sorumluluğu gündeme gelebilir.</li>
+            </ul>
+
+            <p>
+                Bu nedenle kanun koyucu yalnızca genel kurulun yapılmasını emretmekle yetinmemiş, yönetim kurulunun çağrı yükümlülüğünü yerine getirmemesi hâlinde pay sahiplerine çeşitli hukuki başvuru yolları açmıştır.
+            </p>
+
+            <div class="note">
+                <strong>Uygulamada</strong>
+                <p>
+                    Mahkemeler, uzun süre genel kurul yapılmamasını tek başına fesih sebebi olarak değil; pay sahiplerinin kanundan doğan haklarını kullanmasını engelleyen bir durum olarak değerlendirmektedir. Bu nedenle pay sahipleri aktif olarak hukuki başvuru yollarını kullanmalıdırlar.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 3 -->
+        <section>
+            <h2>3. Yönetim Kurulunun Sorumluluğu</h2>
+
+            <p>
+                Genel kurulu süresinde toplantıya çağırmak yönetim kurulunun kanundan doğan asli görevlerinden biridir. Bu yükümlülüğün ihlali hâlinde yönetim kurulu üyeleri, Türk Ticaret Kanunu'nun 553. maddesinde düzenlenen sorumluluğa tabi tutulabilirler.
+            </p>
+
+            <p>
+                Özellikle genel kurulun yapılmaması nedeniyle şirketin zarara uğraması, pay sahiplerinin haklarını kullanamaması veya şirket yönetiminin uzun süre hukuki denetim dışında kalması durumunda yönetim kurulu üyelerinin sorumluluğu kesinleşmektedir.
+            </p>
+
+            <div class="note">
+                <strong>Kanuni Dayanak</strong>
+                <p>
+                    TTK m.553 uyarınca yönetim kurulu üyeleri, kanundan ve esas sözleşmeden doğan yükümlülüklerini kusurlarıyla ihlal etmeleri hâlinde meydana gelen zararlardan sorumludur.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 4 -->
+        <section>
+            <h2>4. Azlığın Genel Kurul Çağrısı Talebi (TTK m. 411)</h2>
+
+            <p>
+                Türk Ticaret Kanunu'nun 411. maddesi, yönetim kurulunun genel kurulu toplantıya çağırmaması ihtimaline karşı azlık pay sahiplerine özel bir başvuru hakkı tanımaktadır. Bu düzenleme, şirket yönetiminin keyfi davranışlarından pay sahiplerini korumayı amaçlamaktadır.
+            </p>
+
+            <p>
+                Halka açık olmayan anonim şirketlerde sermayenin en az <strong>yüzde onuna</strong>, halka açık şirketlerde ise en az <strong>yüzde beşine</strong> sahip bulunan pay sahipleri, yönetim kurulundan genel kurulu toplantıya çağırmasını talep edebilirler.
+            </p>
+
+            <p>Talepte;</p>
+
+            <ul>
+                <li>Toplantı çağrısının yapılması istendiği açıkça belirtilmelidir.</li>
+                <li>Toplantının gerekçesi gösterilmelidir.</li>
+                <li>Görüşülmesi istenen gündem maddeleri somut şekilde yazılmalıdır.</li>
+            </ul>
+
+            <p>
+                Uygulamada bu talebin noter aracılığıyla gönderilmesi ispat kolaylığı sağlamaktadır. Kanunda noter şartı bulunmamakla birlikte, ileride açılabilecek davalarda talebin yönetim kuruluna ulaştığını ispatlamak açısından oldukça önemlidir.
+            </p>
+
+            <div class="note">
+                <strong>Uygulama Notu</strong>
+                <p>
+                    Talebin e-posta ile gönderilmesi mümkün olmakla birlikte, noter ihtarnamesi kullanılması uyuşmazlık hâlinde önemli bir ispat kolaylığı sağlar. Özellikle yönetim kurulunun hiç cevap vermemesi durumunda bu belge kritik öneme sahiptir.
+                </p>
+            </div>
+
+            <p>
+                Yönetim kurulunun bu talep üzerine vereceği karar, pay sahiplerinin izleyeceği hukuki yolu doğrudan etkilemektedir. Çünkü kanun, talepin reddedilmesi ile kabul edilmesine rağmen yerine getirilmemesi durumlarında farklı hukuki sonuçlar öngörmüştür.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 5 -->
+        <section>
+            <h2>5. Yönetim Kurulunun Talebi Kabul Etmesine Rağmen 45 Gün İçinde Çağrı Yapmaması (TTK m.411/4)</h2>
+
+            <p>
+                Uygulamada en sık karşılaşılan durumlardan biri, yönetim kurulunun azlığın talebini kabul etmesine rağmen genel kurul toplantısını fiilen gerçekleştirmemesidir. Bu durum, hem pay sahiplerinin haklarını zedeler hem de yönetim kurulunun sorumluluğu gündeme getirir.
+            </p>
+
+            <p>
+                Türk Ticaret Kanunu'nun 411. maddesinin dördüncü fıkrası bu ihtimali özel olarak düzenlemiştir.
+            </p>
+
+            <p>
+                Buna göre yönetim kurulu çağrı talebini kabul ettiği hâlde <strong>45 gün içerisinde</strong> genel kurul toplantısını yapmaz veya çağrıyı gerçekleştirmezse, çağrı hakkı doğrudan azlık pay sahiplerine geçer.
+            </p>
+
+            <p>
+                Bu durumda artık mahkemeye başvurulmasına gerek bulunmamaktadır. Azlık pay sahipleri genel kurulu kendileri toplantıya çağırabilirler.
+            </p>
+
+            <div class="note">
+                <strong>Önemli Ayrım</strong>
+                <p>
+                    TTK m.411/4 kapsamında mahkemeden kayyım atanması söz konusu değildir. Yönetim kurulu talebi kabul etmiş olduğundan çağrı yetkisi doğrudan azlık pay sahiplerine geçmektedir. Bu hukuki mekanizma, pay sahiplerinin haklarını daha hızlı bir şekilde kullanmalarını sağlamaktadır.
+                </p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Durum</th>
+                        <th>Sonuç</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Talep kabul edildi.</td>
+                        <td>Yönetim kurulunun çağrı yapması beklenir.</td>
+                    </tr>
+                    <tr>
+                        <td>45 gün geçti.</td>
+                        <td>Azlık doğrudan genel kurulu toplantıya çağırabilir.</td>
+                    </tr>
+                    <tr>
+                        <td>Mahkemeye başvuru gerekir mi?</td>
+                        <td>Hayır.</td>
+                    </tr>
+                    <tr>
+                        <td>Kayyım atanır mı?</td>
+                        <td>Hayır.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 6 -->
+        <section>
+            <h2>6. Yönetim Kurulunun Çağrı Yapmaması Hâlinde Mahkemeye Başvuru (TTK m. 412)</h2>
+
+            <p>
+                Yönetim kurulunun azlığın çağrı talebini reddetmesi veya talebe hiç cevap vermemesi hâlinde uygulanacak hüküm Türk Ticaret Kanunu'nun 412. maddesidir. Bu durumda pay sahipleri mahkemeye başvurma haklarını haiz bulunmaktadırlar.
+            </p>
+
+            <p>
+                Bu durumda azlık pay sahipleri, şirket merkezinin bulunduğu yerdeki Asliye Ticaret Mahkemesine başvurarak genel kurulun toplantıya çağrılmasını talep edebilirler.
+            </p>
+
+            <p>
+                Mahkeme, başvurunun kanuni şartları taşıdığı kanaatine varırsa genel kurulun yapılmasına karar verir ve çağrıyı gerçekleştirmek üzere kayyım veya çağrı yapmaya yetkili bir kişi görevlendirir.
+            </p>
+
+            <p>Görevlendirilen kişi;</p>
+
+            <ul>
+                <li>Toplantı tarihini belirler.</li>
+                <li>Kanuni çağrı ilanlarını yapar.</li>
+                <li>Gündemi yayımlar.</li>
+                <li>Toplantının usulüne uygun şekilde gerçekleştirilmesini sağlar.</li>
+            </ul>
+
+            <div class="note">
+                <strong>TTK m.411 ile TTK m.412 Arasındaki Fark</strong>
+                <ul>
+                    <li><strong>Talep kabul edildi fakat 45 gün içinde çağrı yapılmadıysa:</strong> Azlık doğrudan çağrı yapabilir (TTK m.411/4).</li>
+                    <li><strong>Talep reddedildi veya hiç cevap verilmediyse:</strong> Asliye Ticaret Mahkemesine başvurulması gerekir (TTK m.412).</li>
+                </ul>
+            </div>
+
+            <p>
+                Uygulamada bu iki hükmün karıştırılması sıkça görülmektedir. Oysa mahkemeye başvurulmasının gerekip gerekmediği tamamen yönetim kurulunun azlık talebine verdiği cevaba göre belirlenmektedir.
+            </p>
+
+            <p>
+                Bu nedenle noter ihtarnamesi, yönetim kurulunun cevabı ve 45 günlük sürenin doğru şekilde takip edilmesi hak kaybı yaşanmaması bakımından büyük önem taşımaktadır.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 7 -->
+        <section>
+            <h2>7. Uygulamada İzlenecek Hukuki Yol</h2>
+
+            <p>
+                Anonim şirketlerde olağan genel kurulun süresinde yapılmaması hâlinde izlenecek yol, yönetim kurulunun azlık pay sahiplerinin talebine verdiği cevaba göre değişmektedir. Hak kaybı yaşanmamak için aşağıdaki adımların bilinmesi ve uygulanması önem taşımaktadır.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aşama</th>
+                        <th>Yapılması Gereken İşlem</th>
+                        <th>Hukuki Dayanak</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Yönetim kuruluna noter aracılığıyla genel kurul çağrısı talebi gönderilir.</td>
+                        <td>TTK m.411</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Yönetim kurulunun cevabı beklenir.</td>
+                        <td>TTK m.411</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Talep reddedilir veya cevap verilmezse Asliye Ticaret Mahkemesine başvurulur.</td>
+                        <td>TTK m.412</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Talep kabul edilmiş olmasına rağmen 45 gün içinde çağrı yapılmazsa azlık pay sahipleri genel kurulu doğrudan toplantıya çağırabilir.</td>
+                        <td>TTK m.411/4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Mahkeme gerekli görürse çağrıyı yapmak üzere kayyım veya yetkili kişi görevlendirir.</td>
+                        <td>TTK m.412</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Genel kurul yapılır ve alınan kararlar ticaret siciline tescil edilir.</td>
+                        <td>TTK ve ilgili mevzuat</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="note">
+                <strong>Pratik Tavsiye</strong>
+                <p>
+                    Genel kurul çağrısına ilişkin noter ihtarnameleri, tebligatlar ve teslim kayıtları mutlaka saklanmalıdır. Bu belgeler olası bir yargılama sürecinde en önemli deliller arasında yer alacaktır. Ayrıca, her aşamada yazılı kanıtlar elde etmek hak kaybını önlemek açısından kritik önem taşımaktadır.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- CONCLUSION -->
+        <section>
+            <h2>Sonuç</h2>
+
+            <p>
+                Anonim şirketlerde olağan genel kurulun faaliyet döneminin sona ermesini izleyen üç ay içerisinde yapılması kanuni bir zorunluluktur. Bu yükümlülüğün yerine getirilmemesi şirketin kendiliğinden sona ermesine neden olmasa da, önemli hukuki sonuçlar doğurmaktadır.
+            </p>
+
+            <p>
+                Kanun koyucu, bu tür durumlarda özellikle azlık pay sahiplerini korumak amacıyla Türk Ticaret Kanunu'nun 411 ve 412. maddelerinde etkili başvuru yolları öngörmüştür. Yönetim kurulunun talebi kabul etmesine rağmen 45 gün içinde çağrı yapmaması veya talebi reddetmesi hâlinde pay sahipleri kanuni başvuru yollarını kullanabilmektedirler.
+            </p>
+
+            <p>
+                Her somut olayın özellikleri farklı olabileceğinden, hak kaybı yaşanmaması için sürecin ticaret hukuku alanında uzman bir avukat eşliğinde yürütülmesi önem taşımaktadır.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- FAQ SECTION -->
+        <section>
+            <h2>Sık Sorulan Sorular</h2>
+
+            <h3>Genel kurul en geç ne zaman yapılmalıdır?</h3>
+            <p>
+                Olağan genel kurul, faaliyet döneminin sona ermesini izleyen üç ay içerisinde yapılmalıdır (TTK m.409).
+            </p>
+
+            <h3>Genel kurul yapılmazsa şirket kapanır mı?</h3>
+            <p>
+                Hayır. Genel kurulun süresinde yapılmaması şirketin kendiliğinden sona ermesine neden olmaz. Ancak yönetim kurulunun sorumluluğu doğabilir ve pay sahipleri kanuni başvuru yollarını kullanabilirler.
+            </p>
+
+            <h3>Azlık pay sahipleri genel kurulu doğrudan toplantıya çağırabilir mi?</h3>
+            <p>
+                Evet. Yönetim kurulu çağrı talebini kabul ettiği hâlde kırk beş gün içerisinde çağrı yapmazsa, TTK m.411/4 uyarınca azlık pay sahipleri genel kurulu doğrudan toplantıya çağırabilirler.
+            </p>
+
+            <h3>Mahkemeye hangi durumda başvurulur?</h3>
+            <p>
+                Yönetim kurulunun çağrı talebini reddetmesi veya hiç cevap vermemesi hâlinde Asliye Ticaret Mahkemesine başvurulur.
+            </p>
+
+            <h3>Kayyım her olayda atanır mı?</h3>
+            <p>
+                Hayır. Kayyım veya çağrıyı yapacak kişinin görevlendirilmesi mahkemenin değerlendirmesine bağlıdır. TTK m.411/4 kapsamındaki durumda ise kayyım atanması söz konusu değildir.
+            </p>
+
+            <h3>Yönetim kurulu üyeleri sorumlu olabilir mi?</h3>
+            <p>
+                Evet. Kanundan doğan yükümlülüklerin kusurlu şekilde ihlal edilmesi nedeniyle zarar doğması hâlinde yönetim kurulu üyeleri TTK m.553 kapsamında sorumlu tutulabilir.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- RELATED LEGISLATION -->
+        <section>
+            <h2>İlgili Mevzuat</h2>
+
+            <ul>
+                <li>6102 sayılı Türk Ticaret Kanunu m.409</li>
+                <li>6102 sayılı Türk Ticaret Kanunu m.410</li>
+                <li>6102 sayılı Türk Ticaret Kanunu m.411</li>
+                <li>6102 sayılı Türk Ticaret Kanunu m.412</li>
+                <li>6102 sayılı Türk Ticaret Kanunu m.414</li>
+                <li>6102 sayılı Türk Ticaret Kanunu m.553</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- DISCLAIMER -->
+        <section>
+            <div class="note">
+                <strong>Bilgilendirme</strong>
+                <p>
+                    Bu makale genel bilgilendirme amacıyla hazırlanmıştır. Her somut olayın kendine özgü özellikleri bulunduğundan, hukuki uyuşmazlıklarda profesyonel hukuki danışmanlık alınması tavsiye edilmektedir.
+                </p>
+            </div>
+
+            <div class="note" style="margin-top: 32px;">
+                <strong>Hukuki Danışmanlık</strong>
+                <p>
+                    Anonim şirketlerde genel kurulun süresinde yapılmaması, azlık haklarının kullanılması, yönetim kurulunun sorumluluğu veya genel kurul çağrısı süreçleri hakkında hukuki destek almak istiyorsanız, lütfen bizimle iletişime geçiniz.
+                </p>
+                <a href="mailto:ibrahim@derinpinar.av.tr?subject=Genel%20Kurul%20Hakk%C4%B1nda%20Hukuki%20Dan%C4%B1%C5%9Fmanl%C4%B1k" class="btn primary" style="margin-top: 16px;">Hukuki Danışmanlık Talep Edin</a>
+            </div>
+        </section>
+    </article>
+</body>
+</html>
