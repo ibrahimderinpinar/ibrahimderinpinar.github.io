@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="tr">
   <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-7VG8YJ31K5');
-</script>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar | Derinpınar Law & Consultancy | Ticaret Hukuku, Milli-Uluslararası Tahkim" />
-<title>Av. Dr. İbrahim Nuri Derinpınar | Derinpınar Law & Consultancy</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7VG8YJ31K5');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar | Derinpınar Law & Consultancy | Ticaret Hukuku, Milli-Uluslararası Tahkim" />
+    <title>Av. Dr. İbrahim Nuri Derinpınar | Derinpınar Law & Consultancy</title>
+
     <style>
       :root {
         --bg: #f7f8fc;
@@ -29,6 +30,7 @@ gtag('config', 'G-7VG8YJ31K5');
 
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
+
       body {
         margin: 0;
         color: var(--text);
@@ -59,19 +61,17 @@ gtag('config', 'G-7VG8YJ31K5');
         gap: 20px;
         padding: 14px 0;
       }
+
       .brand {
         display: flex;
         align-items: center;
         gap: 16px;
         min-width: 0;
       }
-      .brand-logo {
-        flex: 0 0 auto;
-      }
+      .brand-logo { flex: 0 0 auto; }
       .brand-logo img {
         width: 230px;
         height: auto;
-        display: block;
       }
       .brand-text {
         display: flex;
@@ -79,16 +79,17 @@ gtag('config', 'G-7VG8YJ31K5');
         gap: 2px;
         min-width: 0;
       }
-     .brand-name {
-    font-weight: 800;
-    font-size: 1.45rem;
-    line-height: 1.1;
-    letter-spacing: 0.01em;
+      .brand-name {
+        font-weight: 800;
+        font-size: 1.45rem;
+        line-height: 1.1;
+        letter-spacing: 0.01em;
       }
       .brand-subtitle {
         color: var(--muted);
         font-size: 0.92rem;
       }
+
       .nav {
         display: flex;
         flex-wrap: wrap;
@@ -105,6 +106,7 @@ gtag('config', 'G-7VG8YJ31K5');
         gap: 28px;
         align-items: stretch;
       }
+
       .hero-copy,
       .hero-card,
       .section-card {
@@ -113,7 +115,24 @@ gtag('config', 'G-7VG8YJ31K5');
         border-radius: var(--radius);
         box-shadow: var(--shadow);
       }
-      .hero-copy { padding: 34px; }
+
+      .hero-copy {
+        padding: 34px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-copy::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(31, 58, 95, 0.03), rgba(200, 155, 60, 0.05));
+        pointer-events: none;
+      }
+      .hero-copy > * {
+        position: relative;
+        z-index: 1;
+      }
+
       .eyebrow {
         display: inline-flex;
         align-items: center;
@@ -126,21 +145,24 @@ gtag('config', 'G-7VG8YJ31K5');
         font-size: 0.92rem;
         margin-bottom: 18px;
       }
-    h1 {
-    margin: 0;
-    font-size: clamp(1.55rem, 2.4vw, 2.45rem);
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    font-weight: 700;
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.55rem, 2.4vw, 2.45rem);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        font-weight: 700;
       }
-     .lead {
-    margin: 18px 0 0;
-    color: var(--muted);
-    font-size: 1.05rem;
-    max-width: 62ch;
-    text-align: justify;
-    text-justify: inter-word;
+
+      .lead {
+        margin: 18px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        max-width: 62ch;
+        text-align: justify;
+        text-justify: inter-word;
       }
+
       .bar-association {
         margin-top: 14px;
         display: inline-flex;
@@ -154,6 +176,7 @@ gtag('config', 'G-7VG8YJ31K5');
         font-size: 0.94rem;
         font-weight: 600;
       }
+
       .buttons {
         display: flex;
         flex-wrap: wrap;
@@ -171,7 +194,10 @@ gtag('config', 'G-7VG8YJ31K5');
         transition: transform 0.18s ease, border-color 0.18s ease;
         font-weight: 600;
       }
-      .btn:hover { transform: translateY(-1px); border-color: rgba(31, 58, 95, 0.24); }
+      .btn:hover {
+        transform: translateY(-1px);
+        border-color: rgba(31, 58, 95, 0.24);
+      }
       .btn.primary {
         background: linear-gradient(135deg, var(--accent), #294d7c);
         color: #fff;
@@ -182,13 +208,17 @@ gtag('config', 'G-7VG8YJ31K5');
         overflow: hidden;
         position: relative;
         min-height: 100%;
+        transition: 0.35s ease;
       }
+      .hero-card:hover { transform: translateY(-6px); }
+
       .portrait {
         width: 100%;
         aspect-ratio: 4 / 5;
         object-fit: cover;
         object-position: center top;
       }
+
       .hero-overlay {
         position: absolute;
         left: 18px;
@@ -210,9 +240,7 @@ gtag('config', 'G-7VG8YJ31K5');
         font-size: 0.94rem;
       }
 
-      .hero-credentials {
-        margin-top: 18px;
-      }
+      .hero-credentials { margin-top: 18px; }
       .hero-credentials .credentials {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -234,22 +262,29 @@ gtag('config', 'G-7VG8YJ31K5');
         color: var(--muted);
         font-size: 0.92rem;
       }
-      section{
-      padding:18px 0;
-      scroll-margin-top:110px;
+
+      section {
+        padding: 18px 0;
+        scroll-margin-top: 110px;
       }
+
       .section-card { padding: 28px; }
       .section-title {
         margin: 0 0 14px;
         font-size: 1.38rem;
         letter-spacing: -0.02em;
       }
-      .section-text { color: var(--muted); margin: 0; }
+      .section-text {
+        color: var(--muted);
+        margin: 0;
+      }
+
       .grid-2 {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
       }
+
       .item {
         padding: 18px;
         border-radius: 22px;
@@ -261,11 +296,13 @@ gtag('config', 'G-7VG8YJ31K5');
         margin: 0 0 8px;
         font-size: 1.03rem;
       }
+
       .meta {
         color: var(--muted);
         font-size: 0.94rem;
         margin-bottom: 8px;
       }
+
       .chip-row {
         display: flex;
         flex-wrap: wrap;
@@ -281,6 +318,12 @@ gtag('config', 'G-7VG8YJ31K5');
         color: var(--accent);
         font-size: 0.93rem;
       }
+
+      .text-justify {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+
       .contact-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -306,7 +349,6 @@ gtag('config', 'G-7VG8YJ31K5');
       .footer-mark img {
         width: 430px;
         height: auto;
-        display: block;
       }
       .footer-logo-note {
         color: rgba(19, 34, 56, 0.72);
@@ -319,6 +361,73 @@ gtag('config', 'G-7VG8YJ31K5');
         font-size: 1rem;
       }
 
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #1f3a5f;
+        padding: 0;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .mobile-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        z-index: 9998;
+      }
+      .mobile-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 82%;
+        max-width: 340px;
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: calc(80px + env(safe-area-inset-top));
+        padding-bottom: env(safe-area-inset-bottom);
+        background: #fff;
+        padding-left: 35px;
+        padding-right: 35px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18);
+        transition: 0.35s ease;
+        z-index: 9999;
+      }
+      .mobile-menu.active {
+        right: 0;
+      }
+      .mobile-menu a {
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: #132238;
+        margin: 18px 0;
+        text-decoration: none;
+      }
+
+      .close-menu {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+
       @media (max-width: 920px) {
         .hero-grid,
         .grid-2,
@@ -329,6 +438,11 @@ gtag('config', 'G-7VG8YJ31K5');
           flex-direction: column;
           align-items: flex-start;
         }
+      }
+
+      @media (max-width: 768px) {
+        .nav { display: none; }
+        .menu-toggle { display: flex; }
       }
 
       @media (max-width: 640px) {
@@ -356,160 +470,8 @@ gtag('config', 'G-7VG8YJ31K5');
         }
       }
     </style>
-  
-<style>
-.hero-copy{position:relative;overflow:hidden}
-.hero-copy:before{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(135deg,rgba(31,58,95,.03),rgba(200,155,60,.05));
-pointer-events:none;
-}
-.hero-card{transition:.35s ease}
-.hero-card:hover{transform:translateY(-6px)}
-  
-.menu-toggle{
+  </head>
 
-display:none;
-
-background:none;
-
-border:none;
-
-cursor:pointer;
-
-color:#1f3a5f;
-
-padding:0;
-
-width:42px;
-
-height:42px;
-
-align-items:center;
-
-justify-content:center;
-
-}
-
-@media(max-width:768px){
-
-.nav{
-display:none;
-}
-
-.menu-toggle{
-display:flex;
-}
-
-}
-
-.mobile-overlay{
-
-position:fixed;
-
-inset:0;
-
-background:rgba(0,0,0,.35);
-
-opacity:0;
-
-visibility:hidden;
-
-transition:.3s;
-
-z-index:9998;
-
-}
-
-.mobile-overlay.active{
-
-opacity:1;
-
-visibility:visible;
-
-}
-
-.mobile-menu{
-
-position:fixed;
-
-top:0;
-
-right:-100%;
-
-width:82%;
-
-max-width:340px;
-
-height:100vh;
-  
-overflow-y:auto; 
-  
-padding-top:calc(80px + env(safe-area-inset-top));
-  
-padding-bottom:env(safe-area-inset-bottom);
-  
-background:#fff;
-
-padding-left:35px;
-  
-padding-right:35px;
-
-display:flex;
-
-flex-direction:column;
-
-box-shadow:-15px 0 40px rgba(0,0,0,.18);
-
-transition:.35s ease;
-
-z-index:9999;
-
-}
-
-.mobile-menu.active{
-
-right:0;
-
-}
-
-.mobile-menu a{
-
-font-size:1.35rem;
-
-font-weight:600;
-
-color:#132238;
-
-margin:18px 0;
-
-text-decoration:none;
-
-}
-
-.close-menu{
-
-position:absolute;
-
-top:22px;
-
-right:22px;
-
-background:none;
-
-border:none;
-
-cursor:pointer;
-
-padding:0;
-
-}
-  
-</style>
-
-</head>
   <body>
     <header class="topbar">
       <div class="wrap topbar-inner">
@@ -522,25 +484,21 @@ padding:0;
             <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
           </div>
         </div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
 
-<svg xmlns="http://www.w3.org/2000/svg"
-width="30"
-height="30"
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Menüyü Aç"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
 
-<line x1="3" y1="6" x2="21" y2="6"/>
-<line x1="3" y1="12" x2="21" y2="12"/>
-<line x1="3" y1="18" x2="21" y2="18"/>
-
-</svg>
-
-</button>
         <nav class="nav" aria-label="Birincil">
           <a href="#hakkimda">Hakkımda</a>
           <a href="#egitim">Eğitim</a>
@@ -551,58 +509,39 @@ stroke-linejoin="round">
         </nav>
       </div>
     </header>
-<div class="mobile-overlay" id="mobileOverlay"></div>
 
-<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
-<button class="close-menu" id="closeMenu">
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="close-menu" id="closeMenu" aria-label="Menüyü Kapat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
 
-<svg xmlns="http://www.w3.org/2000/svg"
-width="34"
-height="34"
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-stroke-width="2"
-stroke-linecap="round"
-stroke-linejoin="round">
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#egitim">Eğitim</a>
+      <a href="#deneyim">Deneyim</a>
+      <a href="#uzmanlik">Uzmanlık</a>
+      <a href="#akademik-calismalar">Akademik Çalışmalar</a>
+      <a href="makaleler.html">Makaleler</a>
+      <a href="#iletisim">Bize Ulaşın</a>
+    </div>
 
-<line x1="18" y1="6" x2="6" y2="18"/>
-<line x1="6" y1="6" x2="18" y2="18"/>
-
-</svg>
-
-</button>
-
-<a href="#hakkimda">Hakkımda</a>
-
-<a href="#egitim">Eğitim</a>
-
-<a href="#deneyim">Deneyim</a>
-
-<a href="#uzmanlik">Uzmanlık</a>
-
-<a href="#akademik-calismalar">Akademik Çalışmalar</a>
- 
-<a href="makaleler.html">Makaleler</a>
-
-<a href="#iletisim">Bize Ulaşın</a>
-
-</div>
     <main id="top">
       <section class="hero">
         <div class="wrap hero-grid">
           <div class="hero-copy">
             <div class="eyebrow">Şirketler Hukuku • Sözleşmeler Hukuku • Gayrimenkul Hukuku • Tahkim</div>
             <h1>Av. Dr. İbrahim Nuri Derinpınar</h1>
-<p class="lead">
-Şirketler hukuku, sözleşmeler hukuku, gayrimenkul hukuku ile ulusal ve uluslararası tahkim alanlarında faaliyet göstermektedir. Yerli ve yabancı müvekkillere; ticari faaliyetlerin hukuki güvence altına alınması, sözleşmesel ilişkilerin etkin şekilde yapılandırılması ve uyuşmazlıkların önlenmesi ile çözümüne yönelik stratejik hukuki danışmanlık hizmeti sunmaktadır.
-</p>
-           <div class="bar-association">2014 yılından bu yana İstanbul Barosu'na kayıtlı olup avukatlık mesleğini icra etmektedir.</div>
+            <p class="lead">
+              Şirketler hukuku, sözleşmeler hukuku, gayrimenkul hukuku ile ulusal ve uluslararası tahkim alanlarında faaliyet göstermektedir. Yerli ve yabancı müvekkillere; ticari faaliyetlerin hukuki güvence altına alınması, uyuşmazlıkların önlenmesi ve çözümü konularında kapsamlı hukuki danışmanlık sunmaktadır.
+            </p>
+            <div class="bar-association">2014 yılından bu yana İstanbul Barosu'na kayıtlı olup avukatlık mesleğini icra etmektedir.</div>
+
             <div class="buttons">
-              <a class="btn primary"
-   href="mailto:ibrahim@derinpinar.av.tr?subject=Hukuki%20Danışmanlık%20Talebi&body=Sayın%20Av.%20Dr.%20İbrahim%20Nuri%20Derinpınar,%0A%0A">
-   Bize Ulaşın</a>
+              <a class="btn primary" href="mailto:ibrahim@derinpinar.av.tr?subject=Hukuki%20Danışmanlık%20Talebi&body=Sayın%20Av.%20Dr.%20İbrahim%20Nuri%20Derinpınar,%0A%0A">Bize Ulaşın</a>
               <a class="btn" href="#egitim">Akademik Geçmiş</a>
               <a class="btn" href="https://www.linkedin.com/in/ibrahim-nuri-derinpınar-lawyer" target="_blank" rel="noreferrer">LinkedIn</a>
             </div>
@@ -616,19 +555,18 @@ stroke-linejoin="round">
             </div>
           </div>
         </div>
-
       </section>
 
       <section id="hakkimda">
         <div class="wrap section-card">
           <h2 class="section-title">Hakkımda</h2>
-         <p class="section-text">
-İbrahim Nuri Derinpınar, 2014 yılından bu yana İstanbul Barosu'na kayıtlı avukat olarak; şirketler hukuku, ticaret hukuku, sözleşmeler hukuku, gayrimenkul hukuku ile ulusal ve uluslararası tahkim alanlarında faaliyet göstermektedir. Yerli ve yabancı müvekkillere, ticari faaliyetlerin hukuki yapılandırılması, kurumsal danışmanlık, sözleşme yönetimi ve ticari uyuşmazlıkların çözümü süreçlerinde hukuki hizmet sunmaktadır.
-</p>
+          <p class="section-text">
+            İbrahim Nuri Derinpınar, 2014 yılından bu yana İstanbul Barosu'na kayıtlı avukat olarak; şirketler hukuku, ticaret hukuku, sözleşmeler hukuku, gayrimenkul hukuku ile ulusal ve uluslararası tahkim alanlarında faaliyet göstermektedir.
+          </p>
           <br />
-<p class="section-text">
-İstanbul Üniversitesi Hukuk Fakültesi'nden mezun olduktan sonra Brunel University of London'da Uluslararası Ticaret Hukuku (LL.M.) programını üstün başarı derecesiyle tamamlamış; London School of Economics and Political Science (LSE) bünyesinde ticaret hukuku ve rekabet hukuku alanlarında akademik çalışmalar yürütmüştür. Bahçeşehir Üniversitesi Özel Hukuk Doktora Programı kapsamında hazırladığı <strong>"E-sporcu Sözleşmesi"</strong> başlıklı doktora teziyle, Türk hukukunda e-sporcu sözleşmelerinin hukuki niteliği, uygulanacak hukuk kuralları ile uygulamada karşılaşılan temel sorunlara ilişkin sistematik değerlendirmelerde bulunmuştur.
-</p>
+          <p class="section-text">
+            İstanbul Üniversitesi Hukuk Fakültesi'nden mezun olduktan sonra Brunel University of London'da Uluslararası Ticaret Hukuku (LL.M.) programını üstün başarı derecesiyle tamamlamış; London School of Economics and Political Science (LSE) bünyesinde ticaret hukuku ve rekabet hukuku alanlarında akademik çalışmalar yürütmüştür.
+          </p>
         </div>
       </section>
 
@@ -639,7 +577,7 @@ stroke-linejoin="round">
             <div class="item">
               <h3>Bahçeşehir Üniversitesi</h3>
               <div class="meta">Özel Hukuk Doktora Programı · 2018–2026</div>
-             <p>Doktora Tezi (Ph.D. Dissertation): <em>E-sporcu Sözleşmesi</em></p>
+              <p>Doktora Tezi (Ph.D. Dissertation): <em>E-sporcu Sözleşmesi</em></p>
             </div>
             <div class="item">
               <h3>Brunel University of London</h3>
@@ -680,12 +618,12 @@ stroke-linejoin="round">
             <div class="item">
               <h3>Kurucu Avukat · Derinpınar Hukuk ve Danışmanlık</h3>
               <div class="meta">Ocak 2018 – Halen · Bakırköy, İstanbul</div>
-              <p>Şirketler hukuku, sözleşmeler hukuku, gayrimenkul hukuku ile ulusal ve uluslararası tahkim alanlarında faaliyet göstermekte; yerli ve yabancı müvekkillere kurumsal danışmanlık, sözleşme yönetimi ve ticari uyuşmazlıkların çözümü konularında hukuki hizmet sunmaktadır.</p>
+              <p>Şirketler hukuku, sözleşmeler hukuku, gayrimenkul hukuku ile ulusal ve uluslararası tahkim alanlarında faaliyet göstermekte; yerli ve yabancı müvekkillere kurumsal danışmanlık sunmaktadır.</p>
             </div>
             <div class="item">
               <h3>Hukuk Müşaviri · Penteks İplik Sanayi ve Ticaret A.Ş.</h3>
               <div class="meta">Ocak 2018 – Nisan 2026 · Malatya</div>
-              <p>Şirketin ticari faaliyetlerine ilişkin hukuki süreçlerin yönetimi, sözleşmelerin hazırlanması ve müzakeresi, şirketler hukuku ile iş ve ticaret hukukundan kaynaklanan konularda hukuk müşavirliği hizmeti sunmuştur.</p>
+              <p>Şirketin ticari faaliyetlerine ilişkin hukuki süreçlerin yönetimi, sözleşmelerin hazırlanması ve müzakeresi, şirketler hukuku ile iş ve ticaret hukukundan kaynaklanan konularda hukuki destek sağlamıştır.</p>
             </div>
             <div class="item">
               <h3>Associate · Reisbey Law Office</h3>
@@ -695,7 +633,7 @@ stroke-linejoin="round">
             <div class="item">
               <h3>Stajyer Avukat · Doğan Law Office</h3>
               <div class="meta">Ağustos 2012 – Eylül 2013</div>
-              <p>Avukatlık stajı süresince ticaret hukuku, şirketler hukuku ve sözleşmeler hukuku alanlarında hukuki araştırmalar gerçekleştirmiş; dava hazırlıkları, sözleşme incelemeleri, şirket kuruluş işlemleri ve uyuşmazlık çözüm süreçlerine destek sağlamıştır.</p>
+              <p>Avukatlık stajı süresince ticaret hukuku, şirketler hukuku ve sözleşmeler hukuku alanlarında hukuki araştırmalar gerçekleştirmiş; dava hazırlıkları, sözleşme incelemeleri ve takip işlemlerinde görev almıştır.</p>
             </div>
           </div>
         </div>
@@ -716,45 +654,28 @@ stroke-linejoin="round">
           </div>
         </div>
       </section>
-<section id="akademik-calismalar">
-  <div class="wrap section-card">
-    <h2 class="section-title">Akademik Çalışmalar</h2>
 
-    <div class="grid-2">
+      <section id="akademik-calismalar">
+        <div class="wrap section-card">
+          <h2 class="section-title">Akademik Çalışmalar</h2>
 
-      <div class="item">
-        <h3>Doktora Tezi</h3>
-        <div class="meta">Bahçeşehir Üniversitesi Özel Hukuk Doktora Programı</div>
+          <div class="grid-2">
+            <div class="item">
+              <h3>Doktora Tezi</h3>
+              <div class="meta">Bahçeşehir Üniversitesi Özel Hukuk Doktora Programı</div>
+              <p><strong>E-sporcu Sözleşmesi</strong></p>
+              <p class="text-justify">
+                Türk hukukunda e-sporcu sözleşmelerine ilişkin sistematik bir hukuki çerçeve ortaya koymak amacıyla; e-sporcu ile spor kulübü veya spor anonim şirketi arasındaki sözleşmesel ilişkinin hukuki niteliğini, uygulanacak hukuk kurallarını, tarafların hak ve yükümlülüklerini, sözleşmenin geçerlilik şartlarını ve sona erme rejimini doktrin, karşılaştırmalı hukuk ve uygulama ışığında kapsamlı biçimde incelemektedir.
+              </p>
+            </div>
 
-        <p><strong>E-sporcu Sözleşmesi</strong></p>
-
-        <p style="text-align:justify;">
-          Türk hukukunda e-sporcu sözleşmelerine ilişkin sistematik bir hukuki çerçeve
-          ortaya koymak amacıyla; e-sporcu ile spor kulübü veya spor anonim şirketi
-          arasındaki sözleşmesel ilişkinin hukuki niteliğini, uygulanacak hukuk
-          kurallarını, tarafların hak ve yükümlülüklerini, sözleşmenin geçerlilik
-          şartlarını ve sona erme rejimini doktrin, karşılaştırmalı hukuk ve uygulama
-          ışığında kapsamlı biçimde incelemektedir.
-        </p>
-      </div>
-
-      <div class="item">
-        <h3>Yüksek Lisans Tezi</h3>
-        <div class="meta">Brunel University of London</div>
-
-        <p><strong>Continuing Legal Uncertainty and Complexity in the Field of International Multimodal Transport Liability</strong></p>
-
-        <p style="text-align:justify;">
-          Uluslararası multimodal taşımacılıkta taşıyıcının sorumluluğuna ilişkin
-          hukuki belirsizlikleri; uluslararası sözleşmeler, konvansiyonlar ve farklı
-          sorumluluk rejimleri arasındaki ilişkiyi karşılaştırmalı hukuk perspektifiyle
-          inceleyerek mevcut düzenlemelerin uygulamaya etkilerini değerlendirmektedir.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
+            <div class="item">
+              <h3>Yüksek Lisans Tezi</h3>
+              <div class="meta">Brunel University of London</div>
+              <p><strong>Continuing Legal Uncertainty and Complexity in the Field of International Multimodal Transport Liability</strong></p>
+              <p class="text-justify">
+                Uluslararası multimodal taşımacılıkta taşıyıcının sorumluluğuna ilişkin hukuki belirsizlikleri; uluslararası sözleşmeler, konvansiyonlar ve farklı sorumluluk rejimleri arasındaki ilişkiyi karşılaştırmalı hukuk perspektifiyle inceleyerek mevcut düzenlemelerin uygulamaya etkilerini değerlendirmektedir.
+              </p>
             </div>
           </div>
         </div>
@@ -790,56 +711,45 @@ stroke-linejoin="round">
         <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
       </div>
     </footer>
+
     <script>
+      const menu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("mobileOverlay");
+      const menuToggle = document.getElementById("menuToggle");
 
-const menu=document.getElementById("mobileMenu");
+      document.getElementById("menuToggle").onclick = function () {
+        menu.classList.add("active");
+        overlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+        menuToggle.setAttribute("aria-expanded", "true");
+        menu.setAttribute("aria-hidden", "false");
+      };
 
-const overlay=document.getElementById("mobileOverlay");
+      document.getElementById("closeMenu").onclick = function () {
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+        menuToggle.setAttribute("aria-expanded", "false");
+        menu.setAttribute("aria-hidden", "true");
+      };
 
-document.getElementById("menuToggle").onclick=function(){
+      overlay.onclick = function () {
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+        menuToggle.setAttribute("aria-expanded", "false");
+        menu.setAttribute("aria-hidden", "true");
+      };
 
-menu.classList.add("active");
-
-overlay.classList.add("active");
-  
-document.body.style.overflow="hidden";
-
-}
-
-document.getElementById("closeMenu").onclick=function(){
-
-menu.classList.remove("active");
-
-overlay.classList.remove("active");
-  
-document.body.style.overflow="";
-
-}
-
-overlay.onclick=function(){
-
-menu.classList.remove("active");
-
-overlay.classList.remove("active");
-  
-document.body.style.overflow="";
-  
-}
-
-document.querySelectorAll(".mobile-menu a").forEach(function(item){
-
-item.onclick=function(){
-
-menu.classList.remove("active");
-
-overlay.classList.remove("active");
-
-document.body.style.overflow="";
-
-}
-
-});
-
-</script>
+      document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+        item.onclick = function () {
+          menu.classList.remove("active");
+          overlay.classList.remove("active");
+          document.body.style.overflow = "";
+          menuToggle.setAttribute("aria-expanded", "false");
+          menu.setAttribute("aria-hidden", "true");
+        };
+      });
+    </script>
   </body>
 </html>
