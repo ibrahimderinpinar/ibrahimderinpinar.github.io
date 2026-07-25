@@ -11,7 +11,7 @@
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar tarafından yazılan makaleler. Şirketler hukuku, sözleşmeler hukuku, kira hukuku, gayrimenkul hukuku, tahkim, spor hukuku ve e-spor hukuku."/>
+    <meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar tarafından yazılan makaleler. Şirketler hukuku, sözleşmeler hukuku, kira hukuku, gayrimenkul hukuku, tahkim, spor hukuku ve e-spor hukuku alanlarında güncel hukuki içerikler." />
     <title>Makaleler | Av. Dr. İbrahim Nuri Derinpınar | Derinpınar Law & Consultancy</title>
     <style>
       :root {
@@ -99,7 +99,7 @@
       .nav a:hover { color: var(--accent); }
 
       .page-header {
-        padding: 34px 0;
+        padding: 34px 0 24px;
         border-bottom: 1px solid var(--line);
       }
       .page-title {
@@ -110,14 +110,61 @@
         font-weight: 700;
       }
       .page-subtitle {
-        margin: 12px 0 0;
+        margin: 14px 0 0;
         color: var(--muted);
-        font-size: 1.05rem;
+        font-size: 1.02rem;
+        line-height: 1.85;
+        max-width: 980px;
       }
 
       .articles-container {
         padding: 34px 0;
       }
+
+      .category-section {
+        margin-bottom: 34px;
+      }
+      .category-heading {
+        margin: 0 0 14px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text);
+        letter-spacing: 0.01em;
+      }
+      .category-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .category-chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 10px 16px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--accent);
+        font-size: 0.92rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        box-shadow: 0 8px 24px rgba(19, 34, 56, 0.08);
+        transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background-color 0.22s ease, color 0.22s ease;
+      }
+      .category-chip:hover {
+        transform: translateY(-2px);
+        border-color: rgba(31, 58, 95, 0.25);
+        box-shadow: 0 12px 30px rgba(19, 34, 56, 0.12);
+        background: #fff;
+      }
+      .category-chip.is-active {
+        background: linear-gradient(135deg, var(--accent), #294d7c);
+        border-color: transparent;
+        color: #fff;
+        box-shadow: 0 12px 28px rgba(31, 58, 95, 0.28);
+      }
+
       .articles-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -345,16 +392,31 @@
           width: 180px;
         }
         .page-header {
-          padding: 24px 0;
+          padding: 24px 0 20px;
         }
         .page-title {
           font-size: 1.6rem;
         }
         .page-subtitle {
           font-size: 0.95rem;
+          line-height: 1.8;
         }
         .articles-container {
           padding: 24px 0;
+        }
+        .category-section {
+          margin-bottom: 24px;
+        }
+        .category-heading {
+          margin-bottom: 12px;
+        }
+        .category-list {
+          gap: 10px;
+        }
+        .category-chip {
+          min-height: 38px;
+          padding: 8px 14px;
+          font-size: 0.86rem;
         }
         .articles-grid {
           grid-template-columns: 1fr;
@@ -428,14 +490,27 @@
       <section class="page-header">
         <div class="wrap">
           <h1 class="page-title">Makaleler</h1>
-          <p class="page-subtitle">Şirketler hukuku, sözleşmeler hukuku ve hukuki analizlere ilişkin yazılarım</p>
+          <p class="page-subtitle">Şirketler hukuku, sözleşmeler hukuku, kira hukuku, gayrimenkul hukuku, tahkim, spor hukuku ve e-spor hukuku alanlarında güncel hukuki gelişmeler, mevzuat değişiklikleri, yargı kararları ve uygulamaya yönelik değerlendirmeler içeren makaleler.</p>
         </div>
       </section>
 
       <section class="articles-container">
         <div class="wrap">
+          <section class="category-section" aria-label="Uzmanlık Alanları">
+            <h2 class="category-heading">Uzmanlık Alanları</h2>
+            <div class="category-list" role="list">
+              <a href="#" class="category-chip is-active" data-category="sirketler-hukuku" role="listitem" aria-current="true">Şirketler Hukuku</a>
+              <a href="#" class="category-chip" data-category="sozlesmeler-hukuku" role="listitem">Sözleşmeler Hukuku</a>
+              <a href="#" class="category-chip" data-category="kira-hukuku" role="listitem">Kira Hukuku</a>
+              <a href="#" class="category-chip" data-category="gayrimenkul-hukuku" role="listitem">Gayrimenkul Hukuku</a>
+              <a href="#" class="category-chip" data-category="tahkim" role="listitem">Tahkim</a>
+              <a href="#" class="category-chip" data-category="spor-hukuku" role="listitem">Spor Hukuku</a>
+              <a href="#" class="category-chip" data-category="e-spor-hukuku" role="listitem">E-spor Hukuku</a>
+            </div>
+          </section>
+
           <div class="articles-grid">
-            <article class="article-card">
+            <article class="article-card" data-category="sirketler-hukuku">
               <div class="article-header">
                 <span class="article-category">Şirketler Hukuku</span>
                 <span class="article-meta">📖 8 dk · 25 Temmuz 2026</span>
@@ -447,10 +522,142 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  6102 sayılı Türk Ticaret Kanunu çerçevesinde olağan genel kurulun süresinde yapılmamasının hukuki sonuçları; yönetim kurulunun sorumluluğu, azlık pay sahiplerinin genel kurulu toplantı talep etme hakkı ve bu haktan yararlanma prosedürlerini detaylı olarak incelemektedir.
+                  Olağan genel kurulun süresinde yapılmamasının yönetim kurulunun sorumluluğu, azlık hakları ve mahkemeye başvuru mekanizmaları bakımından doğurduğu sonuçlar Türk Ticaret Kanunu kapsamında incelenmektedir.
                 </p>
                 <div class="article-footer">
                   <a href="anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html" class="read-more-btn">
+                    Makaleyi Oku →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="sozlesmeler-hukuku">
+              <div class="article-header">
+                <span class="article-category">Sözleşmeler Hukuku</span>
+                <span class="article-meta">📖 7 dk · 26 Temmuz 2026</span>
+              </div>
+              <div class="article-body">
+                <h2 class="article-title">
+                  <a href="ticari-sozlesmelerde-cezai-sart-duzenlemeleri-ve-uygulama-sinirlari.html">
+                    Ticari Sözleşmelerde Cezai Şart Düzenlemeleri ve Uygulama Sınırları
+                  </a>
+                </h2>
+                <p class="article-excerpt">
+                  Cezai şart hükümlerinin hazırlanmasında dikkat edilmesi gereken esaslar, fahişlik denetimi, indirim ölçütleri ve Yargıtay yaklaşımı ışığında sözleşme risklerinin nasıl yönetilebileceği değerlendirilmektedir.
+                </p>
+                <div class="article-footer">
+                  <a href="ticari-sozlesmelerde-cezai-sart-duzenlemeleri-ve-uygulama-sinirlari.html" class="read-more-btn">
+                    Makaleyi Oku →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="kira-hukuku">
+              <div class="article-header">
+                <span class="article-category">Kira Hukuku</span>
+                <span class="article-meta">📖 6 dk · 27 Temmuz 2026</span>
+              </div>
+              <div class="article-body">
+                <h2 class="article-title">
+                  <a href="is-yeri-kiralarinda-kira-artis-uyusmazliklari-ve-uyarlama-davasi.html">
+                    İşyeri Kiralarında Kira Artış Uyuşmazlıkları ve Uyarlama Davası
+                  </a>
+                </h2>
+                <p class="article-excerpt">
+                  İşyeri kira sözleşmelerinde artış oranı ihtilafları, emsal kira incelemesi, ekonomik değişim karşısında uyarlama davasının şartları ve mahkeme uygulamasında öne çıkan kriterler ele alınmaktadır.
+                </p>
+                <div class="article-footer">
+                  <a href="is-yeri-kiralarinda-kira-artis-uyusmazliklari-ve-uyarlama-davasi.html" class="read-more-btn">
+                    Makaleyi Oku →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="gayrimenkul-hukuku">
+              <div class="article-header">
+                <span class="article-category">Gayrimenkul Hukuku</span>
+                <span class="article-meta">📖 9 dk · 28 Temmuz 2026</span>
+              </div>
+              <div class="article-body">
+                <h2 class="article-title">
+                  <a href="tapu-iptal-ve-tescil-davalarinda-ispat-rejimi-ve-pratik-riskler.html">
+                    Tapu İptal ve Tescil Davalarında İspat Rejimi ve Pratik Riskler
+                  </a>
+                </h2>
+                <p class="article-excerpt">
+                  Tapu iptal ve tescil davalarında hukuki sebep seçimi, delil stratejisi, iyi niyet tartışmaları ve dava sürecinde yapılan usul hatalarının mülkiyet hakkına etkisi uygulama odaklı olarak açıklanmaktadır.
+                </p>
+                <div class="article-footer">
+                  <a href="tapu-iptal-ve-tescil-davalarinda-ispat-rejimi-ve-pratik-riskler.html" class="read-more-btn">
+                    Makaleyi Oku →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="tahkim">
+              <div class="article-header">
+                <span class="article-category">Tahkim</span>
+                <span class="article-meta">📖 8 dk · 29 Temmuz 2026</span>
+              </div>
+              <div class="article-body">
+                <h2 class="article-title">
+                  <a href="sozlesmelerde-tahkim-sarti-yazimi-ve-gecerlilik-kontrolleri.html">
+                    Sözleşmelerde Tahkim Şartı Yazımı ve Geçerlilik Kontrolleri
+                  </a>
+                </h2>
+                <p class="article-excerpt">
+                  Tahkim şartının kurum, yer, dil, uygulanacak hukuk ve hakem sayısı bakımından doğru kurgulanmaması halinde doğabilecek yargılama riskleri; geçerlilik ve icra kabiliyeti perspektifinden incelenmektedir.
+                </p>
+                <div class="article-footer">
+                  <a href="sozlesmelerde-tahkim-sarti-yazimi-ve-gecerlilik-kontrolleri.html" class="read-more-btn">
+                    Makaleyi Oku →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="spor-hukuku">
+              <div class="article-header">
+                <span class="article-category">Spor Hukuku</span>
+                <span class="article-meta">📖 7 dk · 30 Temmuz 2026</span>
+              </div>
+              <div class="article-body">
+                <h2 class="article-title">
+                  <a href="profesyonel-sporcu-sozlesmelerinde-fesih-ve-tazminat-rejimi.html">
+                    Profesyonel Sporcu Sözleşmelerinde Fesih ve Tazminat Rejimi
+                  </a>
+                </h2>
+                <p class="article-excerpt">
+                  Profesyonel sporcu sözleşmelerinde haklı nedenli fesih, disiplin ihlalleri, transfer dönemine etkiler ve tazminat hesaplamasında dikkate alınan ölçütler ulusal ve uluslararası spor uyuşmazlık pratiğiyle birlikte değerlendirilmektedir.
+                </p>
+                <div class="article-footer">
+                  <a href="profesyonel-sporcu-sozlesmelerinde-fesih-ve-tazminat-rejimi.html" class="read-more-btn">
+                    Makaleyi Oku →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="e-spor-hukuku">
+              <div class="article-header">
+                <span class="article-category">E-spor Hukuku</span>
+                <span class="article-meta">📖 6 dk · 31 Temmuz 2026</span>
+              </div>
+              <div class="article-body">
+                <h2 class="article-title">
+                  <a href="e-spor-takim-sozlesmelerinde-fikri-mulkiyet-ve-yayin-haklari.html">
+                    E-spor Takım Sözleşmelerinde Fikri Mülkiyet ve Yayın Hakları
+                  </a>
+                </h2>
+                <p class="article-excerpt">
+                  E-spor ekosisteminde oyuncu-takım ilişkilerinde marka kullanımı, yayın gelirleri, içerik üretimi, veri ve görüntü hakları ile rekabet yasağı hükümlerinin sözleşmesel olarak nasıl dengelenmesi gerektiği ele alınmaktadır.
+                </p>
+                <div class="article-footer">
+                  <a href="e-spor-takim-sozlesmelerinde-fikri-mulkiyet-ve-yayin-haklari.html" class="read-more-btn">
                     Makaleyi Oku →
                   </a>
                 </div>
