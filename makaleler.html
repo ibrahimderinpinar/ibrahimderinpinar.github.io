@@ -1,38 +1,505 @@
-<div class="article">
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7VG8YJ31K5');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar tarafından yazılan makaleler. Şirketler hukuku, sözleşmeler hukuku ve hukuki analizler." />
+    <title>Makaleler | Av. Dr. İbrahim Nuri Derinpınar | Derinpınar Law & Consultancy</title>
+    <style>
+      :root {
+        --bg: #f7f8fc;
+        --panel: rgba(255, 255, 255, 0.88);
+        --text: #132238;
+        --muted: #59657a;
+        --line: rgba(19, 34, 56, 0.08);
+        --accent: #1f3a5f;
+        --accent-2: #c89b3c;
+        --shadow: 0 24px 70px rgba(19, 34, 56, 0.10);
+        --radius: 28px;
+        --max: 1180px;
+      }
 
-<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:10px;">
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+        background:
+          radial-gradient(circle at top left, rgba(31, 58, 95, 0.08), transparent 26%),
+          radial-gradient(circle at top right, rgba(200, 155, 60, 0.10), transparent 22%),
+          linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+      }
 
-<span style="background:#1f3a5f;color:#fff;padding:6px 12px;border-radius:999px;font-size:.82rem;">
-Şirketler Hukuku
-</span>
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+      .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
 
-<span style="color:#777;font-size:.88rem;">
-📖 8 dk · 25 Temmuz 2026
-</span>
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--line);
+      }
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 14px 0;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-width: 0;
+      }
+      .brand-logo {
+        flex: 0 0 auto;
+      }
+      .brand-logo img {
+        width: 230px;
+        height: auto;
+        display: block;
+      }
+      .brand-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        min-width: 0;
+      }
+      .brand-name {
+        font-weight: 800;
+        font-size: 1.45rem;
+        line-height: 1.1;
+        letter-spacing: 0.01em;
+      }
+      .brand-subtitle {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+      .nav a:hover { color: var(--accent); }
 
-</div>
+      .page-header {
+        padding: 34px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .page-title {
+        margin: 0;
+        font-size: clamp(1.8rem, 3vw, 2.45rem);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+      }
+      .page-subtitle {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
 
-<h2 style="margin:0 0 14px;font-size:1.45rem;line-height:1.35;">
+      .articles-container {
+        padding: 34px 0;
+      }
+      .articles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+      }
 
-<a href="anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html">
+      .article-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+        height: 100%;
+      }
+      .article-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 32px 90px rgba(19, 34, 56, 0.15);
+        border-color: rgba(31, 58, 95, 0.2);
+      }
 
-Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur? Pay Sahiplerinin Başvurabileceği Hukuki Yollar
+      .article-header {
+        padding: 24px;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .article-category {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), #294d7c);
+        color: #fff;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      .article-meta {
+        color: var(--muted);
+        font-size: 0.88rem;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
 
-</a>
+      .article-body {
+        padding: 24px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .article-title {
+        margin: 0 0 12px;
+        font-size: 1.35rem;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+        font-weight: 700;
+      }
+      .article-title a {
+        color: var(--text);
+        transition: color 0.18s ease;
+      }
+      .article-title a:hover {
+        color: var(--accent);
+      }
 
-</h2>
+      .article-excerpt {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 0.98rem;
+        line-height: 1.7;
+        flex: 1;
+      }
 
-<p style="margin-bottom:18px;">
+      .article-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+      }
 
-6102 sayılı Türk Ticaret Kanunu çerçevesinde olağan genel kurulun süresinde yapılmamasının hukuki sonuçları; yönetim kurulunun sorumluluğu, azlık pay sahiplerinin genel kurulu toplantıya çağırma hakkı, TTK m. 411/4 kapsamında doğrudan çağrı yetkisi ile TTK m. 412 uyarınca mahkemeye başvuru süreci uygulama ve yargı kararları ışığında incelenmektedir.
+      .read-more-btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 16px;
+        background: linear-gradient(135deg, var(--accent), #294d7c);
+        color: #fff;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .read-more-btn:hover {
+        transform: translateX(2px);
+        box-shadow: 0 8px 24px rgba(31, 58, 95, 0.3);
+      }
 
-</p>
+      .site-footer {
+        margin-top: 10px;
+        background: #ffffff;
+        color: #132238;
+        border-top: 1px solid rgba(19, 34, 56, 0.08);
+      }
+      .footer-inner {
+        padding: 50px 0 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        text-align: center;
+      }
+      .footer-mark img {
+        width: 430px;
+        height: auto;
+        display: block;
+      }
+      .footer-logo-note {
+        color: rgba(19, 34, 56, 0.72);
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .footer-copy {
+        color: rgba(19, 34, 56, 0.78);
+        font-size: 1rem;
+      }
 
-<a href="anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html"
-style="display:inline-block;background:#1f3a5f;color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:600;">
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #1f3a5f;
+        padding: 0;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+      }
 
-Makaleyi Oku →
+      .mobile-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        z-index: 9998;
+      }
+      .mobile-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
 
-</a>
+      .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 82%;
+        max-width: 340px;
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: calc(80px + env(safe-area-inset-top));
+        padding-bottom: env(safe-area-inset-bottom);
+        background: #fff;
+        padding-left: 35px;
+        padding-right: 35px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18);
+        transition: 0.35s ease;
+        z-index: 9999;
+      }
+      .mobile-menu.active {
+        right: 0;
+      }
+      .mobile-menu a {
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: #132238;
+        margin: 18px 0;
+        text-decoration: none;
+      }
 
-</div>
+      .close-menu {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+      }
+
+      @media (max-width: 768px) {
+        .nav {
+          display: none;
+        }
+        .menu-toggle {
+          display: flex;
+        }
+      }
+
+      @media (max-width: 920px) {
+        .articles-grid {
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+        .topbar-inner {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .brand-logo img {
+          width: 180px;
+        }
+        .page-header {
+          padding: 24px 0;
+        }
+        .page-title {
+          font-size: 1.6rem;
+        }
+        .page-subtitle {
+          font-size: 0.95rem;
+        }
+        .articles-container {
+          padding: 24px 0;
+        }
+        .articles-grid {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+        .article-header {
+          padding: 18px;
+        }
+        .article-body {
+          padding: 18px;
+        }
+        .article-title {
+          font-size: 1.15rem;
+        }
+        .article-excerpt {
+          font-size: 0.92rem;
+        }
+        .footer-mark img {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <div class="brand">
+          <a class="brand-logo" href="index.html" aria-label="DLC ana sayfa">
+            <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
+          </a>
+          <div class="brand-text">
+            <div class="brand-name">Av. Dr. İbrahim Nuri Derinpınar</div>
+            <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <nav class="nav" aria-label="Birincil">
+          <a href="index.html#hakkimda">Hakkımda</a>
+          <a href="index.html#egitim">Eğitim</a>
+          <a href="index.html#deneyim">Deneyim</a>
+          <a href="index.html#uzmanlik">Uzmanlık</a>
+          <a href="makaleler.html">Makaleler</a>
+          <a href="index.html#iletisim">Bize Ulaşın</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-menu" id="closeMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <a href="index.html#hakkimda">Hakkımda</a>
+      <a href="index.html#egitim">Eğitim</a>
+      <a href="index.html#deneyim">Deneyim</a>
+      <a href="index.html#uzmanlik">Uzmanlık</a>
+      <a href="makaleler.html">Makaleler</a>
+      <a href="index.html#iletisim">Bize Ulaşın</a>
+    </div>
+
+    <main>
+      <section class="page-header">
+        <div class="wrap">
+          <h1 class="page-title">Makaleler</h1>
+          <p class="page-subtitle">Şirketler hukuku, sözleşmeler hukuku ve hukuki analizlere ilişkin yazılarım</p>
+        </div>
+      </section>
+
+      <section class="articles-container">
+        <div class="wrap">
+          <div class="articles-grid">
+            <article class="article-card">
+              <div class="article-header">
+                <span class="article-category">Şirketler Hukuku</span>
+                <span class="article-meta">📖 8 dk · 25 Temmuz 2026</span>
+              </div>
+              <div class="article-body">
+                <h2 class="article-title">
+                  <a href="anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html">
+                    Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur? Pay Sahiplerinin Başvurabileceği Hukuki Yollar
+                  </a>
+                </h2>
+                <p class="article-excerpt">
+                  6102 sayılı Türk Ticaret Kanunu çerçevesinde olağan genel kurulun süresinde yapılmamasının hukuki sonuçları; yönetim kurulunun sorumluluğu, azlık pay sahiplerinin genel kurulu toplantı talep etme hakkı ve bu haktan yararlanma prosedürlerini detaylı olarak incelemektedir.
+                </p>
+                <div class="article-footer">
+                  <a href="anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html" class="read-more-btn">
+                    Makaleyi Oku →
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-mark">
+          <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
+        </div>
+        <div class="footer-logo-note">Derinpınar Law & Consultancy</div>
+        <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
+      </div>
+    </footer>
+
+    <script>
+      const menu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("mobileOverlay");
+
+      document.getElementById("menuToggle").onclick = function() {
+        menu.classList.add("active");
+        overlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      document.getElementById("closeMenu").onclick = function() {
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      overlay.onclick = function() {
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      document.querySelectorAll(".mobile-menu a").forEach(function(item) {
+        item.onclick = function() {
+          menu.classList.remove("active");
+          overlay.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+      });
+    </script>
+  </body>
+</html>
