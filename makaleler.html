@@ -9,10 +9,94 @@
       gtag('js', new Date());
       gtag('config', 'G-7VG8YJ31K5');
     </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Av. Dr. İbrahim Nuri Derinpınar tarafından yazılan makaleler. Şirketler hukuku, sözleşmeler hukuku, kira hukuku, gayrimenkul hukuku, tahkim, spor hukuku ve e-spor hukuku alanlarında güncel hukuki içerikler." />
+    <meta
+      name="description"
+      content="Av. Dr. İbrahim Nuri Derinpınar tarafından yazılan makaleler. Şirketler hukuku, sözleşmeler hukuku, kira hukuku, gayrimenkul hukuku, tahkim, spor hukuku ve e-spor hukuku alanlarında güncel hukuki değerlendirmeler."
+    />
     <title>Makaleler | Av. Dr. İbrahim Nuri Derinpınar | Derinpınar Law & Consultancy</title>
+    <link rel="canonical" href="https://www.derinpinar.av.tr/makaleler.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:title" content="Makaleler | Av. Dr. İbrahim Nuri Derinpınar" />
+    <meta property="og:description" content="Hukukun farklı alanlarında güncel, pratik ve derinlemesine makaleler." />
+    <meta property="og:url" content="https://www.derinpinar.av.tr/makaleler.html" />
+    <meta property="og:site_name" content="Derinpınar Law & Consultancy" />
+    <meta property="og:image" content="https://www.derinpinar.av.tr/dlc-logo.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Makaleler | Av. Dr. İbrahim Nuri Derinpınar" />
+    <meta name="twitter:description" content="Hukukun farklı alanlarında güncel, pratik ve derinlemesine makaleler." />
+    <meta name="twitter:image" content="https://www.derinpinar.av.tr/dlc-logo.png" />
+
+    <!-- CollectionPage + ItemList Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Makaleler",
+        "url": "https://www.derinpinar.av.tr/makaleler.html",
+        "description": "Hukukun farklı alanlarında güncel, pratik ve derinlemesine makaleler.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Derinpınar Law & Consultancy",
+          "url": "https://www.derinpinar.av.tr/"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://www.derinpinar.av.tr/anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html",
+              "name": "Anonim Şirketlerde Genel Kurul Süresinde Yapılmazsa Ne Olur? Pay Sahiplerinin Başvurabileceği Hukuki Yollar"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://www.derinpinar.av.tr/ticari-sozlesmelerde-cezai-sart-duzenlemeleri-ve-uygulama-sinirlari.html",
+              "name": "Ticari Sözleşmelerde Cezai Şart Düzenlemeleri ve Uygulama Sınırları"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://www.derinpinar.av.tr/is-yeri-kiralarinda-kira-artis-uyusmazliklari-ve-uyarlama-davasi.html",
+              "name": "İşyeri Kiralarında Kira Artış Uyuşmazlıkları ve Uyarlama Davası"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "url": "https://www.derinpinar.av.tr/tapu-iptal-ve-tescil-davalarinda-ispat-rejimi-ve-pratik-riskler.html",
+              "name": "Tapu İptal ve Tescil Davalarında İspat Rejimi ve Pratik Riskler"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "url": "https://www.derinpinar.av.tr/sozlesmelerde-tahkim-sarti-yazimi-ve-gecerlilik-kontrolleri.html",
+              "name": "Sözleşmelerde Tahkim Şartı Yazımı ve Geçerlilik Kontrolleri"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "url": "https://www.derinpinar.av.tr/profesyonel-sporcu-sozlesmelerinde-fesih-ve-tazminat-rejimi.html",
+              "name": "Profesyonel Sporcu Sözleşmelerinde Fesih ve Tazminat Rejimi"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "url": "https://www.derinpinar.av.tr/e-spor-takim-sozlesmelerinde-fikri-mulkiyet-ve-yayin-haklari.html",
+              "name": "E-spor Takım Sözleşmelerinde Fikri Mülkiyet ve Yayın Hakları"
+            }
+          ]
+        }
+      }
+    </script>
+
     <style>
       :root {
         --bg: #f7f8fc;
@@ -164,6 +248,10 @@
         color: #fff;
         box-shadow: 0 12px 28px rgba(31, 58, 95, 0.28);
       }
+      .category-chip:focus-visible {
+        outline: 2px solid var(--accent-2);
+        outline-offset: 2px;
+      }
 
       .articles-grid {
         display: grid;
@@ -186,6 +274,9 @@
         transform: translateY(-8px);
         box-shadow: 0 32px 90px rgba(19, 34, 56, 0.15);
         border-color: rgba(31, 58, 95, 0.2);
+      }
+      .article-card[hidden] {
+        display: none !important;
       }
 
       .article-header {
@@ -211,7 +302,7 @@
       .article-meta {
         color: var(--muted);
         font-size: 0.88rem;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         gap: 6px;
       }
@@ -268,6 +359,25 @@
       .read-more-btn:hover {
         transform: translateX(2px);
         box-shadow: 0 8px 24px rgba(31, 58, 95, 0.3);
+      }
+
+      .results-info {
+        margin-bottom: 18px;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .empty-state {
+        display: none;
+        margin: 10px 0 0;
+        padding: 18px;
+        border: 1px dashed var(--line);
+        border-radius: 16px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.75);
+      }
+      .empty-state.active {
+        display: block;
       }
 
       .site-footer {
@@ -452,7 +562,7 @@
             <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
           </div>
         </div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç" aria-controls="mobileMenu" aria-expanded="false">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="6" x2="21" y2="6"/>
             <line x1="3" y1="12" x2="21" y2="12"/>
@@ -464,15 +574,15 @@
           <a href="index.html#egitim">Eğitim</a>
           <a href="index.html#deneyim">Deneyim</a>
           <a href="index.html#uzmanlik">Uzmanlık</a>
-          <a href="makaleler.html">Makaleler</a>
+          <a href="makaleler.html" aria-current="page">Makaleler</a>
           <a href="index.html#iletisim">Bize Ulaşın</a>
         </nav>
       </div>
     </header>
 
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-      <button class="close-menu" id="closeMenu">
+    <div class="mobile-menu" id="mobileMenu" aria-label="Mobil Menü">
+      <button class="close-menu" id="closeMenu" aria-label="Menüyü Kapat">
         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"/>
           <line x1="6" y1="6" x2="18" y2="18"/>
@@ -482,7 +592,7 @@
       <a href="index.html#egitim">Eğitim</a>
       <a href="index.html#deneyim">Deneyim</a>
       <a href="index.html#uzmanlik">Uzmanlık</a>
-      <a href="makaleler.html">Makaleler</a>
+      <a href="makaleler.html" aria-current="page">Makaleler</a>
       <a href="index.html#iletisim">Bize Ulaşın</a>
     </div>
 
@@ -490,7 +600,9 @@
       <section class="page-header">
         <div class="wrap">
           <h1 class="page-title">Makaleler</h1>
-          <p class="page-subtitle">Şirketler hukuku, sözleşmeler hukuku, kira hukuku, gayrimenkul hukuku, tahkim, spor hukuku ve e-spor hukuku alanlarında güncel hukuki gelişmeler, mevzuat değişiklikleri, yargı kararları ve uygulamaya yönelik değerlendirmeler içeren makaleler.</p>
+          <p class="page-subtitle">
+            Şirketler hukuku, sözleşmeler hukuku, kira hukuku, gayrimenkul hukuku, tahkim, spor hukuku ve e-spor hukuku alanlarında güncel hukuki gelişmeler, mevzuat değişiklikleri ve uygulama odaklı değerlendirmeler.
+          </p>
         </div>
       </section>
 
@@ -499,21 +611,25 @@
           <section class="category-section" aria-label="Uzmanlık Alanları">
             <h2 class="category-heading">Uzmanlık Alanları</h2>
             <div class="category-list" role="list">
-              <a href="#" class="category-chip is-active" data-category="sirketler-hukuku" role="listitem" aria-current="true">Şirketler Hukuku</a>
-              <a href="#" class="category-chip" data-category="sozlesmeler-hukuku" role="listitem">Sözleşmeler Hukuku</a>
-              <a href="#" class="category-chip" data-category="kira-hukuku" role="listitem">Kira Hukuku</a>
-              <a href="#" class="category-chip" data-category="gayrimenkul-hukuku" role="listitem">Gayrimenkul Hukuku</a>
-              <a href="#" class="category-chip" data-category="tahkim" role="listitem">Tahkim</a>
-              <a href="#" class="category-chip" data-category="spor-hukuku" role="listitem">Spor Hukuku</a>
-              <a href="#" class="category-chip" data-category="e-spor-hukuku" role="listitem">E-spor Hukuku</a>
+              <a href="#tum-makaleler" class="category-chip is-active" data-category="all" role="button" aria-pressed="true">Tüm Makaleler</a>
+              <a href="#sirketler-hukuku" class="category-chip" data-category="sirketler-hukuku" role="button" aria-pressed="false">Şirketler Hukuku</a>
+              <a href="#sozlesmeler-hukuku" class="category-chip" data-category="sozlesmeler-hukuku" role="button" aria-pressed="false">Sözleşmeler Hukuku</a>
+              <a href="#kira-hukuku" class="category-chip" data-category="kira-hukuku" role="button" aria-pressed="false">Kira Hukuku</a>
+              <a href="#gayrimenkul-hukuku" class="category-chip" data-category="gayrimenkul-hukuku" role="button" aria-pressed="false">Gayrimenkul Hukuku</a>
+              <a href="#tahkim" class="category-chip" data-category="tahkim" role="button" aria-pressed="false">Tahkim</a>
+              <a href="#spor-hukuku" class="category-chip" data-category="spor-hukuku" role="button" aria-pressed="false">Spor Hukuku</a>
+              <a href="#e-spor-hukuku" class="category-chip" data-category="e-spor-hukuku" role="button" aria-pressed="false">E-spor Hukuku</a>
             </div>
           </section>
 
-          <div class="articles-grid">
+          <p class="results-info" id="resultsInfo" aria-live="polite">7 makale listeleniyor.</p>
+          <p class="empty-state" id="emptyState">Bu kategori altında henüz makale bulunmuyor.</p>
+
+          <div class="articles-grid" id="articlesGrid">
             <article class="article-card" data-category="sirketler-hukuku">
               <div class="article-header">
                 <span class="article-category">Şirketler Hukuku</span>
-                <span class="article-meta">📖 8 dk · 25 Temmuz 2026</span>
+                <span class="article-meta">📖 8 dk · <time datetime="2026-07-25">25 Temmuz 2026</time></span>
               </div>
               <div class="article-body">
                 <h2 class="article-title">
@@ -522,7 +638,7 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  Olağan genel kurulun süresinde yapılmamasının yönetim kurulunun sorumluluğu, azlık hakları ve mahkemeye başvuru mekanizmaları bakımından doğurduğu sonuçlar Türk Ticaret Kanunu kapsamında incelenmektedir.
+                  Olağan genel kurulun süresinde yapılmamasının yönetim kurulunun sorumluluğu, azlık hakları ve mahkemeye başvuru mekanizmaları bakımından doğurduğu sonuçlar Türk Ticaret Hukuku perspektifinden incelenmektedir.
                 </p>
                 <div class="article-footer">
                   <a href="anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html" class="read-more-btn">
@@ -535,7 +651,7 @@
             <article class="article-card" data-category="sozlesmeler-hukuku">
               <div class="article-header">
                 <span class="article-category">Sözleşmeler Hukuku</span>
-                <span class="article-meta">📖 7 dk · 26 Temmuz 2026</span>
+                <span class="article-meta">📖 7 dk · <time datetime="2026-07-24">24 Temmuz 2026</time></span>
               </div>
               <div class="article-body">
                 <h2 class="article-title">
@@ -544,7 +660,7 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  Cezai şart hükümlerinin hazırlanmasında dikkat edilmesi gereken esaslar, fahişlik denetimi, indirim ölçütleri ve Yargıtay yaklaşımı ışığında sözleşme risklerinin nasıl yönetilebileceği değerlendirilmektedir.
+                  Cezai şart hükümlerinin hazırlanmasında dikkat edilmesi gereken esaslar, fahişlik denetimi, indirim ölçütleri ve Yargıtay yaklaşımı ışığında sözleşme risklerinin nasıl azaltılabileceği ele alınmaktadır.
                 </p>
                 <div class="article-footer">
                   <a href="ticari-sozlesmelerde-cezai-sart-duzenlemeleri-ve-uygulama-sinirlari.html" class="read-more-btn">
@@ -557,7 +673,7 @@
             <article class="article-card" data-category="kira-hukuku">
               <div class="article-header">
                 <span class="article-category">Kira Hukuku</span>
-                <span class="article-meta">📖 6 dk · 27 Temmuz 2026</span>
+                <span class="article-meta">📖 6 dk · <time datetime="2026-07-23">23 Temmuz 2026</time></span>
               </div>
               <div class="article-body">
                 <h2 class="article-title">
@@ -566,7 +682,7 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  İşyeri kira sözleşmelerinde artış oranı ihtilafları, emsal kira incelemesi, ekonomik değişim karşısında uyarlama davasının şartları ve mahkeme uygulamasında öne çıkan kriterler ele alınmaktadır.
+                  İşyeri kira sözleşmelerinde artış oranı ihtilafları, emsal kira incelemesi, ekonomik değişim karşısında uyarlama davasının şartları ve mahkeme uygulamasında öne çıkan noktalar değerlendirilmektedir.
                 </p>
                 <div class="article-footer">
                   <a href="is-yeri-kiralarinda-kira-artis-uyusmazliklari-ve-uyarlama-davasi.html" class="read-more-btn">
@@ -579,7 +695,7 @@
             <article class="article-card" data-category="gayrimenkul-hukuku">
               <div class="article-header">
                 <span class="article-category">Gayrimenkul Hukuku</span>
-                <span class="article-meta">📖 9 dk · 28 Temmuz 2026</span>
+                <span class="article-meta">📖 9 dk · <time datetime="2026-07-22">22 Temmuz 2026</time></span>
               </div>
               <div class="article-body">
                 <h2 class="article-title">
@@ -588,7 +704,7 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  Tapu iptal ve tescil davalarında hukuki sebep seçimi, delil stratejisi, iyi niyet tartışmaları ve dava sürecinde yapılan usul hatalarının mülkiyet hakkına etkisi uygulama odaklı olarak açıklanmaktadır.
+                  Tapu iptal ve tescil davalarında hukuki sebep seçimi, delil stratejisi, iyi niyet tartışmaları ve dava sürecinde yapılan usul hatalarının mülkiyet hakkına etkisi uygulama odaklı şekilde incelenmektedir.
                 </p>
                 <div class="article-footer">
                   <a href="tapu-iptal-ve-tescil-davalarinda-ispat-rejimi-ve-pratik-riskler.html" class="read-more-btn">
@@ -601,7 +717,7 @@
             <article class="article-card" data-category="tahkim">
               <div class="article-header">
                 <span class="article-category">Tahkim</span>
-                <span class="article-meta">📖 8 dk · 29 Temmuz 2026</span>
+                <span class="article-meta">📖 8 dk · <time datetime="2026-07-21">21 Temmuz 2026</time></span>
               </div>
               <div class="article-body">
                 <h2 class="article-title">
@@ -610,7 +726,7 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  Tahkim şartının kurum, yer, dil, uygulanacak hukuk ve hakem sayısı bakımından doğru kurgulanmaması halinde doğabilecek yargılama riskleri; geçerlilik ve icra kabiliyeti perspektifinden incelenmektedir.
+                  Tahkim şartının kurum, yer, dil, uygulanacak hukuk ve hakem sayısı bakımından doğru kurgulanmaması halinde doğabilecek yargılama riskleri; geçerlilik ve icra kabiliyeti perspektifinde ele alınmaktadır.
                 </p>
                 <div class="article-footer">
                   <a href="sozlesmelerde-tahkim-sarti-yazimi-ve-gecerlilik-kontrolleri.html" class="read-more-btn">
@@ -623,7 +739,7 @@
             <article class="article-card" data-category="spor-hukuku">
               <div class="article-header">
                 <span class="article-category">Spor Hukuku</span>
-                <span class="article-meta">📖 7 dk · 30 Temmuz 2026</span>
+                <span class="article-meta">📖 7 dk · <time datetime="2026-07-20">20 Temmuz 2026</time></span>
               </div>
               <div class="article-body">
                 <h2 class="article-title">
@@ -632,7 +748,7 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  Profesyonel sporcu sözleşmelerinde haklı nedenli fesih, disiplin ihlalleri, transfer dönemine etkiler ve tazminat hesaplamasında dikkate alınan ölçütler ulusal ve uluslararası spor uyuşmazlık pratiğiyle birlikte değerlendirilmektedir.
+                  Profesyonel sporcu sözleşmelerinde haklı nedenli fesih, disiplin ihlalleri, transfer dönemine etkiler ve tazminat hesaplamasında dikkate alınan ölçütler ulusal ve uluslararası uyuşmazlık pratiğiyle birlikte değerlendirilmektedir.
                 </p>
                 <div class="article-footer">
                   <a href="profesyonel-sporcu-sozlesmelerinde-fesih-ve-tazminat-rejimi.html" class="read-more-btn">
@@ -645,7 +761,7 @@
             <article class="article-card" data-category="e-spor-hukuku">
               <div class="article-header">
                 <span class="article-category">E-spor Hukuku</span>
-                <span class="article-meta">📖 6 dk · 31 Temmuz 2026</span>
+                <span class="article-meta">📖 6 dk · <time datetime="2026-07-19">19 Temmuz 2026</time></span>
               </div>
               <div class="article-body">
                 <h2 class="article-title">
@@ -654,7 +770,7 @@
                   </a>
                 </h2>
                 <p class="article-excerpt">
-                  E-spor ekosisteminde oyuncu-takım ilişkilerinde marka kullanımı, yayın gelirleri, içerik üretimi, veri ve görüntü hakları ile rekabet yasağı hükümlerinin sözleşmesel olarak nasıl dengelenmesi gerektiği ele alınmaktadır.
+                  E-spor ekosisteminde oyuncu-takım ilişkilerinde marka kullanımı, yayın gelirleri, içerik üretimi, veri ve görüntü hakları ile rekabet yasağı hükümlerinin sözleşmesel çerçevesi ele alınmaktadır.
                 </p>
                 <div class="article-footer">
                   <a href="e-spor-takim-sozlesmelerinde-fikri-mulkiyet-ve-yayin-haklari.html" class="read-more-btn">
@@ -679,34 +795,120 @@
     </footer>
 
     <script>
-      const menu = document.getElementById("mobileMenu");
-      const overlay = document.getElementById("mobileOverlay");
+      (function () {
+        const menu = document.getElementById("mobileMenu");
+        const overlay = document.getElementById("mobileOverlay");
+        const menuToggle = document.getElementById("menuToggle");
+        const closeMenu = document.getElementById("closeMenu");
 
-      document.getElementById("menuToggle").onclick = function() {
-        menu.classList.add("active");
-        overlay.classList.add("active");
-        document.body.style.overflow = "hidden";
-      }
+        function openMenu() {
+          menu.classList.add("active");
+          overlay.classList.add("active");
+          document.body.style.overflow = "hidden";
+          menuToggle.setAttribute("aria-expanded", "true");
+        }
 
-      document.getElementById("closeMenu").onclick = function() {
-        menu.classList.remove("active");
-        overlay.classList.remove("active");
-        document.body.style.overflow = "";
-      }
-
-      overlay.onclick = function() {
-        menu.classList.remove("active");
-        overlay.classList.remove("active");
-        document.body.style.overflow = "";
-      }
-
-      document.querySelectorAll(".mobile-menu a").forEach(function(item) {
-        item.onclick = function() {
+        function closeMenuFn() {
           menu.classList.remove("active");
           overlay.classList.remove("active");
           document.body.style.overflow = "";
+          menuToggle.setAttribute("aria-expanded", "false");
         }
-      });
+
+        menuToggle.addEventListener("click", openMenu);
+        closeMenu.addEventListener("click", closeMenuFn);
+        overlay.addEventListener("click", closeMenuFn);
+
+        document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+          item.addEventListener("click", closeMenuFn);
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape" && menu.classList.contains("active")) {
+            closeMenuFn();
+          }
+        });
+
+        const chips = Array.from(document.querySelectorAll(".category-chip"));
+        const cards = Array.from(document.querySelectorAll(".article-card"));
+        const resultsInfo = document.getElementById("resultsInfo");
+        const emptyState = document.getElementById("emptyState");
+
+        function toHash(category) {
+          return category === "all" ? "#tum-makaleler" : "#" + category;
+        }
+
+        function fromHash(hash) {
+          const key = String(hash || "").replace("#", "").trim();
+          if (!key || key === "tum-makaleler") return "all";
+          const exists = chips.some(function (chip) {
+            return chip.dataset.category === key;
+          });
+          return exists ? key : "all";
+        }
+
+        function countVisible() {
+          return cards.reduce(function (total, card) {
+            return total + (!card.hidden ? 1 : 0);
+          }, 0);
+        }
+
+        function updateResultText(visibleCount, categoryLabel) {
+          if (categoryLabel && categoryLabel !== "Tüm Makaleler") {
+            resultsInfo.textContent = visibleCount + " makale listeleniyor · " + categoryLabel;
+          } else {
+            resultsInfo.textContent = visibleCount + " makale listeleniyor.";
+          }
+        }
+
+        function applyFilter(category, options) {
+          const config = options || {};
+          const selectedChip = chips.find(function (chip) {
+            return chip.dataset.category === category;
+          }) || chips[0];
+
+          chips.forEach(function (chip) {
+            const isActive = chip === selectedChip;
+            chip.classList.toggle("is-active", isActive);
+            chip.setAttribute("aria-pressed", String(isActive));
+          });
+
+          cards.forEach(function (card) {
+            const show = category === "all" || card.dataset.category === category;
+            card.hidden = !show;
+          });
+
+          const visibleCount = countVisible();
+          const label = selectedChip.textContent.trim();
+          updateResultText(visibleCount, label);
+
+          emptyState.classList.toggle("active", visibleCount === 0);
+
+          if (config.updateHash !== false) {
+            history.replaceState(null, "", toHash(category));
+          }
+        }
+
+        chips.forEach(function (chip) {
+          chip.addEventListener("click", function (event) {
+            event.preventDefault();
+            applyFilter(chip.dataset.category, { updateHash: true });
+          });
+
+          chip.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              applyFilter(chip.dataset.category, { updateHash: true });
+            }
+          });
+        });
+
+        applyFilter(fromHash(window.location.hash), { updateHash: false });
+
+        window.addEventListener("hashchange", function () {
+          applyFilter(fromHash(window.location.hash), { updateHash: false });
+        });
+      })();
     </script>
   </body>
 </html>
