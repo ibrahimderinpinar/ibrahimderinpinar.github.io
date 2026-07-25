@@ -1,1 +1,632 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7VG8YJ31K5');
+    </script>
 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>E-spor Nedir? Hukuki Açıdan E-spor Kavramı ve Unsurları | Av. Dr. İbrahim Nuri Derinpınar</title>
+    <meta name="description" content="E-sporun hukuki niteliği, temel unsurları, geleneksel spordan farkları ve Türk hukuku açısından değerlendirmesi. E-spor Hukuku serisinin ilk ana rehber makalesi." />
+    <link rel="canonical" href="https://www.derinpinar.av.tr/e-spor-nedir-hukuki-acidan-e-spor-kavrami-ve-unsurlari.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Derinpınar Law & Consultancy" />
+    <meta property="og:title" content="E-spor Nedir? Hukuki Açıdan E-spor Kavramı ve Unsurları" />
+    <meta property="og:description" content="E-sporun hukuki niteliği, temel unsurları, geleneksel spordan farkları ve Türk hukuku açısından değerlendirmesi." />
+    <meta property="og:url" content="https://www.derinpinar.av.tr/e-spor-nedir-hukuki-acidan-e-spor-kavrami-ve-unsurlari.html" />
+    <meta property="og:image" content="https://www.derinpinar.av.tr/dlc-logo.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="E-spor Nedir? Hukuki Açıdan E-spor Kavramı ve Unsurları" />
+    <meta name="twitter:description" content="E-sporun hukuki niteliği, temel unsurları, geleneksel spordan farkları ve Türk hukuku açısından değerlendirmesi." />
+    <meta name="twitter:image" content="https://www.derinpinar.av.tr/dlc-logo.png" />
+
+    <style>
+      :root {
+        --bg: #f7f8fc;
+        --panel: rgba(255, 255, 255, 0.90);
+        --text: #132238;
+        --muted: #59657a;
+        --line: rgba(19, 34, 56, 0.08);
+        --accent: #1f3a5f;
+        --accent-2: #c89b3c;
+        --shadow: 0 24px 70px rgba(19, 34, 56, 0.10);
+        --radius: 28px;
+        --max: 1180px;
+        --article-max: 860px;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.7;
+        background:
+          radial-gradient(circle at top left, rgba(31, 58, 95, 0.08), transparent 26%),
+          radial-gradient(circle at top right, rgba(200, 155, 60, 0.10), transparent 22%),
+          linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+      }
+
+      a { color: inherit; text-decoration: none; }
+      img { display: block; max-width: 100%; }
+      .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--line);
+      }
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 14px 0;
+      }
+      .brand { display: flex; align-items: center; gap: 16px; min-width: 0; }
+      .brand-logo img { width: 230px; height: auto; }
+      .brand-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+      .brand-name { font-weight: 800; font-size: 1.45rem; line-height: 1.1; letter-spacing: 0.01em; }
+      .brand-subtitle { color: var(--muted); font-size: 0.92rem; }
+
+      .nav { display: flex; flex-wrap: wrap; gap: 18px; color: var(--muted); font-size: 1rem; }
+      .nav a:hover, .nav a[aria-current="page"] { color: var(--accent); }
+
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #1f3a5f;
+        padding: 0;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+      }
+      .mobile-overlay {
+        position: fixed; inset: 0; background: rgba(0, 0, 0, 0.35);
+        opacity: 0; visibility: hidden; transition: 0.3s; z-index: 9998;
+      }
+      .mobile-overlay.active { opacity: 1; visibility: visible; }
+      .mobile-menu {
+        position: fixed; top: 0; right: -100%; width: 82%; max-width: 340px; height: 100vh;
+        overflow-y: auto; padding-top: calc(80px + env(safe-area-inset-top)); padding-bottom: env(safe-area-inset-bottom);
+        background: #fff; padding-left: 35px; padding-right: 35px; display: flex; flex-direction: column;
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18); transition: 0.35s ease; z-index: 9999;
+      }
+      .mobile-menu.active { right: 0; }
+      .mobile-menu a { font-size: 1.35rem; font-weight: 600; color: #132238; margin: 18px 0; }
+      .close-menu {
+        position: absolute; top: 22px; right: 22px; background: none; border: none; cursor: pointer; padding: 0;
+      }
+
+      .hero {
+        padding: 38px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+      .hero-inner { max-width: var(--article-max); }
+      .article-kicker {
+        display: inline-flex; align-items: center; gap: 8px;
+        font-size: 0.86rem; font-weight: 700; letter-spacing: 0.06em;
+        color: var(--accent); text-transform: uppercase;
+      }
+      .article-title {
+        margin: 12px 0 0;
+        font-size: clamp(1.95rem, 4vw, 3rem);
+        line-height: 1.18;
+        letter-spacing: -0.02em;
+      }
+      .article-lead {
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.9;
+      }
+
+      .breadcrumbs {
+        padding: 16px 0 8px;
+      }
+      .breadcrumbs ol {
+        list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: 0.94rem;
+      }
+      .breadcrumbs li + li::before { content: "›"; margin-right: 8px; color: rgba(19,34,56,0.45); }
+
+      .content-wrap {
+        display: grid;
+        grid-template-columns: minmax(0, var(--article-max)) minmax(0, 280px);
+        gap: 30px;
+        align-items: start;
+        padding: 12px 0 50px;
+      }
+
+      .meta-card, .toc-card, .panel-card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      .meta-card { padding: 18px; margin-bottom: 18px; }
+      .meta-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+      .meta-item { padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+      .meta-label { display: block; font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+      .meta-value { font-size: 0.96rem; font-weight: 700; color: var(--text); }
+
+      .toc-card {
+        position: sticky;
+        top: 92px;
+        padding: 18px;
+      }
+      .toc-title { margin: 0 0 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
+      .toc-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; }
+      .toc-list a {
+        display: block; font-size: 0.94rem; color: var(--muted);
+        padding: 7px 10px; border-radius: 10px; border: 1px solid transparent;
+      }
+      .toc-list a:hover { color: var(--accent); background: rgba(31,58,95,0.05); }
+      .toc-list a.is-active {
+        color: #fff; background: linear-gradient(135deg, var(--accent), #294d7c); border-color: transparent;
+      }
+
+      .article-main {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 26px;
+      }
+      .article-main h2 {
+        margin: 34px 0 12px;
+        font-size: 1.52rem;
+        line-height: 1.35;
+        scroll-margin-top: 96px;
+      }
+      .article-main h3 {
+        margin: 22px 0 8px;
+        font-size: 1.2rem;
+        line-height: 1.45;
+        scroll-margin-top: 96px;
+      }
+      .article-main p { margin: 0 0 14px; }
+      .article-main ul { margin: 0 0 14px 20px; }
+      .article-main li { margin-bottom: 6px; }
+
+      .faq-section, .advisory-section, .related-section, .next-article, .series-section {
+        margin-top: 26px;
+        padding: 22px;
+      }
+      .section-title { margin: 0 0 12px; font-size: 1.25rem; }
+
+      .faq-item {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 12px 14px;
+        background: #fff;
+        margin-bottom: 10px;
+      }
+      .faq-q { margin: 0 0 6px; font-weight: 700; }
+      .faq-a { margin: 0; color: var(--muted); }
+
+      .cta-btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        padding: 11px 18px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), #294d7c);
+        color: #fff; font-weight: 600;
+      }
+
+      .related-list, .series-list { margin: 0; padding-left: 18px; }
+      .related-list li, .series-list li { margin-bottom: 8px; }
+
+      .site-footer {
+        margin-top: 10px;
+        background: #ffffff;
+        color: #132238;
+        border-top: 1px solid rgba(19, 34, 56, 0.08);
+      }
+      .footer-inner {
+        padding: 50px 0 56px;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: 14px; text-align: center;
+      }
+      .footer-mark img { width: 430px; height: auto; }
+      .footer-logo-note { color: rgba(19, 34, 56, 0.72); font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; }
+      .footer-copy { color: rgba(19, 34, 56, 0.78); font-size: 1rem; }
+
+      @media (max-width: 1024px) {
+        .content-wrap { grid-template-columns: 1fr; }
+        .toc-card { position: static; top: unset; }
+      }
+
+      @media (max-width: 768px) {
+        .nav { display: none; }
+        .menu-toggle { display: flex; }
+      }
+
+      @media (max-width: 640px) {
+        .brand-logo img { width: 180px; }
+        .hero { padding: 24px 0 14px; }
+        .article-main { padding: 18px; border-radius: 22px; }
+        .meta-grid { grid-template-columns: 1fr; }
+        .footer-mark img { width: 300px; }
+      }
+    </style>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"Article",
+        "headline":"E-spor Nedir? Hukuki Açıdan E-spor Kavramı ve Unsurları",
+        "description":"E-sporun hukuki niteliği, temel unsurları, geleneksel spordan farkları ve Türk hukuku açısından değerlendirmesi.",
+        "author":{"@type":"Person","name":"Av. Dr. İbrahim Nuri Derinpınar"},
+        "publisher":{
+          "@type":"Organization",
+          "name":"Derinpınar Law & Consultancy",
+          "logo":{"@type":"ImageObject","url":"https://www.derinpinar.av.tr/dlc-logo.png"}
+        },
+        "mainEntityOfPage":"https://www.derinpinar.av.tr/e-spor-nedir-hukuki-acidan-e-spor-kavrami-ve-unsurlari.html",
+        "articleSection":"E-spor Hukuku",
+        "datePublished":"2026-07-25",
+        "dateModified":"2026-07-25",
+        "identifier":"espor-001"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://www.derinpinar.av.tr/index.html"},
+          {"@type":"ListItem","position":2,"name":"Makaleler","item":"https://www.derinpinar.av.tr/makaleler.html"},
+          {"@type":"ListItem","position":3,"name":"E-spor Nedir? Hukuki Açıdan E-spor Kavramı ve Unsurları","item":"https://www.derinpinar.av.tr/e-spor-nedir-hukuki-acidan-e-spor-kavrami-ve-unsurlari.html"}
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"E-spor ile video oyunu aynı şey midir?",
+            "acceptedAnswer":{"@type":"Answer","text":"Hayır. Her e-spor faaliyeti bir video oyununa dayanır; ancak her video oyunu e-spor değildir."}
+          },
+          {
+            "@type":"Question",
+            "name":"E-spor hukuken spor sayılır mı?",
+            "acceptedAnswer":{"@type":"Answer","text":"Bu konu öğretide ve uygulamada tartışmalıdır. Ayrıntılı değerlendirmeye \"E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar\" başlıklı bir sonraki makalemizde yer verilecektir."}
+          },
+          {
+            "@type":"Question",
+            "name":"Türkiye'de e-spor faaliyetleri düzenleniyor mu?",
+            "acceptedAnswer":{"@type":"Answer","text":"Evet. E-spor faaliyetleri Türkiye E-Spor Federasyonu (TESFED) çatısı altında yürütülmektedir. Ancak e-sporcu sözleşmelerini kapsamlı biçimde düzenleyen özel bir kanun bulunmamaktadır."}
+          },
+          {
+            "@type":"Question",
+            "name":"Profesyonel e-sporcu kimdir?",
+            "acceptedAnswer":{"@type":"Answer","text":"Profesyonel e-sporcu kavramı ve hukuki statüsü, serimizin bir sonraki bölümlerinde ayrıntılı olarak ele alınacaktır."}
+          },
+          {
+            "@type":"Question",
+            "name":"Her rekabetçi oyun e-spor sayılır mı?",
+            "acceptedAnswer":{"@type":"Answer","text":"Hayır. Bir oyunun e-spor olarak değerlendirilebilmesi için yalnızca rekabet içermesi yeterli değildir. Organize yapı, kurallar ve profesyonel faaliyet unsurları birlikte değerlendirilmelidir."}
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <div class="brand">
+          <a class="brand-logo" href="index.html" aria-label="DLC ana sayfa">
+            <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
+          </a>
+          <div class="brand-text">
+            <div class="brand-name">Av. Dr. İbrahim Nuri Derinpınar</div>
+            <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <nav class="nav" aria-label="Birincil">
+          <a href="index.html#hakkimda">Hakkımda</a>
+          <a href="index.html#egitim">Eğitim</a>
+          <a href="index.html#deneyim">Deneyim</a>
+          <a href="index.html#uzmanlik">Uzmanlık</a>
+          <a href="makaleler.html" aria-current="page">Makaleler</a>
+          <a href="index.html#iletisim">Bize Ulaşın</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-menu" id="closeMenu" aria-label="Menüyü kapat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <a href="index.html#hakkimda">Hakkımda</a>
+      <a href="index.html#egitim">Eğitim</a>
+      <a href="index.html#deneyim">Deneyim</a>
+      <a href="index.html#uzmanlik">Uzmanlık</a>
+      <a href="makaleler.html">Makaleler</a>
+      <a href="index.html#iletisim">Bize Ulaşın</a>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-inner">
+          <div class="article-kicker">E-spor Hukuku • Ana Rehber</div>
+          <h1 class="article-title">E-spor Nedir? Hukuki Açıdan E-spor Kavramı ve Unsurları</h1>
+          <p class="article-lead">
+            E-sporun hukuki niteliği, temel unsurları, geleneksel sporlardan farkları ve Türk hukuku açısından değerlendirmesi.
+          </p>
+        </div>
+      </section>
+
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="wrap">
+          <ol>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="makaleler.html">Makaleler</a></li>
+            <li aria-current="page">E-spor Nedir? Hukuki Açıdan E-spor Kavramı ve Unsurları</li>
+          </ol>
+        </div>
+      </nav>
+
+      <section class="wrap content-wrap">
+        <article>
+          <div class="meta-card" data-article-id="espor-001">
+            <div class="meta-grid">
+              <div class="meta-item">
+                <span class="meta-label">Kategori</span>
+                <span class="meta-value">E-spor Hukuku</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Yayın Tarihi</span>
+                <time class="meta-value" datetime="2026-07-25">25 Temmuz 2026</time>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Son Güncelleme</span>
+                <time class="meta-value" datetime="2026-07-25">25 Temmuz 2026</time>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Okuma Süresi</span>
+                <span class="meta-value">8 Dakika</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Görüntülenme</span>
+                <span class="meta-value" id="viewCount" aria-live="polite">—</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Article ID</span>
+                <span class="meta-value">espor-001</span>
+              </div>
+            </div>
+          </div>
+
+          <section class="article-main" id="articleRoot">
+            <h2 id="giris">Giriş</h2>
+            <p>Son yıllarda milyonlarca kişiye ulaşan e-spor, artık yalnızca bir oyun faaliyeti değil; profesyonel oyuncuların, kulüplerin, sponsorluk sözleşmelerinin ve uluslararası turnuvaların yer aldığı büyük bir dijital ekonomi hâline gelmiştir. Bu gelişim, e-sporun hukuki niteliği ve taraflar arasındaki hukuki ilişkiler bakımından yeni tartışmaları da beraberinde getirmiştir.</p>
+            <p>Dijitalleşmenin hız kazanmasıyla birlikte video oyunları yalnızca bireysel eğlence aracı olmaktan çıkmış; milyonlarca oyuncunun, profesyonel kulüplerin, sponsorluk anlaşmalarının ve uluslararası turnuvaların yer aldığı küresel bir sektör hâline gelmiştir. Bu dönüşümün sonucu olarak ortaya çıkan e-spor, günümüzde hem ekonomik hem de hukuki açıdan giderek önem kazanan bir faaliyet alanıdır.</p>
+            <p>Bununla birlikte, e-sporun hukuki niteliği konusunda öğretide ve uygulamada tam bir görüş birliği bulunmamaktadır. Özellikle e-sporun spor sayılıp sayılamayacağı, profesyonel e-sporcuların hukuki statüsü ve e-spor faaliyetlerine uygulanacak hukuk kuralları bakımından çeşitli tartışmalar devam etmektedir. Bu nedenle öncelikle e-spor kavramının doğru şekilde ortaya konulması gerekmektedir.</p>
+
+            <h2 id="e-spor-nedir">E-spor Nedir?</h2>
+            <p>"E-spor" (electronic sports), elektronik ortamda oynanan video oyunlarının belirli kurallar çerçevesinde, bireysel veya takım hâlinde rekabetçi şekilde icra edilmesini ifade eder. Günümüzde profesyonel ligler, uluslararası turnuvalar ve yüksek ödüllü organizasyonlar sayesinde e-spor, küresel ölçekte milyonlarca oyuncu ve izleyiciye ulaşan bağımsız bir sektör hâline gelmiştir.</p>
+            <p>Doktrinde e-spor için tek ve üzerinde uzlaşılmış bir tanım bulunmamaktadır. Bunun temel nedeni, e-sporun gerçekten bir "spor" olarak kabul edilip edilemeyeceğine ilişkin tartışmalardır. Bununla birlikte ortak kabul gören yaklaşım; e-sporun belirli kurallar çerçevesinde yürütülen, rekabet unsurunu içeren ve oyuncuların bilişsel ile fiziksel becerilerini birlikte kullandıkları organize bir faaliyet olduğu yönündedir.</p>
+            <p>Kanaatimizce e-spor; elektronik cihazlar aracılığıyla çevrim içi veya çevrim dışı ortamda gerçekleştirilen, belirli kurallara ve organizasyon yapısına sahip, rekabet esasına dayanan ve oyuncuların bilişsel ile fiziksel becerilerinin belirleyici olduğu video oyunu karşılaşmalarıdır.</p>
+
+            <h2 id="e-sporun-temel-unsurlari">E-sporun Temel Unsurları</h2>
+            <p>Bir faaliyetin e-spor olarak kabul edilebilmesi için yalnızca video oyunu oynanması yeterli değildir. E-sporu diğer dijital oyunlardan ayıran başlıca unsurlar şunlardır:</p>
+            <h3 id="video-oyununun-varligi">1. Video Oyununun Varlığı</h3>
+            <p>Her e-spor faaliyeti bir video oyununa dayanır. Ancak her video oyunu e-spor değildir. Bir oyunun e-spor niteliği kazanabilmesi için rekabetçi yapıya uygun olması ve profesyonel organizasyonlarda oynanabilmesi gerekir. League of Legends, Counter-Strike, Valorant ve EA SPORTS FC gibi oyunlar buna örnek gösterilebilir.</p>
+            <h3 id="elektronik-ortamda-oynanmasi">2. Elektronik Ortamda Oynanması</h3>
+            <p>E-spor faaliyetleri bilgisayar, oyun konsolu, mobil cihaz veya benzeri elektronik sistemler aracılığıyla gerçekleştirilir. Oyuncuların performansı tamamen dijital ortam üzerinden ölçülür ve değerlendirilir.</p>
+            <h3 id="rekabet-unsuru">3. Rekabet Unsuru</h3>
+            <p>E-sporun en önemli özelliklerinden biri rekabettir. Oyuncular veya takımlar, belirli kurallar çerçevesinde birbirlerine karşı mücadele eder ve karşılaşma sonunda kazanan ile kaybeden belirlenir. Rekabet unsurunun bulunmadığı oyunlar, e-spor kapsamında değerlendirilmez.</p>
+            <h3 id="organize-yapi">4. Organize Yapı</h3>
+            <p>Profesyonel e-spor; ligler, turnuvalar ve federasyonlar tarafından organize edilen kurumsal bir yapıya sahiptir. Hakemler, teknik kurallar, disiplin mekanizmaları ve resmi organizasyonlar bu yapının temel parçalarıdır.</p>
+
+            <h2 id="her-video-oyunu-e-spor-mudur">Her Video Oyunu E-spor mudur?</h2>
+            <p>Hayır.</p>
+            <p>Bir video oyununun bulunması tek başına o faaliyeti e-spor hâline getirmez.</p>
+            <p>Örneğin tek kişilik hikâye tabanlı bir oyunun bireysel olarak oynanması e-spor değildir.</p>
+            <p>Buna karşılık, belirli kurallar altında düzenlenen turnuvalarda oynanan rekabetçi oyunlar e-spor kapsamında değerlendirilebilir. Bu nedenle e-spor, video oyunlarının yalnızca belirli bir bölümünü oluşturan profesyonel ve rekabetçi faaliyetleri ifade eder.</p>
+
+            <h2 id="e-sporun-geleneksel-sporlardan-farki">E-sporun Geleneksel Sporlardan Farkı</h2>
+            <p>E-spor ile geleneksel sporlar arasında önemli benzerlikler bulunmaktadır. Her iki alanda da;</p>
+            <ul>
+              <li>rekabet vardır,</li>
+              <li>kurallar uygulanır,</li>
+              <li>profesyonel sporcular yer alır,</li>
+              <li>organizasyonlar düzenlenir,</li>
+              <li>hakem ve disiplin mekanizmaları bulunur.</li>
+            </ul>
+            <p>Ancak e-sporu farklı kılan temel özellik, müsabakaların tamamen elektronik ortamda gerçekleştirilmesi ve oyun üzerindeki teknik kontrolün büyük ölçüde oyun geliştirici şirketlerde bulunmasıdır. Bu durum, e-sporun hukuki yapısını geleneksel sporlardan ayıran en önemli unsurlardan biridir.</p>
+
+            <h2 id="turk-hukuku-acisindan-degerlendirme">Türk Hukuku Açısından Değerlendirme</h2>
+            <p>Türk hukukunda e-sporu kapsamlı biçimde düzenleyen özel bir kanun bulunmamaktadır. Bununla birlikte e-spor faaliyetleri belirli ölçüde Türkiye E-Spor Federasyonu (TESFED) bünyesinde yürütülmekte; profesyonel oyuncular, kulüpler ve organizasyonlar arasındaki hukuki ilişkiler ise çoğunlukla genel hukuk kuralları, sözleşme hükümleri ve ilgili spor düzenlemeleri çerçevesinde değerlendirilmektedir.</p>
+            <p>E-sporun hızla gelişen yapısı karşısında hukuki uyuşmazlıkların artması, bu alandaki özel düzenlemelere duyulan ihtiyacı da giderek artırmaktadır.</p>
+
+            <h2 id="sonuc">Sonuç</h2>
+            <p>E-spor, yalnızca video oyunu oynanmasından ibaret değildir. Belirli kurallar çerçevesinde, organize bir yapı içinde ve rekabet esasına göre yürütülen profesyonel faaliyetler e-spor olarak nitelendirilmektedir. Bu nedenle e-sporun hukuki değerlendirilmesinde; video oyunu, elektronik ortam, rekabet ve organizasyon unsurları birlikte dikkate alınmalıdır.</p>
+            <p>Türk hukukunda e-spora ilişkin kapsamlı bir yasal düzenleme henüz bulunmamakla birlikte, sektörün hızlı gelişimi karşısında bu alandaki hukuki sorunların ve çözüm önerilerinin önemi giderek artmaktadır.</p>
+          </section>
+
+          <section class="faq-section panel-card" id="sss">
+            <h2 class="section-title">Sık Sorulan Sorular</h2>
+            <div class="faq-item">
+              <p class="faq-q">E-spor ile video oyunu aynı şey midir?</p>
+              <p class="faq-a">Hayır. Her e-spor faaliyeti bir video oyununa dayanır; ancak her video oyunu e-spor değildir.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">E-spor hukuken spor sayılır mı?</p>
+              <p class="faq-a">Bu konu öğretide ve uygulamada tartışmalıdır. Ayrıntılı değerlendirmeye "E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar" başlıklı bir sonraki makalemizde yer verilecektir.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">Türkiye'de e-spor faaliyetleri düzenleniyor mu?</p>
+              <p class="faq-a">Evet. E-spor faaliyetleri Türkiye E-Spor Federasyonu (TESFED) çatısı altında yürütülmektedir. Ancak e-sporcu sözleşmelerini kapsamlı biçimde düzenleyen özel bir kanun bulunmamaktadır.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">Profesyonel e-sporcu kimdir?</p>
+              <p class="faq-a">Profesyonel e-sporcu kavramı ve hukuki statüsü, serimizin bir sonraki bölümlerinde ayrıntılı olarak ele alınacaktır.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">Her rekabetçi oyun e-spor sayılır mı?</p>
+              <p class="faq-a">Hayır. Bir oyunun e-spor olarak değerlendirilebilmesi için yalnızca rekabet içermesi yeterli değildir. Organize yapı, kurallar ve profesyonel faaliyet unsurları birlikte değerlendirilmelidir.</p>
+            </div>
+          </section>
+
+          <section class="advisory-section panel-card" id="hukuki-danismanlik">
+            <h2 class="section-title">Hukuki Danışmanlık</h2>
+            <p>E-sporcu sözleşmeleri, profesyonel oyuncu ilişkileri, spor kulüpleri ve e-spor alanındaki hukuki uyuşmazlıklar hakkında hukuki danışmanlık almak için bizimle iletişime geçebilirsiniz.</p>
+            <a class="cta-btn" href="index.html#iletisim">İletişime Geçin →</a>
+          </section>
+
+          <section class="related-section panel-card" id="ilgili-makaleler">
+            <h2 class="section-title">İlgili Makaleler</h2>
+            <ul class="related-list" data-related-mode="manual">
+              <li><a href="e-spor-spor-sayilir-mi-turk-hukuku-ve-uluslararasi-yaklasimlar.html">E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar</a></li>
+              <li><a href="profesyonel-sporcu-sozlesmelerinde-fesih-ve-tazminat-rejimi.html">Profesyonel Sporcu Sözleşmelerinde Fesih ve Tazminat Rejimi</a></li>
+            </ul>
+          </section>
+
+          <section class="series-section panel-card" id="bu-makale-serisi">
+            <h2 class="section-title">Bu Makale Serisi Hakkında</h2>
+            <p>Bu makale, E-spor Hukuku başlıklı akademik yayın serisinin ilk yazısıdır.</p>
+            <p>Seride sırasıyla;</p>
+            <ul class="series-list">
+              <li>e-sporun spor niteliği,</li>
+              <li>profesyonel e-sporcu kavramı,</li>
+              <li>e-sporcu sözleşmeleri,</li>
+              <li>kulüplerin ve oyuncuların hak ve yükümlülükleri,</li>
+              <li>rekabet yasağı,</li>
+              <li>imaj hakları,</li>
+              <li>yayıncılık faaliyetleri,</li>
+              <li>sözleşmenin sona ermesi</li>
+            </ul>
+            <p>gibi konular sistematik biçimde incelenecektir.</p>
+          </section>
+
+          <section class="next-article panel-card" id="bir-sonraki-makale">
+            <h2 class="section-title">Bir Sonraki Makale</h2>
+            <p>➡️ <a href="e-spor-spor-sayilir-mi-turk-hukuku-ve-uluslararasi-yaklasimlar.html"><strong>E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar</strong></a></p>
+          </section>
+        </article>
+
+        <aside aria-label="İçindekiler">
+          <nav class="toc-card" id="tocBox">
+            <h2 class="toc-title">İçindekiler</h2>
+            <ol class="toc-list" id="tocList"></ol>
+          </nav>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-mark">
+          <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
+        </div>
+        <div class="footer-logo-note">Derinpınar Law & Consultancy</div>
+        <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu
+      const menu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("mobileOverlay");
+      document.getElementById("menuToggle").onclick = function () {
+        menu.classList.add("active");
+        overlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+      };
+      document.getElementById("closeMenu").onclick = closeMenu;
+      overlay.onclick = closeMenu;
+      document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+        item.onclick = closeMenu;
+      });
+      function closeMenu() {
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      // View counter (local fallback, future CMS compatible)
+      (function () {
+        const articleId = "espor-001";
+        const key = "dlps:view:" + articleId;
+        const el = document.getElementById("viewCount");
+        let count = Number(localStorage.getItem(key) || "0");
+        count += 1;
+        localStorage.setItem(key, String(count));
+        el.textContent = count.toLocaleString("tr-TR");
+      })();
+
+      // Auto TOC + active section + sticky header offset
+      (function () {
+        const article = document.getElementById("articleRoot");
+        const tocList = document.getElementById("tocList");
+        const headings = [...article.querySelectorAll("h2, h3")];
+
+        headings.forEach((h) => {
+          if (!h.id) return;
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = "#" + h.id;
+          a.textContent = h.textContent;
+          if (h.tagName === "H3") a.style.paddingLeft = "22px";
+
+          a.addEventListener("click", function (e) {
+            e.preventDefault();
+            const topbar = document.querySelector(".topbar");
+            const offset = (topbar ? topbar.offsetHeight : 80) + 12;
+            const y = h.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+            history.replaceState(null, "", "#" + h.id);
+          });
+
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+
+        const links = [...tocList.querySelectorAll("a")];
+        const map = new Map(links.map((a) => [a.getAttribute("href").slice(1), a]));
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              links.forEach((l) => l.classList.remove("is-active"));
+              const link = map.get(entry.target.id);
+              if (link) link.classList.add("is-active");
+            }
+          });
+        }, { rootMargin: "-35% 0px -55% 0px", threshold: 0 });
+
+        headings.forEach((h) => observer.observe(h));
+      })();
+    </script>
+  </body>
+</html>
