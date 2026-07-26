@@ -1120,5 +1120,19 @@
             </div>
         </section>
     </article>
+    <script>
+    // View counter (localStorage-based)
+    (function () {
+        var articleId = "sirketler-001";
+        var key = "dlps:view:" + articleId;
+        var el = document.getElementById("viewsChip");
+        var count = Number(localStorage.getItem(key) || "0");
+        count += 1;
+        localStorage.setItem(key, String(count));
+        if (el) {
+            el.textContent = "👁 " + count.toLocaleString("tr-TR");
+        }
+    })();
+</script>
 </body>
 </html>
