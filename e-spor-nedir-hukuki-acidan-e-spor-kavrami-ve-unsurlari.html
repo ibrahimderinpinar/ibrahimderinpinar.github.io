@@ -117,10 +117,7 @@
         position: absolute; top: 22px; right: 22px; background: none; border: none; cursor: pointer; padding: 0;
       }
 
-      .hero {
-        padding: 38px 0 20px;
-        border-bottom: 1px solid var(--line);
-      }
+      .hero { padding: 38px 0 20px; border-bottom: 1px solid var(--line); }
       .hero-inner { max-width: var(--article-max); }
       .article-kicker {
         display: inline-flex; align-items: center; gap: 8px;
@@ -133,16 +130,9 @@
         line-height: 1.18;
         letter-spacing: -0.02em;
       }
-      .article-lead {
-        margin: 16px 0 0;
-        color: var(--muted);
-        font-size: 1.05rem;
-        line-height: 1.9;
-      }
+      .article-lead { margin: 16px 0 0; color: var(--muted); font-size: 1.05rem; line-height: 1.9; }
 
-      .breadcrumbs {
-        padding: 16px 0 8px;
-      }
+      .breadcrumbs { padding: 16px 0 8px; }
       .breadcrumbs ol {
         list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: 0.94rem;
       }
@@ -169,11 +159,7 @@
       .meta-label { display: block; font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
       .meta-value { font-size: 0.96rem; font-weight: 700; color: var(--text); }
 
-      .toc-card {
-        position: sticky;
-        top: 92px;
-        padding: 18px;
-      }
+      .toc-card { position: sticky; top: 92px; padding: 18px; }
       .toc-title { margin: 0 0 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
       .toc-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; }
       .toc-list a {
@@ -185,6 +171,8 @@
         color: #fff; background: linear-gradient(135deg, var(--accent), #294d7c); border-color: transparent;
       }
 
+      .toc-mobile { display: none; position: static; margin: 0 0 18px; }
+
       .article-main {
         background: var(--panel);
         border: 1px solid var(--line);
@@ -192,18 +180,8 @@
         box-shadow: var(--shadow);
         padding: 26px;
       }
-      .article-main h2 {
-        margin: 34px 0 12px;
-        font-size: 1.52rem;
-        line-height: 1.35;
-        scroll-margin-top: 96px;
-      }
-      .article-main h3 {
-        margin: 22px 0 8px;
-        font-size: 1.2rem;
-        line-height: 1.45;
-        scroll-margin-top: 96px;
-      }
+      .article-main h2 { margin: 34px 0 12px; font-size: 1.52rem; line-height: 1.35; scroll-margin-top: 96px; }
+      .article-main h3 { margin: 22px 0 8px; font-size: 1.2rem; line-height: 1.45; scroll-margin-top: 96px; }
       .article-main p { margin: 0 0 14px; }
       .article-main ul { margin: 0 0 14px 20px; }
       .article-main li { margin-bottom: 6px; }
@@ -226,8 +204,7 @@
 
       .cta-btn {
         display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-        padding: 11px 18px;
-        border-radius: 999px;
+        padding: 11px 18px; border-radius: 999px;
         background: linear-gradient(135deg, var(--accent), #294d7c);
         color: #fff; font-weight: 600;
       }
@@ -252,8 +229,8 @@
 
       @media (max-width: 1024px) {
         .content-wrap { grid-template-columns: 1fr; }
-        .content-wrap aside { order: -1; }
-        .toc-card { position: static; top: unset; margin-bottom: 14px; }
+        .toc-desktop { display: none; }
+        .toc-mobile { display: block; }
       }
 
       @media (max-width: 768px) {
@@ -397,42 +374,23 @@
       </nav>
 
       <section class="wrap content-wrap">
-        <aside aria-label="İçindekiler">
-          <nav class="toc-card" id="tocBox">
-            <h2 class="toc-title">İçindekiler</h2>
-            <ol class="toc-list" id="tocList"></ol>
-          </nav>
-        </aside>
-
         <article>
           <div class="meta-card" data-article-id="espor-001">
             <div class="meta-grid">
-              <div class="meta-item">
-                <span class="meta-label">Kategori</span>
-                <span class="meta-value">E-spor Hukuku</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Yayın Tarihi</span>
-                <time class="meta-value" datetime="2026-07-25">25 Temmuz 2026</time>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Son Güncelleme</span>
-                <time class="meta-value" datetime="2026-07-25">25 Temmuz 2026</time>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Okuma Süresi</span>
-                <span class="meta-value">8 Dakika</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Görüntülenme</span>
-                <span class="meta-value" id="viewCount" aria-live="polite">—</span>
-              </div>
-              <div class="meta-item">
-                <span class="meta-label">Article ID</span>
-                <span class="meta-value">espor-001</span>
-              </div>
+              <div class="meta-item"><span class="meta-label">Kategori</span><span class="meta-value">E-spor Hukuku</span></div>
+              <div class="meta-item"><span class="meta-label">Yayın Tarihi</span><time class="meta-value" datetime="2026-07-25">25 Temmuz 2026</time></div>
+              <div class="meta-item"><span class="meta-label">Son Güncelleme</span><time class="meta-value" datetime="2026-07-25">25 Temmuz 2026</time></div>
+              <div class="meta-item"><span class="meta-label">Okuma Süresi</span><span class="meta-value">8 Dakika</span></div>
+              <div class="meta-item"><span class="meta-label">Görüntülenme</span><span class="meta-value" id="viewCount" aria-live="polite">—</span></div>
+              <div class="meta-item"><span class="meta-label">Article ID</span><span class="meta-value">espor-001</span></div>
             </div>
           </div>
+
+          <!-- Mobile TOC: Meta'dan hemen sonra -->
+          <nav class="toc-card toc-mobile" aria-label="İçindekiler (Mobil)">
+            <h2 class="toc-title">İçindekiler</h2>
+            <ol class="toc-list" id="tocListMobile"></ol>
+          </nav>
 
           <section class="article-main" id="articleRoot">
             <h2 id="giris">Giriş</h2>
@@ -484,26 +442,11 @@
 
           <section class="faq-section panel-card" id="sss">
             <h2 class="section-title">Sık Sorulan Sorular</h2>
-            <div class="faq-item">
-              <p class="faq-q">E-spor ile video oyunu aynı şey midir?</p>
-              <p class="faq-a">Hayır. Her e-spor faaliyeti bir video oyununa dayanır; ancak her video oyunu e-spor değildir.</p>
-            </div>
-            <div class="faq-item">
-              <p class="faq-q">E-spor hukuken spor sayılır mı?</p>
-              <p class="faq-a">Bu konu öğretide ve uygulamada tartışmalıdır. Ayrıntılı değerlendirmeye "E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar" başlıklı bir sonraki makalemizde yer verilecektir.</p>
-            </div>
-            <div class="faq-item">
-              <p class="faq-q">Türkiye'de e-spor faaliyetleri düzenleniyor mu?</p>
-              <p class="faq-a">Evet. E-spor faaliyetleri Türkiye E-Spor Federasyonu (TESFED) çatısı altında yürütülmektedir. Ancak e-sporcu sözleşmelerini kapsamlı biçimde düzenleyen özel bir kanun bulunmamaktadır.</p>
-            </div>
-            <div class="faq-item">
-              <p class="faq-q">Profesyonel e-sporcu kimdir?</p>
-              <p class="faq-a">Profesyonel e-sporcu kavramı ve hukuki statüsü, serimizin bir sonraki bölümlerinde ayrıntılı olarak ele alınacaktır.</p>
-            </div>
-            <div class="faq-item">
-              <p class="faq-q">Her rekabetçi oyun e-spor sayılır mı?</p>
-              <p class="faq-a">Hayır. Bir oyunun e-spor olarak değerlendirilebilmesi için yalnızca rekabet içermesi yeterli değildir. Organize yapı, kurallar ve profesyonel faaliyet unsurları birlikte değerlendirilmelidir.</p>
-            </div>
+            <div class="faq-item"><p class="faq-q">E-spor ile video oyunu aynı şey midir?</p><p class="faq-a">Hayır. Her e-spor faaliyeti bir video oyununa dayanır; ancak her video oyunu e-spor değildir.</p></div>
+            <div class="faq-item"><p class="faq-q">E-spor hukuken spor sayılır mı?</p><p class="faq-a">Bu konu öğretide ve uygulamada tartışmalıdır. Ayrıntılı değerlendirmeye "E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar" başlıklı bir sonraki makalemizde yer verilecektir.</p></div>
+            <div class="faq-item"><p class="faq-q">Türkiye'de e-spor faaliyetleri düzenleniyor mu?</p><p class="faq-a">Evet. E-spor faaliyetleri Türkiye E-Spor Federasyonu (TESFED) çatısı altında yürütülmektedir. Ancak e-sporcu sözleşmelerini kapsamlı biçimde düzenleyen özel bir kanun bulunmamaktadır.</p></div>
+            <div class="faq-item"><p class="faq-q">Profesyonel e-sporcu kimdir?</p><p class="faq-a">Profesyonel e-sporcu kavramı ve hukuki statüsü, serimizin bir sonraki bölümlerinde ayrıntılı olarak ele alınacaktır.</p></div>
+            <div class="faq-item"><p class="faq-q">Her rekabetçi oyun e-spor sayılır mı?</p><p class="faq-a">Hayır. Bir oyunun e-spor olarak değerlendirilebilmesi için yalnızca rekabet içermesi yeterli değildir. Organize yapı, kurallar ve profesyonel faaliyet unsurları birlikte değerlendirilmelidir.</p></div>
           </section>
 
           <section class="advisory-section panel-card" id="hukuki-danismanlik">
@@ -542,14 +485,19 @@
             <p>➡️ <a href="e-spor-spor-sayilir-mi-turk-hukuku-ve-uluslararasi-yaklasimlar.html"><strong>E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar</strong></a></p>
           </section>
         </article>
+
+        <aside aria-label="İçindekiler">
+          <nav class="toc-card toc-desktop" id="tocBox">
+            <h2 class="toc-title">İçindekiler</h2>
+            <ol class="toc-list" id="tocList"></ol>
+          </nav>
+        </aside>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <div class="footer-mark">
-          <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
-        </div>
+        <div class="footer-mark"><img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" /></div>
         <div class="footer-logo-note">Derinpınar Law & Consultancy</div>
         <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
       </div>
@@ -566,16 +514,14 @@
       };
       document.getElementById("closeMenu").onclick = closeMenu;
       overlay.onclick = closeMenu;
-      document.querySelectorAll(".mobile-menu a").forEach(function (item) {
-        item.onclick = closeMenu;
-      });
+      document.querySelectorAll(".mobile-menu a").forEach(function (item) { item.onclick = closeMenu; });
       function closeMenu() {
         menu.classList.remove("active");
         overlay.classList.remove("active");
         document.body.style.overflow = "";
       }
 
-      // View counter (local fallback, future CMS compatible)
+      // View counter
       (function () {
         const articleId = "espor-001";
         const key = "dlps:view:" + articleId;
@@ -586,14 +532,14 @@
         el.textContent = count.toLocaleString("tr-TR");
       })();
 
-      // Auto TOC + active section + sticky header offset
+      // TOC (desktop + mobile)
       (function () {
         const article = document.getElementById("articleRoot");
         const tocList = document.getElementById("tocList");
+        const tocListMobile = document.getElementById("tocListMobile");
         const headings = [...article.querySelectorAll("h2, h3")];
 
-        headings.forEach((h) => {
-          if (!h.id) return;
+        function createTocItem(h) {
           const li = document.createElement("li");
           const a = document.createElement("a");
           a.href = "#" + h.id;
@@ -610,18 +556,33 @@
           });
 
           li.appendChild(a);
-          tocList.appendChild(li);
+          return li;
+        }
+
+        headings.forEach((h) => {
+          if (!h.id) return;
+          if (tocList) tocList.appendChild(createTocItem(h));
+          if (tocListMobile) tocListMobile.appendChild(createTocItem(h));
         });
 
-        const links = [...tocList.querySelectorAll("a")];
-        const map = new Map(links.map((a) => [a.getAttribute("href").slice(1), a]));
+        const allLinks = [
+          ...document.querySelectorAll("#tocList a"),
+          ...document.querySelectorAll("#tocListMobile a")
+        ];
+
+        const linkMap = new Map();
+        allLinks.forEach((a) => {
+          const id = a.getAttribute("href").slice(1);
+          if (!linkMap.has(id)) linkMap.set(id, []);
+          linkMap.get(id).push(a);
+        });
 
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              links.forEach((l) => l.classList.remove("is-active"));
-              const link = map.get(entry.target.id);
-              if (link) link.classList.add("is-active");
+              allLinks.forEach((l) => l.classList.remove("is-active"));
+              const matched = linkMap.get(entry.target.id) || [];
+              matched.forEach((l) => l.classList.add("is-active"));
             }
           });
         }, { rootMargin: "-35% 0px -55% 0px", threshold: 0 });
