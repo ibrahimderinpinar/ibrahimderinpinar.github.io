@@ -251,26 +251,11 @@
       .footer-copy { color: rgba(19, 34, 56, 0.78); font-size: 1rem; }
 
       @media (max-width: 1024px) {
-        .content-wrap {
-        grid-template-columns: 1fr;
-    }
-
-        .content-wrap aside {
-        order: -1; /* İçindekiler en üste */
-    }
-
-        .toc-card {
-        position: static;
-        top: unset;
-        margin-bottom: 14px;
-    }
-    }
-      
-      @media (max-width: 1024px) {
         .content-wrap { grid-template-columns: 1fr; }
-        .toc-card { position: static; top: unset; }
+        .content-wrap aside { order: -1; }
+        .toc-card { position: static; top: unset; margin-bottom: 14px; }
       }
-      
+
       @media (max-width: 768px) {
         .nav { display: none; }
         .menu-toggle { display: flex; }
@@ -412,16 +397,14 @@
       </nav>
 
       <section class="wrap content-wrap">
-      <aside aria-label="İçindekiler">
-      <nav class="toc-card" id="tocBox">
-      <h2 class="toc-title">İçindekiler</h2>
-      <ol class="toc-list" id="tocList"></ol>
-      </nav>
-    </aside>
-    <article>
-    <!-- Meta + Makale + diğer bölümler -->
-    </article>
-    </section>   
+        <aside aria-label="İçindekiler">
+          <nav class="toc-card" id="tocBox">
+            <h2 class="toc-title">İçindekiler</h2>
+            <ol class="toc-list" id="tocList"></ol>
+          </nav>
+        </aside>
+
+        <article>
           <div class="meta-card" data-article-id="espor-001">
             <div class="meta-grid">
               <div class="meta-item">
@@ -559,13 +542,6 @@
             <p>➡️ <a href="e-spor-spor-sayilir-mi-turk-hukuku-ve-uluslararasi-yaklasimlar.html"><strong>E-spor Spor Sayılır mı? Türk Hukuku ve Uluslararası Yaklaşımlar</strong></a></p>
           </section>
         </article>
-
-        <aside aria-label="İçindekiler">
-          <nav class="toc-card" id="tocBox">
-            <h2 class="toc-title">İçindekiler</h2>
-            <ol class="toc-list" id="tocList"></ol>
-          </nav>
-        </aside>
       </section>
     </main>
 
