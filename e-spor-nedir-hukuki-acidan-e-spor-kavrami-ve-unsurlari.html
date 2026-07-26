@@ -251,10 +251,26 @@
       .footer-copy { color: rgba(19, 34, 56, 0.78); font-size: 1rem; }
 
       @media (max-width: 1024px) {
+        .content-wrap {
+        grid-template-columns: 1fr;
+    }
+
+        .content-wrap aside {
+        order: -1; /* İçindekiler en üste */
+    }
+
+        .toc-card {
+        position: static;
+        top: unset;
+        margin-bottom: 14px;
+    }
+    }
+      
+      @media (max-width: 1024px) {
         .content-wrap { grid-template-columns: 1fr; }
         .toc-card { position: static; top: unset; }
       }
-
+      
       @media (max-width: 768px) {
         .nav { display: none; }
         .menu-toggle { display: flex; }
@@ -396,7 +412,16 @@
       </nav>
 
       <section class="wrap content-wrap">
-        <article>
+      <aside aria-label="İçindekiler">
+      <nav class="toc-card" id="tocBox">
+      <h2 class="toc-title">İçindekiler</h2>
+      <ol class="toc-list" id="tocList"></ol>
+      </nav>
+    </aside>
+    <article>
+    <!-- Meta + Makale + diğer bölümler -->
+    </article>
+    </section>   
           <div class="meta-card" data-article-id="espor-001">
             <div class="meta-grid">
               <div class="meta-item">
