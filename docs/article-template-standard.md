@@ -107,8 +107,12 @@ Master şablondaki görüntülenme yapısı zorunludur:
 - Meta/chip düzeniyle görsel uyumlu olmalı
 - Aynı satır sistemi içinde yer almalı
 - Responsive düzeni bozmamalı
-- Mevcut istemci tarafı sayaç yaklaşımı (localStorage tabanlı) korunmalı
-- Her makale için benzersiz `articleId` / key kullanılmalı
+- Sayaç **Firebase Realtime Database REST API** üzerinden atomik olarak artırılmalı (`{".sv": {"increment": 1}}`)
+- `FIREBASE_DB_URL` sabiti `https://ibrahimderinpinar-default-rtdb.firebaseio.com` olarak tanımlanmış; tüm makalelerde aynı değer kullanılmalı
+- Her makale için benzersiz `articleId` kullanılmalı (örn. `espor-001`, `sirketler-001`)
+- Firebase endpoint: `PATCH /views/{articleId}.json` ile count değeri sunucu tarafında atomik olarak artırılır ve yanıtta yeni değer döner
+- Hata durumunda chip `"👁 —"` göstermeli; sayfa yüklemesini veya SEO'yu engellememeli
+- Kurulum ve migration için bkz. [`docs/firebase-setup.md`](firebase-setup.md)
 
 ---
 
