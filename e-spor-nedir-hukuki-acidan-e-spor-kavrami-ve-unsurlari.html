@@ -1418,17 +1418,29 @@
             });
         })();
 
-        // View counter (localStorage-based)
+        // View counter (Firebase Realtime Database — persistent, atomic, cross-device)
+        // Setup: https://github.com/ibrahimderinpinar/ibrahimderinpinar.github.io/blob/master/docs/firebase-setup.md
         (function () {
+            var FIREBASE_DB_URL = "https://ibrahimderinpinar-default-rtdb.firebaseio.com";
             var articleId = "espor-001";
-            var key = "dlps:view:" + articleId;
             var el = document.getElementById("viewsChip");
-            var count = Number(localStorage.getItem(key) || "0");
-            count += 1;
-            localStorage.setItem(key, String(count));
-            if (el) {
-                el.textContent = "👁 " + count.toLocaleString("tr-TR");
-            }
+
+            fetch(FIREBASE_DB_URL + "/views/" + articleId + ".json", {
+                method: "PATCH",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ count: { ".sv": { "increment": 1 } } })
+            })
+            .then(function (r) {
+                if (!r.ok) throw new Error("status " + r.status);
+                return r.json();
+            })
+            .then(function (data) {
+                var count = (data && typeof data.count === "number") ? data.count : 0;
+                if (el) el.textContent = "👁 " + count.toLocaleString("tr-TR");
+            })
+            .catch(function () {
+                if (el) el.textContent = "👁 —";
+            });
         })();
     </script>
 </body>
