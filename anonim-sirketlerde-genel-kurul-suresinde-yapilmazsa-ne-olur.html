@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anonim Şirketlerde Olağan Genel Kurul Süresinde Yapılmazsa Ne Olur? | Derinpınar Hukuk</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7VG8YJ31K5');
+    </script>
+
+    <title>Anonim Şirketlerde Olağan Genel Kurul Süresinde Yapılmazsa Ne Olur? | Av. Dr. İbrahim Nuri Derinpınar</title>
+    <meta name="description" content="Olağan genel kurulun süresinde yapılmaması şirketin sona ermesine yol açmaz. Ancak yönetim kurulunun sorumluluğu, azlık pay sahiplerinin hakları ve mahkemeye başvuru yolları bakımından önemli hukuki sonuçlar doğurabilir." />
+    <link rel="canonical" href="https://www.derinpinar.av.tr/anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Derinpınar Law & Consultancy" />
+    <meta property="og:title" content="Anonim Şirketlerde Olağan Genel Kurul Süresinde Yapılmazsa Ne Olur?" />
+    <meta property="og:description" content="Olağan genel kurulun süresinde yapılmaması şirketin sona ermesine yol açmaz. Ancak yönetim kurulunun sorumluluğu, azlık pay sahiplerinin hakları ve mahkemeye başvuru yolları bakımından önemli hukuki sonuçlar doğurabilir." />
+    <meta property="og:url" content="https://www.derinpinar.av.tr/anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html" />
+    <meta property="og:image" content="https://www.derinpinar.av.tr/dlc-logo.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anonim Şirketlerde Olağan Genel Kurul Süresinde Yapılmazsa Ne Olur?" />
+    <meta name="twitter:description" content="Olağan genel kurulun süresinde yapılmaması şirketin sona ermesine yol açmaz. Ancak yönetim kurulunun sorumluluğu, azlık pay sahiplerinin hakları ve mahkemeye başvuru yolları bakımından önemli hukuki sonuçlar doğurabilir." />
+    <meta name="twitter:image" content="https://www.derinpinar.av.tr/dlc-logo.png" />
+
     <style>
         :root {
             --primary: #1f2d47;
@@ -45,6 +73,152 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============================================
+           NAVBAR
+           ============================================ */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .topbar-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            min-width: 0;
+            text-decoration: none;
+        }
+
+        .brand-logo img {
+            width: 200px;
+            height: auto;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            min-width: 0;
+        }
+
+        .brand-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1.2;
+            color: var(--primary);
+        }
+
+        .brand-subtitle {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+            border-bottom: none;
+        }
+
+        .nav a:hover,
+        .nav a[aria-current="page"] {
+            color: var(--primary);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--primary);
+            padding: 0;
+            width: 42px;
+            height: 42px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            z-index: 9998;
+        }
+
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 82%;
+            max-width: 340px;
+            height: 100vh;
+            overflow-y: auto;
+            padding-top: calc(80px + env(safe-area-inset-top));
+            padding-bottom: env(safe-area-inset-bottom);
+            background: var(--bg-white);
+            padding-left: 35px;
+            padding-right: 35px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18);
+            transition: 0.35s ease;
+            z-index: 9999;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 16px 0;
+            text-decoration: none;
+            border-bottom: none;
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 22px;
+            right: 22px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            color: var(--primary);
         }
 
         /* ============================================
@@ -467,6 +641,45 @@
         }
 
         /* ============================================
+           FOOTER
+           ============================================ */
+        .site-footer {
+            margin-top: 60px;
+            background: var(--bg-white);
+            color: var(--primary);
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            text-align: center;
+        }
+
+        .footer-mark img {
+            width: 380px;
+            height: auto;
+        }
+
+        .footer-logo-note {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* ============================================
            RESPONSIVE
            ============================================ */
         @media (max-width: 768px) {
@@ -584,6 +797,18 @@
             .section-text {
                 text-align: left;
             }
+
+            .nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .footer-mark img {
+                width: 260px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -700,12 +925,30 @@
             section {
                 margin-bottom: 40px;
             }
+
+            .topbar-inner {
+                padding: 10px 16px;
+            }
+
+            .brand-logo img {
+                width: 160px;
+            }
+
+            .brand-name {
+                font-size: 0.95rem;
+            }
+
+            .footer-mark img {
+                width: 200px;
+            }
         }
 
         /* ============================================
            PRINT STYLES
            ============================================ */
         @media print {
+            .topbar, .mobile-overlay, .mobile-menu { display: none; }
+
             .hero {
                 background: var(--primary);
                 color: var(--bg-white);
@@ -738,8 +981,118 @@
             }
         }
     </style>
+
+    <!-- JSON-LD: Article -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Anonim Şirketlerde Olağan Genel Kurul Süresinde Yapılmazsa Ne Olur?",
+        "description": "Olağan genel kurulun süresinde yapılmaması şirketin sona ermesine yol açmaz. Ancak yönetim kurulunun sorumluluğu, azlık pay sahiplerinin hakları ve mahkemeye başvuru yolları bakımından önemli hukuki sonuçlar doğurabilir.",
+        "author": {"@type": "Person", "name": "Av. Dr. İbrahim Nuri Derinpınar"},
+        "publisher": {
+            "@type": "Organization",
+            "name": "Derinpınar Law & Consultancy",
+            "logo": {"@type": "ImageObject", "url": "https://www.derinpinar.av.tr/dlc-logo.png"}
+        },
+        "mainEntityOfPage": "https://www.derinpinar.av.tr/anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html",
+        "articleSection": "Şirketler Hukuku",
+        "datePublished": "2026-07-25",
+        "dateModified": "2026-07-25",
+        "identifier": "sirketler-001"
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.derinpinar.av.tr/index.html"},
+            {"@type": "ListItem", "position": 2, "name": "Makaleler", "item": "https://www.derinpinar.av.tr/makaleler.html"},
+            {"@type": "ListItem", "position": 3, "name": "Anonim Şirketlerde Olağan Genel Kurul Süresinde Yapılmazsa Ne Olur?", "item": "https://www.derinpinar.av.tr/anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html"}
+        ]
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Genel kurulun hiç yapılmaması durumunda şirket feshine zorunlu olur mu?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Genel kurulun yapılmaması şirketin kendiliğinden sona ermesine veya ticaret sicilinden silinmesine yol açmaz. Ancak yönetim kurulunun kanundan doğan yükümlülüğünü ihlal etmiş olduğu sonucuna varılır."}
+            },
+            {
+                "@type": "Question",
+                "name": "Yönetim kurulu üyeleri hangi durumlarda şahsen sorumlu olur?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Genel kurulun yapılmaması nedeniyle şirket veya pay sahipleri zarara uğradığında, yönetim kurulu üyeleri Türk Ticaret Kanunu'nun 553. maddesi uyarınca şahsen sorumlu olabilirler."}
+            },
+            {
+                "@type": "Question",
+                "name": "Azlık pay sahipleri hukuk mahkemesine mi, ticaret mahkemesine mi başvurmalıdır?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Azlık pay sahipleri Asliye Ticaret Mahkemesine başvurmalıdırlar. Çünkü ticaret uyuşmazlıkları ticaret mahkemelerinin görev alanına girmektedir."}
+            },
+            {
+                "@type": "Question",
+                "name": "Noter ihtarnamesi olmadan gönderilen talep geçerli sayılır mı?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Kanuni olarak noter zorunludur. TTK m.411/3'e göre çağrı talebinin noter aracılığıyla yapılması şekli şarttır. Noter olmaksızın yapılan talep kanun açısından geçerli değildir."}
+            },
+            {
+                "@type": "Question",
+                "name": "45 gün süresi içinde yönetim kurulu çağrı yapmazsa ne olur?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Yönetim kurulu talebi kabul ettiği hâlde 45 gün içinde çağrı yapmazsa, azlık pay sahipleri genel kurulu kendileri çağırabilir. Mahkemeye başvuru gerekmez."}
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
+    <!-- NAVBAR -->
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="index.html" aria-label="DLC ana sayfa">
+                <div class="brand-logo">
+                    <img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" />
+                </div>
+                <div class="brand-text">
+                    <div class="brand-name">Av. Dr. İbrahim Nuri Derinpınar</div>
+                    <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+            <nav class="nav" aria-label="Birincil">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="index.html#hakkimda">Hakkımda</a>
+                <a href="index.html#egitim">Eğitim</a>
+                <a href="index.html#deneyim">Deneyim</a>
+                <a href="index.html#uzmanlik">Uzmanlık</a>
+                <a href="makaleler.html" aria-current="page">Makaleler</a>
+                <a href="index.html#iletisim">Bize Ulaşın</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu" aria-label="Menüyü kapat">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="index.html#hakkimda">Hakkımda</a>
+        <a href="index.html#egitim">Eğitim</a>
+        <a href="index.html#deneyim">Deneyim</a>
+        <a href="index.html#uzmanlik">Uzmanlık</a>
+        <a href="makaleler.html">Makaleler</a>
+        <a href="index.html#iletisim">Bize Ulaşın</a>
+    </div>
+
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-grid">
@@ -1120,7 +1473,41 @@
             </div>
         </section>
     </article>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-mark"><img src="dlc-logo.png" alt="DLC Derinpınar Law & Consultancy logosu" /></div>
+            <div class="footer-logo-note">Derinpınar Law & Consultancy</div>
+            <div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
+        </div>
+    </footer>
+
     <script>
+        // Mobile menu
+        (function () {
+            var menu = document.getElementById("mobileMenu");
+            var overlay = document.getElementById("mobileOverlay");
+
+            document.getElementById("menuToggle").onclick = function () {
+                menu.classList.add("active");
+                overlay.classList.add("active");
+                document.body.style.overflow = "hidden";
+            };
+
+            function closeMenu() {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+                document.body.style.overflow = "";
+            }
+
+            document.getElementById("closeMenu").onclick = closeMenu;
+            overlay.onclick = closeMenu;
+            document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+                item.onclick = closeMenu;
+            });
+        })();
+
     // View counter (Firebase Realtime Database — persistent, atomic, cross-device)
     // Setup: https://github.com/ibrahimderinpinar/ibrahimderinpinar.github.io/blob/master/docs/firebase-setup.md
     (function () {
@@ -1145,6 +1532,6 @@
             if (el) el.textContent = "👁 —";
         });
     })();
-</script>
+    </script>
 </body>
 </html>
