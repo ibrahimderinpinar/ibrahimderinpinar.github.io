@@ -980,7 +980,86 @@
                 page-break-inside: avoid;
             }
         }
-    </style>
+    
+        /* ============================================
+           GLOBAL TOP BAR
+           ============================================ */
+        .global-top-bar {
+            background: #1f3a5f;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .global-top-bar-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 7px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .gtb-left,
+        .gtb-right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-shrink: 0;
+        }
+        .gtb-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: color 0.18s ease;
+        }
+        .gtb-contact:hover { color: #c89b3c; }
+        .gtb-contact svg { flex-shrink: 0; }
+        .gtb-contact-label { display: inline; }
+        .gtb-sep {
+            width: 1px;
+            height: 14px;
+            background: rgba(255, 255, 255, 0.2);
+            flex-shrink: 0;
+        }
+        .gtb-lang {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.8rem;
+        }
+        .gtb-lang-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.18s ease;
+            letter-spacing: 0.05em;
+        }
+        .gtb-lang-link:hover,
+        .gtb-lang-link.gtb-lang-active {
+            color: #c89b3c;
+            font-weight: 600;
+        }
+        .gtb-lang-div {
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.72rem;
+            user-select: none;
+        }
+        .gtb-search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            align-items: center;
+            padding: 0;
+            transition: color 0.18s ease;
+        }
+        .gtb-search-btn:hover { color: #c89b3c; }
+        @media (max-width: 640px) {
+            .gtb-contact-label { display: none; }
+            .gtb-sep { display: none; }
+        }
+</style>
 
     <!-- JSON-LD: Article -->
     <script type="application/ld+json">
@@ -1048,6 +1127,31 @@
 </head>
 <body>
     <!-- NAVBAR -->
+    <div class="global-top-bar" role="complementary" aria-label="Kurumsal Üst Bilgi">
+        <div class="global-top-bar-inner">
+            <div class="gtb-left">
+                <a href="mailto:ibrahim@derinpinar.av.tr" class="gtb-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span class="gtb-contact-label">ibrahim@derinpinar.av.tr</span>
+                </a>
+                <span class="gtb-sep" aria-hidden="true"></span>
+                <a href="https://www.linkedin.com/in/ibrahim-nuri-derinp%C4%B1nar-lawyer" class="gtb-contact" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profili">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span class="gtb-contact-label">LinkedIn</span>
+                </a>
+            </div>
+            <div class="gtb-right">
+                <nav class="gtb-lang" aria-label="Dil seçici">
+                    <a href="#" class="gtb-lang-link gtb-lang-active" aria-current="true" hreflang="tr">TR</a>
+                    <span class="gtb-lang-div" aria-hidden="true">|</span>
+                    <a href="#" class="gtb-lang-link" hreflang="en">EN</a>
+                </nav>
+                <button class="gtb-search-btn" type="button" aria-label="Sitede ara">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
     <header class="topbar">
         <div class="topbar-inner">
             <a class="brand" href="index.html" aria-label="DLC ana sayfa">
