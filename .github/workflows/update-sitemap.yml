@@ -1,0 +1,31 @@
+name: Update sitemap.xml
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "*.html"
+      - "scripts/generate_sitemap.py"
+      - ".github/workflows/update-sitemap.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate sitemap
+        run: python3 scripts/generate_sitemap.py
+
+      - name: Commit sitemap changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update sitemap.xml"
+          file_pattern: sitemap.xml
