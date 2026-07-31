@@ -1,4 +1,4 @@
-name: Update sitemap.xml
+name: Update sitemap and search index
 
 on:
   pull_request:
@@ -6,13 +6,14 @@ on:
     paths:
       - "*.html"
       - "scripts/generate_sitemap.py"
+      - "scripts/generate_search_index.py"
       - ".github/workflows/update-sitemap.yml"
 
 permissions:
   contents: write
 
 jobs:
-  update-sitemap:
+  update-metadata:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +25,11 @@ jobs:
       - name: Generate sitemap
         run: python3 scripts/generate_sitemap.py
 
-      - name: Commit sitemap changes
+      - name: Generate search index
+        run: python3 scripts/generate_search_index.py
+
+      - name: Commit metadata changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update sitemap.xml"
-          file_pattern: sitemap.xml
+          commit_message: "chore: update sitemap and search index"
+          file_pattern: sitemap.xml search-index.json
