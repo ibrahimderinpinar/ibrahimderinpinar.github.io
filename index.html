@@ -101,12 +101,12 @@
       }
       .nav a:hover { color: var(--accent); }
 
-      .hero { padding: 34px 0 18px; }
+      .hero { padding: 24px 0 14px; }
       .hero-grid {
         display: grid;
         grid-template-columns: 1.1fr 0.9fr;
-        gap: 28px;
-        align-items: stretch;
+        gap: 22px;
+        align-items: start;
       }
 
       .hero-copy,
@@ -119,9 +119,12 @@
       }
 
       .hero-copy {
-        padding: 34px;
+        padding: 28px;
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
       }
       .hero-copy::before {
         content: "";
@@ -145,7 +148,7 @@
         color: var(--accent);
         background: rgba(31, 58, 95, 0.05);
         font-size: 0.92rem;
-        margin-bottom: 18px;
+        margin: 0;
       }
 
       h1 {
@@ -157,7 +160,7 @@
       }
 
       .lead {
-        margin: 18px 0 0;
+        margin: 0;
         color: var(--muted);
         font-size: 1.05rem;
         max-width: 62ch;
@@ -166,7 +169,7 @@
       }
 
       .bar-association {
-        margin-top: 14px;
+        margin: 0;
         display: inline-flex;
         align-items: center;
         gap: 10px;
@@ -177,19 +180,21 @@
         color: var(--accent);
         font-size: 0.94rem;
         font-weight: 600;
+        width: fit-content;
+        max-width: 100%;
       }
 
       .buttons {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
-        margin-top: 26px;
+        margin-top: 4px;
       }
       .btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 12px 18px;
+        padding: 11px 18px;
         border-radius: 999px;
         border: 1px solid var(--line);
         background: rgba(255, 255, 255, 0.9);
@@ -266,13 +271,13 @@
       }
 
       section {
-        padding: 18px 0;
+        padding: 14px 0;
         scroll-margin-top: 110px;
       }
 
-      .section-card { padding: 28px; }
+      .section-card { padding: 24px; }
       .section-title {
-        margin: 0 0 14px;
+        margin: 0 0 12px;
         font-size: 1.38rem;
         letter-spacing: -0.02em;
       }
@@ -280,29 +285,39 @@
         color: var(--muted);
         margin: 0;
       }
+      .section-text + .section-text {
+        margin-top: 16px;
+      }
 
       .grid-2 {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
+        align-items: start;
       }
 
       .item {
-        padding: 18px;
+        padding: 20px;
         border-radius: 22px;
         background: rgba(255, 255, 255, 0.92);
         border: 1px solid var(--line);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
       }
       .item h3,
       .item h4 {
-        margin: 0 0 8px;
+        margin: 0;
         font-size: 1.03rem;
+      }
+      .item p {
+        margin: 0;
       }
 
       .meta {
         color: var(--muted);
         font-size: 0.94rem;
-        margin-bottom: 8px;
+        margin: 0;
       }
 
       .chip-row {
@@ -330,6 +345,10 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 16px;
+        align-items: start;
+      }
+      .contact-grid .item {
+        padding: 18px 20px;
       }
       .contact-grid a { text-decoration: underline; }
 
@@ -340,27 +359,30 @@
         border-top: 1px solid rgba(19, 34, 56, 0.08);
       }
       .footer-inner {
-        padding: 50px 0 56px;
+        padding: 32px 0 36px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 14px;
+        gap: 8px;
         text-align: center;
       }
       .footer-mark img {
         width: 430px;
         height: auto;
+        margin: 0 auto;
       }
       .footer-logo-note {
         color: rgba(19, 34, 56, 0.72);
-        font-size: 0.9rem;
+        font-size: 0.84rem;
         letter-spacing: 0.08em;
+        line-height: 1.4;
         text-transform: uppercase;
       }
       .footer-copy {
         color: rgba(19, 34, 56, 0.78);
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.4;
       }
 
       .menu-toggle {
@@ -431,10 +453,17 @@
       }
 
       @media (max-width: 920px) {
+        .hero {
+          padding: 22px 0 12px;
+        }
         .hero-grid,
         .grid-2,
         .contact-grid {
           grid-template-columns: 1fr;
+        }
+        .hero-copy,
+        .section-card {
+          padding: 22px;
         }
         .topbar-inner {
           flex-direction: column;
@@ -448,18 +477,40 @@
       }
 
       @media (max-width: 640px) {
+        .hero {
+          padding: 18px 0 10px;
+        }
         .hero-copy,
         .section-card {
-          padding: 20px;
+          padding: 18px;
+        }
+        .eyebrow {
+          padding: 7px 12px;
+          font-size: 0.86rem;
+        }
+        .lead {
+          font-size: 1rem;
+        }
+        .bar-association {
+          padding: 9px 12px;
+          font-size: 0.9rem;
         }
         .buttons {
           flex-direction: column;
+          gap: 10px;
         }
         .buttons .btn {
           width: 100%;
         }
+        .item {
+          padding: 18px;
+        }
         .brand-logo img {
           width: 180px;
+        }
+        .footer-inner {
+          padding: 28px 0 30px;
+          gap: 7px;
         }
         .footer-mark img {
           width: 300px;
@@ -666,14 +717,13 @@
         <h2 class="section-title">Hakkımda</h2>
         <p class="section-text">
           İbrahim Nuri Derinpınar, 2014 yılından bu yana İstanbul Barosu'na kayıtlı avukat olarak; şirketler hukuku, ticaret hukuku, sözleşmeler hukuku, gayrimenkul hukuku ile ulusal ve uluslararası tahkim alanlarında faaliyet göstermektedir. Yerli ve yabancı müvekkillere, ticari faaliyetlerin hukuki güvence altına alınması, şirket yapılanmalarının sağlıklı şekilde kurulması, sözleşmesel süreçlerin doğru yönetilmesi ve uyuşmazlıkların önlenmesi konularında kapsamlı hukuki danışmanlık sunmaktadır.
-    </p>
-    <br />
-    <p class="section-text">
+        </p>
+        <p class="section-text">
       İstanbul Üniversitesi Hukuk Fakültesi'nden mezun olduktan sonra Brunel University of London'da Uluslararası Ticaret Hukuku (LL.M.) programını üstün başarı derecesiyle tamamlamış; London School of Economics and Political Science (LSE) bünyesinde ticaret hukuku ve rekabet hukuku alanlarında akademik çalışmalar yürütmüştür. Bahçeşehir Üniversitesi Özel Hukuk Doktora Programı kapsamında hazırladığı "E-sporcu Sözleşmesi" başlıklı doktora tezini 2026 yılında başarıyla tamamlamış olup, akademik
       çalışmalarını özellikle sözleşmeler hukuku, spor hukuku ve e-spor hukuku ekseninde sürdürmektedir.
-    </p>
-  </div>
-</section>
+        </p>
+      </div>
+    </section>
 
       <section id="egitim">
         <div class="wrap section-card">
