@@ -2,13 +2,6 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.derinpinar.av.tr/milli-ve-milletlerarasi-tahkimde-tahkime-elverislilik-kavrami-hukuki-niteligi-ve-uygulama-alani.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://www.derinpinar.av.tr/anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -37,13 +30,6 @@
   </url>
 
   <url>
-    <loc>https://www.derinpinar.av.tr/profesyonel-e-sporcu-kimdir-amator-ve-profesyonel-e-sporcu-ayriminin-hukuki-cercevesi.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://www.derinpinar.av.tr/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -62,6 +48,20 @@
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.derinpinar.av.tr/milli-ve-milletlerarasi-tahkimde-tahkime-elverislilik-kavrami-hukuki-niteligi-ve-uygulama-alani.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.derinpinar.av.tr/profesyonel-e-sporcu-kimdir-amator-ve-profesyonel-e-sporcu-ayriminin-hukuki-cercevesi.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
