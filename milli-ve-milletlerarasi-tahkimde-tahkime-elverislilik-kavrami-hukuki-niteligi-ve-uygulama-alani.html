@@ -605,7 +605,22 @@
             color: var(--primary);
             text-decoration: underline;
         }
+        .toc-container .toc-list{
+            list-style:none;
+            margin:0;
+            padding-left:0;
+        }
 
+        .toc-container .toc-list li{
+            list-style:none;
+            margin-left:0;
+            position:static;
+        }
+
+        .toc-container .toc-list li::before{
+            display:none;
+            content:none;
+        }
         /* ============================================
            SECTION CARD (INTRO)
            ============================================ */
@@ -1267,7 +1282,7 @@
 
             <div class="toc-container">
                 <h3>İçindekiler</h3>
-                <ol>
+                <ul class="toc-list">
                     <li><a href="#section-1">1. Giriş</a></li>
                     <li><a href="#section-2">2. Tahkime Elverişlilik Kavramı</a></li>
                     <li><a href="#section-2-1">2.1. Tahkime Elverişlilik Kavramı ve Hukukî Niteliği</a></li>
@@ -1288,7 +1303,7 @@
                     <li><a href="#section-8">8. Hukuki Danışmanlık</a></li>
                     <li><a href="#section-9">9. Yararlanılan Yargı Kararları</a></li>
                     <li><a href="#section-10">10. Yararlanılan Kaynaklar</a></li>
-                </ol>
+                </ul>
             </div>
 
             <hr>
