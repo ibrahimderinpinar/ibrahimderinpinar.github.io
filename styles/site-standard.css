@@ -97,8 +97,12 @@ p {
   padding-bottom: 0 !important;
 }
 
+.brand-logo {
+  flex: 0 0 260px !important;
+}
+
 .brand-logo img {
-  width: 260px !important;
+  width: 100% !important;
   height: auto;
 }
 
