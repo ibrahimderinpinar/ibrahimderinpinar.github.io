@@ -98,7 +98,7 @@ p {
 }
 
 .brand-logo {
-  flex: 0 0 200px !important;
+  flex: 0 0 180px !important;
 }
 
 .brand-logo img {
@@ -359,7 +359,7 @@ p {
   }
 
   .brand-logo img {
-    width: 200px !important;
+    width: 180px !important;
   }
 
   .brand-name {
