@@ -1134,8 +1134,9 @@
         ]
     }
     </script>
+    <link rel="stylesheet" href="styles/site-standard.css" />
 </head>
-<body>
+<body class="article-page">
     <!-- NAVBAR -->
     <div class="global-top-bar" role="complementary" aria-label="Kurumsal Üst Bilgi">
         <div class="global-top-bar-inner">
@@ -1173,15 +1174,15 @@
                     <div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
                 </div>
             </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç" aria-controls="mobileMenu" aria-expanded="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
             <nav class="nav" aria-label="Birincil">
-                <a href="index.html">Ana Sayfa</a>
                 <a href="index.html#hakkimda">Hakkımda</a>
                 <a href="index.html#egitim">Eğitim</a>
-                <a href="index.html#deneyim">Deneyim</a>
-                <a href="index.html#uzmanlik">Uzmanlık</a>
+                <a href="index.html#deneyim">Mesleki Deneyim</a>
+                <a href="index.html#uzmanlik">Uzmanlık Alanları</a>
+                <a href="index.html#akademik-calismalar">Akademik Çalışmalar</a>
                 <a href="makaleler.html" aria-current="page">Makaleler</a>
                 <a href="index.html#iletisim">Bize Ulaşın</a>
             </nav>
@@ -1189,15 +1190,15 @@
     </header>
 
     <div class="mobile-overlay" id="mobileOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <button class="close-menu" id="closeMenu" aria-label="Menüyü kapat">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
-        <a href="index.html">Ana Sayfa</a>
         <a href="index.html#hakkimda">Hakkımda</a>
         <a href="index.html#egitim">Eğitim</a>
-        <a href="index.html#deneyim">Deneyim</a>
-        <a href="index.html#uzmanlik">Uzmanlık</a>
+        <a href="index.html#deneyim">Mesleki Deneyim</a>
+        <a href="index.html#uzmanlik">Uzmanlık Alanları</a>
+        <a href="index.html#akademik-calismalar">Akademik Çalışmalar</a>
         <a href="makaleler.html">Makaleler</a>
         <a href="index.html#iletisim">Bize Ulaşın</a>
     </div>
@@ -1546,16 +1547,22 @@
             var menu = document.getElementById("mobileMenu");
             var overlay = document.getElementById("mobileOverlay");
 
-            document.getElementById("menuToggle").onclick = function () {
+            var menuToggle = document.getElementById("menuToggle");
+
+            menuToggle.onclick = function () {
                 menu.classList.add("active");
                 overlay.classList.add("active");
                 document.body.style.overflow = "hidden";
+                menuToggle.setAttribute("aria-expanded", "true");
+                menu.setAttribute("aria-hidden", "false");
             };
 
             function closeMenu() {
                 menu.classList.remove("active");
                 overlay.classList.remove("active");
                 document.body.style.overflow = "";
+                menuToggle.setAttribute("aria-expanded", "false");
+                menu.setAttribute("aria-hidden", "true");
             }
 
             document.getElementById("closeMenu").onclick = closeMenu;
