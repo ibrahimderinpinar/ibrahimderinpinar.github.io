@@ -27,6 +27,10 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
+p {
+  text-align: justify;
+}
+
 .global-top-bar {
   background: linear-gradient(180deg, #0d1c31 0%, #10233d 100%) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -94,7 +98,7 @@ h1, h2, h3, h4 {
 }
 
 .brand-logo img {
-  width: 176px !important;
+  width: 210px !important;
   height: auto;
 }
 
@@ -351,7 +355,7 @@ h1, h2, h3, h4 {
   }
 
   .brand-logo img {
-    width: 132px !important;
+    width: 158px !important;
   }
 
   .brand-name {
