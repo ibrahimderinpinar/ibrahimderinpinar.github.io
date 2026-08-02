@@ -35,7 +35,10 @@ h1, h2, h3, h4 {
 .global-top-bar-inner,
 .topbar-inner {
   width: min(calc(100% - 32px), var(--site-max));
+  max-width: none !important;
   margin: 0 auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .global-top-bar-inner {
@@ -44,6 +47,24 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   gap: 16px;
   min-height: 46px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Global Top Bar and Header/Topbar stick together at the very top of the
+   viewport on scroll, on both desktop and mobile. The wrapper establishes a
+   single sticky context so the two bars stay stacked instead of the header
+   sticking on its own while the top bar scrolls away. */
+.site-sticky-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 55;
+}
+
+.site-sticky-wrap .site-header,
+.site-sticky-wrap .topbar {
+  position: static !important;
+  top: auto !important;
 }
 
 .site-header,
@@ -171,7 +192,7 @@ h1, h2, h3, h4 {
   padding-top: 20px;
 }
 
-.homepage .site-header {
+.homepage .site-sticky-wrap {
   z-index: 60;
 }
 
@@ -293,23 +314,16 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 920px) {
-  .homepage .hero-grid {
-    grid-template-columns: minmax(0, 1.12fr) minmax(220px, 0.82fr) !important;
-  }
-
-  .homepage .hero-media {
-    order: 0 !important;
-    min-height: 100%;
-  }
-
-  .homepage .portrait {
-    aspect-ratio: auto !important;
-    height: 100% !important;
-    min-height: 100% !important;
-  }
-
   .article-page .article-container {
     padding: 28px 24px 32px;
+  }
+
+  /* Restore the approved stacked mobile hero: the photo must size itself by
+     aspect-ratio only, not stretch to fill the (much taller) text column's
+     height, so the photo, name, title and lead are all visible together. */
+  .homepage .portrait {
+    height: auto !important;
+    min-height: 0 !important;
   }
 }
 
@@ -348,11 +362,6 @@ h1, h2, h3, h4 {
     font-size: 0.8rem !important;
   }
 
-  .homepage .hero-grid {
-    grid-template-columns: minmax(0, 1.16fr) minmax(112px, 0.84fr) !important;
-    border-radius: 26px;
-  }
-
   .homepage .hero-copy {
     padding: 22px 18px 18px !important;
   }
@@ -387,11 +396,6 @@ h1, h2, h3, h4 {
 
   .homepage .hero-caption {
     padding: 12px 12px 14px;
-  }
-
-  .homepage .portrait {
-    aspect-ratio: 3 / 4 !important;
-    object-position: center 16% !important;
   }
 
   .articles-page .page-header {
