@@ -428,24 +428,29 @@
       .value-band {
         background: rgba(255, 255, 255, 0.82);
         border: 1px solid rgba(16, 35, 61, 0.08);
-        border-radius: 0 0 32px 32px;
+        border-radius: 28px;
         box-shadow: 0 18px 40px rgba(16, 35, 61, 0.05);
-        margin-top: -8px;
+        margin-top: 16px;
+        overflow: hidden;
       }
       .value-grid {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 0;
+        gap: 1px;
+        align-items: stretch;
+        background: rgba(16, 35, 61, 0.08);
       }
       .value-item {
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
+        align-items: flex-start;
         gap: 16px;
         padding: 28px 24px;
-        align-items: start;
+        background: rgba(255, 255, 255, 0.92);
+        min-width: 0;
+        height: 100%;
       }
-      .value-item + .value-item {
-        border-left: 1px solid rgba(16, 35, 61, 0.08);
+      .value-item > div:last-child {
+        min-width: 0;
       }
       .icon-badge {
         width: 52px;
@@ -765,6 +770,9 @@
         .hero-grid {
           grid-template-columns: minmax(0, 1fr) minmax(340px, 0.86fr);
         }
+        .value-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
         .overview-grid {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -778,10 +786,6 @@
         .expertise-grid,
         .value-grid {
           grid-template-columns: 1fr;
-        }
-        .value-item + .value-item {
-          border-left: 0;
-          border-top: 1px solid rgba(16, 35, 61, 0.08);
         }
         .hero-media {
           order: -1;
