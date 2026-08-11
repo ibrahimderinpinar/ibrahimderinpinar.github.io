@@ -1845,6 +1845,44 @@
     </article>
 
     <script>
+    // Mobile menu
+    (function () {
+        var menu = document.getElementById("mobileMenu");
+        var overlay = document.getElementById("mobileOverlay");
+        var menuToggle = document.getElementById("menuToggle");
+        var closeButton = document.getElementById("closeMenu");
+
+        if (!menu || !overlay || !menuToggle || !closeButton) return;
+
+        function openMenu() {
+            menu.classList.add("active");
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+            menuToggle.setAttribute("aria-expanded", "true");
+            menu.setAttribute("aria-hidden", "false");
+        }
+
+        function closeMenu() {
+            menu.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = "";
+            menuToggle.setAttribute("aria-expanded", "false");
+            menu.setAttribute("aria-hidden", "true");
+        }
+
+        menuToggle.addEventListener("click", openMenu);
+        closeButton.addEventListener("click", closeMenu);
+        overlay.addEventListener("click", closeMenu);
+        document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+            item.addEventListener("click", closeMenu);
+        });
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && menu.classList.contains("active")) closeMenu();
+        });
+    })();
+    </script>
+
+    <script>
     // View counter (Firebase Realtime Database — persistent, atomic, cross-device)
     (function () {
         var FIREBASE_DB_URL = "https://ibrahimderinpinar-1c681-default-rtdb.europe-west1.firebasedatabase.app";
