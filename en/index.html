@@ -760,6 +760,45 @@
         color: var(--gold);
       }
 
+      /* Desktop navigation fit: keep the full English navigation visible without affecting mobile */
+      @media (min-width: 841px) {
+        .site-header .wrap {
+          width: min(calc(100% - 24px), 1560px);
+        }
+        .topbar-inner {
+          gap: 16px;
+        }
+        .brand {
+          gap: 12px;
+          flex-shrink: 0;
+        }
+        .brand-logo img {
+          width: 148px;
+        }
+        .brand-name {
+          font-size: 0.96rem;
+        }
+        .brand-subtitle {
+          font-size: 0.82rem;
+        }
+        .nav {
+          gap: 13px;
+          margin-left: auto;
+          min-width: 0;
+        }
+        .nav a {
+          font-size: 0.80rem;
+        }
+      }
+
+      @media (min-width: 1181px) {
+        .site-header .wrap {
+          width: min(calc(100% - 32px), 1600px);
+        }
+        .nav { gap: 16px; }
+        .nav a { font-size: 0.84rem; }
+      }
+
       @media (max-width: 1180px) {
         .topbar-inner {
           min-height: 82px;
