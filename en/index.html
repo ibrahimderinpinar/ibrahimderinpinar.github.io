@@ -1462,7 +1462,6 @@
               <form class="advisory-form" id="advisoryForm" action="https://formspree.io/f/myegjrwo" method="POST">
                 <input type="hidden" name="_subject" value="Legal Advisory Request | derinpinar.av.tr">
                 <input type="hidden" name="language" value="en">
-                <input class="form-honeypot" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" type="text">
                 <div class="form-grid">
                   <div class="form-field"><label for="contactName">Full Name</label><input id="contactName" name="name" type="text" autocomplete="name" placeholder="Your full name" required></div>
                   <div class="form-field"><label for="contactEmail">Email</label><input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" required></div>
@@ -1581,7 +1580,8 @@
               body: new FormData(advisoryForm),
               headers: { "Accept": "application/json" }
             });
-            if (!response.ok) throw new Error("Submission failed");
+            const result = await response.json().catch(() => ({}));
+            if (!response.ok || (Array.isArray(result.errors) && result.errors.length)) throw new Error("Submission failed");
             advisoryForm.reset();
             advisoryStatus.classList.add("success");
             advisoryStatus.innerHTML = "<strong>✓ Your Request Has Been Received</strong><span>Your legal advisory request has been successfully submitted. We will contact you using the details provided.</span>";
