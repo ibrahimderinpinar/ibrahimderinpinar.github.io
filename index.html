@@ -882,7 +882,16 @@
           display: grid;
         }
       }
-    </style>
+    
+#iletisim .form-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+#iletisim .contact-submit:disabled{opacity:.72;cursor:wait;transform:none}
+#iletisim .form-status{margin-top:16px;padding:16px 18px;border-radius:16px;text-align:left;line-height:1.55}
+#iletisim .form-status strong,#iletisim .form-status span{display:block}
+#iletisim .form-status span{margin-top:4px}
+#iletisim .form-status.success{background:rgba(214,177,90,.12);border:1px solid rgba(214,177,90,.38);color:#f7ecd0}
+#iletisim .form-status.success strong{color:#e7c875}
+#iletisim .form-status.error{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff}
+</style>
 <link href="styles/site-standard.css" rel="stylesheet"/>
 
 <style id="final-contact-and-header-fix">
@@ -1263,8 +1272,11 @@ main p, main li, #hakkimda p, #iletisim .section-intro, #iletisim .contact-card-
 <div class="contact-form-card">
 <div class="contact-card-kicker">İlk İletişim</div>
 <h3 class="contact-card-title">Hukukî Danışmanlık Talebi</h3>
-<p class="contact-card-copy">Aşağıdaki kısa form, e-posta uygulamanızda önceden doldurulmuş bir danışmanlık talebi oluşturur.</p>
-<form class="contact-form" id="consultationForm">
+<p class="contact-card-copy">Aşağıdaki kısa form aracılığıyla hukukî danışmanlık talebinizi doğrudan iletebilirsiniz.</p>
+<form class="contact-form" id="consultationForm" action="https://formspree.io/f/myegjrwo" method="POST">
+<input type="hidden" name="_subject" value="Hukukî Danışmanlık Talebi | derinpinar.av.tr"/>
+<input type="hidden" name="language" value="tr"/>
+<input class="form-honeypot" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" type="text"/>
 <div class="contact-form-grid">
 <div class="form-field"><label for="contactName">Ad Soyad</label><input autocomplete="name" id="contactName" name="name" placeholder="Adınız ve soyadınız" required="" type="text"/></div>
 <div class="form-field"><label for="contactEmail">E-posta</label><input autocomplete="email" id="contactEmail" name="email" placeholder="ornek@eposta.com" required="" type="email"/></div>
@@ -1272,7 +1284,8 @@ main p, main li, #hakkimda p, #iletisim .section-intro, #iletisim .contact-card-
 <div class="form-field"><label for="contactMatter">Hukukî Konu</label><select id="contactMatter" name="matter" required=""><option disabled="" selected="" value="">Konu seçin</option><option>Şirketler Hukuku</option><option>Sözleşmeler Hukuku</option><option>Gayrimenkul / Kira Hukuku</option><option>Milli ve Milletlerarası Tahkim</option><option>Spor Hukuku</option><option>E-Spor Hukuku</option><option>Taşıma Hukuku</option><option>Diğer</option></select></div>
 <div class="form-field full"><label for="contactMessage">Konunuzu Kısaca Açıklayın</label><textarea id="contactMessage" name="message" placeholder="Hukukî meselenizin genel çerçevesini ve talebinizi kısaca belirtin." required=""></textarea></div>
 </div>
-<button class="contact-submit" type="submit">Hukukî Danışmanlık Talebi Gönder <span aria-hidden="true">→</span></button>
+<button class="contact-submit" type="submit"><span class="submit-label">Hukukî Danışmanlık Talebi Gönder</span> <span aria-hidden="true">→</span></button>
+<div class="form-status" id="consultationStatus" role="status" aria-live="polite" hidden></div>
 <p class="contact-notice"><strong>Bilgilendirme:</strong> Bu formun gönderilmesi tek başına avukat–müvekkil ilişkisi kurmaz. İlk iletişim aşamasında özel nitelikli kişisel verileri, gizli belgeleri veya süreye tabi işlemlere ilişkin belgeleri paylaşmamanız önerilir.</p>
 </form>
 </div>
@@ -1359,5 +1372,37 @@ main p, main li, #hakkimda p, #iletisim .section-intro, #iletisim .contact-card-
         }
       });
     </script>
-<script id="consultation-form-handler">(function(){const form=document.getElementById("consultationForm");if(!form)return;form.addEventListener("submit",function(event){event.preventDefault();if(!form.reportValidity())return;const name=document.getElementById("contactName").value.trim();const email=document.getElementById("contactEmail").value.trim();const phone=document.getElementById("contactPhone").value.trim();const matter=document.getElementById("contactMatter").value.trim();const message=document.getElementById("contactMessage").value.trim();const subject=`Hukukî Danışmanlık Talebi – ${matter}`;const body=[`Ad Soyad: ${name}`,`E-posta: ${email}`,`Telefon: ${phone||"Belirtilmedi"}`,`Hukukî Konu: ${matter}`,"","Konu / Talep:",message].join("\n");window.location.href=`mailto:ibrahim@derinpinar.av.tr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;});})();</script></body>
+<script id="consultation-form-handler">
+(function(){
+  const form=document.getElementById("consultationForm");
+  const status=document.getElementById("consultationStatus");
+  if(!form||!status)return;
+  const button=form.querySelector(".contact-submit");
+  const label=button.querySelector(".submit-label");
+  form.addEventListener("submit",async function(event){
+    event.preventDefault();
+    if(!form.reportValidity())return;
+    button.disabled=true;
+    label.textContent="Gönderiliyor…";
+    status.hidden=true;
+    status.className="form-status";
+    try{
+      const response=await fetch(form.action,{method:"POST",body:new FormData(form),headers:{"Accept":"application/json"}});
+      if(!response.ok)throw new Error("Form gönderilemedi");
+      form.reset();
+      status.classList.add("success");
+      status.innerHTML="<strong>✓ Talebiniz Alındı</strong><span>Hukukî danışmanlık talebiniz başarıyla iletilmiştir. İletişim bilgileriniz üzerinden tarafınıza dönüş sağlanacaktır.</span>";
+      status.hidden=false;
+      label.textContent="Talebiniz Alındı";
+    }catch(error){
+      status.classList.add("error");
+      status.innerHTML="<strong>Talebiniz iletilemedi.</strong><span>Lütfen bağlantınızı kontrol ederek yeniden deneyin veya doğrudan e-posta yoluyla iletişime geçin.</span>";
+      status.hidden=false;
+      label.textContent="Hukukî Danışmanlık Talebi Gönder";
+    }finally{
+      button.disabled=false;
+    }
+  });
+})();
+</script></body>
 </html>
