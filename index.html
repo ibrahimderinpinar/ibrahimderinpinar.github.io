@@ -1276,7 +1276,6 @@ main p, main li, #hakkimda p, #iletisim .section-intro, #iletisim .contact-card-
 <form class="contact-form" id="consultationForm" action="https://formspree.io/f/myegjrwo" method="POST">
 <input type="hidden" name="_subject" value="Hukukî Danışmanlık Talebi | derinpinar.av.tr"/>
 <input type="hidden" name="language" value="tr"/>
-<input class="form-honeypot" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" type="text"/>
 <div class="contact-form-grid">
 <div class="form-field"><label for="contactName">Ad Soyad</label><input autocomplete="name" id="contactName" name="name" placeholder="Adınız ve soyadınız" required="" type="text"/></div>
 <div class="form-field"><label for="contactEmail">E-posta</label><input autocomplete="email" id="contactEmail" name="email" placeholder="ornek@eposta.com" required="" type="email"/></div>
@@ -1388,7 +1387,8 @@ main p, main li, #hakkimda p, #iletisim .section-intro, #iletisim .contact-card-
     status.className="form-status";
     try{
       const response=await fetch(form.action,{method:"POST",body:new FormData(form),headers:{"Accept":"application/json"}});
-      if(!response.ok)throw new Error("Form gönderilemedi");
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok || (Array.isArray(result.errors) && result.errors.length)) throw new Error("Form gönderilemedi");
       form.reset();
       status.classList.add("success");
       status.innerHTML="<strong>✓ Talebiniz Alındı</strong><span>Hukukî danışmanlık talebiniz başarıyla iletilmiştir. İletişim bilgileriniz üzerinden tarafınıza dönüş sağlanacaktır.</span>";
