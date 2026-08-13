@@ -1093,6 +1093,15 @@
         #contact .direct-copy span { font-size:.84rem; }
       }
 
+    
+      #contact .form-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+      #contact .contact-submit:disabled{opacity:.72;cursor:wait;transform:none}
+      #contact .form-status{margin-top:16px;padding:16px 18px;border-radius:16px;text-align:left;line-height:1.55}
+      #contact .form-status strong,#contact .form-status span{display:block}
+      #contact .form-status span{margin-top:4px}
+      #contact .form-status.success{background:rgba(214,177,90,.12);border:1px solid rgba(214,177,90,.38);color:#f7ecd0}
+      #contact .form-status.success strong{color:#e7c875}
+      #contact .form-status.error{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff}
     </style>
     <link rel="stylesheet" href="../styles/site-standard.css" />
   <style id="english-master-header-fix">
@@ -1449,8 +1458,11 @@
             <div class="contact-panel">
               <div class="contact-kicker">Initial Contact</div>
               <h3>Legal Advisory Request</h3>
-              <p class="contact-panel-copy">Complete the short form below to prepare a structured advisory request in your email application.</p>
-              <form class="advisory-form" id="advisoryForm">
+              <p class="contact-panel-copy">Complete the short form below to submit your legal advisory request directly.</p>
+              <form class="advisory-form" id="advisoryForm" action="https://formspree.io/f/myegjrwo" method="POST">
+                <input type="hidden" name="_subject" value="Legal Advisory Request | derinpinar.av.tr">
+                <input type="hidden" name="language" value="en">
+                <input class="form-honeypot" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" type="text">
                 <div class="form-grid">
                   <div class="form-field"><label for="contactName">Full Name</label><input id="contactName" name="name" type="text" autocomplete="name" placeholder="Your full name" required></div>
                   <div class="form-field"><label for="contactEmail">Email</label><input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" required></div>
@@ -1458,7 +1470,8 @@
                   <div class="form-field"><label for="contactMatter">Legal Matter</label><select id="contactMatter" name="matter" required><option value="" selected disabled>Select a matter</option><option>Corporate Law</option><option>Contract Law</option><option>Real Estate / Lease Law</option><option>National and International Arbitration</option><option>Sports Law</option><option>Esports Law</option><option>Transport Law</option><option>Other</option></select></div>
                   <div class="form-field full"><label for="contactMessage">Briefly Describe Your Matter</label><textarea id="contactMessage" name="message" placeholder="Please briefly describe the general framework of your legal matter and your request." required></textarea></div>
                 </div>
-                <button class="contact-submit" type="submit">Prepare Legal Advisory Request →</button>
+                <button class="contact-submit" type="submit"><span class="submit-label">Submit Legal Advisory Request</span> →</button>
+                <div class="form-status" id="advisoryStatus" role="status" aria-live="polite" hidden></div>
                 <p class="contact-notice"><strong>Notice:</strong> Submitting or preparing this form does not establish an attorney–client relationship. Please do not include sensitive personal data, confidential documents or documents relating to time-sensitive proceedings in your initial communication.</p>
               </form>
             </div>
@@ -1551,25 +1564,37 @@
 
 
       const advisoryForm = document.getElementById("advisoryForm");
-      if (advisoryForm) {
-        advisoryForm.addEventListener("submit", (event) => {
+      const advisoryStatus = document.getElementById("advisoryStatus");
+      if (advisoryForm && advisoryStatus) {
+        advisoryForm.addEventListener("submit", async (event) => {
           event.preventDefault();
-          const name = document.getElementById("contactName").value.trim();
-          const email = document.getElementById("contactEmail").value.trim();
-          const phone = document.getElementById("contactPhone").value.trim();
-          const matter = document.getElementById("contactMatter").value;
-          const message = document.getElementById("contactMessage").value.trim();
-          const subject = `Legal Advisory Request${matter ? ` – ${matter}` : ""}`;
-          const body = [
-            `Full Name: ${name}`,
-            `Email: ${email}`,
-            `Telephone: ${phone || "Not provided"}`,
-            `Legal Matter: ${matter}`,
-            "",
-            "Brief Description:",
-            message
-          ].join("\n");
-          window.location.href = `mailto:ibrahim@derinpinar.av.tr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          if (!advisoryForm.reportValidity()) return;
+          const button = advisoryForm.querySelector(".contact-submit");
+          const label = button.querySelector(".submit-label");
+          button.disabled = true;
+          label.textContent = "Submitting…";
+          advisoryStatus.hidden = true;
+          advisoryStatus.className = "form-status";
+          try {
+            const response = await fetch(advisoryForm.action, {
+              method: "POST",
+              body: new FormData(advisoryForm),
+              headers: { "Accept": "application/json" }
+            });
+            if (!response.ok) throw new Error("Submission failed");
+            advisoryForm.reset();
+            advisoryStatus.classList.add("success");
+            advisoryStatus.innerHTML = "<strong>✓ Your Request Has Been Received</strong><span>Your legal advisory request has been successfully submitted. We will contact you using the details provided.</span>";
+            advisoryStatus.hidden = false;
+            label.textContent = "Request Received";
+          } catch (error) {
+            advisoryStatus.classList.add("error");
+            advisoryStatus.innerHTML = "<strong>Your request could not be submitted.</strong><span>Please check your connection and try again, or contact the office directly by email.</span>";
+            advisoryStatus.hidden = false;
+            label.textContent = "Submit Legal Advisory Request";
+          } finally {
+            button.disabled = false;
+          }
         });
       }
     </script>
