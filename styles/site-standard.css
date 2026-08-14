@@ -426,3 +426,117 @@ p {
     border-radius: 24px;
   }
 }
+
+/* ==========================================================
+   DERINPINAR MASTER ARTICLE SYSTEM v1.0
+   Authoritative article-page layer. Keep this block LAST.
+   Mobile rules intentionally preserve the approved current layout.
+   ========================================================== */
+.article-page {
+  --article-shell: 1400px;
+  --article-hero-inner: 1120px;
+  --article-reading: 860px;
+  --article-gutter: clamp(20px, 3vw, 40px);
+}
+
+.article-page .hero {
+  background: linear-gradient(135deg, #1f2d47 0%, #2d3e54 100%);
+}
+
+.article-page .hero-grid {
+  margin-inline: auto;
+}
+
+.article-page .hero-copy {
+  min-width: 0;
+}
+
+/* Reading measure: deliberately narrower than the visual shell. */
+.article-page .article-container {
+  max-width: var(--article-reading) !important;
+}
+
+@media (min-width: 769px) {
+  .article-page .hero {
+    width: min(calc(100% - 32px), var(--article-shell));
+    margin: 22px auto 40px;
+    padding: clamp(46px, 4vw, 68px) var(--article-gutter);
+    border-radius: 32px;
+  }
+
+  .article-page .hero-grid {
+    width: min(100%, var(--article-hero-inner));
+    max-width: var(--article-hero-inner) !important;
+  }
+
+  .article-page .hero h1 {
+    max-width: 1040px;
+    font-size: clamp(2.35rem, 3.35vw, 3.65rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+    margin-bottom: 24px;
+  }
+
+  .article-page .lead {
+    max-width: 780px;
+    font-size: clamp(1.02rem, 1.15vw, 1.16rem);
+    line-height: 1.72;
+    margin-bottom: 28px;
+  }
+
+  .article-page .meta {
+    max-width: 980px;
+    margin-bottom: 28px;
+  }
+
+  .article-page .chip-row {
+    gap: 10px;
+  }
+
+  .article-page .article-container {
+    width: min(calc(100% - 40px), var(--article-reading));
+    padding: clamp(32px, 3vw, 44px) clamp(28px, 3.2vw, 46px) 46px;
+    margin: 0 auto 48px;
+  }
+
+  .article-page .quick-answer,
+  .article-page .note,
+  .article-page .toc-container {
+    width: 100%;
+  }
+}
+
+/* Laptop refinement: 13–16 inch class displays. */
+@media (min-width: 769px) and (max-width: 1180px) {
+  .article-page .hero {
+    width: min(calc(100% - 28px), var(--article-shell));
+    padding: 46px clamp(24px, 4vw, 42px);
+  }
+
+  .article-page .hero h1 {
+    font-size: clamp(2.15rem, 4.1vw, 3rem);
+  }
+
+  .article-page .article-container {
+    width: min(calc(100% - 32px), 840px);
+  }
+}
+
+/* Approved mobile behaviour: no desktop shell constraints leak downward. */
+@media (max-width: 768px) {
+  .article-page .hero {
+    width: auto;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .article-page .hero-grid {
+    max-width: 900px !important;
+  }
+
+  .article-page .article-container {
+    max-width: 800px !important;
+  }
+}
