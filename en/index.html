@@ -1177,6 +1177,57 @@
   .homepage .nav a { font-size: .84rem !important; }
 }
 </style>
+
+<style id="tr-en-identical-desktop-header">
+/* Master rule: English desktop header uses exactly the same geometry as Turkish desktop header. */
+@media (min-width: 1101px) {
+  .site-header .wrap {
+    width: min(calc(100% - 32px), 1400px) !important;
+  }
+  .topbar-inner {
+    min-height: 88px !important;
+    gap: 24px !important;
+  }
+  .brand {
+    gap: 18px !important;
+    flex: 0 0 auto !important;
+    min-width: 0;
+  }
+  .brand-logo img {
+    width: 172px !important;
+  }
+  .brand-name {
+    font-size: 1.05rem !important;
+    white-space: nowrap;
+  }
+  .brand-subtitle {
+    font-size: 0.9rem !important;
+    white-space: nowrap;
+  }
+  .nav {
+    margin-left: auto !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: clamp(8px, .78vw, 18px) !important;
+    white-space: nowrap;
+    min-width: 0;
+  }
+  .nav a {
+    font-size: clamp(.72rem, .64vw, .88rem) !important;
+    white-space: nowrap !important;
+  }
+}
+/* On narrower desktop/laptop widths, do not distort the master header: switch EN navigation to the same mobile control. */
+@media (min-width: 841px) and (max-width: 1100px) {
+  .nav { display: none !important; }
+  .menu-toggle { display: inline-flex !important; }
+  .site-header .wrap { width: min(calc(100% - 32px), 1400px) !important; }
+  .topbar-inner { min-height: 82px !important; gap: 20px !important; }
+  .brand-logo img { width: 172px !important; }
+  .brand-name { font-size: 1.05rem !important; }
+  .brand-subtitle { font-size: .9rem !important; }
+}
+</style>
 </head>
 
   <body class="homepage">
