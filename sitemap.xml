@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
@@ -13,12 +13,12 @@
 
   <url>
     <loc>https://derinpinar.av.tr/makaleler.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-15</lastmod>
   </url>
 
   <url>
     <loc>https://derinpinar.av.tr/e-spor-hukuku.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-15</lastmod>
   </url>
 
   <url>
@@ -76,4 +76,4 @@
     <lastmod>2026-08-14</lastmod>
   </url>
 
-</urlset>
+<url><loc>https://derinpinar.av.tr/e-sporcu-sozlesmesinin-hukuki-niteligi-hizmet-sozlesmesi-mi-sui-generis-sozlesme-mi.html</loc><lastmod>2026-08-15</lastmod></url></urlset>
