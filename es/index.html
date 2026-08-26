@@ -49,7 +49,7 @@
       "name": "Dr. İbrahim Nuri Derinpınar",
       "url": "https://derinpinar.av.tr/es/",
       "image": "https://derinpinar.av.tr/IMG_3478.png",
-      "jobTitle": "Abogado colegiado en Turquía",
+      "jobTitle": "Abogado habilitado en Turquía",
       "sameAs": [
         "https://www.linkedin.com/in/ibrahim-nuri-derinp%C4%B1nar-lawyer"
       ]
@@ -800,42 +800,6 @@
       .mobile-action svg {
         color: var(--gold);
       }
-
-      /* Desktop navigation fit: keep the full English navigation visible without affecting mobile */
-      @media (min-width: 841px) {
-        .site-header .wrap {
-          width: min(calc(100% - 24px), 1560px);
-        }
-        .topbar-inner {
-          gap: 16px;
-        }
-        .brand {
-          gap: 12px;
-          flex-shrink: 0;
-        }
-        .brand-logo img {
-          width: 148px;
-        }
-        .brand-name {
-          font-size: 0.96rem;
-        }
-        .brand-subtitle {
-          font-size: 0.82rem;
-        }
-        .nav {
-          gap: 13px;
-          margin-left: auto;
-          min-width: 0;
-        }
-        .nav a {
-          font-size: 0.80rem;
-        }
-      }
-
-      @media (min-width: 1181px) {
-        .site-header .wrap {
-          width: min(calc(100% - 32px), 1600px);
-        }
         .nav { gap: 16px; }
         .nav a { font-size: 0.84rem; }
       }
@@ -1144,87 +1108,11 @@
       #contact .form-status.error{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff}
     </style>
 <link href="../styles/site-standard.css" rel="stylesheet"/>
-<style id="english-master-header-fix">
-/* Match the approved Turkish master: top corporate bar remains navy; logo/name/navigation header remains white. */
-.site-header{background:#fff !important;backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(16,35,61,.10) !important;}
-.site-header::after{background:linear-gradient(90deg,rgba(16,35,61,0),rgba(16,35,61,.12),rgba(16,35,61,0)) !important;}
-.site-header .brand-text{color:var(--navy) !important;}
-.site-header .brand-name{color:var(--navy) !important;}
-.site-header .brand-subtitle{color:var(--muted) !important;}
-.site-header .nav a{color:#34455d !important;}
-.site-header .nav a:hover,.site-header .nav a[aria-current="page"]{color:var(--navy) !important;}
-.site-header .menu-toggle{background:rgba(16,35,61,.06) !important;color:var(--navy) !important;border:1px solid rgba(16,35,61,.10) !important;}
-</style>
-<style id="master-homepage-header-contract">
-@media (min-width: 841px) {
-  .homepage .site-header .wrap { width: min(calc(100% - 24px), 1600px); }
-  .homepage .topbar-inner { flex-wrap: nowrap !important; gap: 14px; }
-  .homepage .brand { flex: 0 0 auto; flex-shrink: 0; gap: 11px; }
-  .homepage .brand-text, .homepage .brand-name, .homepage .brand-subtitle { white-space: nowrap; }
-  .homepage .brand-logo { flex-basis: 148px !important; }
-  .homepage .brand-name { font-size: .95rem !important; }
-  .homepage .brand-subtitle { font-size: .80rem !important; }
-  .homepage .nav { margin-left: auto; flex-wrap: nowrap !important; white-space: nowrap; min-width: 0; gap: 11px !important; }
-  .homepage .nav a { white-space: nowrap; font-size: .79rem !important; }
-}
-@media (min-width: 1181px) {
-  .homepage .site-header .wrap { width: min(calc(100% - 32px), 1600px); }
-  .homepage .nav { gap: 15px !important; }
-  .homepage .nav a { font-size: .84rem !important; }
-}
-</style>
-<style id="tr-en-identical-desktop-header">
-/* Master rule: English desktop header uses exactly the same geometry as Turkish desktop header. */
-@media (min-width: 1101px) {
-  .site-header .wrap {
-    width: min(calc(100% - 32px), 1400px) !important;
-  }
-  .topbar-inner {
-    min-height: 88px !important;
-    gap: 24px !important;
-  }
-  .brand {
-    gap: 18px !important;
-    flex: 0 0 auto !important;
-    min-width: 0;
-  }
-  .brand-logo img {
-    width: 172px !important;
-  }
-  .brand-name {
-    font-size: 1.05rem !important;
-    white-space: nowrap;
-  }
-  .brand-subtitle {
-    font-size: 0.9rem !important;
-    white-space: nowrap;
-  }
-  .nav {
-    margin-left: auto !important;
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    gap: clamp(8px, .78vw, 18px) !important;
-    white-space: nowrap;
-    min-width: 0;
-  }
-  .nav a {
-    font-size: clamp(.72rem, .64vw, .88rem) !important;
-    white-space: nowrap !important;
-  }
-}
-/* On narrower desktop/laptop widths, do not distort the master header: switch EN navigation to the same mobile control. */
-@media (min-width: 841px) and (max-width: 1100px) {
-  .nav { display: none !important; }
-  .menu-toggle { display: inline-flex !important; }
-  .site-header .wrap { width: min(calc(100% - 32px), 1400px) !important; }
-  .topbar-inner { min-height: 82px !important; gap: 20px !important; }
-  .brand-logo img { width: 172px !important; }
-  .brand-name { font-size: 1.05rem !important; }
-  .brand-subtitle { font-size: .9rem !important; }
-}
-</style>
+
+
+
 <style id="spanish-prose-standard">
-.homepage .lead,.homepage .section-intro,.homepage .text-panel,.homepage .detail-item p,
+.homepage .lead,.homepage .section-intro,.homepage .text-panel p,.homepage .detail-item p,
 .homepage .card-list p,#contact .contact-intro,#contact .contact-panel-copy,#contact .contact-notice{
  text-align:justify!important;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto;
 }
@@ -1235,50 +1123,51 @@
   hyphens:auto;
   -webkit-hyphens:auto;
 }
-</style><style id="multilingual-selector-tight-spacing">
-/* MULTILINGUAL LANGUAGE SELECTOR — MASTER TIGHT SPACING */
-.gtb-lang{
-    display:flex !important;
-    align-items:center !important;
-    gap:0 !important;
-    white-space:nowrap !important;
-    line-height:1 !important;
+</style>
+<style id="tr-master-header-contract-copy">
+<style id="final-contact-and-header-fix">
+/* MASTER: logo/name/navigation row stays light; only contact section is navy/gold. */
+.site-header{background:#fff !important;backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(16,35,61,.10) !important;}
+.site-header::after{background:linear-gradient(90deg,rgba(16,35,61,0),rgba(16,35,61,.12),rgba(16,35,61,0)) !important;}
+.site-header .brand-text{color:var(--navy) !important;}
+.site-header .brand-name{color:var(--navy) !important;}
+.site-header .brand-subtitle{color:var(--muted) !important;}
+.site-header .nav a{color:#34455d !important;}
+.site-header .nav a:hover,.site-header .nav a[aria-current=page]{color:var(--navy) !important;}
+.site-header .menu-toggle{background:rgba(16,35,61,.06) !important;color:var(--navy) !important;border:1px solid rgba(16,35,61,.10) !important;}
+</style>
+<style id="tr-master-homepage-header-contract-copy">
+@media (min-width: 841px) {
+  .homepage .topbar-inner { flex-wrap: nowrap !important; }
+  .homepage .brand { flex: 0 0 auto; flex-shrink: 0; }
+  .homepage .brand-text, .homepage .brand-name, .homepage .brand-subtitle { white-space: nowrap; }
+  .homepage .nav { margin-left: auto; flex-wrap: nowrap !important; white-space: nowrap; min-width: 0; }
+  .homepage .nav a { white-space: nowrap; }
 }
-.gtb-lang-link{
-    display:inline-block !important;
-    padding:0 3px !important;
-    margin:0 !important;
-    font-size:.78rem !important;
-    line-height:1 !important;
-    letter-spacing:.06em !important;
-    font-weight:400 !important;
-    text-transform:uppercase !important;
-    text-decoration:none !important;
+@media (min-width: 841px) and (max-width: 1180px) {
+  .homepage .site-header .wrap { width: min(calc(100% - 24px), 1500px); }
+  .homepage .topbar-inner { gap: 14px; }
+  .homepage .brand { gap: 11px; }
+  .homepage .brand-logo { flex-basis: 148px !important; }
+  .homepage .brand-name { font-size: .95rem !important; }
+  .homepage .brand-subtitle { font-size: .80rem !important; }
+  .homepage .nav { gap: 11px !important; }
+  .homepage .nav a { font-size: .79rem !important; }
 }
-.gtb-lang-div{
-    display:inline-block !important;
-    padding:0 1px !important;
-    margin:0 !important;
-    font-size:.78rem !important;
-    line-height:1 !important;
-    color:rgba(255,255,255,.34) !important;
-}
-.gtb-lang-link.gtb-lang-active,
-.gtb-lang-link[aria-current="true"],
-.gtb-lang-link[aria-current="page"]{
-    font-weight:400 !important;
-}
-@media (max-width:768px){
-    .gtb-lang-link{
-        padding:0 3px !important;
-        font-size:.72rem !important;
-        letter-spacing:.05em !important;
-    }
-    .gtb-lang-div{
-        padding:0 1px !important;
-        font-size:.72rem !important;
-    }
-}
+</style>
+<style id="tr-master-language-selector-copy">
+.gtb-lang{gap:6px!important;white-space:nowrap}.gtb-lang-link{font-size:.78rem;letter-spacing:.06em}.gtb-lang-div{font-size:.72rem}
+@media(max-width:640px){.gtb-lang{gap:4px!important}.gtb-lang-link{font-size:.70rem;letter-spacing:.02em}.gtb-lang-div{font-size:.62rem}}
+</style>
+<style id="master-language-header-white">
+.site-header{background:#fff !important;backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(16,35,61,.10) !important;}
+.site-header::after{background:linear-gradient(90deg,rgba(16,35,61,0),rgba(16,35,61,.12),rgba(16,35,61,0)) !important;}
+.site-header .brand-text{color:var(--navy) !important;}
+.site-header .brand-name{color:var(--navy) !important;}
+.site-header .brand-subtitle{color:var(--muted) !important;}
+.site-header .nav a{color:#34455d !important;}
+.site-header .nav a:hover,.site-header .nav a[aria-current="page"]{color:var(--navy) !important;}
+.site-header .menu-toggle{background:rgba(16,35,61,.06) !important;color:var(--navy) !important;border:1px solid rgba(16,35,61,.10) !important;}
 </style></head>
 <body class="homepage" data-language="es">
 <div class="site-sticky-wrap">
@@ -1311,7 +1200,7 @@
 </a>
 <div class="brand-text">
 <div class="brand-name">Dr. İbrahim Nuri Derinpınar</div>
-<div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
+<div class="brand-subtitle">PhD • LL.M. • LL.B. • MCIArb</div>
 </div>
 </div>
 <button aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" id="menuToggle">
@@ -1354,12 +1243,12 @@
 <div class="hero-copy">
 <div class="section-badge">Asesoramiento jurídico y arbitraje</div>
 <h1 class="hero-title">Dr. İbrahim Nuri <span class="accent">Derinpınar</span></h1>
-<p class="lead">Su práctica se centra especialmente en el derecho societario, el derecho de contratos, el derecho inmobiliario, el derecho del transporte y el arbitraje nacional e internacional. Presta asesoramiento jurídico integral a clientes turcos e internacionales en la estructuración jurídica de relaciones comerciales, la gestión de riesgos contractuales y contenciosos y la dirección estratégica de procedimientos de resolución de controversias.</p>
+<p class="lead">Su práctica se centra especialmente en el derecho societario, el derecho de contratos, el derecho inmobiliario, el derecho del transporte y el arbitraje nacional e internacional. Presta asesoramiento jurídico integral a clientes nacionales e internacionales en la estructuración jurídicamente segura de relaciones comerciales, la gestión de riesgos contractuales y contenciosos y la conducción de procedimientos de resolución de controversias.</p>
 <div class="association-card">
 <div aria-hidden="true" class="association-icon">
 <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18"></path><path d="M6 6h12"></path><path d="M8 6c0 3-2 5-4 6 2 1 4 3 4 6"></path><path d="M16 6c0 3 2 5 4 6-2 1-4 3-4 6"></path><path d="M4 18h16"></path></svg>
 </div>
-<p class="professional-status">Ejerce la abogacía en Turquía desde 2014 y está colegiado en el Colegio de Abogados de Estambul.</p>
+<p class="professional-status">Está habilitado para ejercer la abogacía en Turquía desde 2014 y es miembro del Colegio de Abogados de Estambul.</p>
 </div>
 <div class="hero-actions">
 <a class="btn primary" href="#contact">Contacto</a>
@@ -1368,7 +1257,7 @@
 </div>
 </div>
 <div class="hero-media">
-<img alt="Retrato del Dr. İbrahim Nuri Derinpınar" class="portrait" src="../IMG_3478.png"/>
+<img alt="Portrait of Dr. İbrahim Nuri Derinpınar" class="portrait" src="../IMG_3478.png"/>
 </div>
 </div>
 </div>
@@ -1384,14 +1273,14 @@
 <div class="card-list">
 <div>
 <strong>Bahçeşehir University</strong>
-<span>Doctorado en Derecho Privado (2018–2026)</span>
+<span>Doctoral Program (2018–2026)</span>
 </div>
 <div>
 <strong>Brunel University of London</strong>
 <span>LL.M. International Commercial Law (2016–2017) · Merit</span>
 </div>
 <div>
-<strong>Universidad de Estambul</strong>
+<strong>Estambul University</strong>
 <span>Facultad de Derecho (2008–2012)</span>
 </div>
 </div>
@@ -1406,11 +1295,11 @@
 </div>
 <div class="card-list">
 <div>
-<strong>Abogado fundador</strong>
+<strong>Founding Attorney</strong>
 <span>Derinpınar Asesoría Jurídica (2018–actualidad)</span>
 </div>
 <div>
-<strong>Abogado</strong>
+<strong>Associate</strong>
 <span>Reisbey Law Office (2017)</span>
 </div>
 <div>
@@ -1432,8 +1321,8 @@
 <li>Derecho societario</li>
 <li>Derecho de contratos</li>
 <li>Derecho inmobiliario</li>
-<li><a href="../icranin-geri-birakilmasi.html">Derecho de ejecución forzosa y concursal</a></li>
-<li>Arbitraje</li>
+<li><a href="../icranin-geri-birakilmasi.html">Derecho de ejecución e insolvencia</a></li>
+<li>Arbitration</li>
 <li>Derecho del transporte</li>
 <li><a href="../e-spor-hukuku.html">Derecho de los e-sports</a></li>
 </ul>
@@ -1449,11 +1338,11 @@
 </div>
 <div class="card-list">
 <div>
-<strong>Tesis doctoral</strong>
+<strong>Ph.D. Dissertation</strong>
 <span>El contrato del jugador profesional de e-sports</span>
 </div>
 <div>
-<strong>Trabajo de Fin de Máster (LL.M.)</strong>
+<strong>Master’s Thesis</strong>
 <span>Continuing Legal Uncertainty and Complexity in the Field of International Multimodal Transport Liability</span>
 </div>
 </div>
@@ -1463,11 +1352,11 @@
 </section>
 <section id="about">
 <div class="wrap about-card">
-<div class="section-badge">Perfil profesional</div>
+<div class="section-badge">Corporate Profile</div>
 <h2 class="section-title">Perfil</h2>
 <div class="text-columns">
-<div class="text-panel">İbrahim Nuri Derinpınar ejerce principalmente en los ámbitos del derecho societario, el derecho de contratos, el derecho inmobiliario y de arrendamientos, el derecho deportivo, el derecho de los e-sports, el derecho del transporte y el arbitraje. Su práctica se orienta a la estructuración jurídica de las relaciones comerciales, la gestión eficiente de las relaciones contractuales y la prevención de controversias para clientes turcos e internacionales.</div>
-<div class="text-panel">Tras graduarse en la Facultad de Derecho de la Universidad de Estambul, cursó el LL.M. in International Commercial Law en Brunel University of London, que obtuvo con la calificación «Merit», y realizó estudios de derecho mercantil y derecho de la competencia en la London School of Economics and Political Science. Su investigación doctoral se ha centrado especialmente en el derecho de contratos, el derecho deportivo y el derecho de los e-sports.</div>
+<div class="text-panel">İbrahim Nuri Derinpınar ejerce principalmente en los ámbitos del derecho societario, derecho de contratos, derecho inmobiliario, derecho de arrendamientos, derecho deportivo, derecho de los e-sports, derecho del transporte y arbitraje. Su actividad se orienta a la estructuración jurídicamente segura de las relaciones comerciales, la gestión eficaz de los procesos contractuales y la prevención de controversias para clientes nacionales e internacionales.</div>
+<div class="text-panel">Tras graduarse en la Facultad de Derecho de la Universidad de Estambul, obtuvo el LL.M. en Brunel University of London con la calificación Merit y cursó estudios de derecho mercantil y derecho de la competencia en la London School of Economics and Political Science. Su investigación doctoral se ha centrado especialmente en el derecho de contratos, el derecho deportivo y el derecho de los e-sports.</div>
 </div>
 </div>
 </section>
@@ -1479,7 +1368,7 @@
 <article class="detail-item">
 <h3>Bahçeşehir University</h3>
 <div class="detail-meta">Programa de Doctorado en Derecho Privado · 2018–2026</div>
-<p>Tesis doctoral: <em>El contrato del jugador profesional de e-sports</em></p>
+<p>Ph.D. Dissertation: <em>El contrato del jugador profesional de e-sports</em></p>
 </article>
 <article class="detail-item">
 <h3>Brunel University of London</h3>
@@ -1487,27 +1376,27 @@
 <p><em>Continuing Legal Uncertainty and Complexity in the Field of International Multimodal Transport Liability</em></p>
 </article>
 <article class="detail-item">
-<h3>Facultad de Derecho de la Universidad de Estambul</h3>
-<div class="detail-meta">Título universitario en Derecho (equivalente a LL.B.) · 2008–2012</div>
+<h3>Estambul University Facultad de Derecho</h3>
+<div class="detail-meta">LL.B. Equivalent · 2008–2012</div>
 </article>
 <article class="detail-item">
 <h3>London School of Economics and Political Science</h3>
-<div class="detail-meta">Derecho mercantil · Derecho y política de la competencia · 2016</div>
-<p>Derecho mercantil: B+ · Derecho y política de la competencia: A-.</p>
+<div class="detail-meta">Commercial Law · Competition Law and Policy · 2016</div>
+<p>Commercial Law: B+ · Competition Law and Policy: A-.</p>
 </article>
 </div>
 </div>
 </section>
 <section id="sertifikalar">
 <div class="wrap detail-card">
-<div class="section-badge">Formación complementaria</div>
+<div class="section-badge">Additional Programs</div>
 <h2 class="section-title">Certificados y programas académicos</h2>
 <div class="chips">
 <span class="chip">CIArb · MCIArb · 2018</span>
-<span class="chip">Istanbul Bilgi University · Practical Competition Law</span>
+<span class="chip">Estambul Bilgi University · Practical Competition Law</span>
 <span class="chip">Hilderstone College · CEFR B2.2</span>
-<span class="chip">Programa de inglés jurídico</span>
-<span class="chip">Programa LSE Summer School</span>
+<span class="chip">Legal English Programme</span>
+<span class="chip">LSE Summer School Programme</span>
 </div>
 </div>
 </section>
@@ -1519,22 +1408,22 @@
 <article class="detail-item">
 <h3>Abogado fundador · Derinpınar Asesoría Jurídica</h3>
 <div class="detail-meta">Enero de 2018 – actualidad · Bakırköy, Estambul</div>
-<p>Presta asesoramiento jurídico a clientes turcos e internacionales en materia de derecho societario, derecho de contratos, derecho inmobiliario, derecho del transporte y arbitraje.</p>
+<p>Presta asesoramiento jurídico a clientes nacionales e internacionales en materia de derecho societario, derecho de contratos, derecho inmobiliario, derecho del transporte y arbitraje.</p>
 </article>
 <article class="detail-item">
 <h3>Asesor jurídico · Penteks İplik Sanayi ve Ticaret A.Ş.</h3>
-<div class="detail-meta">Enero de 2018 – abril de 2026 · Malatya</div>
-<p>Responsable del asesoramiento jurídico relacionado con la actividad de la empresa, incluida la redacción y negociación de contratos y la evaluación de riesgos jurídicos societarios y comerciales.</p>
+<div class="detail-meta">January 2018 – April 2026 · Malatya</div>
+<p>Se ocupa de la gestión de los procesos jurídicos vinculados a la actividad empresarial, la redacción y negociación de contratos y la evaluación de riesgos jurídicos corporativos.</p>
 </article>
 <article class="detail-item">
-<h3>Abogado · Reisbey Law Office</h3>
-<div class="detail-meta">Mayo de 2017 – noviembre de 2017 · Estambul</div>
-<p>Realizó investigación jurídica, elaboró dictámenes y participó en la preparación de asuntos relativos al arbitraje comercial internacional, litigios mercantiles y contratos con elemento de extranjería.</p>
+<h3>Associate · Reisbey Law Office</h3>
+<div class="detail-meta">May 2017 – November 2017 · Estambul</div>
+<p>Participó en investigaciones jurídicas, elaboración de dictámenes y preparación de asuntos relativos al arbitraje comercial internacional, controversias mercantiles y contratos con elemento extranjero.</p>
 </article>
 <article class="detail-item">
 <h3>Abogado en prácticas · Doğan Law Office</h3>
-<div class="detail-meta">Agosto de 2012 – septiembre de 2013</div>
-<p>Realizó investigación jurídica, revisión de contratos y actuaciones de apoyo en asuntos de derecho societario y contractual, así como en la preparación de procedimientos contenciosos.</p>
+<div class="detail-meta">August 2012 – September 2013</div>
+<p>Realizó investigaciones jurídicas, revisión de contratos y actuaciones de seguimiento relacionadas con el derecho societario, el derecho de contratos y la preparación de controversias.</p>
 </article>
 </div>
 </div>
@@ -1543,16 +1432,16 @@
 <div class="wrap detail-card">
 <div class="section-badge">Áreas de práctica</div>
 <h2 class="section-title">Áreas de práctica</h2>
-<p class="section-intro">Los servicios jurídicos de Derinpınar Asesoría Jurídica se orientan a la estructuración jurídicamente segura de las relaciones comerciales, la gestión de riesgos de litigio y la dirección estratégica de procedimientos de resolución de controversias.</p>
+<p class="section-intro">Los servicios jurídicos de Derinpınar Asesoría Jurídica se estructuran en torno a la seguridad jurídica de las relaciones comerciales, la gestión de los riesgos de controversia y la conducción estratégica de los procedimientos de resolución de conflictos.</p>
 <div class="expertise-grid">
 <div class="expertise-item"><span class="expertise-check">✓</span>Derecho societario</div>
 <div class="expertise-item"><span class="expertise-check">✓</span>Derecho de contratos</div>
 <div class="expertise-item"><span class="expertise-check">✓</span>Derecho inmobiliario</div>
-<a class="expertise-item" href="../icranin-geri-birakilmasi.html"><span class="expertise-check">✓</span>Derecho de ejecución forzosa y concursal</a>
+<a class="expertise-item" href="../icranin-geri-birakilmasi.html"><span class="expertise-check">✓</span>Derecho de ejecución e insolvencia</a>
 <div class="expertise-item"><span class="expertise-check">✓</span>Derecho de arrendamientos</div>
 <div class="expertise-item"><span class="expertise-check">✓</span>Derecho deportivo</div>
 <a class="expertise-item" href="../e-spor-hukuku.html"><span class="expertise-check">✓</span>Derecho de los e-sports</a>
-<div class="expertise-item"><span class="expertise-check">✓</span>Arbitraje</div>
+<div class="expertise-item"><span class="expertise-check">✓</span> Arbitration</div>
 <div class="expertise-item"><span class="expertise-check">✓</span>Derecho del transporte</div>
 </div>
 </div>
@@ -1563,16 +1452,16 @@
 <h2 class="section-title">Actividad académica</h2>
 <div class="detail-grid">
 <article class="detail-item">
-<h3>Tesis doctoral</h3>
+<h3>Ph.D. Dissertation</h3>
 <div class="detail-meta">Programa de Doctorado en Derecho Privado de la Universidad Bahçeşehir</div>
 <p><strong>El contrato del jugador profesional de e-sports</strong></p>
-<p>La tesis examina, desde una perspectiva comparada, el régimen jurídico de los contratos de jugadores de e-sports conforme al derecho turco, con especial atención a los derechos y obligaciones de las partes, los requisitos de validez y las causas y efectos de la extinción de la relación contractual.</p>
+<p>Esta tesis examina, desde una perspectiva comparada, el régimen jurídico de los contratos de jugadores de e-sports en el derecho turco, con especial atención a los derechos y obligaciones de las partes, los requisitos de validez y el régimen de extinción.</p>
 </article>
 <article class="detail-item">
-<h3>Trabajo de Fin de Máster (LL.M.)</h3>
+<h3>Master’s Thesis</h3>
 <div class="detail-meta">Brunel University of London</div>
 <p><strong>Continuing Legal Uncertainty and Complexity in the Field of International Multimodal Transport Liability</strong></p>
-<p>El trabajo analiza la inseguridad jurídica existente en el régimen de responsabilidad del porteador en el transporte multimodal internacional y las consecuencias prácticas derivadas de la coexistencia de distintos regímenes de responsabilidad.</p>
+<p>Analiza la inseguridad jurídica existente en el régimen de responsabilidad del porteador en el transporte multimodal internacional y los efectos prácticos de los distintos sistemas de responsabilidad.</p>
 </article>
 </div>
 </div>
@@ -1581,9 +1470,9 @@
 <div class="wrap contact-strip">
 <div class="section-badge">Derinpınar Asesoría Jurídica</div>
 <h2 class="section-title contact-title">Asesoramiento jurídico y resolución de controversias</h2>
-<p class="contact-intro">Para solicitar asesoramiento jurídico o asistencia en la resolución de controversias en materia de derecho societario, derecho de contratos, derecho inmobiliario y de arrendamientos, arbitraje nacional e internacional, derecho deportivo y derecho de los e-sports, puede ponerse en contacto con Derinpınar Asesoría Jurídica. Una exposición sucinta de los antecedentes jurídicos y fácticos del asunto facilita una primera valoración más precisa.</p>
-<div aria-label="Áreas principales de asesoramiento" class="contact-focus-grid">
-<div class="contact-focus"><strong>Asesoramiento societario</strong><span>Asuntos societarios y contratos mercantiles</span></div>
+<p class="contact-intro">Para servicios de asesoramiento jurídico y resolución de controversias en derecho societario, derecho de contratos, derecho inmobiliario y de arrendamientos, arbitraje nacional e internacional, derecho deportivo y derecho de los e-sports, puede ponerse en contacto con Derinpınar Asesoría Jurídica. Una exposición sucinta del marco general del asunto en la fase inicial permite realizar una evaluación preliminar más precisa.</p>
+<div aria-label="Advisory focus areas" class="contact-focus-grid">
+<div class="contact-focus"><strong>Corporate Advisory</strong><span>Asuntos societarios y contratos mercantiles</span></div>
 <div class="contact-focus"><strong>Resolución de controversias</strong><span>Procedimientos judiciales y arbitrales</span></div>
 <div class="contact-focus"><strong>Derecho de los e-sports</strong><span>Contratos de jugadores de e-sports y asesoramiento jurídico sectorial</span></div>
 </div>
@@ -1591,30 +1480,30 @@
 <div class="contact-panel">
 <div class="contact-kicker">Contacto inicial</div>
 <h3>Solicitud de asesoramiento jurídico</h3>
-<p class="contact-panel-copy">Puede remitir su consulta jurídica directamente mediante el breve formulario que figura a continuación.</p>
+<p class="contact-panel-copy">Complete el breve formulario que figura a continuación para remitir directamente su solicitud de asesoramiento jurídico.</p>
 <form action="https://formspree.io/f/myegjrwo" class="advisory-form" id="advisoryForm" method="POST">
-<input name="_subject" type="hidden" value="Solicitud de asesoramiento jurídico | derinpinar.av.tr"/>
-<input name="language" type="hidden" value="es"/>
+<input name="_subject" type="hidden" value="Legal Advisory Request | derinpinar.av.tr"/>
+<input name="language" type="hidden" value="en"/>
 <div class="form-grid">
-<div class="form-field"><label for="contactName">Nombre y apellidos</label><input autocomplete="name" id="contactName" name="name" placeholder="Nombre y apellidos" required="" type="text"/></div>
+<div class="form-field"><label for="contactName">Nombre y apellidos</label><input autocomplete="name" id="contactName" name="name" placeholder="Your full name" required="" type="text"/></div>
 <div class="form-field"><label for="contactEmail">Correo electrónico</label><input autocomplete="email" id="contactEmail" name="email" placeholder="name@example.com" required="" type="email"/></div>
-<div class="form-field"><label for="contactPhone">Teléfono <span style="font-weight:500;opacity:.7;">(opcional)</span></label><input autocomplete="tel" id="contactPhone" name="phone" placeholder="+34 ..." type="tel"/></div>
-<div class="form-field"><label for="contactMatter">Asunto jurídico</label><select id="contactMatter" name="matter" required=""><option disabled="" selected="" value="">Seleccione una materia</option><option>Derecho societario</option><option>Derecho de contratos</option><option>Derecho inmobiliario / Derecho de arrendamientos</option><option>Arbitraje nacional e internacional</option><option>Derecho deportivo</option><option>Derecho de los e-sports</option><option>Derecho del transporte</option><option>Otro</option></select></div>
-<div class="form-field full"><label for="contactMessage">Describa brevemente su consulta</label><textarea id="contactMessage" name="message" placeholder="Describa brevemente los antecedentes generales de su asunto y el objeto de su consulta." required=""></textarea></div>
+<div class="form-field"><label for="contactPhone">Telephone <span style="font-weight:500;opacity:.7;">(optional)</span></label><input autocomplete="tel" id="contactPhone" name="phone" placeholder="+34 ..." type="tel"/></div>
+<div class="form-field"><label for="contactMatter">Asunto jurídico</label><select id="contactMatter" name="matter" required=""><option disabled="" selected="" value="">Select a matter</option><option>Derecho societario</option><option>Derecho de contratos</option><option>Derecho inmobiliario / Derecho de arrendamientos</option><option>Arbitraje nacional e internacional</option><option>Derecho deportivo</option><option>Derecho de los e-sports</option><option>Derecho del transporte</option><option>Otro</option></select></div>
+<div class="form-field full"><label for="contactMessage">Briefly Describe Your Matter</label><textarea id="contactMessage" name="message" placeholder="Please briefly describe the general framework of your legal matter and your request." required=""></textarea></div>
 </div>
 <button class="contact-submit" type="submit"><span class="submit-label">Enviar solicitud de asesoramiento jurídico</span> →</button>
 <div aria-live="polite" class="form-status" hidden="" id="advisoryStatus" role="status"></div>
-<p class="contact-notice"><strong>Aviso:</strong> La cumplimentación o el envío de este formulario no da lugar al establecimiento de una relación abogado-cliente. En su primera comunicación, no incluya datos personales sensibles, documentación confidencial ni documentos relativos a procedimientos sujetos a plazo.</p>
+<p class="contact-notice"><strong>Notice:</strong> Submitting or preparing this form does not establish an attorney–client relationship. Please do not include sensitive personal data, confidential documents or documents relating to time-sensitive proceedings in your initial communication.</p>
 </form>
 </div>
-<aside aria-label="Datos de contacto directo" class="contact-panel">
+<aside aria-label="Direct contact details" class="contact-panel">
 <div class="contact-kicker">Contacto directo</div>
 <h3>Derinpınar Asesoría Jurídica</h3>
-<p class="contact-panel-copy">También puede contactar directamente con el despacho por correo electrónico, a través de LinkedIn o mediante los datos de ubicación del despacho, sin utilizar el formulario.</p>
+<p class="contact-panel-copy">También puede ponerse en contacto directamente con el despacho por correo electrónico, LinkedIn o mediante la ubicación del despacho, sin utilizar el formulario.</p>
 <div class="direct-list">
 <a class="direct-card email" href="mailto:ibrahim@derinpinar.av.tr"><span aria-hidden="true" class="direct-icon"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span><span class="direct-copy"><strong>Correo electrónico</strong><span>ibrahim@derinpinar.av.tr</span></span><span class="direct-arrow">→</span></a>
 <a class="direct-card" href="https://www.linkedin.com/in/ibrahim-nuri-derinp%C4%B1nar-lawyer" rel="noopener noreferrer" target="_blank"><span aria-hidden="true" class="direct-icon"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></span><span class="direct-copy"><strong>LinkedIn</strong><span>Ver perfil profesional</span></span><span class="direct-arrow">→</span></a>
-<a class="direct-card" href="https://maps.app.goo.gl/wgUL2QteEvekjEPo9" rel="noopener noreferrer" target="_blank"><span aria-hidden="true" class="direct-icon"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-6-4.35-6-10a6 6 0 1 1 12 0c0 5.65-6 10-6 10z"></path><circle cx="12" cy="11" r="2.5"></circle></svg></span><span class="direct-copy"><strong>Despacho</strong><span>Bakırköy · Estambul · Turquía</span></span><span class="direct-arrow">→</span></a>
+<a class="direct-card" href="https://maps.app.goo.gl/wgUL2QteEvekjEPo9" rel="noopener noreferrer" target="_blank"><span aria-hidden="true" class="direct-icon"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-6-4.35-6-10a6 6 0 1 1 12 0c0 5.65-6 10-6 10z"></path><circle cx="12" cy="11" r="2.5"></circle></svg></span><span class="direct-copy"><strong>Despacho</strong><span>Bakırköy · Estambul · Türkiye</span></span><span class="direct-arrow">→</span></a>
 </div>
 </aside>
 </div>
@@ -1630,12 +1519,12 @@
 <div class="footer-copy">© 2026 Dr. İbrahim Nuri Derinpınar</div>
 </div>
 </footer>
-<div aria-label="Barra de acciones móvil" class="mobile-action-bar">
-<a aria-label="Enviar correo electrónico" class="mobile-action" href="mailto:ibrahim@derinpinar.av.tr">
+<div aria-label="Mobil sabit aksiyon çubuğu" class="mobile-action-bar">
+<a aria-label="Email gönder" class="mobile-action" href="mailto:ibrahim@derinpinar.av.tr">
 <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
 <span>Correo electrónico</span>
 </a>
-<a aria-label="Abrir ubicación" class="mobile-action" href="https://maps.app.goo.gl/wgUL2QteEvekjEPo9" rel="noreferrer" target="_blank">
+<a aria-label="Locationu aç" class="mobile-action" href="https://maps.app.goo.gl/wgUL2QteEvekjEPo9" rel="noreferrer" target="_blank">
 <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-6-4.35-6-10a6 6 0 1 1 12 0c0 5.65-6 10-6 10z"></path><circle cx="12" cy="11" r="2.5"></circle></svg>
 <span>Ubicación</span>
 </a>
@@ -1700,7 +1589,7 @@
           const button = advisoryForm.querySelector(".contact-submit");
           const label = button.querySelector(".submit-label");
           button.disabled = true;
-          label.textContent = "Enviando…";
+          label.textContent = "Submitting…";
           advisoryStatus.hidden = true;
           advisoryStatus.className = "form-status";
           try {
@@ -1710,17 +1599,17 @@
               headers: { "Accept": "application/json" }
             });
             const result = await response.json().catch(() => ({}));
-            if (!response.ok || (Array.isArray(result.errors) && result.errors.length)) throw new Error("Error de envío");
+            if (!response.ok || (Array.isArray(result.errors) && result.errors.length)) throw new Error("Submission failed");
             advisoryForm.reset();
             advisoryStatus.classList.add("success");
-            advisoryStatus.innerHTML = "<strong>✓ Hemos recibido su consulta</strong><span>Su solicitud de asesoramiento jurídico se ha enviado correctamente. Nos pondremos en contacto con usted a través de los datos facilitados.</span>";
+            advisoryStatus.innerHTML = "<strong>✓ Your Request Has Been Received</strong><span>Your legal advisory request has been successfully submitted. We will contact you using the details provided.</span>";
             advisoryStatus.hidden = false;
-            label.textContent = "Consulta recibida";
+            label.textContent = "Request Received";
           } catch (error) {
             advisoryStatus.classList.add("error");
-            advisoryStatus.innerHTML = "<strong>No ha sido posible enviar su consulta.</strong><span>Compruebe su conexión e inténtelo de nuevo o contacte directamente con el despacho por correo electrónico.</span>";
+            advisoryStatus.innerHTML = "<strong>Your request could not be submitted.</strong><span>Please check your connection and try again, or contact the office directly by email.</span>";
             advisoryStatus.hidden = false;
-            label.textContent = "Enviar solicitud de asesoramiento jurídico";
+            label.textContent = "Submit Legal Advisory Request";
           } finally {
             button.disabled = false;
           }
