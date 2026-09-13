@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://derinpinar.av.tr/makaleler.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-13</lastmod>
   </url>
   <url>
     <loc>https://derinpinar.av.tr/e-spor-hukuku.html</loc>
@@ -195,5 +195,11 @@
   <url>
     <loc>https://derinpinar.av.tr/e-sporcunun-sadakat-borcu-kulup-itibari-takim-disiplini-ve-sir-saklama.html</loc>
     <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://derinpinar.av.tr/anonim-sirketlerde-yonetim-yetkisinin-devri.html</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
