@@ -951,12 +951,27 @@ transparent 100%);
 .site-header .menu-toggle{display:none;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(16,35,61,.10) !important;border-radius:14px;background:rgba(16,35,61,.06) !important;color:#10233d !important;cursor:pointer;}
 @media (min-width:1101px){.site-header .topbar-inner{flex-wrap:nowrap !important}.site-header .brand{flex-shrink:0}.site-header .nav{display:flex !important;flex-wrap:nowrap !important}.site-header .nav a{white-space:nowrap}}
 @media (max-width:1100px){.site-header .nav{display:none !important}.site-header .menu-toggle{display:inline-flex !important}.site-header .topbar-inner{min-height:76px}}
-@media (max-width:640px){.site-header{background:#fff !important}.site-header .topbar-inner{min-height:76px;gap:12px}.site-header .brand{gap:12px}.site-header .brand-logo img{width:124px}.site-header .brand-name{font-size:.95rem}.site-header .brand-subtitle{font-size:.82rem}}
+@media (max-width:640px){
+  .site-header{background:#fff !important}
+  .site-header .topbar-inner{min-height:76px;gap:10px;padding-left:14px!important;padding-right:14px!important}
+  .site-header .brand{gap:10px;min-width:0}
+  .site-header .brand-logo img{width:115px;height:auto}
+  .site-header .brand-text{min-width:0}
+  .site-header .brand-name{font-size:.88rem;white-space:nowrap}
+  .site-header .brand-subtitle{font-size:.76rem;white-space:nowrap}
+  .site-header .menu-toggle{width:40px;height:40px;flex-shrink:0}
+}
+@media (max-width:390px){
+  .site-header .brand-logo img{width:100px}
+  .site-header .brand-name{font-size:.82rem}
+  .site-header .brand-subtitle{font-size:.70rem}
+  .site-header .menu-toggle{width:38px;height:38px}
+}
 </style>
 <style id="yk-temsil-final-contract">
 .article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
-.article-page table{border:1px solid var(--border)}
-.article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none;-webkit-hyphens:none}
+.article-page table{border:1px solid var(--border);display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none;-webkit-hyphens:none;white-space:normal}
 .article-page thead th+th,.article-page tbody td+td{border-left:1px solid rgba(16,35,61,.18)}
 .article-page .note p strong,.article-page .note p .legal-gold,.article-page p .legal-gold,.article-page td .legal-gold{display:inline!important;margin:0!important;color:#c89b3c!important;font-size:inherit!important;font-weight:700!important;letter-spacing:normal!important;text-transform:none!important}
 .article-page .checklist{margin:32px 0;padding:26px 28px;border:1px solid rgba(200,155,60,.24);border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(200,155,60,.08),rgba(16,35,61,.025))}
@@ -966,7 +981,12 @@ transparent 100%);
 .toc-container .toc-list{list-style:none;margin:0;padding-left:0}
 .toc-container .toc-list li{list-style:none;margin-left:0;position:static}
 .toc-container .toc-list li::before{display:none;content:none}
-@media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important}.article-page thead th,.article-page tbody td{text-align:left!important}}
+@media(max-width:768px){
+  .article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important}
+  .article-page thead th,.article-page tbody td{text-align:left!important}
+  .article-page table{display:block!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+  .article-page .article-container{width:100%!important;padding:0 16px 20px!important}
+}
 </style>
 <style id="hero-single-legal-emphasis">.article-page .hero .hero-legal-emphasis{color:#c89b3c;font-weight:700;}</style>
 </head>
