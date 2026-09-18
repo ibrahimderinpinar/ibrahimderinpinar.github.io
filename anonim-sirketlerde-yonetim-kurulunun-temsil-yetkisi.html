@@ -7,11 +7,11 @@
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>
 <script defer="" src="scripts/site-search.js"></script>
 <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-7VG8YJ31K5');
- </script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7VG8YJ31K5');
+</script>
 <title>Anonim Şirketlerde Yönetim Kurulunun Temsil Yetkisi: Şirketi Kim, Nasıl Temsil Eder? | Av. Dr. İbrahim Nuri Derinpınar</title>
 <meta content="Anonim şirkette temsil yetkisi; TTK m. 370 çift imza kuralı, münferit temsil, TTK m. 371 sınırlandırmalar, ultra vires yasağı, sınırlı yetkili ticari vekiller ve Yargıtay içtihatları incelenmektedir." name="description"/>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
@@ -32,764 +32,1069 @@
 <meta content="Anonim şirkette temsil yetkisi; TTK m. 370 çift imza kuralı, münferit temsil, TTK m. 371 sınırlandırmalar, ultra vires yasağı, sınırlı yetkili ticari vekiller ve Yargıtay içtihatları incelenmektedir." name="twitter:description"/>
 <meta content="https://derinpinar.av.tr/dlc-logo.png" name="twitter:image"/>
 <style>
-        :root {
-            --primary: #1f2d47;
-            --primary-light: #2d3e54;
-            --accent: #c9a961;
-            --accent-light: #e8dcc4;
-            --text: #1a1a1a;
-            --text-muted: #666;
-            --bg-light: #f9f7f3;
-            --bg-white: #ffffff;
-            --border: #e8e3dd;
-            --success: #4caf50;
-            
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
-            
-            --radius-sm: 6px;
-            --radius-md: 10px;
-            --radius-lg: 16px;
-            
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+  
+ :root {  
+ --primary: #1f2d47;  
+ --primary-light: #2d3e54;  
+ --accent: #c9a961;  
+ --accent-light: #e8dcc4;  
+ --text: #1a1a1a;  
+ --text-muted: #666;  
+ --bg-light: #f9f7f3;  
+ --bg-white: #ffffff;  
+ --border: #e8e3dd;  
+ --success: #4caf50;  
+   
+--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);  
+ --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);  
+ --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);  
+   
+--radius-sm: 6px;  
+ --radius-md: 10px;  
+ --radius-lg: 16px;  
+   
+--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);  
+ }  
+  
+ * {  
+ margin: 0;  
+ padding: 0;  
+ box-sizing: border-box;  
+ }  
+  
+ html {  
+ scroll-behavior: smooth;  
+ }  
+  
+ body {  
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;  
+ color: var(--text);  
+ background: var(--bg-white);  
+ line-height: 1.6;  
+ -webkit-font-smoothing: antialiased;  
+ -moz-osx-font-smoothing: grayscale;  
+ }  
+  
+ /* ============================================  
+ NAVBAR  
+ ============================================ */  
+ .topbar {  
+ position: sticky;  
+ top: 0;  
+ z-index: 50;  
+ background: rgba(255, 255, 255, 0.92);  
+ backdrop-filter: blur(16px);  
+ border-bottom: 1px solid var(--border);  
+ }  
+  
+ .topbar-inner {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ padding: 14px 20px;  
+ display: flex;  
+ align-items: center;  
+ justify-content: space-between;  
+ gap: 20px;  
+ }  
+  
+ .brand {  
+ display: flex;  
+ align-items: center;  
+ gap: 14px;  
+ min-width: 0;  
+ text-decoration: none;  
+ }  
+  
+ .brand-logo img {  
+ width: 200px;  
+ height: auto;  
+ }  
+  
+ .brand-text {  
+ display: flex;  
+ flex-direction: column;  
+ gap: 2px;  
+ min-width: 0;  
+ }  
+  
+ .brand-name {  
+ font-weight: 700;  
+ font-size: 1.1rem;  
+ line-height: 1.2;  
+ color: var(--primary);  
+ }  
+  
+ .brand-subtitle {  
+ color: var(--text-muted);  
+ font-size: 0.82rem;  
+ }  
+  
+ .nav {  
+ display: flex;  
+ flex-wrap: wrap;  
+ gap: 18px;  
+ color: var(--text-muted);  
+ font-size: 0.95rem;  
+ }  
+  
+ .nav a {  
+ color: var(--text-muted);  
+ text-decoration: none;  
+ transition: var(--transition);  
+ border-bottom: none;  
+ }  
+  
+ .nav a:hover,  
+ .nav a[aria-current="page"] {  
+ color: var(--primary);  
+ }  
+  
+ .menu-toggle {  
+ display: none;  
+ background: none;  
+ border: none;  
+ cursor: pointer;  
+ color: var(--primary);  
+ padding: 0;  
+ width: 42px;  
+ height: 42px;  
+ align-items: center;  
+ justify-content: center;  
+ }  
+  
+ .mobile-overlay {  
+ position: fixed;  
+ inset: 0;  
+ background: rgba(0, 0, 0, 0.35);  
+ opacity: 0;  
+ visibility: hidden;  
+ transition: 0.3s;  
+ z-index: 9998;  
+ }  
+  
+ .mobile-overlay.active {  
+ opacity: 1;  
+ visibility: visible;  
+ }  
+  
+ .mobile-menu {  
+ position: fixed;  
+ top: 0;  
+ right: -100%;  
+ width: 82%;  
+ max-width: 340px;  
+ height: 100vh;  
+ overflow-y: auto;  
+ padding-top: calc(80px + env(safe-area-inset-top));  
+ padding-bottom: env(safe-area-inset-bottom);  
+ background: var(--bg-white);  
+ padding-left: 35px;  
+ padding-right: 35px;  
+ display: flex;  
+ flex-direction: column;  
+ box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18);  
+ transition: 0.35s ease;  
+ z-index: 9999;  
+ }  
+  
+ .mobile-menu.active {  
+ right: 0;  
+ }  
+  
+ .mobile-menu a {  
+ font-size: 1.2rem;  
+ font-weight: 600;  
+ color: var(--primary);  
+ margin: 16px 0;  
+ text-decoration: none;  
+ border-bottom: none;  
+ }  
+  
+ .close-menu {  
+ position: absolute;  
+ top: 22px;  
+ right: 22px;  
+ background: none;  
+ border: none;  
+ cursor: pointer;  
+ padding: 0;  
+ color: var(--primary);  
+ }  
+  
+ /* ============================================  
+ HERO SECTION  
+ ============================================ */  
+ .hero {  
+ background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);  
+ color: var(--bg-white);  
+ padding: 60px 20px;  
+ margin-bottom: 40px;  
+ }  
+  
+ .hero-grid {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ }  
+  
+ .eyebrow {  
+ font-size: 12px;  
+ font-weight: 600;  
+ letter-spacing: 1.5px;  
+ text-transform: uppercase;  
+ color: var(--accent);  
+ margin-bottom: 16px;  
+ display: block;  
+ }  
+  
+ .meta {  
+ font-size: 14px;  
+ color: rgba(255, 255, 255, 0.75);  
+ margin-bottom: 32px;  
+ display: flex;  
+ flex-wrap: wrap;  
+ gap: 8px;  
+ align-items: center;  
+ }  
+  
+ .meta a {  
+ color: var(--accent);  
+ text-decoration: none;  
+ font-weight: 500;  
+ transition: var(--transition);  
+ }  
+  
+ .meta a:hover {  
+ color: var(--accent-light);  
+ text-decoration: underline;  
+ }  
+  
+ .hero h1 {  
+ font-size: clamp(28px, 5vw, 48px);  
+ font-weight: 700;  
+ line-height: 1.2;  
+ margin-bottom: 24px;  
+ letter-spacing: -0.5px;  
+ color: var(--bg-white);  
+ }  
+  
+ .lead {  
+ font-size: 18px;  
+ line-height: 1.8;  
+ color: rgba(255, 255, 255, 0.95);  
+ max-width: 600px;  
+ margin-bottom: 32px;  
+ font-weight: 400;  
+ }  
+  
+ .chip-row {  
+ display: flex;  
+ flex-wrap: wrap;  
+ gap: 12px;  
+ }  
+  
+ .chip {  
+ background: rgba(255, 255, 255, 0.15);  
+ backdrop-filter: blur(10px);  
+ color: var(--bg-white);  
+ padding: 8px 16px;  
+ border-radius: var(--radius-md);  
+ font-size: 13px;  
+ font-weight: 500;  
+ border: 1px solid rgba(255, 255, 255, 0.2);  
+ display: inline-block;  
+ }  
+  
+ /* ============================================  
+ MAIN CONTENT  
+ ============================================ */  
+ .article-container {  
+ max-width: 800px;  
+ margin: 0 auto;  
+ padding: 0 20px;  
+ }  
+  
+ section {  
+ margin-bottom: 60px;  
+ }  
+  
+ /* ============================================  
+ HEADINGS  
+ ============================================ */  
+ h1 {  
+ font-size: clamp(28px, 5vw, 40px);  
+ font-weight: 700;  
+ line-height: 1.25;  
+ margin-bottom: 40px;  
+ color: var(--primary);  
+ letter-spacing: -0.5px;  
+ }  
+  
+ h2 {  
+ font-size: clamp(24px, 4vw, 32px);  
+ font-weight: 700;  
+ line-height: 1.3;  
+ margin-bottom: 20px;  
+ margin-top: 32px;  
+ color: var(--primary);  
+ padding-bottom: 16px;  
+ border-bottom: 2px solid var(--accent);  
+ letter-spacing: -0.3px;  
+ scroll-margin-top: 80px;  
+ }  
+  
+ h2:first-child {  
+ margin-top: 0;  
+ }  
+  
+ h3 {  
+ font-size: clamp(18px, 2.5vw, 22px);  
+ font-weight: 600;  
+ line-height: 1.4;  
+ margin-bottom: 16px;  
+ margin-top: 24px;  
+ color: var(--primary);  
+ letter-spacing: -0.2px;  
+ }  
+  
+ /* ============================================  
+ TYPOGRAPHY  
+ ============================================ */  
+ p {  
+ font-size: 18px;  
+ line-height: 1.9;  
+ margin-bottom: 18px;  
+ color: var(--text);  
+ text-align: justify;  
+ }  
+  
+ p:last-child {  
+ margin-bottom: 0;  
+ }  
+  
+ strong {  
+ font-weight: 600;  
+ color: var(--primary);  
+ }  
+  
+ em {  
+ font-style: italic;  
+ color: var(--text-muted);  
+ }  
+  
+ /* ============================================  
+ LISTS  
+ ============================================ */  
+ ul, ol {  
+ margin: 32px 0;  
+ padding-left: 0;  
+ }  
+  
+ ul li, ol li {  
+ margin-bottom: 12px;  
+ font-size: 18px;  
+ line-height: 1.8;  
+ color: var(--text);  
+ }  
+  
+ ul li {  
+ margin-left: 28px;  
+ list-style: none;  
+ position: relative;  
+ }  
+  
+ ul li::before {  
+ content: "•";  
+ position: absolute;  
+ left: -20px;  
+ color: var(--accent);  
+ font-weight: bold;  
+ font-size: 20px;  
+ }  
+  
+ ol li {  
+ margin-left: 28px;  
+ list-style: decimal;  
+ list-style-position: outside;  
+ }  
+  
+ ol {  
+ counter-reset: item;  
+ }  
+  
+ /* ============================================  
+ SEPARATOR  
+ ============================================ */  
+ hr {  
+ border: none;  
+ height: 1px;  
+ background: linear-gradient(90deg,   
+transparent 0%,   
+var(--border) 20%,   
+var(--border) 80%,   
+transparent 100%);  
+ margin: 40px 0;  
+ }  
+  
+ /* ============================================  
+ NOTE BOXES  
+ ============================================ */  
+ .note {  
+ background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.04) 100%);  
+ border-left: 4px solid var(--accent);  
+ border-radius: var(--radius-lg);  
+ padding: 28px 28px;  
+ margin: 40px 0;  
+ box-shadow: var(--shadow-md);  
+ border: 1px solid rgba(201, 169, 97, 0.2);  
+ border-left: 4px solid var(--accent);  
+ }  
+  
+ .transition-note {  
+ margin: 28px 0 24px 0;  
+ }  
+  
+ .note strong {  
+ display: block;  
+ font-size: 16px;  
+ margin-bottom: 12px;  
+ color: var(--primary);  
+ text-transform: uppercase;  
+ letter-spacing: 0.5px;  
+ font-size: 14px;  
+ }  
+  
+ .note p {  
+ font-size: 16px;  
+ line-height: 1.8;  
+ margin-bottom: 0;  
+ color: var(--text);  
+ }  
+  
+ .note ul, .note ol {  
+ margin: 16px 0 0 0;  
+ }  
+  
+ .note li {  
+ font-size: 16px;  
+ color: var(--text);  
+ }  
+  
+ /* ============================================  
+ TABLES  
+ ============================================ */  
+ table {  
+ width: 100%;  
+ border-collapse: collapse;  
+ margin: 40px 0;  
+ box-shadow: var(--shadow-md);  
+ border-radius: var(--radius-lg);  
+ overflow: hidden;  
+ }  
+  
+ thead {  
+ background: var(--primary);  
+ color: var(--bg-white);  
+ }  
+  
+ thead th {  
+ padding: 18px 20px;  
+ text-align: left;  
+ font-weight: 600;  
+ font-size: 15px;  
+ letter-spacing: 0.3px;  
+ text-transform: none;  
+ }  
+  
+ tbody tr {  
+ border-bottom: 1px solid var(--border);  
+ transition: var(--transition);  
+ }  
+  
+ tbody tr:nth-child(even) {  
+ background: var(--bg-light);  
+ }  
+  
+ tbody tr:hover {  
+ background: rgba(201, 169, 97, 0.08);  
+ box-shadow: inset 0 0 0 1px var(--accent);  
+ }  
+  
+ tbody td {  
+ padding: 16px 20px;  
+ font-size: 16px;  
+ line-height: 1.6;  
+ color: var(--text);  
+ }  
+  
+ /* ============================================  
+ BUTTONS  
+ ============================================ */  
+ .btn {  
+ display: inline-block;  
+ padding: 12px 28px;  
+ border: none;  
+ border-radius: var(--radius-md);  
+ font-size: 15px;  
+ font-weight: 600;  
+ cursor: pointer;  
+ transition: var(--transition);  
+ text-decoration: none;  
+ letter-spacing: 0.3px;  
+ text-transform: uppercase;  
+ text-align: center;  
+ }  
+  
+ .btn.primary {  
+ background: var(--primary);  
+ color: var(--bg-white);  
+ box-shadow: var(--shadow-md);  
+ }  
+  
+ .btn.primary:hover {  
+ background: var(--primary-light);  
+ box-shadow: var(--shadow-lg);  
+ transform: translateY(-2px);  
+ }  
+  
+ .btn.primary:active {  
+ transform: translateY(0);  
+ }  
+  
+ /* ============================================  
+ TABLE OF CONTENTS  
+ ============================================ */  
+ .toc-container {  
+ background: linear-gradient(135deg, rgba(201, 169, 97, 0.12) 0%, rgba(201, 169, 97, 0.06) 100%);  
+ border-radius: var(--radius-lg);  
+ padding: 40px;  
+ margin: 32px 0;  
+ box-shadow: var(--shadow-md);  
+ border: 1px solid rgba(201, 169, 97, 0.2);  
+ }  
+  
+ .toc-container h3 {  
+ margin-top: 0;  
+ font-size: 18px;  
+ color: var(--primary);  
+ margin-bottom: 24px;  
+ padding-bottom: 12px;  
+ border-bottom: 2px solid var(--accent);  
+ }  
+  
+ .toc-container ol {  
+ margin: 0;  
+ }  
+  
+ .toc-container li {  
+ font-size: 16px;  
+ line-height: 1.8;  
+ margin-bottom: 10px;  
+ color: var(--text);  
+ }  
+  
+ .toc-container a {  
+ color: var(--accent);  
+ text-decoration: none;  
+ font-weight: 500;  
+ transition: var(--transition);  
+ }  
+  
+ .toc-container a:hover {  
+ color: var(--primary);  
+ text-decoration: underline;  
+ }  
+ .toc-container .toc-list{  
+ list-style:none;  
+ margin:0;  
+ padding-left:0;  
+ }  
+  
+ .toc-container .toc-list li{  
+ list-style:none;  
+ margin-left:0;  
+ position:static;  
+ }  
+  
+ .toc-container .toc-list li::before{  
+ display:none;  
+ content:none;  
+ }  
+ /* ============================================  
+ SECTION CARD (INTRO)  
+ ============================================ */  
+ .section-card {  
+ max-width: 800px;  
+ margin: 0 auto;  
+ }  
+  
+ .section-title {  
+ font-size: clamp(24px, 4vw, 32px);  
+ font-weight: 700;  
+ color: var(--primary);  
+ margin-bottom: 24px;  
+ line-height: 1.3;  
+ }  
+  
+ .section-text {  
+ font-size: 18px;  
+ line-height: 1.9;  
+ color: var(--text);  
+ text-align: justify;  
+ margin-bottom: 24px;  
+ }  
+  
+ /* ============================================  
+ LINKS  
+ ============================================ */  
+ a {  
+ color: var(--accent);  
+ text-decoration: none;  
+ font-weight: 500;  
+ transition: var(--transition);  
+ border-bottom: 1px solid transparent;  
+ }  
+  
+ a:hover {  
+ color: var(--primary);  
+ border-bottom-color: var(--accent);  
+ }  
+  
+ /* ============================================  
+ FOOTER  
+ ============================================ */  
+ .site-footer {  
+ margin-top: 60px;  
+ background: var(--bg-white);  
+ color: var(--primary);  
+ border-top: 1px solid var(--border);  
+ }  
+  
+ .footer-inner {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ padding: 32px 20px 36px;  
+ display: flex;  
+ flex-direction: column;  
+ align-items: center;  
+ justify-content: center;  
+ gap: 8px;  
+ text-align: center;  
+ }  
+  
+ .footer-mark img {  
+ width: 380px;  
+ height: auto;  
+ margin: 0 auto;  
+ }  
+  
+ .footer-logo-note {  
+ color: var(--text-muted);  
+ font-size: 0.84rem;  
+ letter-spacing: 0.08em;  
+ line-height: 1.4;  
+ text-transform: uppercase;  
+ }  
+  
+ .footer-copy {  
+ color: var(--text-muted);  
+ font-size: 0.95rem;  
+ line-height: 1.4;  
+ }  
+  
+ /* ============================================  
+ RESPONSIVE  
+ ============================================ */  
+ @media (max-width: 768px) {  
+ .hero {  
+ padding: 40px 20px;  
+ margin-bottom: 30px;  
+ }  
+  
+ .hero h1 {  
+ font-size: 28px;  
+ }  
+  
+ .lead {  
+ font-size: 16px;  
+ }  
+  
+ .article-container {  
+ padding: 0 16px;  
+ }  
+  
+ section {  
+ margin-bottom: 50px;  
+ }  
+  
+ p {  
+ font-size: 16px;  
+ line-height: 1.8;  
+ }  
+  
+ ul li, ol li {  
+ font-size: 16px;  
+ line-height: 1.7;  
+ }  
+  
+ h1 {  
+ font-size: 24px;  
+ margin-bottom: 32px;  
+ }  
+  
+ h2 {  
+ font-size: 22px;  
+ margin-bottom: 18px;  
+ margin-top: 32px;  
+ }  
+  
+ h3 {  
+ font-size: 18px;  
+ margin-bottom: 14px;  
+ }  
+  
+ .note {  
+ padding: 20px 20px;  
+ border-left: 3px solid var(--accent);  
+ }  
+  
+ .transition-note {  
+ margin: 22px 0 20px 0;  
+ }  
+  
+ .note strong {  
+ font-size: 13px;  
+ }  
+  
+ .note p {  
+ font-size: 15px;  
+ }  
+  
+ table {  
+ font-size: 14px;  
+ margin: 32px 0;  
+ }  
+  
+ thead th {  
+ padding: 14px 12px;  
+ font-size: 13px;  
+ }  
+  
+ tbody td {  
+ padding: 12px;  
+ font-size: 14px;  
+ }  
+  
+ .toc-container {  
+ padding: 24px;  
+ margin: 24px 0;  
+ }  
+  
+ .toc-container h3 {  
+ font-size: 16px;  
+ margin-bottom: 16px;  
+ }  
+  
+ .toc-container li {  
+ font-size: 15px;  
+ }  
+  
+ .btn {  
+ width: 100%;  
+ padding: 14px 20px;  
+ }  
+  
+ hr {  
+ margin: 32px 0;  
+ }  
+  
+ .chip-row {  
+ gap: 10px;  
+ }  
+  
+ .chip {  
+ font-size: 12px;  
+ padding: 6px 14px;  
+ }  
+  
+ p {  
+ text-align: left;  
+ }  
+  
+ .section-text {  
+ text-align: left;  
+ }  
+  
+ .nav {  
+ display: none;  
+ }  
+  
+ .menu-toggle {  
+ display: flex;  
+ }  
+  
+ .footer-inner {  
+ padding: 28px 20px 30px;  
+ gap: 7px;  
+ }  
+  
+ .footer-mark img {  
+ width: 260px;  
+ }  
+ }  
+  
+ @media (max-width: 480px) {  
+ .hero {  
+ padding: 32px 16px;  
+ margin-bottom: 24px;  
+ }  
+  
+ .hero h1 {  
+ font-size: 22px;  
+ }  
+  
+ .lead {  
+ font-size: 15px;  
+ line-height: 1.7;  
+ }  
+  
+ .article-container {  
+ padding: 0 16px;  
+ }  
+  
+ p {  
+ font-size: 15px;  
+ line-height: 1.7;  
+ margin-bottom: 16px;  
+ }  
+  
+ h1 {  
+ font-size: 20px;  
+ margin-bottom: 24px;  
+ }  
+  
+ h2 {  
+ font-size: 20px;  
+ margin-top: 24px;  
+ margin-bottom: 14px;  
+ padding-bottom: 12px;  
+ }  
+  
+ h3 {  
+ font-size: 16px;  
+ }  
+  
+ ul li, ol li {  
+ font-size: 15px;  
+ line-height: 1.6;  
+ margin-bottom: 8px;  
+ }  
+  
+ .meta {  
+ flex-direction: column;  
+ gap: 4px;  
+ font-size: 13px;  
+ }  
+  
+ .eyebrow {  
+ font-size: 11px;  
+ margin-bottom: 12px;  
+ }  
+  
+ .chip {  
+ font-size: 11px;  
+ padding: 5px 12px;  
+ }  
+  
+ .note {  
+ padding: 16px;  
+ border-radius: var(--radius-md);  
+ margin: 24px 0;  
+ }  
+  
+ .transition-note {  
+ margin: 18px 0;  
+ }  
+  
+ .note strong {  
+ font-size: 12px;  
+ }  
+  
+ .note p {  
+ font-size: 14px;  
+ }  
+  
+ table {  
+ font-size: 13px;  
+ margin: 24px 0;  
+ }  
+  
+ thead th {  
+ padding: 12px 8px;  
+ font-size: 12px;  
+ }  
+  
+ tbody td {  
+ padding: 10px 8px;  
+ font-size: 13px;  
+ }  
+  
+ .toc-container {  
+ padding: 20px;  
+ margin: 20px 0;  
+ }  
+  
+ .toc-container h3 {  
+ font-size: 15px;  
+ margin-bottom: 12px;  
+ }  
+  
+ .toc-container li {  
+ font-size: 14px;  
+ margin-bottom: 6px;  
+ }  
+  
+ hr {  
+ margin: 32px 0;  
+ }  
+  
+ section {  
+ margin-bottom: 40px;  
+ }  
+  
+ .topbar-inner {  
+ padding: 10px 16px;  
+ }  
+  
+ .brand-logo img {  
+ width: 160px;  
+ }  
+  
+ .brand-name {  
+ font-size: 0.95rem;  
+ }  
+  
+ .footer-mark img {  
+ width: 200px;  
+ }  
+ }  
+  
+ /* ============================================  
+ PRINT STYLES  
+ ============================================ */  
+ @media print {  
+ .topbar, .mobile-overlay, .mobile-menu { display: none; }  
+  
+ .hero {  
+ background: var(--primary);  
+ color: var(--bg-white);  
+ }  
+  
+ .hero a {  
+ color: var(--accent);  
+ }  
+  
+ a {  
+ color: var(--primary);  
+ text-decoration: underline;  
+ }  
+  
+ .btn {  
+ display: none;  
+ }  
+  
+ table {  
+ box-shadow: none;  
+ page-break-inside: avoid;  
+ }  
+  
+ .note {  
+ page-break-inside: avoid;  
+ }  
+  
+ section {  
+ page-break-inside: avoid;  
+ }  
+ }  
+   
+/* ============================================  
+ GLOBAL TOP BAR  
+ ============================================ */  
+ .global-top-bar {  
+ background: #1f3a5f;  
+ border-bottom: 1px solid rgba(255, 255, 255, 0.08);  
+ }  
+ .global-top-bar-inner {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ padding: 7px 20px;  
+ display: flex;  
+ align-items: center;  
+ justify-content: space-between;  
+ gap: 16px;  
+ }  
+ .gtb-left,  
+ .gtb-right {  
+ display: flex;  
+ align-items: center;  
+ gap: 14px;  
+ flex-shrink: 0;  
+ }  
+ .gtb-contact {  
+ display: inline-flex;  
+ align-items: center;  
+ gap: 6px;  
+ color: rgba(255, 255, 255, 0.82);  
+ font-size: 0.8rem;  
+ text-decoration: none;  
+ transition: color 0.18s ease;  
+ }  
+ .gtb-contact:hover { color: #c89b3c; }  
+ .gtb-contact svg { flex-shrink: 0; }  
+ .gtb-contact-label { display: inline; }  
+ .gtb-sep {  
+ width: 1px;  
+ height: 14px;  
+ background: rgba(255, 255, 255, 0.2);  
+ flex-shrink: 0;  
+ }  
+ .gtb-lang {  
+ display: flex;  
+ align-items: center;  
+ gap: 5px;  
+ font-size: 0.8rem;  
+ }  
+ .gtb-lang-link {  
+ color: rgba(255, 255, 255, 0.7);  
+ text-decoration: none;  
+ transition: color 0.18s ease;  
+ letter-spacing: 0.05em;  
+ }  
+ .gtb-lang-link:hover,  
+ .gtb-lang-link.gtb-lang-active {  
+ color: #c89b3c;  
+ font-weight: 600;  
+ }  
+ .gtb-lang-div {  
+ color: rgba(255, 255, 255, 0.3);  
+ font-size: 0.72rem;  
+ user-select: none;  
+ }  
+ .gtb-search-btn {  
+ background: none;  
+ border: none;  
+ cursor: pointer;  
+ color: rgba(255, 255, 255, 0.7);  
+ display: flex;  
+ align-items: center;  
+ padding: 0;  
+ transition: color 0.18s ease;  
+ }  
+ .gtb-search-btn:hover { color: #c89b3c; }  
+ @media (max-width: 640px) {  
+ .gtb-contact-label { display: none; }  
+ .gtb-sep { display: none; }  
+ }  
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-            color: var(--text);
-            background: var(--bg-white);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* NAVBAR */
-        .topbar {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .topbar-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            min-width: 0;
-            text-decoration: none;
-        }
-
-        .brand-logo img {
-            width: 200px;
-            height: auto;
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            min-width: 0;
-        }
-
-        .brand-name {
-            font-weight: 700;
-            font-size: 1.1rem;
-            line-height: 1.2;
-            color: var(--primary);
-        }
-
-        .brand-subtitle {
-            color: var(--text-muted);
-            font-size: 0.82rem;
-        }
-
-        .nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .nav a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: var(--transition);
-            border-bottom: none;
-        }
-
-        .nav a:hover,
-        .nav a[aria-current="page"] {
-            color: var(--primary);
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--primary);
-            padding: 0;
-            width: 42px;
-            height: 42px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mobile-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.35);
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.3s;
-            z-index: 9998;
-        }
-
-        .mobile-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .mobile-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 82%;
-            max-width: 340px;
-            height: 100vh;
-            overflow-y: auto;
-            padding-top: calc(80px + env(safe-area-inset-top));
-            padding-bottom: env(safe-area-inset-bottom);
-            background: var(--bg-white);
-            padding-left: 35px;
-            padding-right: 35px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18);
-            transition: 0.35s ease;
-            z-index: 9999;
-        }
-
-        .mobile-menu.active {
-            right: 0;
-        }
-
-        .mobile-menu a {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin: 16px 0;
-            text-decoration: none;
-            border-bottom: none;
-        }
-
-        .close-menu {
-            position: absolute;
-            top: 22px;
-            right: 22px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            color: var(--primary);
-        }
-
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-            color: var(--bg-white);
-            padding: 60px 20px;
-            margin-bottom: 40px;
-        }
-
-        .hero-grid {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .eyebrow {
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .meta {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.75);
-            margin-bottom: 32px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            align-items: center;
-        }
-
-        .meta a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .meta a:hover {
-            color: var(--accent-light);
-            text-decoration: underline;
-        }
-
-        .hero h1 {
-            font-size: clamp(28px, 5vw, 48px);
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 24px;
-            letter-spacing: -0.5px;
-            color: var(--bg-white);
-        }
-
-        .lead {
-            font-size: 18px;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.95);
-            max-width: 600px;
-            margin-bottom: 32px;
-            font-weight: 400;
-        }
-
-        .chip-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .chip {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            color: var(--bg-white);
-            padding: 8px 16px;
-            border-radius: var(--radius-md);
-            font-size: 13px;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            display: inline-block;
-        }
-
-        /* MAIN CONTENT */
-        .article-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            margin-bottom: 60px;
-        }
-
-        h1 {
-            font-size: clamp(28px, 5vw, 40px);
-            font-weight: 700;
-            line-height: 1.25;
-            margin-bottom: 40px;
-            color: var(--primary);
-            letter-spacing: -0.5px;
-        }
-
-        h2 {
-            font-size: clamp(24px, 4vw, 32px);
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 20px;
-            margin-top: 32px;
-            color: var(--primary);
-            padding-bottom: 16px;
-            border-bottom: 2px solid var(--accent);
-            letter-spacing: -0.3px;
-            scroll-margin-top: 80px;
-        }
-
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        h3 {
-            font-size: clamp(18px, 2.5vw, 22px);
-            font-weight: 600;
-            line-height: 1.4;
-            margin-bottom: 16px;
-            margin-top: 24px;
-            color: var(--primary);
-            letter-spacing: -0.2px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.9;
-            margin-bottom: 18px;
-            color: var(--text);
-            text-align: justify;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        strong {
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        em {
-            font-style: italic;
-            color: var(--text-muted);
-        }
-
-        ul, ol {
-            margin: 32px 0;
-            padding-left: 0;
-        }
-
-        ul li, ol li {
-            margin-bottom: 12px;
-            font-size: 18px;
-            line-height: 1.8;
-            color: var(--text);
-        }
-
-        ul li {
-            margin-left: 28px;
-            list-style: none;
-            position: relative;
-        }
-
-        ul li::before {
-            content: "•";
-            position: absolute;
-            left: -20px;
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        ol li {
-            margin-left: 28px;
-            list-style: decimal;
-            list-style-position: outside;
-        }
-
-        ol {
-            counter-reset: item;
-        }
-
-        hr {
-            border: none;
-            height: 1px;
-            background: linear-gradient(90deg, 
-                transparent 0%, 
-                var(--border) 20%, 
-                var(--border) 80%, 
-                transparent 100%);
-            margin: 40px 0;
-        }
-
-        .note {
-            background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.04) 100%);
-            border-left: 4px solid var(--accent);
-            border-radius: var(--radius-lg);
-            padding: 28px 28px;
-            margin: 40px 0;
-            box-shadow: var(--shadow-md);
-            border: 1px solid rgba(201, 169, 97, 0.2);
-            border-left: 4px solid var(--accent);
-        }
-
-        .transition-note {
-            margin: 28px 0 24px 0;
-        }
-
-        .note strong {
-            display: block;
-            font-size: 16px;
-            margin-bottom: 12px;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-size: 14px;
-        }
-
-        .note p {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 0;
-            color: var(--text);
-        }
-
-        .note ul, .note ol {
-            margin: 16px 0 0 0;
-        }
-
-        .note li {
-            font-size: 16px;
-            color: var(--text);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-            box-shadow: var(--shadow-md);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-        }
-
-        thead {
-            background: var(--primary);
-            color: var(--bg-white);
-        }
-
-        thead th {
-            padding: 18px 20px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 15px;
-            letter-spacing: 0.3px;
-            text-transform: none;
-        }
-
-        tbody tr {
-            border-bottom: 1px solid var(--border);
-            transition: var(--transition);
-        }
-
-        tbody tr:nth-child(even) {
-            background: var(--bg-light);
-        }
-
-        tbody tr:hover {
-            background: rgba(201, 169, 97, 0.08);
-            box-shadow: inset 0 0 0 1px var(--accent);
-        }
-
-        tbody td {
-            padding: 16px 20px;
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--text);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 28px;
-            border: none;
-            border-radius: var(--radius-md);
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            text-decoration: none;
-            letter-spacing: 0.3px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .btn.primary {
-            background: var(--primary);
-            color: var(--bg-white);
-            box-shadow: var(--shadow-md);
-        }
-
-        .btn.primary:hover {
-            background: var(--primary-light);
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
-        }
-
-        .btn.primary:active {
-            transform: translateY(0);
-        }
-
-        .toc-container {
-            background: linear-gradient(135deg, rgba(201, 169, 97, 0.12) 0%, rgba(201, 169, 97, 0.06) 100%);
-            border-radius: var(--radius-lg);
-            padding: 40px;
-            margin: 32px 0;
-            box-shadow: var(--shadow-md);
-            border: 1px solid rgba(201, 169, 97, 0.2);
-        }
-
-        .toc-container h3 {
-            margin-top: 0;
-            font-size: 18px;
-            color: var(--primary);
-            margin-bottom: 24px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid var(--accent);
-        }
-
-        .toc-container ol {
-            margin: 0;
-        }
-
-        .toc-container li {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 10px;
-            color: var(--text);
-        }
-
-        .toc-container a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .toc-container a:hover {
-            color: var(--primary);
-            text-decoration: underline;
-        }
-
-        .section-text {
-            font-size: 18px;
-            line-height: 1.9;
-            color: var(--text);
-            text-align: justify;
-            margin-bottom: 24px;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-            border-bottom: 1px solid transparent;
-        }
-
-        a:hover {
-            color: var(--primary);
-            border-bottom-color: var(--accent);
-        }
-
-        .site-footer {
-            margin-top: 60px;
-            background: var(--bg-white);
-            color: var(--primary);
-            border-top: 1px solid var(--border);
-        }
-
-        .footer-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 32px 20px 36px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            text-align: center;
-        }
-
-        .footer-mark img {
-            width: 380px;
-            height: auto;
-            margin: 0 auto;
-        }
-
-        .footer-logo-note {
-            color: var(--text-muted);
-            font-size: 0.84rem;
-            letter-spacing: 0.08em;
-            line-height: 1.4;
-            text-transform: uppercase;
-        }
-
-        .footer-copy {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.4;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 40px 20px;
-                margin-bottom: 30px;
-            }
-
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            .lead {
-                font-size: 16px;
-            }
-
-            .article-container {
-                padding: 0 16px;
-            }
-
-            section {
-                margin-bottom: 50px;
-            }
-
-            p {
-                font-size: 16px;
-                line-height: 1.8;
-                text-align: left;
-            }
-
-            .section-text {
-                text-align: left;
-            }
-
-            ul li, ol li {
-                font-size: 16px;
-                line-height: 1.7;
-            }
-
-            h1 {
-                font-size: 24px;
-                margin-bottom: 32px;
-            }
-
-            h2 {
-                font-size: 22px;
-                margin-bottom: 18px;
-                margin-top: 32px;
-            }
-
-            h3 {
-                font-size: 18px;
-                margin-bottom: 14px;
-            }
-
-            .note {
-                padding: 20px 20px;
-                border-left: 3px solid var(--accent);
-            }
-
-            .toc-container {
-                padding: 24px;
-                margin: 24px 0;
-            }
-
-            .nav {
-                display: none;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-
-            .footer-inner {
-                padding: 28px 20px 30px;
-                gap: 7px;
-            }
-
-            .footer-mark img {
-                width: 260px;
-            }
-        }
-
-        /* GLOBAL TOP BAR */
-        .global-top-bar {
-            background: #1f3a5f;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .global-top-bar-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 7px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-        }
-        .gtb-left,
-        .gtb-right {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            flex-shrink: 0;
-        }
-        .gtb-contact {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            color: rgba(255, 255, 255, 0.82);
-            font-size: 0.8rem;
-            text-decoration: none;
-            transition: color 0.18s ease;
-        }
-        .gtb-contact:hover { color: #c89b3c; }
-        .gtb-contact svg { flex-shrink: 0; }
-        .gtb-contact-label { display: inline; }
-        .gtb-sep {
-            width: 1px;
-            height: 14px;
-            background: rgba(255, 255, 255, 0.2);
-            flex-shrink: 0;
-        }
-        .gtb-lang {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 0.8rem;
-        }
-        .gtb-lang-link {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: color 0.18s ease;
-            letter-spacing: 0.05em;
-        }
-        .gtb-lang-link:hover,
-        .gtb-lang-link.gtb-lang-active {
-            color: #c89b3c;
-            font-weight: 600;
-        }
-        .gtb-lang-div {
-            color: rgba(255, 255, 255, 0.3);
-            font-size: 0.72rem;
-            user-select: none;
-        }
-        .gtb-search-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: rgba(255, 255, 255, 0.7);
-            display: flex;
-            align-items: center;
-            padding: 0;
-            transition: color 0.18s ease;
-        }
-        .gtb-search-btn:hover { color: #c89b3c; }
-        @media (max-width: 640px) {
-            .gtb-contact-label { display: none; }
-            .gtb-sep { display: none; }
-        }
 </style>
 <!-- JSON-LD: Article -->
 <script type="application/ld+json">{
@@ -911,52 +1216,78 @@
  }
  ]
 }</script>
+<style id="article-master-final">
+  
+ /* Derinpinar article master: synchronized with the approved TR homepage and article system. */  
+ :root{--primary:#10233d;--primary-light:#1f3a5f;--accent:#c89b3c;--accent-light:#e7c97f;--text:#18263b;--text-muted:#5f6d7f;--bg-light:#f7f3ed;--bg-white:#fffdfa;--border:rgba(16,35,61,.10);--site-max:1400px}  
+ body.article-page{background:linear-gradient(180deg,#fff 0%,#fbf8f2 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}  
+ .article-page .global-top-bar-inner,.article-page .topbar-inner{width:min(calc(100% - 48px),var(--site-max));max-width:none;margin-inline:auto;padding-left:0;padding-right:0}  
+ .article-page .global-top-bar{background:#10233d}  
+ .article-page .topbar{background:rgba(16,35,61,.96);border-bottom:1px solid rgba(255,255,255,.08);backdrop-filter:blur(18px)}  
+ .article-page .topbar-inner{min-height:88px;padding-top:0;padding-bottom:0;gap:24px}  
+ .article-page .brand{gap:18px;flex-shrink:0}.article-page .brand-logo img{width:172px}.article-page .brand-name{font-size:1.05rem;color:#fff;white-space:nowrap}.article-page .brand-subtitle{font-size:.9rem;color:rgba(255,255,255,.74)}  
+ .article-page .nav{margin-left:auto;display:flex;align-items:center;flex-wrap:nowrap;gap:18px;min-width:0}.article-page .nav a{font-size:.88rem;color:rgba(255,255,255,.88);white-space:nowrap}.article-page .nav a:hover,.article-page .nav a[aria-current="page"]{color:#fff}  
+ .article-page .menu-toggle{color:#fff;background:rgba(255,255,255,.08);border-radius:14px}  
+ .article-page .hero{width:min(calc(100% - 48px),1400px);margin:28px auto 44px;padding:0;border-radius:30px;background:radial-gradient(circle at 88% 16%,rgba(200,155,60,.22),transparent 27%),linear-gradient(135deg,#10233d 0%,#1f3a5f 100%);box-shadow:0 24px 60px rgba(16,35,61,.14);overflow:hidden}  
+ .article-page .hero-grid{width:min(calc(100% - 80px),1180px);max-width:none;margin-inline:auto;padding:58px 0 60px}.article-page .hero-copy{max-width:1120px}  
+ .article-page .hero h1{max-width:1040px;font-size:clamp(2.25rem,3.15vw,3.55rem);line-height:1.09;letter-spacing:-.035em;margin-bottom:22px}.article-page .lead{max-width:800px;font-size:clamp(1.02rem,1.15vw,1.15rem);line-height:1.75;margin-bottom:28px}.article-page .meta{margin-bottom:26px}  
+ .article-page .article-container{width:min(calc(100% - 48px),860px);max-width:none;margin-inline:auto;padding:0 0 24px}.article-page .article-container p,.article-page .section-text{color:var(--text);line-height:1.88}.article-page .article-container h2,.article-page .article-container h3{color:#10233d}.article-page .article-container h2{border-bottom-color:#c89b3c}  
+ .article-page .note,.article-page .toc-container{background:linear-gradient(135deg,rgba(200,155,60,.10),rgba(16,35,61,.035));border-color:rgba(200,155,60,.24);box-shadow:0 12px 34px rgba(16,35,61,.07)}  
+ .article-page thead{background:#10233d}.article-page .btn.primary{background:#10233d}.article-page .site-footer{background:#fffdfa;border-top-color:rgba(16,35,61,.10)}.article-page .footer-inner{max-width:1400px}  
+ @media (max-width:1100px){.article-page .nav{display:none}.article-page .menu-toggle{display:flex}.article-page .hero-grid{width:min(calc(100% - 56px),1000px)}.article-page .hero h1{font-size:clamp(2.15rem,4.4vw,3.25rem)}}  
+ @media (max-width:768px){.article-page .global-top-bar-inner,.article-page .topbar-inner{width:min(calc(100% - 20px),var(--site-max))}.article-page .topbar-inner{min-height:76px}.article-page .brand-logo img{width:124px}.article-page .brand-name{font-size:.95rem}.article-page .brand-subtitle{font-size:.82rem}.article-page .hero{width:100%;margin:0 0 30px;border-radius:0;padding:0}.article-page .hero-grid{width:100%;padding:40px 20px}.article-page .article-container{width:100%;padding:0 16px 20px}.article-page .hero h1{font-size:28px;line-height:1.18}.article-page .lead{font-size:16px}.article-page p,.article-page .section-text{text-align:left}}  
+ @media (max-width:480px){.article-page .hero-grid{padding:32px 16px}.article-page .hero h1{font-size:22px}.article-page .lead{font-size:15px;line-height:1.7}}  
+ 
+</style>
 <link href="styles/site-standard.css" rel="stylesheet"/>
-<style id="master-update">
-.article-page .article-container{max-width:860px!important}
-.article-page .hero .lead{max-width:860px!important;text-align:justify!important;text-justify:inter-word}
-.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
-.article-page table{border:1px solid var(--border)}
-.article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none}
-.article-page thead th+th,.article-page tbody td+td{border-left:1px solid rgba(16,35,61,.18)}
-.article-page .hero-legal-emphasis{color:#c89b3c;font-weight:700}
-@media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word}}
+<style id="index-master-header-contract">
+  
+/* MASTER CONTRACT: identical light logo/navigation bar to Turkish index.html. */  
+.site-header{position:sticky;top:0;z-index:40;background:#fff !important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(16,35,61,.10) !important;border-bottom:0 !important;}  
+.site-header::after{content:"";position:absolute;inset:auto 0 0;height:1px;background:linear-gradient(90deg,rgba(16,35,61,0),rgba(16,35,61,.12),rgba(16,35,61,0)) !important;}  
+.site-header .topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:88px;padding-top:0 !important;padding-bottom:0 !important;max-width:none !important;}  
+.site-header .brand{display:flex;align-items:center;gap:18px;min-width:0;flex:0 0 auto;text-decoration:none;border-bottom:0;}  
+.site-header .brand-logo img{width:172px;height:auto;display:block;}  
+.site-header .brand-text{display:flex;flex-direction:column;gap:3px;color:#10233d !important;white-space:nowrap;}  
+.site-header .brand-name{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:1.05rem;font-weight:700;line-height:1.2;letter-spacing:-.01em;color:#10233d !important;white-space:nowrap;}  
+.site-header .brand-subtitle{font-size:.9rem;color:#59657a !important;white-space:nowrap;}  
+.site-header .nav{display:flex;align-items:center;gap:18px;flex-wrap:nowrap !important;margin-left:auto;white-space:nowrap;}  
+.site-header .nav a{position:relative;color:#34455d !important;font-size:.88rem;font-weight:500;white-space:nowrap;text-decoration:none;border-bottom:0;}  
+.site-header .nav a::after{content:"";position:absolute;left:0;bottom:-10px;width:100%;height:1px;background:#c89b3c;opacity:0;transform:scaleX(.6);transition:opacity .18s ease,transform .18s ease;}  
+.site-header .nav a:hover,.site-header .nav a[aria-current=page]{color:#10233d !important;}  
+.site-header .nav a:hover::after,.site-header .nav a[aria-current=page]::after{opacity:1;transform:scaleX(1);}  
+.site-header .menu-toggle{display:none;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(16,35,61,.10) !important;border-radius:14px;background:rgba(16,35,61,.06) !important;color:#10233d !important;cursor:pointer;}  
+@media (min-width:1101px){.site-header .topbar-inner{flex-wrap:nowrap !important}.site-header .brand{flex-shrink:0}.site-header .nav{display:flex !important;flex-wrap:nowrap !important}.site-header .nav a{white-space:nowrap}}  
+@media (max-width:1100px){.site-header .nav{display:none !important}.site-header .menu-toggle{display:inline-flex !important}.site-header .topbar-inner{min-height:76px}}  
+@media (max-width:640px){.site-header{background:#fff !important}.site-header .topbar-inner{min-height:76px;gap:12px}.site-header .brand{gap:12px}.site-header .brand-logo img{width:124px}.site-header .brand-name{font-size:.95rem}.site-header .brand-subtitle{font-size:.82rem}}  
+
 </style>
-<style id="sirketler-gold-standard">
-.article-page .legal-gold{
-    color:#c89b3c!important;
-    font-weight:700!important;
-    text-transform:none!important;
-    letter-spacing:normal!important;
-}
-.article-page .note p .legal-gold,
-.article-page .article-container p .legal-gold,
-.article-page .article-container td .legal-gold{
-    display:inline!important;
-    margin:0!important;
-    font-size:inherit!important;
-}
-.article-page .note > strong{
-    color:var(--primary)!important;
-    text-transform:none!important;
-    letter-spacing:.02em!important;
-}
-</style>
-<style id="yk-temsil-final">
-.article-page .hero .hero-legal-emphasis,.article-page .legal-gold{color:#c89b3c!important;font-weight:700!important;text-transform:none!important;letter-spacing:normal!important}
-.article-page .article-container{max-width:860px!important}
+<style id="yk-temsil-final-contract">
+
 .article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
-.article-page table{border:1px solid var(--border)} .article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none;-webkit-hyphens:none}
+.article-page table{border:1px solid var(--border);display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none;-webkit-hyphens:none;white-space:normal}
 .article-page thead th+th,.article-page tbody td+td{border-left:1px solid rgba(16,35,61,.18)}
-.article-page .note p .legal-gold,.article-page p .legal-gold,.article-page td .legal-gold{display:inline!important;margin:0!important;font-size:inherit!important}
-@media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word}}
+.article-page .note p strong,.article-page .note p .legal-gold,.article-page p .legal-gold,.article-page td .legal-gold{display:inline!important;margin:0!important;color:#c89b3c!important;font-size:inherit!important;font-weight:700!important;letter-spacing:normal!important;text-transform:none!important}
+.article-page .checklist{margin:32px 0;padding:26px 28px;border:1px solid rgba(200,155,60,.24);border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(200,155,60,.08),rgba(16,35,61,.025))}
+.article-page .checklist li{font-size:16px}
+.article-page .related-articles{list-style:none;padding-left:0}
+.article-page .related-articles li{margin-left:0;padding:14px 16px 14px 34px;border:1px solid rgba(16,35,61,.10);border-radius:10px;background:#fff}
+.toc-container .toc-list{list-style:none;margin:0;padding-left:0}
+.toc-container .toc-list li{list-style:none;margin-left:0;position:static}
+.toc-container .toc-list li::before{display:none;content:none}
+@media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important}.article-page thead th,.article-page tbody td{text-align:left!important}}
+
+</style>
+<style id="hero-single-legal-emphasis">
+.article-page .hero .hero-legal-emphasis{color:#c89b3c;font-weight:700;}
 </style>
 </head>
 <body class="article-page">
 <!-- NAVBAR -->
 <div class="site-sticky-wrap">
 <div aria-label="Kurumsal Üst Bilgi" class="global-top-bar" role="complementary">
-<div class="global-top-bar-inner">
+<div class="wrap global-top-bar-inner">
 <div class="gtb-left">
 <a class="gtb-contact" href="mailto:ibrahim@derinpinar.av.tr">
 <svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
@@ -970,9 +1301,9 @@
 </div>
 <div class="gtb-right">
 <nav aria-label="Dil seçici" class="gtb-lang">
-<a aria-current="true" class="gtb-lang-link gtb-lang-active" href="#" hreflang="tr">TR</a>
+<a aria-current="true" class="gtb-lang-link gtb-lang-active" href="/" hreflang="tr">TR</a>
 <span aria-hidden="true" class="gtb-lang-div">|</span>
-<a class="gtb-lang-link" href="#" hreflang="en">EN</a>
+<a class="gtb-lang-link" href="/en/" hreflang="en">EN</a>
 </nav>
 <button aria-label="Sitede ara" class="gtb-search-btn" type="button">
 <svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
@@ -980,8 +1311,8 @@
 </div>
 </div>
 </div>
-<header class="topbar">
-<div class="topbar-inner">
+<header class="site-header">
+<div class="wrap topbar-inner">
 <a aria-label="DLC ana sayfa" class="brand" href="index.html">
 <div class="brand-logo">
 <img alt="DLC Derinpınar Law &amp; Consultancy logosu" src="dlc-logo.png"/>
@@ -1023,7 +1354,6 @@
 </div>
 <!-- HERO SECTION -->
 <section class="hero"><div class="hero-grid"><div class="hero-copy"><span class="eyebrow">Şirketler Hukuku • Anonim Şirketler Serisi - 5</span><div class="meta"><a href="index.html">Ana Sayfa</a> › <a href="makaleler.html">Makaleler</a> › <span>Anonim Şirketlerde Yönetim Kurulunun Temsil Yetkisi</span></div><h1>Anonim Şirketlerde Yönetim Kurulunun Temsil Yetkisi: Şirketi Kim, Nasıl Temsil Eder?</h1><p class="lead">Anonim şirketin dış dünyayla kurduğu tüm hukukî ilişkilerin merkezinde yönetim kurulunun temsil yetkisi yer alır. <span class="hero-legal-emphasis">TTK m. 370 uyarınca kanunî kural çift imza (müşterek temsil) esasıdır; temsil yetkisi murahhas üyelere veya müdürlere devredilebilse de en az bir yönetim kurulu üyesinin temsil yetkisini koruması emredicidir.</span> 6102 sayılı TTK ile ultra vires yasağı ilgâ edilmiş, şirketin işletme konusu dışındaki işlemleri dahi kural olarak bağlayıcı kılınmıştır. TTK m. 371/3 gereğince tescil edilse bile miktar ve konu sınırlamaları iyiniyetli üçüncü kişilere karşı geçersizdir; üçüncü kişileri bağlayan geçerli sınırlamalar yalnızca mekân (merkez/şube) ve çift imza kuralları ile TTK m. 371/7 kapsamındaki sınırlı yetkili ticari vekillerdir.</p><div class="chip-row"><span class="chip">📅 16 Eylül 2026</span><span class="chip">🔄 16 Eylül 2026</span><span class="chip">📖 20 Dakika Okuma</span><span class="chip" id="viewsChip">👁 —</span><span class="chip">⚖️ Şirketler Hukuku</span></div></div></div></section>
-
 <article class="article-container">
 <section><h2 id="giris">Anonim Şirketlerde Temsil Yetkisi Nasıl Kullanılır ve Sınırlandırılır?</h2>
 <div class="note transition-note"><strong>Kısa Cevap: Temsil Yetkisinin Temel İlkeleri</strong><p><strong>Anonim şirketi dış ilişkide bağlama iktidarı olan temsil yetkisi, TTK m. 365 ve m. 370 uyarınca kural olarak yönetim kuruluna aittir ve çift imza (müşterek temsil) ile kullanılır.</strong> Temsil yetkisinin kullanım şekli, devri ve sınırlandırılmasında geçerli 5 ana kural şunlardır:</p><ol style="margin: 12px 0 0 20px;"><li><strong>Müşterek Temsil Karinesi (TTK m. 370/1):</strong> Esas sözleşmede aksi öngörülmedikçe veya kurul tek kişiden oluşmadıkça şirketi temsilen en az iki yetkilinin birlikte imzası şarttır; tek imza ile işlem şirketi bağlamaz.</li><li><strong>Organik Bağ Şartı (TTK m. 370/2):</strong> Temsil yetkisi murahhas üyelere veya şirket dışından profesyonel müdürlere devredilebilir; ancak <span class="legal-gold">en az bir yönetim kurulu üyesinin şirketi temsil yetkisini haiz olması kanuni zorunluluktur.</span></li><li><strong>Ultra Vires İlkesinin İlgası (TTK m. 371/2):</strong> Temsile yetkili olanların işletme konusu dışında yaptıkları işlemler dahi şirketi bağlar; meğerki üçüncü kişinin kötüniyeti ispat edilsin.</li><li><strong>Üçüncü Kişilere Karşı Yalnızca İki Geçerli Sınır (TTK m. 371/3):</strong> Parasal miktar, işlem türü veya kurul onayı gibi sınırlamalar tescil edilse dahi üçüncü kişilere karşı ileri sürülemez. Üçüncü kişileri bağlayan geçerli sınırlar yalnızca <span class="legal-gold">merkez/şube ayrımı (mekân)</span> ve <span class="legal-gold">birlikte imza (çift imza)</span> sınırlamalarıdır.</li><li><strong>Sınırlı Yetkili Ticari Vekil İstisnası (TTK m. 371/7):</strong> İç yönergeye dayanılarak tescil edilen sınırlı yetkili ticari vekillerin miktar/konu sınırları üçüncü kişileri bağlar; ancak bu kişilerin zararlarından yönetim kurulu müteselsilen sorumludur.</li></ol></div>
@@ -1048,12 +1378,10 @@
 <li><a href="#kaynaklar">Mevzuat, İçtihat ve Yararlanılan Kaynaklar</a></li>
 <li><a href="#ilgili">İlgili Makaleler</a></li>
 </ol></div></section><hr/>
-
 <section><h2 id="s1">1. Temsil Yetkisinin Hukukî Niteliği ve Yönetim Yetkisinden Ayrımı</h2>
 <p>6102 sayılı Türk Ticaret Kanunu m. 365 uyarınca; <em>"Anonim şirket, yönetim kurulu tarafından yönetilir ve temsil olunur."</em> Kanun koyucu yönetim ve temsil yetkisini aynı maddede düzenlemiş olmakla birlikte, bu iki kurumun etki sahası, sınırları ve devir rejimleri birbirinden bütünüyle farklıdır.</p>
 <p><strong>Yönetim yetkisi (Geschäftsführung)</strong>, şirketin iç ilişkisine ilişkindir. Şirketin amacını gerçekleştirmek üzere ticari kararların alınması, iş akışının planlanması, organizasyon yapısının kurulması ve personelin sevk ve idaresi bu kapsama girer. Yönetim yetkisinin devri TTK m. 367 uyarınca esas sözleşmede hüküm bulunması ve ticaret siciline tescil/ilan edilecek bir teşkilat iç yönergesi (Organisationsreglement) düzenlenmesi şartına bağlıdır.</p>
 <p><strong>Temsil yetkisi (Vertretung)</strong> ise şirketin dış ilişkisine yöneliktir. Şirket tüzel kişiliği adına üçüncü kişilerle sözleşmeler akdetme, borç ve taahhüt altına girme, resmi merciler önünde beyanda bulunma ve mahkemelerde dava ikame etme salahiyetidir. Temsil yetkisinin kaynağı ve devri TTK m. 370'te, kapsam ve sınırları m. 371'de, imza şekli ise m. 372'de özel olarak tanzim edilmiştir. <span class="legal-gold">Bir kimseye iç yönergeyle yönetim yetkisi verilmiş olması, o kimseye kendiliğinden üçüncü kişileri bağlayacak temsil yetkisinin tanındığı anlamına gelmez.</span> Temsil yetkisi yönetim kurulu kararıyla ayrıca tesis edilmeli ve tescil/ilan ettirilmelidir (Bakırköy 3. Asliye Ticaret Mahkemesi, 11.01.2024, E. 2022/1115, K. 2024/25).</p></section><hr/>
-
 <section><h2 id="s2">2. Kanunî Temsil Kuralı: Çift İmza (Müşterek Temsil) Esası ve İstisnaları (TTK m. 370/1)</h2>
 <p>Anonim ortaklıkta temsil yetkisinin nasıl kullanılacağı hususunda kanun koyucu ticari güvenliği ve şirket varlıklarının korunmasını öncelemiştir. TTK m. 370/1 hükmü emreder:</p>
 <p><em>"Esas sözleşmede aksi öngörülmemiş veya yönetim kurulu tek kişiden oluşmuyorsa temsil yetkisi çift imza ile kullanılmak üzere yönetim kuruluna aittir."</em></p>
@@ -1063,14 +1391,12 @@
 <li><strong>Münferit Temsile Geçiş Şartı:</strong> Kurul üyelerinden herhangi birinin tek başına (münferit imza ile) şirketi temsil edebilmesi, ancak esas sözleşmede buna açıkça izin verilmiş olmasına veya esas sözleşmenin tanıdığı yetkiyle kurul kararı alınmasına bağlıdır. Esas sözleşmede dayanağı olmayan münferit imza kararları tescil edilemez.</li>
 <li><strong>Tek Kişilik Yönetim Kurulu İstisnası:</strong> 6102 sayılı TTK m. 359 uyarınca anonim şirketin tek üyeden oluşan bir yönetim kurulu ile yönetilmesi mümkündür. Kurulun tek kişiden oluştuğu hâllerde çift imza kuralı doğası gereği uygulanmaz; yönetim kurulu üyesi şirketi münferiden temsil eder.</li>
 </ul></section><hr/>
-
 <section><h2 id="s3">3. Temsil Yetkisinin Kapsamı ve Ultra Vires Yasağının İlgası (TTK m. 371/1-2)</h2>
 <p>Eski 6762 sayılı Türk Ticaret Kanunu döneminde geçerli olan ve şirketlerin yalnızca esas sözleşmelerinde yazılı işletme konusuyla sınırlı olarak hak iktisap edebileceğini öngören <strong>"ultra vires"</strong> ilkesi, ticari hayatın dinamizmi ve işlem güvenliği gereğince 6102 sayılı Kanun ile bütünüyle ilgâ edilmiştir.</p>
 <p>TTK m. 371/1 uyarınca; <em>"Temsile yetkili olanlar şirketin amacına ve işletme konusuna giren her tür işleri ve hukuki işlemleri, şirket adına yapabilir ve bunun için şirket unvanını kullanabilirler."</em></p>
 <p>Bu hükmün tamamlayıcısı ve modern şirketler hukukunun en köklü reformu ise TTK m. 371/2 fıkrasında getirilmiştir:</p>
 <p><em>"Temsile yetkili olanların, üçüncü kişilerle, işletme konusu dışında yaptığı işlemler de şirketi bağlar; meğerki, üçüncü kişinin, işlemin işletme konusu dışında bulunduğunu bildiği veya durumun gereğinden, bilebilecek durumda bulunduğu ispat edilsin. Şirket esas sözleşmesinin ilan edilmiş olması, bu hususun ispatı açısından, tek başına yeterli delil değildir."</em></p>
 <div class="note"><strong>Ultra Vires Sonrası İspat Yükü ve İyiniyet Koruması</strong><p><span class="legal-gold">Şirket temsilcisi esas sözleşmedeki faaliyet alanı dışında bir işlem yapsa dahi, bu işlem şirketi bağlar.</span> Şirket işlemle bağlı olmadığını iddia ediyorsa, karşı tarafın kötüniyetli olduğunu, yani işlemin işletme konusu dışında kaldığını bildiğini somut delillerle ispat etmek zorundadır. "Esas sözleşmemiz ticaret sicil gazetesinde ilan edilmişti, bilmesi gerekirdi" savunması kanunen kesin olarak geçersiz sayılmıştır (İstanbul BAM 13. HD, 06.03.2025, E. 2022/1344, K. 2025/372).</p></div></section><hr/>
-
 <section><h2 id="s4">4. Temsil Yetkisinin Sınırlandırılması: İleri Sürülebilen Sınırlar vs. Hükümsüz Kalan İç Sınırlar (TTK m. 371/3)</h2>
 <p>Anonim ortaklıkta yönetim kurulu, temsilcilerin yetkilerini dilediği gibi sınırlayamaz. Üçüncü kişilerin ticaret siciline güvenini korumak amacıyla temsil yetkisinin sınırlandırılması rejimi TTK m. 371/3'te emredici olarak tahdit edilmiştir:</p>
 <p><em>"Temsil yetkisinin sınırlandırılması, iyiniyet sahibi üçüncü kişilere karşı hüküm ifade etmez; ancak, temsil yetkisinin sadece merkezin veya bir şubenin işlerine özgülendiğine veya birlikte kullanılmasına ilişkin tescil ve ilan edilen sınırlamalar geçerlidir."</em></p>
@@ -1080,7 +1406,6 @@
 <li><strong>Kullanım Şekli Bakımından Sınırlandırma (Birlikte / Çift İmza):</strong> Temsilcinin tek başına değil, bir başka kurul üyesiyle veya müdürle birlikte imza atması gerektiğine ilişkin sınırlama tescil/ilan edilmişse üçüncü kişilere karşı ileri sürülebilir.</li>
 </ol>
 <p>Bu iki yasal istisna haricinde kalan hiçbir sınırlama —ticaret siciline tescil ve ilan edilmiş olsa dahi— iyiniyetli üçüncü kişileri bağlamaz.</p></section><hr/>
-
 <section><h2 id="s5">5. İç İlişkideki Parasal ve Konu Sınırlandırmalarının Hükmü ve Yetkisiz Temsil Riski</h2>
 <p>Uygulamada şirket yönetim kurulları sıklıkla imza sirkülerine veya iç yönergelere miktar ve konu kayıtları koymaktadır: <em>"Genel Müdür 500.000 TL'ye kadar tek imzayla, üzerindeki tutarlarda yönetim kurulu başkanıyla çift imzayla yetkilidir"</em> veya <em>"Gayrimenkul alımında kurul kararı şarttır"</em> gibi klozlar düzenlenmektedir.</p>
 <h3>A. Üçüncü Kişiler Açısından Hükümsüzlük</h3>
@@ -1091,20 +1416,16 @@
 </ul>
 <h3>B. Şirket İçi Hukukî Sorumluluk ve Rücu</h3>
 <p>Parasal veya konusal sınırlamanın üçüncü kişilere karşı ileri sürülememesi, temsilcinin sorumsuz olduğu anlamına gelmez. Şirket içi talimata veya yetki sınırına aykırı davranarak şirketi borçlandıran temsilci, TTK m. 369 özen yükümlülüğünü ve hizmet sözleşmesini ihlal etmiş olur. Şirket, üçüncü kişiye ödemek zorunda kaldığı bedeli TTK m. 553 kapsamında zarara yol açan temsilciden rücuen tazmin eder.</p></section><hr/>
-
 <section><h2 id="s6">6. Temsil Yetkisinin Devri ve "En Az Bir Yönetim Kurulu Üyesi" Şartı (TTK m. 370/2)</h2>
 <p>Yönetim kurulunun temsil yetkisini başkalarına devretme iktidarı TTK m. 370/2'de düzenlenmiştir:</p>
 <p><em>"Yönetim kurulu, temsil yetkisini bir veya daha fazla murahhas üyeye veya müdür olarak üçüncü kişilere devredebilir. En az bir yönetim kurulu üyesinin temsil yetkisini haiz olması şarttır."</em></p>
 <h3>A. Organik Bağın Korunması İlkesi</h3>
 <p>Kanun koyucu, şirketin dış dünyadaki temsili ile kanuni yönetim organı arasındaki organik bağın tamamen koparılmasını mutlak olarak yasaklamıştır. Yönetim kurulu tüm temsil yetkisini profesyonel şirket dışı müdürlere devredip kendisini tamamen temsil yetkisiz bırakamaz. Kurul üyelerinden en az biri şirketi münferiden veya müştereken temsil yetkisini bünyesinde barındırmak zorundadır.</p>
 <div class="note"><strong>"En Az Bir Üye" Şartının İhlali Hâlinde Butlan</strong><p><span class="legal-gold">Yönetim kurulu üyelerinin hiçbirine temsil yetkisi bırakmaksızın tüm imza yetkisini şirket dışı müdürlere devreden yönetim kurulu kararları, TTK m. 391/1-b uyarınca anonim şirketin temel yapısına aykırı olduğundan kendiliğinden BATILDIR.</span> Ticaret sicil müdürlükleri böyle bir tescil talebini resen reddetmekle yükümlüdür.</p></div></section><hr/>
-
 <section><h2 id="s7">7. Sınırlı Yetkili Ticari Vekil ve Diğer Tacir Yardımcıları Rejimi (TTK m. 371/7)</h2>
 <p>6102 sayılı TTK'nın ilk hâlinde miktar ve konu sınırlamalarının hiçbir şekilde tescil edilememesi uygulamada devasa holdinglerde ve bankalarda ciddi tıkanıklıklara yol açmıştı. Kanun koyucu bu ihtiyaca cevap vermek üzere 6552 sayılı Kanun ile TTK m. 371'e 7. fıkrayı ekleyerek <strong>sınırlı yetkili ticari vekiller</strong> rejimini ihdas etmiştir:</p>
 <p><em>"Yönetim kurulu, yukarıda belirtilen temsilciler dışında, temsile yetkili olmayan yönetim kurulu üyelerini veya şirkete hizmet akdi ile bağlı olanları sınırlı yetkiye sahip ticari vekil veya diğer tacir yardımcıları olarak atayabilir. Bu şekilde atanacak olanların görev ve yetkileri, 367 nci maddeye göre hazırlanacak iç yönergede açıkça belirlenir. Bu durumda iç yönergenin tescil ve ilanı zorunludur. İç yönerge ile ticari vekil ve diğer tacir yardımcıları atanamaz. Bu fıkra uyarınca yetkilendirilen ticari vekil veya diğer tacir yardımcıları da ticaret siciline tescil ve ilan edilir. Bu kişilerin, şirkete ve üçüncü kişilere verecekleri her tür zarardan dolayı yönetim kurulu müteselsilen sorumludur."</em></p>
-
 <table><thead><tr><th>Aşama No</th><th>TTK m. 371/7 Uyarınca Sınırlı Temsilci Atama Zinciri</th><th>Zorunlu Hukukî Şart</th></tr></thead><tbody><tr><td><strong>1. Adım</strong></td><td>Esas Sözleşme Yetkisi</td><td>Esas sözleşmede iç yönerge çıkarmaya ve sınırlı temsilci atamaya ilişkin açık hüküm bulunmalıdır.</td></tr><tr><td><strong>2. Adım</strong></td><td>Yetki Çerçeve İç Yönergesi Tanzimi</td><td>Pozisyonlar, unvanlar, harcama/imza limitleri ve konu kısıtları objektif olarak iç yönergeye yazılmalıdır.</td></tr><tr><td><strong>3. Adım</strong></td><td>İç Yönergenin Tescil ve İlanı</td><td>İç yönerge ticaret siciline tescil ve TTSG'de ilan edilmelidir (İç yönerge tek başına atama yapmaz).</td></tr><tr><td><strong>4. Adım</strong></td><td>Yönetim Kurulu Atama Kararı</td><td>Tescilli yönergeye atıf yapılarak somut şahıslar ilgili derecelere/makamlara YK kararıyla atanmalıdır.</td></tr><tr><td><strong>5. Adım</strong></td><td>Şahısların Tescil ve İlanı</td><td>Atanan ticari vekillerin isimleri ve imza sirküleri ticaret siciline tescil ve ilan ettirilmelidir.</td></tr><tr><td><strong>6. Adım</strong></td><td>Müteselsil Sorumluluk Riski</td><td>Bu temsilcilerin üçüncü kişilere veya şirkete verdikleri zararlardan yönetim kurulu müteselsilen sorumlu olur.</td></tr></tbody></table></section><hr/>
-
 <section><h2 id="s8">8. 23.05.2024 Tarihli 7511 Sayılı Kanun Değişikliği: Şube Müdürlerinin Atanması</h2>
 <p>Türk Ticaret Kanunu m. 375/1-d bendinde yer alan ve müdürlerin atanması ile görevden alınmasını yönetim kurulunun devredilemez yetkisi sayan emredici kural, <strong>23/05/2024 tarihli ve 7511 sayılı Kanun'un 14. maddesiyle</strong> önemli bir esnekliğe kavuşturulmuştur.</p>
 <p>Güncel fıkra metni şöyledir: <em>"d) Şube müdürleri hariç olmak üzere müdürlerin ve aynı işleve sahip kişilerin atanmaları ve görevden alınmaları."</em></p>
@@ -1114,12 +1435,10 @@
 <li><strong>İç Yönergeyle Devir İmkânı:</strong> Yönetim kurulu, tescil ettireceği bir iç yönerge ile şube müdürlerini atama, görev yerlerini değiştirme ve azletme yetkisini Genel Müdüre, İcra Kurulu'na veya İnsan Kaynakları Direktörüne devredebilir.</li>
 <li><strong>Genel Müdür ve Üst Düzey Müdürler Ayrımı:</strong> Genel müdür (CEO), genel müdür yardımcıları ve fabrika müdürleri gibi üst düzey icra yetkililerini atama ve azletme yetkisi ise yönetim kurulunun devredilemez çekirdek yetkisi olmaya devam etmektedir.</li>
 </ul></section><hr/>
-
 <section><h2 id="s9">9. Temsil Yetkisinin Genel Kurulun Devredilemez Yetkileriyle Sınırı (TTK m. 408/2-f)</h2>
 <p>Yönetim kurulunun temsil yetkisi ne kadar geniş olursa olsun, kanunen genel kurulun devredilemez yetki alanına giren konularda şirket adına tek başına tasarrufta bulunamaz.</p>
 <p>TTK m. 408/2-f bendi uyarınca; <strong>"önemli miktarda şirket varlığının toptan satışı"</strong> genel kurulun devredilemez yetkileri arasındadır. Yönetim kurulu üyeleri münferit veya müşterek temsil yetkisine sahip olsalar dahi, genel kurul kararı almaksızın şirketin ana üretim tesisini, fabrika arazisini veya gelir getiren temel malvarlığı bloğunu üçüncü kişilere satamaz veya devredemezler.</p>
 <p>İstanbul 14. Asliye Ticaret Mahkemesi'nin 26.06.2025 tarihli kararında (E. 2023/398, K. 2025/514) vurgulandığı üzere; genel kurul kararı olmaksızın şirket varlığının toptan satışı amacıyla yönetim kurulunca yapılan işlemler yetki aşımı niteliğindedir ve bu kararlar TTK m. 391/1-d bendi uyarınca batıldır. Alıcının iyiniyetli olduğu iddiası, emredici organlar arası yetki ayrılığı karşısında şirkete karşı ileri sürülemez.</p></section><hr/>
-
 <section><h2 id="s10">10. Temsil Yetkisinin Kötüye Kullanılması, İnançlı İşlemler ve Şirketin Bağlanması</h2>
 <p>Temsile yetkili kişi, şirketin imza sirkülerine ve tescilli yetki sınırlarına tamamen uygun hareket etse dahi, eğer bu yetkiyi <strong>şirketin menfaatlerine açıkça aykırı olarak ve kendi şahsi çıkarı veya üçüncü kişinin menfaati doğrultusunda</strong> kullanmışsa "temsil yetkisinin kötüye kullanılması" gündeme gelir.</p>
 <p>Yargıtay 11. Hukuk Dairesi'nin yerleşik içtihadı (25.11.2021, E. 2021/5517, K. 2021/6585) uyarınca:</p>
@@ -1127,7 +1446,6 @@
 <li><strong>Dürüstlük Kuralı Sınırı (TMK m. 2):</strong> Temsil yetkisi inançlı bir yetkidir. Temsilci iyiniyet ve sadakat borcu gereği şirket menfaatini gözetmek zorundadır. Temsil edilen şirketin çıkarına açıkça aykırı işlemler kural olarak temsil görevinin sınırları dışında kalır.</li>
 <li><strong>Üçüncü Kişinin Kötüniyeti ve Hile İttifakı:</strong> Eğer üçüncü kişi, temsilcinin şirketi zarara sokmak kastıyla hareket ettiğini biliyorsa veya temsilci ile el ve işbirliği (muvazaa/hıyanet ittifakı) yaparak sözleşme akdetmişse, Türk Medenî Kanunu'nun 2. maddesi uyarınca bu işlemden dolayı şirketin bağlı olduğunu ileri süremez; şirket sözleşmeyle bağlı olmaz.</li>
 </ul></section><hr/>
-
 <section><h2 id="s11">11. Temsil Görevi Sırasında İşlenen Haksız Fiiller ve Şirketin Sorumluluğu (TTK m. 371/5)</h2>
 <p>Anonim ortaklıklar tüzel kişilikleri gereği ancak organları ve temsilcileri vasıtasıyla eylemde bulunabilirler. TTK m. 371/5 hükmü bu organ sorumluluğunu emredici bir esasa bağlamıştır:</p>
 <p><em>"Temsile veya yönetime yetkili olanların, görevlerini yaptıkları sırada işledikleri haksız fiillerden şirket sorumludur. Şirketin rücü hakkı saklıdır."</em></p>
@@ -1138,7 +1456,6 @@
 <li>Üçüncü bir kişinin bu eylem neticesinde maddi veya manevi zarara uğramış bulunmasıdır.</li>
 </ol>
 <p>Bu şartlar gerçekleştiğinde şirket tüzel kişiliği üçüncü kişiye karşı doğrudan doğruya tazminat ödemekle yükümlü olur; ödenen tazminat kusurlu temsilciye rücu edilir.</p></section><hr/>
-
 <section><h2 id="s12">12. Tescil, İlan, İmza Sirküleri ve MERSİS İmza Beyanı Prosedürü</h2>
 <p>TTK m. 372/1 uyarınca; şirket adına imza yetkisine sahip olan kişiler, <strong>şirketin ticaret unvanı altında imza atmak zorundadırlar</strong>. Yalnızca şahsi imzanın atılması, şirketin borç altına girmesi bakımından geçersizlik veya şahsi sorumluluk ihtilaflarına yol açabilir.</p>
 <p>Ticaret sicili uygulaması bakımından şu adımlar izlenir:</p>
@@ -1147,12 +1464,9 @@
 <li><strong>MERSİS Üzerinden İmza Beyanı (TTK m. 40/2):</strong> Temsile yetkilendirilen kişilerin imza beyanları, Ticaret Bakanlığı veri tabanlarındaki elektronik kayıtlar üzerinden veya ticaret sicili müdürlükleri nezdinde fiziken onaylanarak tescil dosyasına alınır.</li>
 <li><strong>İmza Sirküleri Çıkarılması:</strong> Tescil ve ilan edilen temsil kararına dayanılarak noterlikçe imza sirküleri düzenlenir. Şirketle işlem yapacak üçüncü kişiler, temsil yetkisinin güncelliğini MERSİS ve Türkiye Ticaret Sicili Gazetesi kayıtlarından teyit etmelidir.</li>
 </ul></section><hr/>
-
 <section><h2 id="s13">13. Pratik Tablo: Temsil Sınırlandırmalarının Üçüncü Kişilere ve Şirkete Etkisi</h2>
 <p>Uygulamada sıklıkla karşılaşılan sınırlandırma türleri ve bunların hukukî geçerlilik tablosu aşağıda özetlenmiştir:</p>
-
 <table><thead><tr><th>Sınırlandırma Türü</th><th>Kanunî Nitelik</th><th>Üçüncü Kişilere Etkisi</th><th>Şirket İçi Hukukî Sonuç</th></tr></thead><tbody><tr><td><strong>Çift İmza (Birlikte Temsil)</strong></td><td>TTK m. 371/3 uyarınca geçerli istisna</td><td>Tescil ve ilan edilmişse üçüncü kişileri <strong>bağlar</strong>. Tek imza şirketi borç altına sokmaz.</td><td>Şirket işlemle bağlı olmaz; tek imza atan şahsen sorumlu olur.</td></tr><tr><td><strong>Merkez veya Şube Sınırlaması</strong></td><td>TTK m. 371/3 uyarınca geçerli istisna</td><td>Tescil ve ilan edilmişse üçüncü kişileri <strong>bağlar</strong>. Şube temsilcisi merkez işlerini bağlayamaz.</td><td>Yetki aşımı durumunda işlem askıda hükümsüz kalır.</td></tr><tr><td><strong>Parasal Tutar / Miktar Sınırı (Örn: 1 Milyon TL Sınırı)</strong></td><td>İç ilişki sınırlaması (Dış ilişkide batıl)</td><td>Tescil edilse dahi iyiniyetli üçüncü kişileri <strong>BAĞLAMAZ</strong>. Şirket işlemle bağlı kalır.</td><td>Şirket borcu öder; sınırı aşan temsilciye TTK m. 553 kapsamında rücu eder.</td></tr><tr><td><strong>Konu / İşlem Türü Sınırı (Örn: Yalnızca hammadde alımı)</strong></td><td>İç ilişki sınırlaması</td><td>İyiniyetli üçüncü kişilere karşı <strong>ileri sürülemez</strong>. İşlem şirketi ilzam eder.</td><td>Temsilcinin azli ve tazminat sorumluluğu gündeme gelir.</td></tr><tr><td><strong>Şirket İçi Onay / Kurul İzni Şartı</strong></td><td>İç prosedür kuralı</td><td>Üçüncü kişiyi <strong>etkilemez</strong>. Onaysız yapılan sözleşme şirketi bağlar.</td><td>Temsilci şirket içi talimat ihlalinden sorumlu olur.</td></tr><tr><td><strong>TTK m. 371/7 Sınırlı Yetkili Ticari Vekil</strong></td><td>Kanuni özel sınırlama rejimi</td><td>Tescilli iç yönergedeki limitler üçüncü kişileri <strong>BAĞLAR</strong>; limit aşımı şirketi bağlamaz.</td><td>Yönetim kurulu, vekilin vereceği zararlardan müteselsilen sorumlu olur.</td></tr></tbody></table></section><hr/>
-
 <section><h2 id="s14">14. Şirket Yöneticileri ve Uygulayıcılar İçin Temsil Yetkisi Kontrol Rehberi</h2>
 <div class="checklist"><ul>
 <li><strong>1. Esas Sözleşme Temsil Maddesi Kontrolü:</strong> Şirketin münferit mi yoksa müşterek imza ile mi temsil edileceği esas sözleşmeden kontrol edilmelidir.</li>
@@ -1164,37 +1478,27 @@
 <li><strong>7. Devredilemez Genel Kurul Yetkilerine Saygı:</strong> Önemli şirket varlıklarının toptan satışı söz konusu ise mutlaka genel kurul kararı alınmalıdır (TTK m. 408/2-f).</li>
 <li><strong>8. Müşterek İmza Tescilinin Takibi:</strong> Çift imza kuralının ticaret siciline tescil ve ilan ettirildiği doğrulanmalıdır.</li>
 </ul></div></section><hr/>
-
 <section><h2 id="s15">15. Değerlendirme ve Sonuç</h2>
 <p>Anonim ortaklıklarda temsil yetkisi, şirketin ticari varlığını sürdürebilmesi ve dış dünyada güvenle işlem yapabilmesi için vazgeçilmez bir kurumsal iktidardır. 6102 sayılı Türk Ticaret Kanunu, ticari hayatın hızını korumak adına <strong>üçüncü kişilerin iyiniyetini üstün tutmuş</strong>, ultra vires yasağını kaldırmış ve temsil yetkisine getirilecek iç miktar ve konu sınırlarının dış ilişkide hükümsüz kalacağını açıkça hükme bağlamıştır.</p>
 <p>Buna karşılık şirketlerin kontrolsüz borçlandırılmasını önlemek amacıyla; çift imza kuralı, mekân sınırlaması ve TTK m. 371/7'deki sınırlı yetkili ticari vekil müessesesi tescil ve ilan şartıyla üçüncü kişilere karşı geçerli kılınmıştır. <span class="legal-gold">Şirket yönetim kurullarının temsil yetkisini yapılandırırken esas sözleşme, yönetim kurulu kararı, iç yönerge ve ticaret sicil kayıtları arasındaki uyumu eksiksiz sağlaması, hem şirket tüzel kişiliğinin hem de yönetim kurulu üyelerinin şahsi tazminat risklerinden korunmasının yegâne teminatıdır.</span></p></section><hr/>
-
 <section id="sss"><h2>16. Sık Sorulan Sorular</h2>
 <h3>Anonim şirkette kanuni temsil kuralı nedir? Münferit imza nasıl verilir?</h3>
 <p>TTK m. 370/1 uyarınca aksi esas sözleşmede öngörülmedikçe veya kurul tek kişiden oluşmadıkça temsil yetkisi çift imza (müşterek temsil) ile kullanılır. Münferit imza yetkisi tanınabilmesi için esas sözleşmede buna açıkça cevaz verilmesi veya yetki devri mekanizmasının işletilmesi gerekir.</p>
-
 <h3>Temsil yetkisi üçüncü kişilere tamamen devredilebilir mi?</h3>
 <p>Hayır. TTK m. 370/2'nin emredici hükmü uyarınca temsil yetkisi murahhas üyelere veya müdür olarak üçüncü kişilere devredilebilir; ancak en az bir yönetim kurulu üyesinin şirketi temsil yetkisini haiz olması kanuni zorunluluktur.</p>
-
 <h3>Şirketin işletme konusu dışındaki işlemler şirketi bağlar mı? Ultra vires yasağı kalktı mı?</h3>
 <p>Evet, 6102 sayılı TTK ile ultra vires ilkesi ilgâ edilmiştir. TTK m. 371/2 gereğince temsilcilerin işletme konusu dışında yaptığı hukuki işlemler de şirketi bağlar. Şirketin bağlılıktan kurtulabilmesi için üçüncü kişinin işlemin işletme konusu dışında olduğunu bildiğini veya durumun gereğinden bilebilecek durumda olduğunu ispat etmesi gerekir.</p>
-
 <h3>Temsil yetkisindeki miktar veya parasal sınırlar üçüncü kişilere karşı ileri sürülebilir mi?</h3>
 <p>Hayır. TTK m. 371/3 uyarınca miktar veya işlem konusuna ilişkin sınırlamalar ticaret siciline tescil ve ilan edilse dahi iyi niyetli üçüncü kişilere karşı geçersizdir. Bu sınırlamalar yalnızca iç ilişkide geçerli olup şirket içi rücu ve tazminat sorumluluğu doğurur.</p>
-
 <h3>Üçüncü kişilere karşı geçerli olarak ileri sürülebilecek temsil sınırlamaları nelerdir?</h3>
 <p>TTK m. 371/3 uyarınca tescil ve ilan edilmek şartıyla üçüncü kişilere karşı geçerli yalnızca iki sınırlama vardır: (1) Temsil yetkisinin sadece merkezin veya belirli bir şubenin işlerine özgülenmesi (mekân sınırlaması) ve (2) Birlikte (çift imza) temsil sınırlamasıdır.</p>
-
 <h3>Sınırlı yetkili ticari vekil veya tacir yardımcısı nasıl atanır?</h3>
 <p>TTK m. 371/7 uyarınca temsile yetkili olmayan yönetim kurulu üyeleri veya hizmet akdiyle bağlı çalışanlar, TTK m. 367'ye göre hazırlanıp tescil ve ilan edilecek bir iç yönergeye dayanılarak yönetim kurulu kararıyla sınırlı yetkili ticari vekil olarak atanabilir. Bu kişilerin vereceği zararlardan yönetim kurulu müteselsilen sorumludur.</p>
-
 <h3>7511 sayılı Kanun değişikliği ile şube müdürlerinin atanmasında ne değişti?</h3>
 <p>23.05.2024 tarihli 7511 sayılı Kanun m. 14 ile TTK m. 375/1-d hükmü değiştirilmiş ve şube müdürlerinin atanması ile görevden alınması yönetim kurulunun devredilemez yetkileri arasından çıkarılmıştır. Böylece şube müdürlerinin atanması iç yönergeyle murahhaslara veya genel müdüre devredilebilir hale gelmiştir.</p>
-
 <h3>Yetkisiz temsilcinin veya çift imza kuralını ihlal eden tek imzanın akıbeti nedir?</h3>
 <p>Tescil ve ilan edilmiş çift imza kuralına rağmen tek imza ile yapılan veya yetkisiz temsilci tarafından akdedilen işlemler şirketi bağlamaz (askıda hükümsüzdür). Şirket onay (icazet) vermezse işlem kesin olarak geçersiz kalır ve TBK m. 46-47 gereğince imzayı atan kişi şahsen ve münhasıran sorumlu olur.</p>
 </section><hr/>
-
 <section id="kaynaklar"><h2>17. Mevzuat, İçtihat ve Yararlanılan Kaynaklar</h2>
 <h3>Mevzuat</h3><ul>
 <li>6102 sayılı Türk Ticaret Kanunu, özellikle m. 40, 365, 367, 368, 369, 370, 371, 372, 373, 374, 375, 391, 408 ve 553.</li>
@@ -1229,7 +1533,6 @@
 <li>BÜYÜKATAK, Aytuğ, <em>Anonim Şirketlerde Yönetim Kurulunun Yönetim ve Temsil Yetkisinin Devri ve Sınırlandırılması</em>, Yüksek Lisans Tezi, 2019.</li>
 <li>TAMÖZ, İrem, <em>Anonim Şirketlerde Sınırlı Yetkili Temsilci Olarak Ticari Vekil veya Diğer Tacir Yardımcılarının Atanması</em>, Yüksek Lisans Tezi, 2023.</li>
 </ul></section><hr/>
-
 <section id="ilgili"><h2>18. İlgili Makaleler</h2><ul class="related-articles">
 <li><a href="anonim-sirketlerde-yonetim-kurulunun-gorev-ve-yetkileri.html"><strong>Anonim Şirketlerde Yönetim Kurulunun Görev ve Yetkileri: Devredilemez Görev ve Yetkiler Nelerdir?</strong></a></li>
 <li><a href="anonim-sirketlerde-yonetim-kurulu-toplanti-karar-nisaplari.html"><strong>Anonim Şirketlerde Yönetim Kurulu Toplantı ve Karar Nisapları: Yönetim Kurulu Nasıl Toplanır ve Karar Alır?</strong></a></li>
@@ -1238,13 +1541,11 @@
 <li><a href="anonim-sirketlerde-olaganustu-genel-kurul-nasil-yapilir.html"><strong>Olağanüstü Genel Kurul Nasıl Yapılır? (TTK 410-416 Çağrı)</strong></a></li>
 <li><a href="anonim-sirketlerde-genel-kurul-kararinin-iptali.html"><strong>Anonim Şirketlerde Genel Kurul Kararının İptali: Kimler Dava Açabilir ve Şartları Nelerdir?</strong></a></li>
 </ul></section><hr/>
-
 <section class="article-closing-advisory">
 <div class="note"><strong>Bilgilendirme</strong><p>Bu çalışma genel akademik ve uygulamaya dönük bilgilendirme amacıyla hazırlanmıştır. Anonim şirketlerde temsil yetkisinin sınırlandırılması, münferit ve müşterek temsil modellerinin kurgulanması, sınırlı yetkili ticari vekil iç yönergelerinin hazırlanması, imza sirkülerinin tescili ve yetki aşımından doğan uyuşmazlıklar; her şirketin esas sözleşmesi, organizasyonel büyüklüğü ve sektörel mevzuatı dikkate alınarak profesyonel şirketler hukuku danışmanlığı eşliğinde değerlendirilmelidir.</p></div>
 <div class="note" style="margin-top:32px;"><strong>Hukukî Danışmanlık</strong><p>Anonim şirketinizde çift imza ve münferit imza modellerinin belirlenmesi, temsil yetkisi devri yönetim kurulu kararlarının tanzimi, TTK m. 371/7 uyarınca sınırlı yetkili tacir yardımcıları iç yönergesinin hazırlanarak ticaret siciline tescili ve haksız temsil iddialarına karşı şirket haklarının korunması hususlarında profesyonel hukukî danışmanlık almak için bizimle iletişime geçebilirsiniz.</p><a class="btn primary" href="index.html#iletisim" style="margin-top:16px;">Hukukî Danışmanlık Talep Edin</a></div>
 </section>
 </article>
-
 <!-- FOOTER -->
 <footer class="site-footer">
 <div class="footer-inner">
@@ -1255,57 +1556,56 @@
 </footer>
 
 <script>
- (function () {
- var menu = document.getElementById("mobileMenu");
- var overlay = document.getElementById("mobileOverlay");
- var menuToggle = document.getElementById("menuToggle");
+        (function () {
+            var menu = document.getElementById("mobileMenu");
+            var overlay = document.getElementById("mobileOverlay");
+            var menuToggle = document.getElementById("menuToggle");
 
- menuToggle.onclick = function () {
- menu.classList.add("active");
- overlay.classList.add("active");
- document.body.style.overflow = "hidden";
- menuToggle.setAttribute("aria-expanded", "true");
- menu.setAttribute("aria-hidden", "false");
- };
+            menuToggle.onclick = function () {
+                menu.classList.add("active");
+                overlay.classList.add("active");
+                document.body.style.overflow = "hidden";
+                menuToggle.setAttribute("aria-expanded", "true");
+                menu.setAttribute("aria-hidden", "false");
+            };
 
- function closeMenu() {
- menu.classList.remove("active");
- overlay.classList.remove("active");
- document.body.style.overflow = "";
- menuToggle.setAttribute("aria-expanded", "false");
- menu.setAttribute("aria-hidden", "true");
- }
+            function closeMenu() {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+                document.body.style.overflow = "";
+                menuToggle.setAttribute("aria-expanded", "false");
+                menu.setAttribute("aria-hidden", "true");
+            }
 
- document.getElementById("closeMenu").onclick = closeMenu;
- overlay.onclick = closeMenu;
- document.querySelectorAll(".mobile-menu a").forEach(function (item) {
- item.onclick = closeMenu;
- });
- })();
+            document.getElementById("closeMenu").onclick = closeMenu;
+            overlay.onclick = closeMenu;
+            document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+                item.onclick = closeMenu;
+            });
+        })();
 
- // Firebase View Counter
- (function () {
- var FIREBASE_DB_URL = "https://ibrahimderinpinar-1c681-default-rtdb.europe-west1.firebasedatabase.app";
- var articleId = "yk-temsil-yetkisi";
- var el = document.getElementById("viewsChip");
+    (function () {
+        var FIREBASE_DB_URL = "https://ibrahimderinpinar-1c681-default-rtdb.europe-west1.firebasedatabase.app";
+        var articleId = "yk-temsil-yetkisi";
+        var el = document.getElementById("viewsChip");
 
- fetch(FIREBASE_DB_URL + "/views/" + articleId + ".json", {
- method: "PATCH",
- headers: { "Content-Type": "application/json" },
- body: JSON.stringify({ count: { ".sv": { "increment": 1 } } })
- })
- .then(function (r) {
- if (!r.ok) throw new Error("status " + r.status);
- return r.json();
- })
- .then(function (data) {
- var count = (data && typeof data.count === "number") ? data.count : 0;
- if (el) el.textContent = "👁 " + count.toLocaleString("tr-TR");
- })
- .catch(function () {
- if (el) el.textContent = "👁 —";
- });
- })();
+        fetch(FIREBASE_DB_URL + "/views/" + articleId + ".json", {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ count: { ".sv": { "increment": 1 } } })
+        })
+        .then(function (r) {
+            if (!r.ok) throw new Error("status " + r.status);
+            return r.json();
+        })
+        .then(function (data) {
+            var count = (data && typeof data.count === "number") ? data.count : 0;
+            if (el) el.textContent = "👁 " + count.toLocaleString("tr-TR");
+        })
+        .catch(function () {
+            if (el) el.textContent = "👁 —";
+        });
+    })();
 </script>
 </body>
 </html>
