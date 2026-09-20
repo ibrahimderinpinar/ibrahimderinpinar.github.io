@@ -1,1133 +1,1179 @@
-<!DOCTYPE html>
-
-<html lang="tr">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>
-<script defer="" src="scripts/site-search.js"></script>
-<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-7VG8YJ31K5');
-    </script>
-<title>Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik | Av. Dr. İbrahim Nuri Derinpınar</title>
-<meta content="Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir." name="description"/>
-<link href="https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html" rel="canonical"/>
-<!-- Open Graph -->
-<meta content="article" property="og:type"/>
-<meta content="tr_TR" property="og:locale"/>
-<meta content="Derinpınar Law &amp; Consultancy" property="og:site_name"/>
-<meta content="Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik" property="og:title"/>
-<meta content="Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir." property="og:description"/>
-<meta content="https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html" property="og:url"/>
-<meta content="https://derinpinar.av.tr/dlc-logo.png" property="og:image"/>
-<!-- Twitter -->
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik" name="twitter:title"/>
-<meta content="Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir." name="twitter:description"/>
-<meta content="https://derinpinar.av.tr/dlc-logo.png" name="twitter:image"/>
-<style>
-        :root {
-            --primary: #1f2d47;
-            --primary-light: #2d3e54;
-            --accent: #c9a961;
-            --accent-light: #e8dcc4;
-            --text: #1a1a1a;
-            --text-muted: #666;
-            --bg-light: #f9f7f3;
-            --bg-white: #ffffff;
-            --border: #e8e3dd;
-            --success: #4caf50;
-            
-            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
-            
-            --radius-sm: 6px;
-            --radius-md: 10px;
-            --radius-lg: 16px;
-            
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-            color: var(--text);
-            background: var(--bg-white);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* ============================================
-           NAVBAR
-           ============================================ */
-        .topbar {
-            position: sticky;
-            top: 0;
-            z-index: 50;
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .topbar-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 14px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            min-width: 0;
-            text-decoration: none;
-        }
-
-        .brand-logo img {
-            width: 200px;
-            height: auto;
-        }
-
-        .brand-text {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            min-width: 0;
-        }
-
-        .brand-name {
-            font-weight: 700;
-            font-size: 1.1rem;
-            line-height: 1.2;
-            color: var(--primary);
-        }
-
-        .brand-subtitle {
-            color: var(--text-muted);
-            font-size: 0.82rem;
-        }
-
-        .nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .nav a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: var(--transition);
-            border-bottom: none;
-        }
-
-        .nav a:hover,
-        .nav a[aria-current="page"] {
-            color: var(--primary);
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--primary);
-            padding: 0;
-            width: 42px;
-            height: 42px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .mobile-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.35);
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.3s;
-            z-index: 9998;
-        }
-
-        .mobile-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .mobile-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 82%;
-            max-width: 340px;
-            height: 100vh;
-            overflow-y: auto;
-            padding-top: calc(80px + env(safe-area-inset-top));
-            padding-bottom: env(safe-area-inset-bottom);
-            background: var(--bg-white);
-            padding-left: 35px;
-            padding-right: 35px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18);
-            transition: 0.35s ease;
-            z-index: 9999;
-        }
-
-        .mobile-menu.active {
-            right: 0;
-        }
-
-        .mobile-menu a {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--primary);
-            margin: 16px 0;
-            text-decoration: none;
-            border-bottom: none;
-        }
-
-        .close-menu {
-            position: absolute;
-            top: 22px;
-            right: 22px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            color: var(--primary);
-        }
-
-        /* ============================================
-           HERO SECTION
-           ============================================ */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-            color: var(--bg-white);
-            padding: 60px 20px;
-            margin-bottom: 40px;
-        }
-
-        .hero-grid {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .eyebrow {
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .meta {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.75);
-            margin-bottom: 32px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            align-items: center;
-        }
-
-        .meta a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .meta a:hover {
-            color: var(--accent-light);
-            text-decoration: underline;
-        }
-
-        .hero h1 {
-            font-size: clamp(28px, 5vw, 48px);
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 24px;
-            letter-spacing: -0.5px;
-            color: var(--bg-white);
-        }
-
-        .lead {
-            font-size: 18px;
-            line-height: 1.8;
-            color: rgba(255, 255, 255, 0.95);
-            max-width: 600px;
-            margin-bottom: 32px;
-            font-weight: 400;
-        }
-
-        .chip-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .chip {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            color: var(--bg-white);
-            padding: 8px 16px;
-            border-radius: var(--radius-md);
-            font-size: 13px;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            display: inline-block;
-        }
-
-        /* ============================================
-           MAIN CONTENT
-           ============================================ */
-        .article-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            margin-bottom: 60px;
-        }
-
-        /* ============================================
-           HEADINGS
-           ============================================ */
-        h1 {
-            font-size: clamp(28px, 5vw, 40px);
-            font-weight: 700;
-            line-height: 1.25;
-            margin-bottom: 40px;
-            color: var(--primary);
-            letter-spacing: -0.5px;
-        }
-
-        h2 {
-            font-size: clamp(24px, 4vw, 32px);
-            font-weight: 700;
-            line-height: 1.3;
-            margin-bottom: 20px;
-            margin-top: 32px;
-            color: var(--primary);
-            padding-bottom: 16px;
-            border-bottom: 2px solid var(--accent);
-            letter-spacing: -0.3px;
-            scroll-margin-top: 80px;
-        }
-
-        h2:first-child {
-            margin-top: 0;
-        }
-
-        h3 {
-            font-size: clamp(18px, 2.5vw, 22px);
-            font-weight: 600;
-            line-height: 1.4;
-            margin-bottom: 16px;
-            margin-top: 24px;
-            color: var(--primary);
-            letter-spacing: -0.2px;
-        }
-
-        /* ============================================
-           TYPOGRAPHY
-           ============================================ */
-        p {
-            font-size: 18px;
-            line-height: 1.9;
-            margin-bottom: 18px;
-            color: var(--text);
-            text-align: justify;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        strong {
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        em {
-            font-style: italic;
-            color: var(--text-muted);
-        }
-
-        /* ============================================
-           LISTS
-           ============================================ */
-        ul, ol {
-            margin: 32px 0;
-            padding-left: 0;
-        }
-
-        ul li, ol li {
-            margin-bottom: 12px;
-            font-size: 18px;
-            line-height: 1.8;
-            color: var(--text);
-        }
-
-        ul li {
-            margin-left: 28px;
-            list-style: none;
-            position: relative;
-        }
-
-        ul li::before {
-            content: "•";
-            position: absolute;
-            left: -20px;
-            color: var(--accent);
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        ol li {
-            margin-left: 28px;
-            list-style: decimal;
-            list-style-position: outside;
-        }
-
-        ol {
-            counter-reset: item;
-        }
-
-        /* ============================================
-           SEPARATOR
-           ============================================ */
-        hr {
-            border: none;
-            height: 1px;
-            background: linear-gradient(90deg, 
-                transparent 0%, 
-                var(--border) 20%, 
-                var(--border) 80%, 
-                transparent 100%);
-            margin: 40px 0;
-        }
-
-        /* ============================================
-           NOTE BOXES
-           ============================================ */
-        .note {
-            background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.04) 100%);
-            border-left: 4px solid var(--accent);
-            border-radius: var(--radius-lg);
-            padding: 28px 28px;
-            margin: 40px 0;
-            box-shadow: var(--shadow-md);
-            border: 1px solid rgba(201, 169, 97, 0.2);
-            border-left: 4px solid var(--accent);
-        }
-
-        .transition-note {
-            margin: 28px 0 24px 0;
-        }
-
-        .note strong {
-            display: block;
-            font-size: 16px;
-            margin-bottom: 12px;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-size: 14px;
-        }
-
-        .note p {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 0;
-            color: var(--text);
-        }
-
-        .note ul, .note ol {
-            margin: 16px 0 0 0;
-        }
-
-        .note li {
-            font-size: 16px;
-            color: var(--text);
-        }
-
-        /* ============================================
-           TABLES
-           ============================================ */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-            box-shadow: var(--shadow-md);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-        }
-
-        thead {
-            background: var(--primary);
-            color: var(--bg-white);
-        }
-
-        thead th {
-            padding: 18px 20px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 15px;
-            letter-spacing: 0.3px;
-            text-transform: none;
-        }
-
-        tbody tr {
-            border-bottom: 1px solid var(--border);
-            transition: var(--transition);
-        }
-
-        tbody tr:nth-child(even) {
-            background: var(--bg-light);
-        }
-
-        tbody tr:hover {
-            background: rgba(201, 169, 97, 0.08);
-            box-shadow: inset 0 0 0 1px var(--accent);
-        }
-
-        tbody td {
-            padding: 16px 20px;
-            font-size: 16px;
-            line-height: 1.6;
-            color: var(--text);
-        }
-
-        /* ============================================
-           BUTTONS
-           ============================================ */
-        .btn {
-            display: inline-block;
-            padding: 12px 28px;
-            border: none;
-            border-radius: var(--radius-md);
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            text-decoration: none;
-            letter-spacing: 0.3px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .btn.primary {
-            background: var(--primary);
-            color: var(--bg-white);
-            box-shadow: var(--shadow-md);
-        }
-
-        .btn.primary:hover {
-            background: var(--primary-light);
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
-        }
-
-        .btn.primary:active {
-            transform: translateY(0);
-        }
-
-        /* ============================================
-           TABLE OF CONTENTS
-           ============================================ */
-        .toc-container {
-            background: linear-gradient(135deg, rgba(201, 169, 97, 0.12) 0%, rgba(201, 169, 97, 0.06) 100%);
-            border-radius: var(--radius-lg);
-            padding: 40px;
-            margin: 32px 0;
-            box-shadow: var(--shadow-md);
-            border: 1px solid rgba(201, 169, 97, 0.2);
-        }
-
-        .toc-container h3 {
-            margin-top: 0;
-            font-size: 18px;
-            color: var(--primary);
-            margin-bottom: 24px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid var(--accent);
-        }
-
-        .toc-container ol {
-            margin: 0;
-        }
-
-        .toc-container li {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 10px;
-            color: var(--text);
-        }
-
-        .toc-container a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-        }
-
-        .toc-container a:hover {
-            color: var(--primary);
-            text-decoration: underline;
-        }
-
-        /* ============================================
-           SECTION CARD (INTRO)
-           ============================================ */
-        .section-card {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: clamp(24px, 4vw, 32px);
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 24px;
-            line-height: 1.3;
-        }
-
-        .section-text {
-            font-size: 18px;
-            line-height: 1.9;
-            color: var(--text);
-            text-align: justify;
-            margin-bottom: 24px;
-        }
-
-        /* ============================================
-           LINKS
-           ============================================ */
-        a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-            border-bottom: 1px solid transparent;
-        }
-
-        a:hover {
-            color: var(--primary);
-            border-bottom-color: var(--accent);
-        }
-
-        /* ============================================
-           FOOTER
-           ============================================ */
-        .site-footer {
-            margin-top: 60px;
-            background: var(--bg-white);
-            color: var(--primary);
-            border-top: 1px solid var(--border);
-        }
-
-        .footer-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 32px 20px 36px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            text-align: center;
-        }
-
-        .footer-mark img {
-            width: 380px;
-            height: auto;
-            margin: 0 auto;
-        }
-
-        .footer-logo-note {
-            color: var(--text-muted);
-            font-size: 0.84rem;
-            letter-spacing: 0.08em;
-            line-height: 1.4;
-            text-transform: uppercase;
-        }
-
-        .footer-copy {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.4;
-        }
-
-        /* ============================================
-           RESPONSIVE
-           ============================================ */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 40px 20px;
-                margin-bottom: 30px;
-            }
-
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            .lead {
-                font-size: 16px;
-            }
-
-            .article-container {
-                padding: 0 16px;
-            }
-
-            section {
-                margin-bottom: 50px;
-            }
-
-            p {
-                font-size: 16px;
-                line-height: 1.8;
-            }
-
-            ul li, ol li {
-                font-size: 16px;
-                line-height: 1.7;
-            }
-
-            h1 {
-                font-size: 24px;
-                margin-bottom: 32px;
-            }
-
-            h2 {
-                font-size: 22px;
-                margin-bottom: 18px;
-                margin-top: 32px;
-            }
-
-            h3 {
-                font-size: 18px;
-                margin-bottom: 14px;
-            }
-
-            .note {
-                padding: 20px 20px;
-                border-left: 3px solid var(--accent);
-            }
-
-            .transition-note {
-                margin: 22px 0 20px 0;
-            }
-
-            .note strong {
-                font-size: 13px;
-            }
-
-            .note p {
-                font-size: 15px;
-            }
-
-            table {
-                font-size: 14px;
-                margin: 32px 0;
-            }
-
-            thead th {
-                padding: 14px 12px;
-                font-size: 13px;
-            }
-
-            tbody td {
-                padding: 12px;
-                font-size: 14px;
-            }
-
-            .toc-container {
-                padding: 24px;
-                margin: 24px 0;
-            }
-
-            .toc-container h3 {
-                font-size: 16px;
-                margin-bottom: 16px;
-            }
-
-            .toc-container li {
-                font-size: 15px;
-            }
-
-            .btn {
-                width: 100%;
-                padding: 14px 20px;
-            }
-
-            hr {
-                margin: 32px 0;
-            }
-
-            .chip-row {
-                gap: 10px;
-            }
-
-            .chip {
-                font-size: 12px;
-                padding: 6px 14px;
-            }
-
-            p {
-                text-align: left;
-            }
-
-            .section-text {
-                text-align: left;
-            }
-
-            .nav {
-                display: none;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-
-            .footer-inner {
-                padding: 28px 20px 30px;
-                gap: 7px;
-            }
-
-            .footer-mark img {
-                width: 260px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero {
-                padding: 32px 16px;
-                margin-bottom: 24px;
-            }
-
-            .hero h1 {
-                font-size: 22px;
-            }
-
-            .lead {
-                font-size: 15px;
-                line-height: 1.7;
-            }
-
-            .article-container {
-                padding: 0 16px;
-            }
-
-            p {
-                font-size: 15px;
-                line-height: 1.7;
-                margin-bottom: 16px;
-            }
-
-            h1 {
-                font-size: 20px;
-                margin-bottom: 24px;
-            }
-
-            h2 {
-                font-size: 20px;
-                margin-top: 24px;
-                margin-bottom: 14px;
-                padding-bottom: 12px;
-            }
-
-            h3 {
-                font-size: 16px;
-            }
-
-            ul li, ol li {
-                font-size: 15px;
-                line-height: 1.6;
-                margin-bottom: 8px;
-            }
-
-            .meta {
-                flex-direction: column;
-                gap: 4px;
-                font-size: 13px;
-            }
-
-            .eyebrow {
-                font-size: 11px;
-                margin-bottom: 12px;
-            }
-
-            .chip {
-                font-size: 11px;
-                padding: 5px 12px;
-            }
-
-            .note {
-                padding: 16px;
-                border-radius: var(--radius-md);
-                margin: 24px 0;
-            }
-
-            .transition-note {
-                margin: 18px 0;
-            }
-
-            .note strong {
-                font-size: 12px;
-            }
-
-            .note p {
-                font-size: 14px;
-            }
-
-            table {
-                font-size: 13px;
-                margin: 24px 0;
-            }
-
-            thead th {
-                padding: 12px 8px;
-                font-size: 12px;
-            }
-
-            tbody td {
-                padding: 10px 8px;
-                font-size: 13px;
-            }
-
-            .toc-container {
-                padding: 20px;
-                margin: 20px 0;
-            }
-
-            .toc-container h3 {
-                font-size: 15px;
-                margin-bottom: 12px;
-            }
-
-            .toc-container li {
-                font-size: 14px;
-                margin-bottom: 6px;
-            }
-
-            hr {
-                margin: 32px 0;
-            }
-
-            section {
-                margin-bottom: 40px;
-            }
-
-            .topbar-inner {
-                padding: 10px 16px;
-            }
-
-            .brand-logo img {
-                width: 160px;
-            }
-
-            .brand-name {
-                font-size: 0.95rem;
-            }
-
-            .footer-mark img {
-                width: 200px;
-            }
-        }
-
-        /* ============================================
-           PRINT STYLES
-           ============================================ */
-        @media print {
-            .topbar, .mobile-overlay, .mobile-menu { display: none; }
-
-            .hero {
-                background: var(--primary);
-                color: var(--bg-white);
-            }
-
-            .hero a {
-                color: var(--accent);
-            }
-
-            a {
-                color: var(--primary);
-                text-decoration: underline;
-            }
-
-            .btn {
-                display: none;
-            }
-
-            table {
-                box-shadow: none;
-                page-break-inside: avoid;
-            }
-
-            .note {
-                page-break-inside: avoid;
-            }
-
-            section {
-                page-break-inside: avoid;
-            }
-        }
-    
-        /* ============================================
-           GLOBAL TOP BAR
-           ============================================ */
-        .global-top-bar {
-            background: #1f3a5f;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .global-top-bar-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 7px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-        }
-        .gtb-left,
-        .gtb-right {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            flex-shrink: 0;
-        }
-        .gtb-contact {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            color: rgba(255, 255, 255, 0.82);
-            font-size: 0.8rem;
-            text-decoration: none;
-            transition: color 0.18s ease;
-        }
-        .gtb-contact:hover { color: #c89b3c; }
-        .gtb-contact svg { flex-shrink: 0; }
-        .gtb-contact-label { display: inline; }
-        .gtb-sep {
-            width: 1px;
-            height: 14px;
-            background: rgba(255, 255, 255, 0.2);
-            flex-shrink: 0;
-        }
-        .gtb-lang {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 0.8rem;
-        }
-        .gtb-lang-link {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: color 0.18s ease;
-            letter-spacing: 0.05em;
-        }
-        .gtb-lang-link:hover,
-        .gtb-lang-link.gtb-lang-active {
-            color: #c89b3c;
-            font-weight: 600;
-        }
-        .gtb-lang-div {
-            color: rgba(255, 255, 255, 0.3);
-            font-size: 0.72rem;
-            user-select: none;
-        }
-        .gtb-search-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: rgba(255, 255, 255, 0.7);
-            display: flex;
-            align-items: center;
-            padding: 0;
-            transition: color 0.18s ease;
-        }
-        .gtb-search-btn:hover { color: #c89b3c; }
-        @media (max-width: 640px) {
-            .gtb-contact-label { display: none; }
-            .gtb-sep { display: none; }
-        }
+<!DOCTYPE html>  
+  
+<html lang="tr">  
+<head>  
+<meta charset="utf-8"/>  
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>  
+<!-- Google tag (gtag.js) -->  
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7VG8YJ31K5"></script>  
+<script defer="" src="scripts/site-search.js"></script>  
+<script>  
+ window.dataLayer = window.dataLayer || [];  
+ function gtag(){dataLayer.push(arguments);}  
+ gtag('js', new Date());  
+ gtag('config', 'G-7VG8YJ31K5');  
+ </script>  
+<title>Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik | Av. Dr. İbrahim Nuri Derinpınar</title>  
+<meta content="Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir." name="description"/>  
+<link href="https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html" rel="canonical"/>  
+<!-- Open Graph -->  
+<meta content="article" property="og:type"/>  
+<meta content="tr_TR" property="og:locale"/>  
+<meta content="Derinpınar Law &amp; Consultancy" property="og:site_name"/>  
+<meta content="Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik" property="og:title"/>  
+<meta content="Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir." property="og:description"/>  
+<meta content="https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html" property="og:url"/>  
+<meta content="https://derinpinar.av.tr/dlc-logo.png" property="og:image"/>  
+<!-- Twitter -->  
+<meta content="summary_large_image" name="twitter:card"/>  
+<meta content="Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik" name="twitter:title"/>  
+<meta content="Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir." name="twitter:description"/>  
+<meta content="https://derinpinar.av.tr/dlc-logo.png" name="twitter:image"/>  
+<style>  
+ :root {  
+ --primary: #1f2d47;  
+ --primary-light: #2d3e54;  
+ --accent: #c9a961;  
+ --accent-light: #e8dcc4;  
+ --text: #1a1a1a;  
+ --text-muted: #666;  
+ --bg-light: #f9f7f3;  
+ --bg-white: #ffffff;  
+ --border: #e8e3dd;  
+ --success: #4caf50;  
+   
+\--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);  
+ --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);  
+ --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);  
+   
+\--radius-sm: 6px;  
+ --radius-md: 10px;  
+ --radius-lg: 16px;  
+   
+\--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);  
+ }  
+  
+ * {  
+ margin: 0;  
+ padding: 0;  
+ box-sizing: border-box;  
+ }  
+  
+ html {  
+ scroll-behavior: smooth;  
+ }  
+  
+ body {  
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;  
+ color: var(--text);  
+ background: var(--bg-white);  
+ line-height: 1.6;  
+ -webkit-font-smoothing: antialiased;  
+ -moz-osx-font-smoothing: grayscale;  
+ }  
+  
+ /* ============================================  
+ NAVBAR  
+ ============================================ */  
+ .topbar {  
+ position: sticky;  
+ top: 0;  
+ z-index: 50;  
+ background: rgba(255, 255, 255, 0.92);  
+ backdrop-filter: blur(16px);  
+ border-bottom: 1px solid var(--border);  
+ }  
+  
+ .topbar-inner {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ padding: 14px 20px;  
+ display: flex;  
+ align-items: center;  
+ justify-content: space-between;  
+ gap: 20px;  
+ }  
+  
+ .brand {  
+ display: flex;  
+ align-items: center;  
+ gap: 14px;  
+ min-width: 0;  
+ text-decoration: none;  
+ }  
+  
+ .brand-logo img {  
+ width: 200px;  
+ height: auto;  
+ }  
+  
+ .brand-text {  
+ display: flex;  
+ flex-direction: column;  
+ gap: 2px;  
+ min-width: 0;  
+ }  
+  
+ .brand-name {  
+ font-weight: 700;  
+ font-size: 1.1rem;  
+ line-height: 1.2;  
+ color: var(--primary);  
+ }  
+  
+ .brand-subtitle {  
+ color: var(--text-muted);  
+ font-size: 0.82rem;  
+ }  
+  
+ .nav {  
+ display: flex;  
+ flex-wrap: wrap;  
+ gap: 18px;  
+ color: var(--text-muted);  
+ font-size: 0.95rem;  
+ }  
+  
+ .nav a {  
+ color: var(--text-muted);  
+ text-decoration: none;  
+ transition: var(--transition);  
+ border-bottom: none;  
+ }  
+  
+ .nav a:hover,  
+ .nav a[aria-current="page"] {  
+ color: var(--primary);  
+ }  
+  
+ .menu-toggle {  
+ display: none;  
+ background: none;  
+ border: none;  
+ cursor: pointer;  
+ color: var(--primary);  
+ padding: 0;  
+ width: 42px;  
+ height: 42px;  
+ align-items: center;  
+ justify-content: center;  
+ }  
+  
+ .mobile-overlay {  
+ position: fixed;  
+ inset: 0;  
+ background: rgba(0, 0, 0, 0.35);  
+ opacity: 0;  
+ visibility: hidden;  
+ transition: 0.3s;  
+ z-index: 9998;  
+ }  
+  
+ .mobile-overlay.active {  
+ opacity: 1;  
+ visibility: visible;  
+ }  
+  
+ .mobile-menu {  
+ position: fixed;  
+ top: 0;  
+ right: -100%;  
+ width: 82%;  
+ max-width: 340px;  
+ height: 100vh;  
+ overflow-y: auto;  
+ padding-top: calc(80px + env(safe-area-inset-top));  
+ padding-bottom: env(safe-area-inset-bottom);  
+ background: var(--bg-white);  
+ padding-left: 35px;  
+ padding-right: 35px;  
+ display: flex;  
+ flex-direction: column;  
+ box-shadow: -15px 0 40px rgba(0, 0, 0, 0.18);  
+ transition: 0.35s ease;  
+ z-index: 9999;  
+ }  
+  
+ .mobile-menu.active {  
+ right: 0;  
+ }  
+  
+ .mobile-menu a {  
+ font-size: 1.2rem;  
+ font-weight: 600;  
+ color: var(--primary);  
+ margin: 16px 0;  
+ text-decoration: none;  
+ border-bottom: none;  
+ }  
+  
+ .close-menu {  
+ position: absolute;  
+ top: 22px;  
+ right: 22px;  
+ background: none;  
+ border: none;  
+ cursor: pointer;  
+ padding: 0;  
+ color: var(--primary);  
+ }  
+  
+ /* ============================================  
+ HERO SECTION  
+ ============================================ */  
+ .hero {  
+ background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);  
+ color: var(--bg-white);  
+ padding: 60px 20px;  
+ margin-bottom: 40px;  
+ }  
+  
+ .hero-grid {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ }  
+  
+ .eyebrow {  
+ font-size: 12px;  
+ font-weight: 600;  
+ letter-spacing: 1.5px;  
+ text-transform: uppercase;  
+ color: var(--accent);  
+ margin-bottom: 16px;  
+ display: block;  
+ }  
+  
+ .meta {  
+ font-size: 14px;  
+ color: rgba(255, 255, 255, 0.75);  
+ margin-bottom: 32px;  
+ display: flex;  
+ flex-wrap: wrap;  
+ gap: 8px;  
+ align-items: center;  
+ }  
+  
+ .meta a {  
+ color: var(--accent);  
+ text-decoration: none;  
+ font-weight: 500;  
+ transition: var(--transition);  
+ }  
+  
+ .meta a:hover {  
+ color: var(--accent-light);  
+ text-decoration: underline;  
+ }  
+  
+ .hero h1 {  
+ font-size: clamp(28px, 5vw, 48px);  
+ font-weight: 700;  
+ line-height: 1.2;  
+ margin-bottom: 24px;  
+ letter-spacing: -0.5px;  
+ color: var(--bg-white);  
+ }  
+  
+ .lead {  
+ font-size: 18px;  
+ line-height: 1.8;  
+ color: rgba(255, 255, 255, 0.95);  
+ max-width: 600px;  
+ margin-bottom: 32px;  
+ font-weight: 400;  
+ }  
+  
+ .chip-row {  
+ display: flex;  
+ flex-wrap: wrap;  
+ gap: 12px;  
+ }  
+  
+ .chip {  
+ background: rgba(255, 255, 255, 0.15);  
+ backdrop-filter: blur(10px);  
+ color: var(--bg-white);  
+ padding: 8px 16px;  
+ border-radius: var(--radius-md);  
+ font-size: 13px;  
+ font-weight: 500;  
+ border: 1px solid rgba(255, 255, 255, 0.2);  
+ display: inline-block;  
+ }  
+  
+ /* ============================================  
+ MAIN CONTENT  
+ ============================================ */  
+ .article-container {  
+ max-width: 800px;  
+ margin: 0 auto;  
+ padding: 0 20px;  
+ }  
+  
+ section {  
+ margin-bottom: 60px;  
+ }  
+  
+ /* ============================================  
+ HEADINGS  
+ ============================================ */  
+ h1 {  
+ font-size: clamp(28px, 5vw, 40px);  
+ font-weight: 700;  
+ line-height: 1.25;  
+ margin-bottom: 40px;  
+ color: var(--primary);  
+ letter-spacing: -0.5px;  
+ }  
+  
+ h2 {  
+ font-size: clamp(24px, 4vw, 32px);  
+ font-weight: 700;  
+ line-height: 1.3;  
+ margin-bottom: 20px;  
+ margin-top: 32px;  
+ color: var(--primary);  
+ padding-bottom: 16px;  
+ border-bottom: 2px solid var(--accent);  
+ letter-spacing: -0.3px;  
+ scroll-margin-top: 80px;  
+ }  
+  
+ h2:first-child {  
+ margin-top: 0;  
+ }  
+  
+ h3 {  
+ font-size: clamp(18px, 2.5vw, 22px);  
+ font-weight: 600;  
+ line-height: 1.4;  
+ margin-bottom: 16px;  
+ margin-top: 24px;  
+ color: var(--primary);  
+ letter-spacing: -0.2px;  
+ }  
+  
+ /* ============================================  
+ TYPOGRAPHY  
+ ============================================ */  
+ p {  
+ font-size: 18px;  
+ line-height: 1.9;  
+ margin-bottom: 18px;  
+ color: var(--text);  
+ text-align: justify;  
+ }  
+  
+ p:last-child {  
+ margin-bottom: 0;  
+ }  
+  
+ strong {  
+ font-weight: 600;  
+ color: var(--primary);  
+ }  
+  
+ em {  
+ font-style: italic;  
+ color: var(--text-muted);  
+ }  
+  
+ /* ============================================  
+ LISTS  
+ ============================================ */  
+ ul, ol {  
+ margin: 32px 0;  
+ padding-left: 0;  
+ }  
+  
+ ul li, ol li {  
+ margin-bottom: 12px;  
+ font-size: 18px;  
+ line-height: 1.8;  
+ color: var(--text);  
+ }  
+  
+ ul li {  
+ margin-left: 28px;  
+ list-style: none;  
+ position: relative;  
+ }  
+  
+ ul li::before {  
+ content: "•";  
+ position: absolute;  
+ left: -20px;  
+ color: var(--accent);  
+ font-weight: bold;  
+ font-size: 20px;  
+ }  
+  
+ ol li {  
+ margin-left: 28px;  
+ list-style: decimal;  
+ list-style-position: outside;  
+ }  
+  
+ ol {  
+ counter-reset: item;  
+ }  
+  
+ /* ============================================  
+ SEPARATOR  
+ ============================================ */  
+ hr {  
+ border: none;  
+ height: 1px;  
+ background: linear-gradient(90deg,   
+transparent 0%,   
+var(--border) 20%,   
+var(--border) 80%,   
+transparent 100%);  
+ margin: 40px 0;  
+ }  
+  
+ /* ============================================  
+ NOTE BOXES  
+ ============================================ */  
+ .note {  
+ background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.04) 100%);  
+ border-left: 4px solid var(--accent);  
+ border-radius: var(--radius-lg);  
+ padding: 28px 28px;  
+ margin: 40px 0;  
+ box-shadow: var(--shadow-md);  
+ border: 1px solid rgba(201, 169, 97, 0.2);  
+ border-left: 4px solid var(--accent);  
+ }  
+  
+ .transition-note {  
+ margin: 28px 0 24px 0;  
+ }  
+  
+ .note strong {  
+ display: block;  
+ font-size: 16px;  
+ margin-bottom: 12px;  
+ color: var(--primary);  
+ text-transform: uppercase;  
+ letter-spacing: 0.5px;  
+ font-size: 14px;  
+ }  
+  
+ .note p {  
+ font-size: 16px;  
+ line-height: 1.8;  
+ margin-bottom: 0;  
+ color: var(--text);  
+ }  
+  
+ .note ul, .note ol {  
+ margin: 16px 0 0 0;  
+ }  
+  
+ .note li {  
+ font-size: 16px;  
+ color: var(--text);  
+ }  
+  
+ /* ============================================  
+ TABLES  
+ ============================================ */  
+ table {  
+ width: 100%;  
+ border-collapse: collapse;  
+ margin: 40px 0;  
+ box-shadow: var(--shadow-md);  
+ border-radius: var(--radius-lg);  
+ overflow: hidden;  
+ }  
+  
+ thead {  
+ background: var(--primary);  
+ color: var(--bg-white);  
+ }  
+  
+ thead th {  
+ padding: 18px 20px;  
+ text-align: left;  
+ font-weight: 600;  
+ font-size: 15px;  
+ letter-spacing: 0.3px;  
+ text-transform: none;  
+ }  
+  
+ tbody tr {  
+ border-bottom: 1px solid var(--border);  
+ transition: var(--transition);  
+ }  
+  
+ tbody tr:nth-child(even) {  
+ background: var(--bg-light);  
+ }  
+  
+ tbody tr:hover {  
+ background: rgba(201, 169, 97, 0.08);  
+ box-shadow: inset 0 0 0 1px var(--accent);  
+ }  
+  
+ tbody td {  
+ padding: 16px 20px;  
+ font-size: 16px;  
+ line-height: 1.6;  
+ color: var(--text);  
+ }  
+  
+ /* ============================================  
+ BUTTONS  
+ ============================================ */  
+ .btn {  
+ display: inline-block;  
+ padding: 12px 28px;  
+ border: none;  
+ border-radius: var(--radius-md);  
+ font-size: 15px;  
+ font-weight: 600;  
+ cursor: pointer;  
+ transition: var(--transition);  
+ text-decoration: none;  
+ letter-spacing: 0.3px;  
+ text-transform: uppercase;  
+ text-align: center;  
+ }  
+  
+ .btn.primary {  
+ background: var(--primary);  
+ color: var(--bg-white);  
+ box-shadow: var(--shadow-md);  
+ }  
+  
+ .btn.primary:hover {  
+ background: var(--primary-light);  
+ box-shadow: var(--shadow-lg);  
+ transform: translateY(-2px);  
+ }  
+  
+ .btn.primary:active {  
+ transform: translateY(0);  
+ }  
+  
+ /* ============================================  
+ TABLE OF CONTENTS  
+ ============================================ */  
+ .toc-container {  
+ background: linear-gradient(135deg, rgba(201, 169, 97, 0.12) 0%, rgba(201, 169, 97, 0.06) 100%);  
+ border-radius: var(--radius-lg);  
+ padding: 40px;  
+ margin: 32px 0;  
+ box-shadow: var(--shadow-md);  
+ border: 1px solid rgba(201, 169, 97, 0.2);  
+ }  
+  
+ .toc-container h3 {  
+ margin-top: 0;  
+ font-size: 18px;  
+ color: var(--primary);  
+ margin-bottom: 24px;  
+ padding-bottom: 12px;  
+ border-bottom: 2px solid var(--accent);  
+ }  
+  
+ .toc-container ol {  
+ margin: 0;  
+ }  
+  
+ .toc-container li {  
+ font-size: 16px;  
+ line-height: 1.8;  
+ margin-bottom: 10px;  
+ color: var(--text);  
+ }  
+  
+ .toc-container a {  
+ color: var(--accent);  
+ text-decoration: none;  
+ font-weight: 500;  
+ transition: var(--transition);  
+ }  
+  
+ .toc-container a:hover {  
+ color: var(--primary);  
+ text-decoration: underline;  
+ }  
+  
+ /* ============================================  
+ SECTION CARD (INTRO)  
+ ============================================ */  
+ .section-card {  
+ max-width: 800px;  
+ margin: 0 auto;  
+ }  
+  
+ .section-title {  
+ font-size: clamp(24px, 4vw, 32px);  
+ font-weight: 700;  
+ color: var(--primary);  
+ margin-bottom: 24px;  
+ line-height: 1.3;  
+ }  
+  
+ .section-text {  
+ font-size: 18px;  
+ line-height: 1.9;  
+ color: var(--text);  
+ text-align: justify;  
+ margin-bottom: 24px;  
+ }  
+  
+ /* ============================================  
+ LINKS  
+ ============================================ */  
+ a {  
+ color: var(--accent);  
+ text-decoration: none;  
+ font-weight: 500;  
+ transition: var(--transition);  
+ border-bottom: 1px solid transparent;  
+ }  
+  
+ a:hover {  
+ color: var(--primary);  
+ border-bottom-color: var(--accent);  
+ }  
+  
+ /* ============================================  
+ FOOTER  
+ ============================================ */  
+ .site-footer {  
+ margin-top: 60px;  
+ background: var(--bg-white);  
+ color: var(--primary);  
+ border-top: 1px solid var(--border);  
+ }  
+  
+ .footer-inner {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ padding: 32px 20px 36px;  
+ display: flex;  
+ flex-direction: column;  
+ align-items: center;  
+ justify-content: center;  
+ gap: 8px;  
+ text-align: center;  
+ }  
+  
+ .footer-mark img {  
+ width: 380px;  
+ height: auto;  
+ margin: 0 auto;  
+ }  
+  
+ .footer-logo-note {  
+ color: var(--text-muted);  
+ font-size: 0.84rem;  
+ letter-spacing: 0.08em;  
+ line-height: 1.4;  
+ text-transform: uppercase;  
+ }  
+  
+ .footer-copy {  
+ color: var(--text-muted);  
+ font-size: 0.95rem;  
+ line-height: 1.4;  
+ }  
+  
+ /* ============================================  
+ RESPONSIVE  
+ ============================================ */  
+ @media (max-width: 768px) {  
+ .hero {  
+ padding: 40px 20px;  
+ margin-bottom: 30px;  
+ }  
+  
+ .hero h1 {  
+ font-size: 28px;  
+ }  
+  
+ .lead {  
+ font-size: 16px;  
+ }  
+  
+ .article-container {  
+ padding: 0 16px;  
+ }  
+  
+ section {  
+ margin-bottom: 50px;  
+ }  
+  
+ p {  
+ font-size: 16px;  
+ line-height: 1.8;  
+ }  
+  
+ ul li, ol li {  
+ font-size: 16px;  
+ line-height: 1.7;  
+ }  
+  
+ h1 {  
+ font-size: 24px;  
+ margin-bottom: 32px;  
+ }  
+  
+ h2 {  
+ font-size: 22px;  
+ margin-bottom: 18px;  
+ margin-top: 32px;  
+ }  
+  
+ h3 {  
+ font-size: 18px;  
+ margin-bottom: 14px;  
+ }  
+  
+ .note {  
+ padding: 20px 20px;  
+ border-left: 3px solid var(--accent);  
+ }  
+  
+ .transition-note {  
+ margin: 22px 0 20px 0;  
+ }  
+  
+ .note strong {  
+ font-size: 13px;  
+ }  
+  
+ .note p {  
+ font-size: 15px;  
+ }  
+  
+ table {  
+ font-size: 14px;  
+ margin: 32px 0;  
+ }  
+  
+ thead th {  
+ padding: 14px 12px;  
+ font-size: 13px;  
+ }  
+  
+ tbody td {  
+ padding: 12px;  
+ font-size: 14px;  
+ }  
+  
+ .toc-container {  
+ padding: 24px;  
+ margin: 24px 0;  
+ }  
+  
+ .toc-container h3 {  
+ font-size: 16px;  
+ margin-bottom: 16px;  
+ }  
+  
+ .toc-container li {  
+ font-size: 15px;  
+ }  
+  
+ .btn {  
+ width: 100%;  
+ padding: 14px 20px;  
+ }  
+  
+ hr {  
+ margin: 32px 0;  
+ }  
+  
+ .chip-row {  
+ gap: 10px;  
+ }  
+  
+ .chip {  
+ font-size: 12px;  
+ padding: 6px 14px;  
+ }  
+  
+ p {  
+ text-align: left;  
+ }  
+  
+ .section-text {  
+ text-align: left;  
+ }  
+  
+ .nav {  
+ display: none;  
+ }  
+  
+ .menu-toggle {  
+ display: flex;  
+ }  
+  
+ .footer-inner {  
+ padding: 28px 20px 30px;  
+ gap: 7px;  
+ }  
+  
+ .footer-mark img {  
+ width: 260px;  
+ }  
+ }  
+  
+ @media (max-width: 480px) {  
+ .hero {  
+ padding: 32px 16px;  
+ margin-bottom: 24px;  
+ }  
+  
+ .hero h1 {  
+ font-size: 22px;  
+ }  
+  
+ .lead {  
+ font-size: 15px;  
+ line-height: 1.7;  
+ }  
+  
+ .article-container {  
+ padding: 0 16px;  
+ }  
+  
+ p {  
+ font-size: 15px;  
+ line-height: 1.7;  
+ margin-bottom: 16px;  
+ }  
+  
+ h1 {  
+ font-size: 20px;  
+ margin-bottom: 24px;  
+ }  
+  
+ h2 {  
+ font-size: 20px;  
+ margin-top: 24px;  
+ margin-bottom: 14px;  
+ padding-bottom: 12px;  
+ }  
+  
+ h3 {  
+ font-size: 16px;  
+ }  
+  
+ ul li, ol li {  
+ font-size: 15px;  
+ line-height: 1.6;  
+ margin-bottom: 8px;  
+ }  
+  
+ .meta {  
+ flex-direction: column;  
+ gap: 4px;  
+ font-size: 13px;  
+ }  
+  
+ .eyebrow {  
+ font-size: 11px;  
+ margin-bottom: 12px;  
+ }  
+  
+ .chip {  
+ font-size: 11px;  
+ padding: 5px 12px;  
+ }  
+  
+ .note {  
+ padding: 16px;  
+ border-radius: var(--radius-md);  
+ margin: 24px 0;  
+ }  
+  
+ .transition-note {  
+ margin: 18px 0;  
+ }  
+  
+ .note strong {  
+ font-size: 12px;  
+ }  
+  
+ .note p {  
+ font-size: 14px;  
+ }  
+  
+ table {  
+ font-size: 13px;  
+ margin: 24px 0;  
+ }  
+  
+ thead th {  
+ padding: 12px 8px;  
+ font-size: 12px;  
+ }  
+  
+ tbody td {  
+ padding: 10px 8px;  
+ font-size: 13px;  
+ }  
+  
+ .toc-container {  
+ padding: 20px;  
+ margin: 20px 0;  
+ }  
+  
+ .toc-container h3 {  
+ font-size: 15px;  
+ margin-bottom: 12px;  
+ }  
+  
+ .toc-container li {  
+ font-size: 14px;  
+ margin-bottom: 6px;  
+ }  
+  
+ hr {  
+ margin: 32px 0;  
+ }  
+  
+ section {  
+ margin-bottom: 40px;  
+ }  
+  
+ .topbar-inner {  
+ padding: 10px 16px;  
+ }  
+  
+ .brand-logo img {  
+ width: 160px;  
+ }  
+  
+ .brand-name {  
+ font-size: 0.95rem;  
+ }  
+  
+ .footer-mark img {  
+ width: 200px;  
+ }  
+ }  
+  
+ /* ============================================  
+ PRINT STYLES  
+ ============================================ */  
+ @media print {  
+ .topbar, .mobile-overlay, .mobile-menu { display: none; }  
+  
+ .hero {  
+ background: var(--primary);  
+ color: var(--bg-white);  
+ }  
+  
+ .hero a {  
+ color: var(--accent);  
+ }  
+  
+ a {  
+ color: var(--primary);  
+ text-decoration: underline;  
+ }  
+  
+ .btn {  
+ display: none;  
+ }  
+  
+ table {  
+ box-shadow: none;  
+ page-break-inside: avoid;  
+ }  
+  
+ .note {  
+ page-break-inside: avoid;  
+ }  
+  
+ section {  
+ page-break-inside: avoid;  
+ }  
+ }  
+   
+/* ============================================  
+ GLOBAL TOP BAR  
+ ============================================ */  
+ .global-top-bar {  
+ background: #1f3a5f;  
+ border-bottom: 1px solid rgba(255, 255, 255, 0.08);  
+ }  
+ .global-top-bar-inner {  
+ max-width: 900px;  
+ margin: 0 auto;  
+ padding: 7px 20px;  
+ display: flex;  
+ align-items: center;  
+ justify-content: space-between;  
+ gap: 16px;  
+ }  
+ .gtb-left,  
+ .gtb-right {  
+ display: flex;  
+ align-items: center;  
+ gap: 14px;  
+ flex-shrink: 0;  
+ }  
+ .gtb-contact {  
+ display: inline-flex;  
+ align-items: center;  
+ gap: 6px;  
+ color: rgba(255, 255, 255, 0.82);  
+ font-size: 0.8rem;  
+ text-decoration: none;  
+ transition: color 0.18s ease;  
+ }  
+ .gtb-contact:hover { color: #c89b3c; }  
+ .gtb-contact svg { flex-shrink: 0; }  
+ .gtb-contact-label { display: inline; }  
+ .gtb-sep {  
+ width: 1px;  
+ height: 14px;  
+ background: rgba(255, 255, 255, 0.2);  
+ flex-shrink: 0;  
+ }  
+ .gtb-lang {  
+ display: flex;  
+ align-items: center;  
+ gap: 5px;  
+ font-size: 0.8rem;  
+ }  
+ .gtb-lang-link {  
+ color: rgba(255, 255, 255, 0.7);  
+ text-decoration: none;  
+ transition: color 0.18s ease;  
+ letter-spacing: 0.05em;  
+ }  
+ .gtb-lang-link:hover,  
+ .gtb-lang-link.gtb-lang-active {  
+ color: #c89b3c;  
+ font-weight: 600;  
+ }  
+ .gtb-lang-div {  
+ color: rgba(255, 255, 255, 0.3);  
+ font-size: 0.72rem;  
+ user-select: none;  
+ }  
+ .gtb-search-btn {  
+ background: none;  
+ border: none;  
+ cursor: pointer;  
+ color: rgba(255, 255, 255, 0.7);  
+ display: flex;  
+ align-items: center;  
+ padding: 0;  
+ transition: color 0.18s ease;  
+ }  
+ .gtb-search-btn:hover { color: #c89b3c; }  
+ @media (max-width: 640px) {  
+ .gtb-contact-label { display: none; }  
+ .gtb-sep { display: none; }  
+ }  
+</style>  
+<!-- JSON-LD: Article -->  
+<script type="application/ld+json">{  
+ "@context": "https://schema.org",  
+ "@type": "Article",  
+ "headline": "Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik",  
+ "description": "Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir.",  
+ "author": {  
+ "@type": "Person",  
+ "name": "Av. Dr. İbrahim Nuri Derinpınar"  
+ },  
+ "publisher": {  
+ "@type": "Organization",  
+ "name": "Derinpınar Law & Consultancy",  
+ "logo": {  
+ "@type": "ImageObject",  
+ "url": "https://derinpinar.av.tr/dlc-logo.png"  
+ }  
+ },  
+ "mainEntityOfPage": "https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html",  
+ "articleSection": "Şirketler Hukuku • Anonim Şirketler",  
+ "datePublished": "2026-09-08",  
+ "dateModified": "2026-09-08",  
+ "identifier": "yk-kararlari-gecerlilik"  
+}</script>  
+<!-- JSON-LD: BreadcrumbList -->  
+<script type="application/ld+json">{  
+ "@context": "https://schema.org",  
+ "@type": "BreadcrumbList",  
+ "itemListElement": [  
+ {  
+ "@type": "ListItem",  
+ "position": 1,  
+ "name": "Ana Sayfa",  
+ "item": "https://derinpinar.av.tr/"  
+ },  
+ {  
+ "@type": "ListItem",  
+ "position": 2,  
+ "name": "Makaleler",  
+ "item": "https://derinpinar.av.tr/makaleler.html"  
+ },  
+ {  
+ "@type": "ListItem",  
+ "position": 3,  
+ "name": "Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik",  
+ "item": "https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html"  
+ }  
+ ]  
+}</script>  
+<!-- JSON-LD: FAQPage -->  
+<link href="styles/site-standard.css" rel="stylesheet"/>  
+<script type="application/ld+json">{  
+ "@context": "https://schema.org",  
+ "@type": "FAQPage",  
+ "mainEntity": [  
+ {  
+ "@type": "Question",  
+ "name": "Yönetim kurulu kararına karşı iptal davası açılabilir mi?",  
+ "acceptedAnswer": {  
+ "@type": "Answer",  
+ "text": "Kural olarak genel bir iptal davası rejimi yoktur. Yokluk veya butlan söz konusuysa tespit davası gündeme gelir; kanunun açıkça öngördüğü istisnai iptal hâlleri saklıdır."  
+ }  
+ },  
+ {  
+ "@type": "Question",  
+ "name": "Yokluk ile butlan arasındaki fark nedir?",  
+ "acceptedAnswer": {  
+ "@type": "Answer",  
+ "text": "Yoklukta kararın kurucu unsurları oluşmamıştır; butlanda karar şeklen oluşmuş olmakla birlikte ağır bir hukukî sakatlık nedeniyle başlangıçtan itibaren kesin hükümsüzdür."  
+ }  
+ },  
+ {  
+ "@type": "Question",  
+ "name": "TTK m. 391'deki butlan sebepleri sınırlı sayıda mıdır?",  
+ "acceptedAnswer": {  
+ "@type": "Answer",  
+ "text": "Madde özellikle ifadesini kullanır; öğretide baskın yaklaşım sayımın örnekleyici olduğu yönündedir."  
+ }  
+ }  
+ ]  
+}</script>
+<style id="yk-kararlari-gecerlilik-final-contract">
+.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+.article-page table{border:1px solid var(--border)}
+.article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none;-webkit-hyphens:none}
+.article-page thead th+th,.article-page tbody td+td{border-left:1px solid rgba(16,35,61,.18)}
+.article-page .note p strong,.article-page .note p .legal-gold,.article-page p .legal-gold,.article-page td .legal-gold{display:inline!important;margin:0!important;color:#c89b3c!important;font-size:inherit!important;font-weight:700!important;letter-spacing:normal!important;text-transform:none!important}
+.article-page .checklist{margin:32px 0;padding:26px 28px;border:1px solid rgba(200,155,60,.24);border-radius:var(--radius-lg);background:linear-gradient(135deg,rgba(200,155,60,.08),rgba(16,35,61,.025))}
+.article-page .checklist li{font-size:16px}
+.article-page .related-articles{list-style:none;padding-left:0}
+.article-page .related-articles li{margin-left:0;padding:14px 16px 14px 34px;border:1px solid rgba(16,35,61,.10);border-radius:10px;background:#fff}
+.toc-container .toc-list{list-style:none;margin:0;padding-left:0}
+.toc-container .toc-list li{list-style:none;margin-left:0;position:static}
+.toc-container .toc-list li::before{display:none;content:none}
+@media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important}.article-page thead th,.article-page tbody td{text-align:left!important}}
 </style>
-<!-- JSON-LD: Article -->
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik",
-  "description": "Anonim şirketlerde yönetim kurulu kararlarının geçerliliği; yokluk, butlan ve istisnai iptal edilebilirlik, TTK m. 390 ve 391, tespit davası, hukukî yarar ve hükümsüzlüğün sonuçları bakımından incelenmektedir.",
-  "author": {
-    "@type": "Person",
-    "name": "Av. Dr. İbrahim Nuri Derinpınar"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Derinpınar Law & Consultancy",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://derinpinar.av.tr/dlc-logo.png"
-    }
-  },
-  "mainEntityOfPage": "https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html",
-  "articleSection": "Şirketler Hukuku • Anonim Şirketler",
-  "datePublished": "2026-09-08",
-  "dateModified": "2026-09-08",
-  "identifier": "yk-kararlari-gecerlilik"
-}</script>
-<!-- JSON-LD: BreadcrumbList -->
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Ana Sayfa",
-      "item": "https://derinpinar.av.tr/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Makaleler",
-      "item": "https://derinpinar.av.tr/makaleler.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik",
-      "item": "https://derinpinar.av.tr/anonim-sirketlerde-yonetim-kurulu-kararlarinin-gecerliligi.html"
-    }
-  ]
-}</script>
-<!-- JSON-LD: FAQPage -->
-<link href="styles/site-standard.css" rel="stylesheet"/>
+
 <style id="master-update">
 .article-page .article-container{max-width:860px!important}
 .article-page .hero .lead{max-width:860px!important;text-align:justify!important;text-justify:inter-word}
@@ -1137,63 +1183,30 @@
 .article-page thead th+th,.article-page tbody td+td{border-left:1px solid rgba(16,35,61,.18)}
 .article-page .hero-legal-emphasis{color:#c89b3c;font-weight:700}
 @media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word}}
-</style><style id="sirketler-gold-standard">
+</style>
+
+<style id="sirketler-gold-standard">
 .article-page .legal-gold{
-    color:#c89b3c!important;
-    font-weight:700!important;
-    text-transform:none!important;
-    letter-spacing:normal!important;
+ color:#c89b3c!important;
+ font-weight:700!important;
+ text-transform:none!important;
+ letter-spacing:normal!important;
 }
 .article-page .note p .legal-gold,
 .article-page .article-container p .legal-gold,
 .article-page .article-container td .legal-gold{
-    display:inline!important;
-    margin:0!important;
-    font-size:inherit!important;
+ display:inline!important;
+ margin:0!important;
+ font-size:inherit!important;
 }
 .article-page .note > strong{
-    color:var(--primary)!important;
-    text-transform:none!important;
-    letter-spacing:.02em!important;
+ color:var(--primary)!important;
+ text-transform:none!important;
+ letter-spacing:.02em!important;
 }
-</style><style id="yk-nisap-final">
-.article-page .hero .hero-legal-emphasis,.article-page .legal-gold{color:#c89b3c!important;font-weight:700!important;text-transform:none!important;letter-spacing:normal!important}
-.article-page .article-container{max-width:860px!important}
-.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
-.article-page table{border:1px solid var(--border)} .article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none;-webkit-hyphens:none}
-.article-page thead th+th,.article-page tbody td+td{border-left:1px solid rgba(16,35,61,.18)}
-.article-page .note p .legal-gold,.article-page p .legal-gold,.article-page td .legal-gold{display:inline!important;margin:0!important;font-size:inherit!important}
-@media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word}}
-</style><script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Yönetim kurulu kararına karşı iptal davası açılabilir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kural olarak genel bir iptal davası rejimi yoktur. Yokluk veya butlan söz konusuysa tespit davası gündeme gelir; kanunun açıkça öngördüğü istisnai iptal hâlleri saklıdır."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Yokluk ile butlan arasındaki fark nedir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yoklukta kararın kurucu unsurları oluşmamıştır; butlanda karar şeklen oluşmuş olmakla birlikte ağır bir hukukî sakatlık nedeniyle başlangıçtan itibaren kesin hükümsüzdür."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "TTK m. 391'deki butlan sebepleri sınırlı sayıda mıdır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Madde özellikle ifadesini kullanır; öğretide baskın yaklaşım sayımın örnekleyici olduğu yönündedir."
-      }
-    }
-  ]
-}</script><style id="yk-butlan-final">
+</style>
+
+<style id="yk-kararlari-gecerlilik-final">
 .article-page .hero .hero-legal-emphasis,.article-page .legal-gold{color:#c89b3c!important;font-weight:700!important;text-transform:none!important;letter-spacing:normal!important}
 .article-page .article-container{max-width:860px!important}
 .article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
@@ -1201,253 +1214,270 @@
 .article-page thead th,.article-page tbody td{text-align:left!important;vertical-align:top;hyphens:none;-webkit-hyphens:none}
 .article-page thead th+th,.article-page tbody td+td{border-left:1px solid rgba(16,35,61,.18)}
 .article-page .note p .legal-gold,.article-page p .legal-gold,.article-page td .legal-gold{display:inline!important;margin:0!important;font-size:inherit!important}
-@media(max-width:768px){.article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word}}
-</style></head>
-<body class="article-page">
-<!-- NAVBAR -->
-<div class="site-sticky-wrap">
-<div aria-label="Kurumsal Üst Bilgi" class="global-top-bar" role="complementary">
-<div class="global-top-bar-inner">
-<div class="gtb-left">
-<a class="gtb-contact" href="mailto:ibrahim@derinpinar.av.tr">
-<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-<span class="gtb-contact-label">ibrahim@derinpinar.av.tr</span>
-</a>
-<span aria-hidden="true" class="gtb-sep"></span>
-<a aria-label="LinkedIn profili" class="gtb-contact" href="https://www.linkedin.com/in/ibrahim-nuri-derinp%C4%B1nar-lawyer" rel="noopener noreferrer" target="_blank">
-<svg aria-hidden="true" fill="currentColor" height="14" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-<span class="gtb-contact-label">LinkedIn</span>
-</a>
-</div>
-<div class="gtb-right">
-<nav aria-label="Dil seçici" class="gtb-lang">
-<a aria-current="true" class="gtb-lang-link gtb-lang-active" href="#" hreflang="tr">TR</a>
-<span aria-hidden="true" class="gtb-lang-div">|</span>
-<a class="gtb-lang-link" href="#" hreflang="en">EN</a>
-</nav>
-<button aria-label="Sitede ara" class="gtb-search-btn" type="button">
-<svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
-</button>
-</div>
-</div>
-</div>
-<header class="topbar">
-<div class="topbar-inner">
-<a aria-label="DLC ana sayfa" class="brand" href="index.html">
-<div class="brand-logo">
-<img alt="DLC Derinpınar Law &amp; Consultancy logosu" src="dlc-logo.png"/>
-</div>
-<div class="brand-text">
-<div class="brand-name">Av. Dr. İbrahim Nuri Derinpınar</div>
-<div class="brand-subtitle">PhD • LL.M. • MCIArb</div>
-</div>
-</a>
-<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Menüyü Aç" class="menu-toggle" id="menuToggle">
-<svg fill="none" height="30" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
-</button>
-<nav aria-label="Birincil" class="nav">
-<a href="index.html#hakkimda">Hakkımda</a>
-<a href="index.html#egitim">Eğitim</a>
-<a href="index.html#deneyim">Mesleki Deneyim</a>
-<a href="index.html#uzmanlik">Uzmanlık Alanları</a>
-<a href="index.html#akademik-calismalar">Akademik Çalışmalar</a>
-<a href="e-spor-hukuku.html">E-Spor Hukuku</a>
-<a aria-current="page" href="makaleler.html">Makaleler</a>
-<a href="index.html#iletisim">Bize Ulaşın</a>
-</nav>
-</div>
-</header>
-</div>
-<div class="mobile-overlay" id="mobileOverlay"></div>
-<div aria-hidden="true" class="mobile-menu" id="mobileMenu">
-<button aria-label="Menüyü kapat" class="close-menu" id="closeMenu">
-<svg fill="none" height="34" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>
-</button>
-<a href="index.html#hakkimda">Hakkımda</a>
-<a href="index.html#egitim">Eğitim</a>
-<a href="index.html#deneyim">Mesleki Deneyim</a>
-<a href="index.html#uzmanlik">Uzmanlık Alanları</a>
-<a href="index.html#akademik-calismalar">Akademik Çalışmalar</a>
-<a href="e-spor-hukuku.html">E-Spor Hukuku</a>
-<a href="makaleler.html">Makaleler</a>
-<a href="index.html#iletisim">Bize Ulaşın</a>
-</div>
-<!-- HERO SECTION -->
-<section class="hero"><div class="hero-grid"><div class="hero-copy"><span class="eyebrow">Şirketler Hukuku • Anonim Şirketler</span><div class="meta"><a href="index.html">Ana Sayfa</a> › <a href="makaleler.html">Makaleler</a> › <span>Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik</span></div><h1>Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik</h1><p class="lead">Yönetim kurulu kararındaki her hukuka aykırılık aynı yaptırımı doğurmaz. <span class="hero-legal-emphasis">Kurucu unsurları oluşmamış bir karar yok hükmündeyken, şeklen oluşmuş fakat TTK m. 391 veya genel hükümler uyarınca ağır içerik sakatlığı taşıyan bir karar batıldır.</span> Yönetim kurulu kararlarına karşı genel bir iptal davası yolu ise kural olarak bulunmadığından, doğru hükümsüzlük türünün ve doğru dava talebinin belirlenmesi özel önem taşır.</p><div class="chip-row"><span class="chip">📅 8 Eylül 2026</span><span class="chip">🔄 8 Eylül 2026</span><span class="chip">📖 15 Dakika Okuma</span><span class="chip" id="viewsChip">👁 —</span><span class="chip">⚖️ Şirketler Hukuku</span></div></div></div></section>
-<article class="article-container">
-<section><h2 id="giris">Yönetim Kurulu Kararı Ne Zaman Yok, Ne Zaman Batıldır?</h2>
-<div class="note"><strong>Kısa Cevap</strong><p>Yönetim kurulu kararlarının geçersizliği tek tip değildir. <span class="legal-gold">Kararın kurucu unsurları oluşmamışsa yokluk; karar şeklen oluşmuş olmakla birlikte TTK m. 391'de örneklenen veya genel hükümlerden kaynaklanan ağır bir içerik sakatlığı taşıyorsa butlan gündeme gelir.</span> Yönetim kurulu kararlarına karşı genel kurul kararlarındaki gibi genel bir iptal davası kural olarak yoktur; kanunun açıkça öngördüğü istisnai iptal hâlleri saklıdır. Yokluk ve butlanın ileri sürülmesi kural olarak süreye bağlı değildir ve mahkeme kararı geçersizliği yaratmaz, mevcut geçersizliği tespit eder.</p></div>
-<p class="section-text">Bu çalışma, <a href="anonim-sirketlerde-yonetim-kurulunun-gorev-ve-yetkileri.html"><strong>Yönetim Kurulunun Görev ve Yetkileri</strong></a> ile <a href="anonim-sirketlerde-yonetim-kurulu-toplanti-karar-nisaplari.html"><strong>Yönetim Kurulu Toplantı ve Karar Nisapları</strong></a> çalışmalarını tamamlayan hükümsüzlük incelemesidir. Amaç, “karar hukuka aykırı” tespitinden sonra hangi yaptırımın uygulanacağını; <strong>yokluk, butlan ve istisnai iptal edilebilirlik</strong> ayrımı üzerinden sistematik biçimde belirlemektir.</p>
-<div class="toc-container"><h3>İçindekiler</h3><ol>
-<li><a href="#s1">Hükümsüzlük Sistematiği</a></li><li><a href="#s2">Yokluk: Kurucu Unsur Eksikliği</a></li><li><a href="#s3">Butlan: TTK m. 391'in Yapısı</a></li><li><a href="#s4">Eşit İşlem İlkesine Aykırılık</a></li><li><a href="#s5">Temel Yapı ve Sermayenin Korunması</a></li><li><a href="#s6">Vazgeçilmez Pay Sahipliği Haklarının İhlali</a></li><li><a href="#s7">Devredilemez Organ Yetkilerine Müdahale</a></li><li><a href="#s8">TBK m. 27 ve Genel Butlan Sebepleri</a></li><li><a href="#s9">Yokluk–Butlan–İptal Edilebilirlik Karşılaştırması</a></li><li><a href="#s10">Sirküler Karar ve Çağrı Eksiklikleri</a></li><li><a href="#s11">Butlanın Tespiti Davası</a></li><li><a href="#s12">Süre, Hukukî Yarar ve Dürüstlük Kuralı</a></li><li><a href="#s13">Hükümsüz Kararın İcra, Tescil ve Genel Kurula Etkisi</a></li><li><a href="#s14">Uygulama Kontrolü</a></li><li><a href="#s15">Değerlendirme ve Sonuç</a></li><li><a href="#sss">Sık Sorulan Sorular</a></li><li><a href="#kaynaklar">Kaynaklar</a></li><li><a href="#ilgili">İlgili Makaleler</a></li>
-</ol></div></section><hr/>
-<section><h2 id="s1">1. Yönetim Kurulu Kararlarında Hükümsüzlük Sistematiği</h2>
-<p>Yönetim kurulu kararları şirket tüzel kişiliğinin irade oluşumuna hizmet eden hukukî işlemlerdir. Bu nedenle kararın hukuka aykırılığı tespit edildiğinde ilk soru “karar geçersiz midir?” değil, <strong>hangi tür geçersizliğin söz konusu olduğudur.</strong> Sakatlığın kararın oluşumuna mı, içeriğine mi yoksa kanunun özel olarak iptal yaptırımına bağladığı bir alana mı ilişkin olduğu belirlenmelidir.</p>
-<p>6102 sayılı TTK, yönetim kurulu kararlarının butlanını m. 391'de açıkça düzenlemiştir. Yokluk ise kurucu unsurların bulunmamasına ilişkin genel hukuk ilkelerinden ve özellikle TTK m. 390'daki karar oluşum şartlarından hareketle belirlenir. İptal edilebilirlik ise yönetim kurulu kararlarında genel rejim değil, kanunun açıkça öngördüğü istisnai alanlarda söz konusu olur.</p>
-<div class="note"><strong>Temel Ayrım</strong><p><span class="legal-gold">Yokluk kararın hukuk âleminde doğup doğmadığına; butlan ise doğmuş görünen kararın ağır bir hukukî sakatlık nedeniyle baştan itibaren hüküm doğurup doğuramayacağına ilişkindir.</span></p></div></section><hr/>
-<section><h2 id="s2">2. Yokluk: Kararın Kurucu Unsurlarının Oluşmaması</h2>
-<p>Yokluk, hukukî işlemin kurucu unsurlarındaki esaslı eksiklik nedeniyle işlemin hukuk âleminde hiç doğmamış sayılmasıdır. Yönetim kurulu kararları bakımından kurul iradesinin oluşumunu sağlayan toplantı, nisap, kişisel katılım ve yazılı şekil gibi unsurlar bu değerlendirmenin merkezindedir.</p>
-<p>TTK m. 390/1 toplantı ve karar nisaplarını; m. 390/2 üyelerin birbirlerini temsilen oy veremeyeceğini ve vekille katılamayacağını; m. 390/4 toplantısız kararın şartlarını; m. 390/5 ise kararların geçerliliğinin yazılıp imzalanmasına bağlı olduğunu düzenler.</p>
-<table><thead><tr><th>Kurucu / Şeklî Alan</th><th>Tipik Eksiklik</th><th>Hukukî Sorun</th></tr></thead><tbody>
-<tr><td>Toplantı nisabı</td><td>Üye tam sayısının gerekli çoğunluğu olmadan toplantı yapılması</td><td>Kurul iradesinin oluşup oluşmadığı</td></tr>
-<tr><td>Karar nisabı</td><td>Gerekli olumlu oy sayısına ulaşılamaması</td><td>Önerinin kurul kararı hâline gelip gelmediği</td></tr>
-<tr><td>Kişisel katılım</td><td>Üyenin vekil aracılığıyla oy kullanması</td><td>TTK m. 390/2'ye aykırılık</td></tr>
-<tr><td>Toplantısız karar</td><td>Aynı önerinin bütün üyelere yapılmaması</td><td>TTK m. 390/4'teki geçerlilik şartının gerçekleşmemesi</td></tr>
-<tr><td>Yazılı şekil</td><td>Kararın yazılmaması veya imzalanmaması</td><td>TTK m. 390/5'teki geçerlilik şartı</td></tr>
-</tbody></table>
-<p>Bu alanların yaptırımı bakımından öğretide ve içtihatta her somut eksiklik için tam bir terminolojik birlik bulunmadığı unutulmamalıdır. Özellikle çağrı ve toplantısız karar eksikliklerinde yokluk–butlan nitelendirmesi tartışmalıdır. Bu nedenle somut olayda kurucu unsurun gerçekten ortadan kalkıp kalkmadığı ayrıca incelenmelidir.</p></section><hr/>
-<section><h2 id="s3">3. Butlan: TTK m. 391'in Yapısı ve “Özellikle” İbaresi</h2>
-<p>TTK m. 391, yönetim kurulu kararının batıl olduğunun tespitinin mahkemeden istenebileceğini düzenler ve dört temel karar grubunu örnekler: eşit işlem ilkesine aykırı kararlar; anonim şirketin temel yapısına uymayan veya sermayenin korunması ilkesini gözetmeyen kararlar; pay sahiplerinin özellikle vazgeçilmez haklarını ihlal eden veya kullanılmalarını kısıtlayan ya da güçleştiren kararlar; diğer organların devredilemez yetkilerine giren ve bu yetkilerin devrine ilişkin kararlar.</p>
-<p>Kanun metnindeki <span class="legal-gold">“özellikle” ibaresi, butlan sebeplerinin kapalı ve tüketici bir liste olarak kaleme alınmadığını gösterir.</span> Öğretide baskın yaklaşım da TTK m. 391'in örnekleyici niteliğini kabul etmektedir. Bununla birlikte yargı kararlarında zaman zaman daha dar yorumlara rastlandığından, somut uyuşmazlıkta yalnız bent numarası değil ihlal edilen normun niteliği de ortaya konulmalıdır.</p></section><hr/>
-<section><h2 id="s4">4. Eşit İşlem İlkesine Aykırı Yönetim Kurulu Kararları</h2>
-<p>TTK m. 357 uyarınca pay sahipleri eşit şartlarda eşit işleme tabi tutulur. TTK m. 391/1-a ise eşit işlem ilkesine aykırı yönetim kurulu kararlarını batıl kararlar arasında sayar. Burada her farklılaştırma değil, eşit koşullardaki pay sahipleri arasında haklı ve nesnel bir gerekçe olmaksızın yaratılan hukukî farklılık önem taşır.</p>
-<p>Belirli pay sahiplerine kanun veya esas sözleşmede dayanağı bulunmayan ayrıcalıklar tanınması, bazı pay sahiplerinin pay sahipliği haklarının kullanılmasının keyfî biçimde güçleştirilmesi veya benzer durumdaki pay sahiplerine farklı uygulama yapılması bu başlık altında değerlendirilebilir.</p></section><hr/>
-<section><h2 id="s5">5. Anonim Şirketin Temel Yapısına ve Sermayenin Korunması İlkesine Aykırılık</h2>
-<p>TTK m. 391/1-b, anonim şirketin temel yapısına uymayan veya sermayenin korunması ilkesini gözetmeyen yönetim kurulu kararlarını batıl sayar. “Temel yapı”, şirketin kanunla kurulan organ ve sermaye düzeninin yönetim kurulu kararıyla bertaraf edilememesini ifade eder.</p>
-<p>Sermayenin korunmasına ilişkin mutlak emredici hükümlerin dolanılması, şirket malvarlığının hukuken korunması gereken sermaye düzenini zedeleyecek biçimde kullanılması veya kanunun organlar arasında kurduğu temel dengeyi ortadan kaldıran kararlar bu kapsamda gündeme gelebilir.</p>
-<p>Yargıtay 11. Hukuk Dairesinin 12.09.2023 tarihli E. 2022/2761, K. 2023/4889 sayılı kararında, şirketin kendi paylarını iktisabına ilişkin emredici sınırların ihlali butlan yaptırımı bakımından değerlendirilmiştir.</p></section><hr/>
-<section><h2 id="s6">6. Pay Sahiplerinin Vazgeçilmez Haklarının İhlali</h2>
-<p>TTK m. 391/1-c, pay sahiplerinin özellikle vazgeçilmez nitelikteki haklarını ihlal eden veya bu hakların kullanılmasını kısıtlayan ya da güçleştiren yönetim kurulu kararlarını batıl sayar. Genel kurula katılma ve oy hakkı, bilgi alma ve inceleme hakkı ile kanunun vazgeçilmez biçimde koruduğu diğer pay sahipliği hakları bu değerlendirmenin merkezindedir.</p>
-<p>Örneğin yönetim kurulunun kanunda veya esas sözleşmede bulunmayan koşullar getirerek belirli pay sahiplerinin genel kurula katılımını engellemesi yahut <a href="anonim-sirketlerde-pay-sahibinin-bilgi-alma-inceleme-hakki.html"><strong>bilgi alma ve inceleme hakkını</strong></a> fiilen kullanılamaz hâle getirmesi TTK m. 391/1-c bakımından incelenmelidir.</p>
-<div class="note"><strong>Her Sınırlama Aynı Değildir</strong><p>Bir hakkın kullanılmasına ilişkin kanunî ve ölçülü usul düzenlemesi ile hakkı fiilen ortadan kaldıran veya kullanımını aşırı derecede güçleştiren yönetim kurulu kararı birbirinden ayrılmalıdır.</p></div></section><hr/>
-<section><h2 id="s7">7. Diğer Organların Devredilemez Yetkilerine Müdahale</h2>
-<p>TTK m. 391/1-d, diğer organların devredilemez yetkilerine giren ve bu yetkilerin devrine ilişkin yönetim kurulu kararlarını batıl sayar. Bu hüküm anonim şirkette organlar arası yetki ayrılığının yaptırım boyutunu oluşturur.</p>
-<p>Genel kurulun TTK m. 408'deki devredilemez yetki alanına yönetim kurulu kararıyla müdahale edilmesi mümkün değildir. Aynı şekilde yönetim kurulunun TTK m. 375 uyarınca <a href="anonim-sirketlerde-yonetim-kurulunun-gorev-ve-yetkileri.html"><strong>devredilemez ve vazgeçilemez görev ve yetkilerini</strong></a> hukuken yetkisiz bir organa veya kişiye devretmesi de bu kapsamda değerlendirilir.</p>
-<div class="note"><strong>Organlar Arası Yetki Ayrılığı</strong><p><span class="legal-gold">Bir organın devredilemez yetki alanı, diğer organ bakımından serbestçe kullanılabilecek bir “yedek yetki” alanı değildir.</span> Yetki sınırının ihlali TTK m. 391/1-d uyarınca butlan sonucunu doğurabilir.</p></div></section><hr/>
-<section><h2 id="s8">8. TBK m. 27 ve Genel Butlan Sebepleri</h2>
-<p>TTK m. 391'in örnekleyici yapısı, yönetim kurulu kararlarının yalnız maddede açıkça sayılan dört bent bakımından denetlenmesi sonucunu doğurmaz. Genel hükümler de kararın içeriğinin geçerliliğinde rol oynar.</p>
-<p>Öğretide, kanunun mutlak emredici hükümlerine, kamu düzenine, ahlâka veya kişilik haklarına aykırı ya da konusu imkânsız yönetim kurulu kararlarının genel butlan rejimi çerçevesinde hükümsüz olduğu kabul edilmektedir. Yönetim kurulu üyelerinin kişisel haklarını ağır biçimde ihlal eden kararların butlanı da bu bağlamda ayrıca tartışılmıştır.</p></section><hr/>
-<section><h2 id="s9">9. Yokluk, Butlan ve İptal Edilebilirlik Nasıl Ayrılır?</h2>
-<table><thead><tr><th>Kriter</th><th>Yokluk</th><th>Butlan</th><th>İptal Edilebilirlik</th></tr></thead><tbody>
-<tr><td><strong>Sakatlığın odağı</strong></td><td>Kurucu unsur eksikliği</td><td>Ağır içerik / emredici hukuk aykırılığı</td><td>Kanunun açıkça iptal yaptırımı öngördüğü aykırılık</td></tr>
-<tr><td><strong>Kararın durumu</strong></td><td>Hukuken doğmamış sayılır</td><td>Baştan itibaren kesin hükümsüzdür</td><td>İptal edilinceye kadar hüküm doğurur</td></tr>
-<tr><td><strong>Tipik dayanak</strong></td><td>TTK m. 390 ve genel ilkeler</td><td>TTK m. 391; genel butlan hükümleri</td><td>Özel kanun hükmü</td></tr>
-<tr><td><strong>Dava</strong></td><td>Yokluğun tespiti</td><td>Butlanın tespiti</td><td>İptal davası</td></tr>
-<tr><td><strong>Süre</strong></td><td>Kural olarak süreye bağlı değil</td><td>Kural olarak süreye bağlı değil</td><td>İlgili özel hükümdeki süre</td></tr>
-<tr><td><strong>Mahkeme kararının niteliği</strong></td><td>Tespit edici</td><td>Tespit edici</td><td>Yenilik doğurucu</td></tr>
-</tbody></table>
-<div class="note"><strong>En Önemli Pratik Sonuç</strong><p><span class="legal-gold">Yönetim kurulu kararlarına karşı genel bir “iptal davası” rejimi bulunduğu varsayılmamalıdır.</span> Önce kararın yoklukla mı, butlanla mı sakat olduğu; yoksa kanunun istisnai olarak iptal davası öngördüğü bir karar türü mü bulunduğu belirlenmelidir.</p></div></section><hr/>
-<section><h2 id="s10">10. Sirküler Karar ve Çağrı Eksikliklerinde Yokluk–Butlan Tartışması</h2>
-<p>TTK m. 390/4 uyarınca toplantı yapılmaksızın karar alınabilmesi için aynı önerinin bütün yönetim kurulu üyelerine yapılmış olması açık bir geçerlilik şartıdır. Bu şartın ihlalinde kararın yaptırımı bakımından içtihatta farklı nitelendirmeler görülmektedir.</p>
-<p>İstanbul Bölge Adliye Mahkemesi 13. Hukuk Dairesinin 27.02.2025 tarihli E. 2022/1445, K. 2025/309 sayılı kararında TTK m. 390/4'e aykırı kararlar yoklukla malul kabul edilmiştir. Buna karşılık bazı ilk derece mahkemesi kararlarında aynı eksiklik butlan kavramıyla nitelendirilmiştir. Benzer tartışma, bir veya birkaç yönetim kurulu üyesinin toplantıdan haberdar edilmemesi bakımından da mevcuttur.</p>
-<p>Bu nedenle <a href="anonim-sirketlerde-yonetim-kurulu-toplanti-karar-nisaplari.html"><strong>toplantı ve karar alma usulündeki</strong></a> her eksiklik için yaptırımın otomatik olarak adlandırılması yerine, eksikliğin kurul iradesinin kurucu unsurunu ortadan kaldırıp kaldırmadığı ve somut içtihat çizgisi birlikte değerlendirilmelidir.</p></section><hr/>
-<section><h2 id="s11">11. Yönetim Kurulu Kararının Butlanının veya Yokluğunun Tespiti Davası</h2>
-<p>TTK m. 391, yönetim kurulu kararının batıl olduğunun tespitinin mahkemeden istenebileceğini açıkça düzenler. Tespit hükmü geçersizliği sonradan yaratan inşaî bir karar değil, kararın başlangıçtan itibaren taşıdığı hükümsüzlüğü açıklayan niteliktedir.</p>
-<p>Yönetim kurulu kararlarına karşı genel bir iptal davası bulunmadığından, dava talebinin “iptal” şeklinde mekanik biçimde kurulması önemli bir usul riski yaratabilir. Uyuşmazlığın niteliğine göre talep sonucu yokluğun veya butlanın tespiti biçiminde oluşturulmalıdır. Kanunun açıkça iptal davası tanıdığı istisnai karar türleri ise ayrıca değerlendirilmelidir.</p>
-<p>Dava anonim şirket tüzel kişiliğine yöneltilir. Davacının ise kararın hükümsüzlüğünün tespitinde güncel ve korunmaya değer hukukî yararının bulunması gerekir.</p></section><hr/>
-<section><h2 id="s12">12. Dava Süresi, Hukukî Yarar ve Dürüstlük Kuralı</h2>
-<p>Yokluk ve butlan, niteliği gereği kural olarak hak düşürücü süreye veya zamanaşımına bağlı olmaksızın ileri sürülebilir. Hâkim de koşulları oluştuğunda bu tür ağır hükümsüzlük hâllerini re'sen dikkate alabilir.</p>
-<p>Bununla birlikte “süre yoktur” önermesi, butlan iddiasının her durumda sınırsız biçimde kullanılabileceği anlamına gelmez. TMK m. 2'deki dürüstlük kuralı ve hakkın kötüye kullanılması yasağı özellikle karara katılan, kararın icrasından uzun süre yararlanan veya sonradan salt zarar verme amacıyla hükümsüzlük ileri süren kişiler bakımından sınır oluşturabilir.</p>
-<div class="note"><strong>Süre ile Dürüstlük Kuralını Ayırmak Gerekir</strong><p><span class="legal-gold">Butlan tespiti için özel bir hak düşürücü sürenin bulunmaması, TMK m. 2 denetimini ortadan kaldırmaz.</span> Somut davranışın çelişkili veya açıkça kötüye kullanım niteliğinde olup olmadığı ayrıca incelenir.</p></div></section><hr/>
-<section><h2 id="s13">13. Hükümsüz Kararın İcra, Tescil ve Genel Kurul Kararlarına Etkisi</h2>
-<p>Yok veya batıl yönetim kurulu kararı kural olarak geçerli bir şirket içi hukukî dayanak oluşturmaz. Batıl kararın tespitine ilişkin mahkeme hükmü açıklayıcı olduğundan, hükümsüzlük kararın alındığı andan itibaren söz konusudur.</p>
-<p>Ticaret siciline tescil edilmiş olması da her durumda hükümsüz bir yönetim kurulu kararına maddî hukuk bakımından geçerlilik kazandırmaz. Bununla birlikte kararın üçüncü kişilerle yapılan dış işlemlere etkisi, temsil hükümleri ve üçüncü kişinin korunması gibi ayrı meseleler doğurabileceğinden her olayda otomatik bir “zincirleme hükümsüzlük” sonucu çıkarılmamalıdır.</p>
-<p>Geçersiz bir yönetim kurulu kararına dayanılarak genel kurulun toplantıya çağrılması ise ayrı bir risk alanıdır. Öğretide bu ilişkinin genel kurul kararlarının geçerliliğine etkisi özel olarak incelenmekte; yönetim kurulu kararındaki sakatlığın genel kurul kararına hangi ölçüde yansıyacağı çağrının ve genel kurul kararının niteliğine göre değerlendirilmektedir. Genel kurul kararlarının kendi hükümsüzlük rejimi için ayrıca <a href="anonim-sirketlerde-genel-kurul-kararinin-iptali.html"><strong>Genel Kurul Kararının İptali</strong></a> başlıklı çalışmaya bakılabilir.</p></section><hr/>
-<section><h2 id="s14">14. Yönetim Kurulu Kararı Geçerlilik Kontrolü</h2>
-<table><thead><tr><th>Kontrol Aşaması</th><th>Sorulacak Soru</th><th>Muhtemel Sonuç</th></tr></thead><tbody>
-<tr><td><strong>1. Kurucu unsurlar</strong></td><td>Toplantı/karar nisabı, kişisel katılım, sirküler öneri ve yazılı şekil koşulları gerçekleşmiş mi?</td><td>Esaslı eksiklik varsa yokluk gündeme gelebilir.</td></tr>
-<tr><td><strong>2. Organ yetkisi</strong></td><td>Karar başka organın devredilemez yetkisine mi giriyor veya yönetim kurulu kendi devredilemez yetkisini hukuka aykırı mı devrediyor?</td><td>TTK m. 391/1-d kapsamında butlan.</td></tr>
-<tr><td><strong>3. TTK m. 391</strong></td><td>Eşit işlem, temel yapı, sermayenin korunması veya vazgeçilmez pay sahipliği hakkı ihlali var mı?</td><td>Butlan gündeme gelir.</td></tr>
-<tr><td><strong>4. Genel hükümler</strong></td><td>Emredici hukuk, kamu düzeni, kişilik hakkı veya imkânsızlık sorunu var mı?</td><td>Genel butlan rejimi değerlendirilir.</td></tr>
-<tr><td><strong>5. Özel iptal hükmü</strong></td><td>Kanun bu karar türü için açıkça iptal davası öngörüyor mu?</td><td>Varsa özel iptal rejimi uygulanır.</td></tr>
-<tr><td><strong>6. Dava stratejisi</strong></td><td>Talep sonucu doğru hükümsüzlük türüne göre kurulmuş mu; hukukî yarar ve tedbir ihtiyacı var mı?</td><td>Tespit/iptal talebi ve ihtiyatî tedbir somutlaştırılır.</td></tr>
-</tbody></table></section><hr/>
-<section><h2 id="s15">15. Değerlendirme ve Sonuç</h2>
-<p>Anonim şirketlerde yönetim kurulu kararlarının geçerliliği incelenirken “kanuna aykırı karar = batıl karar” biçimindeki basit eşitlikten kaçınılmalıdır. Sakatlığın önce kararın kurucu unsurlarına mı, kararın içeriğine mi, yoksa kanunun özel olarak iptal yaptırımına bağladığı bir alana mı ilişkin olduğu belirlenmelidir.</p>
-<p>TTK m. 390 kurul iradesinin oluşum şartlarını; TTK m. 391 ise yönetim kurulu kararlarının ağır içerik sakatlıklarının önemli bir bölümünü düzenler. Bu iki hüküm arasındaki ayrım, yokluk ile butlanın doğru nitelendirilmesinde merkezî önemdedir.</p>
-<p><span class="legal-gold">Uygulamada güvenli yöntem, önce kararın hukuk âleminde geçerli biçimde oluşup oluşmadığını; ardından organ yetkisini ve karar içeriğinin TTK m. 391 ile genel emredici hukuk karşısındaki durumunu; son olarak da doğru dava ve talep türünü ayrı ayrı incelemektir.</span></p></section><hr/>
-<section id="sss"><h2>16. Sık Sorulan Sorular</h2>
-<h3>Yönetim kurulu kararına karşı iptal davası açılabilir mi?</h3><p>Kural olarak yönetim kurulu kararlarına karşı genel bir iptal davası rejimi yoktur. Yokluk veya butlan söz konusuysa tespit davası gündeme gelir; kanunun açıkça iptal davası öngördüğü istisnai hâller saklıdır.</p>
-<h3>Yönetim kurulu kararının butlanı için dava açma süresi var mı?</h3><p>Butlanın tespiti kural olarak özel bir hak düşürücü süreye bağlı değildir. Bununla birlikte TMK m. 2 kapsamındaki dürüstlük kuralı ve hakkın kötüye kullanılması yasağı somut olayda ayrıca değerlendirilir.</p>
-<h3>Yokluk ile butlan arasındaki fark nedir?</h3><p>Yoklukta kararın kurucu unsurları oluşmadığından hukukî işlem hiç doğmamış sayılır. Butlanda ise karar şeklen oluşmuştur fakat ağır bir hukukî sakatlık nedeniyle başlangıçtan itibaren kesin hükümsüzdür.</p>
-<h3>TTK m. 391'deki butlan sebepleri sınırlı sayıda mıdır?</h3><p>Madde “özellikle” ifadesini kullanır. Öğretide baskın yaklaşım sayımın örnekleyici olduğu yönündedir; genel butlan sebepleri de ayrıca gündeme gelebilir.</p>
-<h3>Sirküler karar önerisi bütün üyelere gönderilmezse ne olur?</h3><p>TTK m. 390/4 aynı önerinin bütün üyelere yapılmasını açık bir geçerlilik şartı olarak düzenler. Yaptırımın yokluk veya butlan olarak nitelendirilmesi konusunda içtihatta farklı yaklaşımlar bulunduğundan somut olay ayrıca değerlendirilmelidir.</p>
-<h3>Batıl yönetim kurulu kararı sonradan onaylanarak geçerli hâle getirilebilir mi?</h3><p>Kesin hükümsüzlük niteliğindeki karar kural olarak sonradan icazet veya onayla geçerli hâle getirilemez.</p></section><hr/>
-<section id="kaynaklar"><h2>17. Mevzuat, İçtihat ve Yararlanılan Kaynaklar</h2>
-<h3>Mevzuat</h3><ul><li>6102 sayılı Türk Ticaret Kanunu, özellikle m. 357, 375, 390, 391, 408, 460 ve ilgili hükümler.</li><li>6098 sayılı Türk Borçlar Kanunu, özellikle m. 27.</li><li>4721 sayılı Türk Medeni Kanunu, özellikle m. 2.</li></ul>
-<h3>Seçilmiş İçtihat</h3><ul><li>Yargıtay 11. Hukuk Dairesi, 12.09.2023, E. 2022/2761, K. 2023/4889.</li><li>İstanbul Bölge Adliye Mahkemesi 13. Hukuk Dairesi, 27.02.2025, E. 2022/1445, K. 2025/309.</li><li>İstanbul Bölge Adliye Mahkemesi 14. Hukuk Dairesi, 26.09.2024, E. 2021/1230, K. 2024/1306.</li><li>Sakarya Bölge Adliye Mahkemesi 7. Hukuk Dairesi, 27.09.2024, E. 2023/597, K. 2024/1261.</li><li>Yargıtay Hukuk Genel Kurulu, 12.03.2008, E. 2008/11-246, K. 2008/239.</li></ul>
-<h3>Seçilmiş Literatür</h3><ul>
-<li>TURANLI, Hüsnü, “Yeni Türk Ticaret Kanunu Işığında Anonim Şirket Yönetim Kurulu Kararlarının Hükümsüzlüğü”, <em>Gazi Üniversitesi Hukuk Fakültesi Dergisi</em>, C. XVII, S. 2, 2013, s. 939–960.</li>
-<li>YAVUZ, Mustafa, “Anonim Şirketlerde Yönetim Kurulu Kararlarının Hükümsüzlüğü”, <em>Gümrük ve Ticaret Dergisi</em>, C. 7, S. 20, 2020, s. 10–19.</li>
-<li>ŞEKER, Hakan, “Anonim Şirket Yönetim Kurulu Kararlarının Hükümsüzlüğü”, <em>Türkiye Barolar Birliği Dergisi</em>, S. 149, 2020.</li>
-<li>PEKDİNÇER, Tamer, “Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği (Özellikle Batıl Yönetim Kurulu Kararları) (TTK m. 391)”, <em>Marmara Üniversitesi Hukuk Fakültesi Hukuk Araştırmaları Dergisi</em>, C. 18, S. 2, 2012.</li>
-<li>SAYIN, Hediye Bahar, “Yönetim Kurulu Üyelerinin Kişisel Haklarının Kurul Kararı ile İhlal Edilmesi ve İlgili Kararların Butlanı”, <em>Anadolu Üniversitesi Hukuk Fakültesi Dergisi</em>, C. 2, S. 3, 2016, s. 201–210.</li>
-<li>ÖZTÜRK, Alperen, “Anonim Şirketlerde Geçersiz Yönetim Kurulu Kararına Dayanılarak Toplanan Genel Kurulun Durumu”, <em>Marmara Üniversitesi Hukuk Fakültesi Hukuk Araştırmaları Dergisi</em>, C. 29, S. 1, 2023.</li>
-<li>ÖZDİN, Funda, “Anonim Şirket Yönetim Kurulu Üyelerinin Seçimine İlişkin Genel Kurul Kararının Hükümsüzlüğünün Yönetim Kurulunca Alınan Kararlara ve Bu Kararlara Dayanılarak Yapılan İşlemlere Etkisi”, <em>Ticaret ve Fikri Mülkiyet Hukuku Dergisi</em>, C. 9, S. 2, 2023.</li>
-</ul></section><hr/>
-<section id="ilgili"><h2>İlgili Makaleler</h2><ul>
-<li><a href="anonim-sirketlerde-yonetim-kurulunun-gorev-ve-yetkileri.html"><strong>Anonim Şirketlerde Yönetim Kurulunun Görev ve Yetkileri: Devredilemez Görev ve Yetkiler Nelerdir?</strong></a></li>
-<li><a href="anonim-sirketlerde-yonetim-kurulu-toplanti-karar-nisaplari.html"><strong>Anonim Şirketlerde Yönetim Kurulu Toplantı ve Karar Nisapları: Yönetim Kurulu Nasıl Toplanır ve Karar Alır?</strong></a></li>
-<li><a href="anonim-sirketlerde-genel-kurul-kararinin-iptali.html"><strong>Anonim Şirketlerde Genel Kurul Kararının İptali</strong></a></li>
-<li><a href="anonim-sirketlerde-pay-sahibinin-bilgi-alma-inceleme-hakki.html"><strong>Anonim Şirketlerde Pay Sahibinin Bilgi Alma ve İnceleme Hakkı</strong></a></li>
-<li><a href="anonim-sirketlerde-genel-kurul-toplanti-karar-nisaplari.html"><strong>Anonim Şirketlerde Genel Kurul Toplantı ve Karar Nisapları</strong></a></li>
-</ul></section><hr/>
-<section><div class="note"><strong>Bilgilendirme</strong><p>Bu çalışma genel bilgilendirme amacıyla hazırlanmıştır. Yönetim kurulu kararının yokluğu, butlanı veya kanunun öngördüğü istisnai iptal edilebilirliği; kararın oluşum biçimi, ihlal edilen hüküm, şirketin esas sözleşmesi, kararın içeriği ve somut uyuşmazlığın özelliklerine göre farklı hukukî değerlendirmeler gerektirebilir.</p></div>
-<div class="note" style="margin-top:32px;"><strong>Hukukî Danışmanlık</strong><p>Anonim şirket yönetim kurulu kararlarının geçerliliği, yokluk ve butlanın tespiti, ihtiyatî tedbir, ticaret sicili ve genel kurul kararlarına etkileri hakkında hukukî danışmanlık almak için bizimle iletişime geçebilirsiniz.</p><a class="btn primary" href="index.html#iletisim" style="margin-top:16px;">Hukukî Danışmanlık Talep Edin</a></div></section>
-</article>
-<!-- FOOTER -->
-<footer class="site-footer">
-<div class="footer-inner">
-<div class="footer-mark"><img alt="DLC Derinpınar Law &amp; Consultancy logosu" src="dlc-logo.png"/></div>
-<div class="footer-logo-note">Derinpınar Law &amp; Consultancy</div>
-<div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>
-</div>
+.table-responsive{width:100%!important;max-width:100%!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important;margin:32px 0!important}
+html, body{overflow-x:hidden!important;max-width:100vw!important}
+@media(max-width:768px){
+ .article-page .hero .lead,.article-page .article-container p,.article-page .article-container .section-text,.article-page .article-container .note p{text-align:justify!important;text-justify:inter-word}
+ .nav{display:none!important}
+ .menu-toggle{display:flex!important}
+ .article-page .article-container{padding:0 16px!important;width:100%!important;max-width:100%!important}
+ .hero{width:100%!important;max-width:100%!important;padding:40px 20px!important;margin-bottom:30px!important}
+ .topbar-inner{width:100%!important;max-width:100%!important;padding:10px 16px!important}
+ .brand-logo img{width:160px!important}
+}
+</style>
+
+</head>  
+<body class="article-page">  
+<!-- NAVBAR -->  
+<div class="site-sticky-wrap">  
+<div aria-label="Kurumsal Üst Bilgi" class="global-top-bar" role="complementary">  
+<div class="global-top-bar-inner">  
+<div class="gtb-left">  
+<a class="gtb-contact" href="mailto:ibrahim@derinpinar.av.tr">  
+<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>  
+<span class="gtb-contact-label">ibrahim@derinpinar.av.tr</span>  
+</a>  
+<span aria-hidden="true" class="gtb-sep"></span>  
+<a aria-label="LinkedIn profili" class="gtb-contact" href="https://www.linkedin.com/in/ibrahim-nuri-derinp%C4%B1nar-lawyer" rel="noopener noreferrer" target="_blank">  
+<svg aria-hidden="true" fill="currentColor" height="14" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>  
+<span class="gtb-contact-label">LinkedIn</span>  
+</a>  
+</div>  
+<div class="gtb-right">  
+<nav aria-label="Dil seçici" class="gtb-lang">  
+<a aria-current="true" class="gtb-lang-link gtb-lang-active" href="#" hreflang="tr">TR</a>  
+<span aria-hidden="true" class="gtb-lang-div">|</span>  
+<a class="gtb-lang-link" href="#" hreflang="en">EN</a>  
+</nav>  
+<button aria-label="Sitede ara" class="gtb-search-btn" type="button">  
+<svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>  
+</button>  
+</div>  
+</div>  
+</div>  
+<header class="topbar">  
+<div class="topbar-inner">  
+<a aria-label="DLC ana sayfa" class="brand" href="index.html">  
+<div class="brand-logo">  
+<img alt="DLC Derinpınar Law &amp; Consultancy logosu" src="dlc-logo.png"/>  
+</div>  
+<div class="brand-text">  
+<div class="brand-name">Av. Dr. İbrahim Nuri Derinpınar</div>  
+<div class="brand-subtitle">PhD • LL.M. • MCIArb</div>  
+</div>  
+</a>  
+<button aria-controls="mobileMenu" aria-expanded="false" aria-label="Menüyü Aç" class="menu-toggle" id="menuToggle">  
+<svg fill="none" height="30" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>  
+</button>  
+<nav aria-label="Birincil" class="nav">  
+<a href="index.html#hakkimda">Hakkımda</a>  
+<a href="index.html#egitim">Eğitim</a>  
+<a href="index.html#deneyim">Mesleki Deneyim</a>  
+<a href="index.html#uzmanlik">Uzmanlık Alanları</a>  
+<a href="index.html#akademik-calismalar">Akademik Çalışmalar</a>  
+<a href="e-spor-hukuku.html">E-Spor Hukuku</a>  
+<a aria-current="page" href="makaleler.html">Makaleler</a>  
+<a href="index.html#iletisim">Bize Ulaşın</a>  
+</nav>  
+</div>  
+</header>  
+</div>  
+<div class="mobile-overlay" id="mobileOverlay"></div>  
+<div aria-hidden="true" class="mobile-menu" id="mobileMenu">  
+<button aria-label="Menüyü kapat" class="close-menu" id="closeMenu">  
+<svg fill="none" height="34" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="34" xmlns="http://www.w3.org/2000/svg"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg>  
+</button>  
+<a href="index.html#hakkimda">Hakkımda</a>  
+<a href="index.html#egitim">Eğitim</a>  
+<a href="index.html#deneyim">Mesleki Deneyim</a>  
+<a href="index.html#uzmanlik">Uzmanlık Alanları</a>  
+<a href="index.html#akademik-calismalar">Akademik Çalışmalar</a>  
+<a href="e-spor-hukuku.html">E-Spor Hukuku</a>  
+<a href="makaleler.html">Makaleler</a>  
+<a href="index.html#iletisim">Bize Ulaşın</a>  
+</div>  
+<!-- HERO SECTION -->  
+<section class="hero"><div class="hero-grid"><div class="hero-copy"><span class="eyebrow">Şirketler Hukuku • Anonim Şirketler Serisi - 3</span><div class="meta"><a href="index.html">Ana Sayfa</a> › <a href="makaleler.html">Makaleler</a> › <span>Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik</span></div><h1>Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği: Yokluk, Butlan ve İptal Edilebilirlik</h1><p class="lead">Yönetim kurulu kararındaki her hukuka aykırılık aynı yaptırımı doğurmaz. <span class="hero-legal-emphasis">Kurucu unsurları oluşmamış bir karar yok hükmündeyken, şeklen oluşmuş fakat TTK m. 391 veya genel hükümler uyarınca ağır içerik sakatlığı taşıyan bir karar batıldır.</span> Yönetim kurulu kararlarına karşı genel bir iptal davası yolu ise kural olarak bulunmadığından, doğru hükümsüzlük türünün ve doğru dava talebinin belirlenmesi özel önem taşır.</p><div class="chip-row"><span class="chip">📅 19 Eylül 2026</span><span class="chip">🔄 19 Eylül 2026</span><span class="chip">📖 13 Dakika Okuma</span><span class="chip" id="viewsChip">👁 —</span><span class="chip">⚖️ Şirketler Hukuku</span></div></div></div></section>  
+<article class="article-container">  
+<section><h2 id="giris">Yönetim Kurulu Kararı Ne Zaman Yok, Ne Zaman Batıldır?</h2>  
+<div class="note"><strong>Kısa Cevap</strong><p>Yönetim kurulu kararlarının geçersizliği tek tip değildir. <span class="legal-gold">Kararın kurucu unsurları oluşmamışsa yokluk; karar şeklen oluşmuş olmakla birlikte TTK m. 391'de örneklenen veya genel hükümlerden kaynaklanan ağır bir içerik sakatlığı taşıyorsa butlan gündeme gelir.</span> Yönetim kurulu kararlarına karşı genel kurul kararlarındaki gibi genel bir iptal davası kural olarak yoktur; kanunun açıkça öngördüğü istisnai iptal hâlleri saklıdır. Yokluk ve butlanın ileri sürülmesi kural olarak süreye bağlı değildir ve mahkeme kararı geçersizliği yaratmaz, mevcut geçersizliği tespit eder.</p></div>  
+<p class="section-text">Bu çalışma, <a href="anonim-sirketlerde-yonetim-kurulunun-gorev-ve-yetkileri.html"><strong>Yönetim Kurulunun Görev ve Yetkileri</strong></a> ile <a href="anonim-sirketlerde-yonetim-kurulu-toplanti-karar-nisaplari.html"><strong>Yönetim Kurulu Toplantı ve Karar Nisapları</strong></a> çalışmalarını tamamlayan hükümsüzlük incelemesidir. Amaç, “karar hukuka aykırı” tespitinden sonra hangi yaptırımın uygulanacağını; <strong>yokluk, butlan ve istisnai iptal edilebilirlik</strong> ayrımı üzerinden sistematik biçimde belirlemektir.</p>  
+<div class="toc-container"><h3>İçindekiler</h3><ol>  
+<li><a href="#s1">Hükümsüzlük Sistematiği</a></li><li><a href="#s2">Yokluk: Kurucu Unsur Eksikliği</a></li><li><a href="#s3">Butlan: TTK m. 391'in Yapısı</a></li><li><a href="#s4">Eşit İşlem İlkesine Aykırılık</a></li><li><a href="#s5">Temel Yapı ve Sermayenin Korunması</a></li><li><a href="#s6">Vazgeçilmez Pay Sahipliği Haklarının İhlali</a></li><li><a href="#s7">Devredilemez Organ Yetkilerine Müdahale</a></li><li><a href="#s8">TBK m. 27 ve Genel Butlan Sebepleri</a></li><li><a href="#s9">Yokluk–Butlan–İptal Edilebilirlik Karşılaştırması</a></li><li><a href="#s10">Sirküler Karar ve Çağrı Eksiklikleri</a></li><li><a href="#s11">Butlanın Tespiti Davası</a></li><li><a href="#s12">Süre, Hukukî Yarar ve Dürüstlük Kuralı</a></li><li><a href="#s13">Hükümsüz Kararın İcra, Tescil ve Genel Kurula Etkisi</a></li><li><a href="#s14">Uygulama Kontrolü</a></li><li><a href="#s15">Değerlendirme ve Sonuç</a></li><li><a href="#sss">Sık Sorulan Sorular</a></li><li><a href="#kaynaklar">Kaynaklar</a></li><li><a href="#ilgili">İlgili Makaleler</a></li>  
+</ol></div></section><hr/>  
+<section><h2 id="s1">1. Yönetim Kurulu Kararlarında Hükümsüzlük Sistematiği</h2>  
+<p>Yönetim kurulu kararları şirket tüzel kişiliğinin irade oluşumuna hizmet eden hukukî işlemlerdir. Bu nedenle kararın hukuka aykırılığı tespit edildiğinde ilk soru “karar geçersiz midir?” değil, <strong>hangi tür geçersizliğin söz konusu olduğudur.</strong> Sakatlığın kararın oluşumuna mı, içeriğine mi yoksa kanunun özel olarak iptal yaptırımına bağladığı bir alana mı ilişkin olduğu belirlenmelidir.</p>  
+<p>6102 sayılı TTK, yönetim kurulu kararlarının butlanını m. 391'de açıkça düzenlemiştir. Yokluk ise kurucu unsurların bulunmamasına ilişkin genel hukuk ilkelerinden ve özellikle TTK m. 390'daki karar oluşum şartlarından hareketle belirlenir. İptal edilebilirlik ise yönetim kurulu kararlarında genel rejim değil, kanunun açıkça öngördüğü istisnai alanlarda söz konusu olur.</p>  
+<div class="note"><strong>Temel Ayrım</strong><p><span class="legal-gold">Yokluk kararın hukuk âleminde doğup doğmadığına; butlan ise doğmuş görünen kararın ağır bir hukukî sakatlık nedeniyle baştan itibaren hüküm doğurup doğuramayacağına ilişkindir.</span></p></div></section><hr/>  
+<section><h2 id="s2">2. Yokluk: Kararın Kurucu Unsurlarının Oluşmaması</h2>  
+<p>Yokluk, hukukî işlemin kurucu unsurlarındaki esaslı eksiklik nedeniyle işlemin hukuk âleminde hiç doğmamış sayılmasıdır. Yönetim kurulu kararları bakımından kurul iradesinin oluşumunu sağlayan toplantı, nisap, kişisel katılım ve yazılı şekil gibi unsurlar bu değerlendirmenin merkezindedir.</p>  
+<p>TTK m. 390/1 toplantı ve karar nisaplarını; m. 390/2 üyelerin birbirlerini temsilen oy veremeyeceğini ve vekille katılamayacağını; m. 390/4 toplantısız kararın şartlarını; m. 390/5 ise kararların geçerliliğinin yazılıp imzalanmasına bağlı olduğunu düzenler.</p>  
+<div class="table-responsive" style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 32px 0; border-radius: 10px; box-shadow: var(--shadow-sm);"><table><thead><tr><th>Kurucu / Şeklî Alan</th><th>Tipik Eksiklik</th><th>Hukukî Sorun</th></tr></thead><tbody>  
+<tr><td>Toplantı nisabı</td><td>Üye tam sayısının gerekli çoğunluğu olmadan toplantı yapılması</td><td>Kurul iradesinin oluşup oluşmadığı</td></tr>  
+<tr><td>Karar nisabı</td><td>Gerekli olumlu oy sayısına ulaşılamaması</td><td>Önerinin kurul kararı hâline gelip gelmediği</td></tr>  
+<tr><td>Kişisel katılım</td><td>Üyenin vekil aracılığıyla oy kullanması</td><td>TTK m. 390/2'ye aykırılık</td></tr>  
+<tr><td>Toplantısız karar</td><td>Aynı önerinin bütün üyelere yapılmaması</td><td>TTK m. 390/4'teki geçerlilik şartının gerçekleşmemesi</td></tr>  
+<tr><td>Yazılı şekil</td><td>Kararın yazılmaması veya imzalanmaması</td><td>TTK m. 390/5'teki geçerlilik şartı</td></tr>  
+</tbody></table></div>  
+<p>Bu alanların yaptırımı bakımından öğretide ve içtihatta her somut eksiklik için tam bir terminolojik birlik bulunmadığı unutulmamalıdır. Özellikle çağrı ve toplantısız karar eksikliklerinde yokluk–butlan nitelendirmesi tartışmalıdır. Bu nedenle somut olayda kurucu unsurun gerçekten ortadan kalkıp kalkmadığı ayrıca incelenmelidir.</p></section><hr/>  
+<section><h2 id="s3">3. Butlan: TTK m. 391'in Yapısı ve “Özellikle” İbaresi</h2>  
+<p>TTK m. 391, yönetim kurulu kararının batıl olduğunun tespitinin mahkemeden istenebileceğini düzenler ve dört temel karar grubunu örnekler: eşit işlem ilkesine aykırı kararlar; anonim şirketin temel yapısına uymayan veya sermayenin korunması ilkesini gözetmeyen kararlar; pay sahiplerinin özellikle vazgeçilmez haklarını ihlal eden veya kullanılmalarını kısıtlayan ya da güçleştiren kararlar; diğer organların devredilemez yetkilerine giren ve bu yetkilerin devrine ilişkin kararlar.</p>  
+<p>Kanun metnindeki <span class="legal-gold">“özellikle” ibaresi, butlan sebeplerinin kapalı ve tüketici bir liste olarak kaleme alınmadığını gösterir.</span> Öğretide baskın yaklaşım da TTK m. 391'in örnekleyici niteliğini kabul etmektedir. Bununla birlikte yargı kararlarında zaman zaman daha dar yorumlara rastlandığından, somut uyuşmazlıkta yalnız bent numarası değil ihlal edilen normun niteliği de ortaya konulmalıdır.</p></section><hr/>  
+<section><h2 id="s4">4. Eşit İşlem İlkesine Aykırı Yönetim Kurulu Kararları</h2>  
+<p>TTK m. 357 uyarınca pay sahipleri eşit şartlarda eşit işleme tabi tutulur. TTK m. 391/1-a ise eşit işlem ilkesine aykırı yönetim kurulu kararlarını batıl kararlar arasında sayar. Burada her farklılaştırma değil, eşit koşullardaki pay sahipleri arasında haklı ve nesnel bir gerekçe olmaksızın yaratılan hukukî farklılık önem taşır.</p>  
+<p>Belirli pay sahiplerine kanun veya esas sözleşmede dayanağı bulunmayan ayrıcalıklar tanınması, bazı pay sahiplerinin pay sahipliği haklarının kullanılmasının keyfî biçimde güçleştirilmesi veya benzer durumdaki pay sahiplerine farklı uygulama yapılması bu başlık altında değerlendirilebilir.</p></section><hr/>  
+<section><h2 id="s5">5. Anonim Şirketin Temel Yapısına ve Sermayenin Korunması İlkesine Aykırılık</h2>  
+<p>TTK m. 391/1-b, anonim şirketin temel yapısına uymayan veya sermayenin korunması ilkesini gözetmeyen yönetim kurulu kararlarını batıl sayar. “Temel yapı”, şirketin kanunla kurulan organ ve sermaye düzeninin yönetim kurulu kararıyla bertaraf edilememesini ifade eder.</p>  
+<p>Sermayenin korunmasına ilişkin mutlak emredici hükümlerin dolanılması, şirket malvarlığının hukuken korunması gereken sermaye düzenini zedeleyecek biçimde kullanılması veya kanunun organlar arasında kurduğu temel dengeyi ortadan kaldıran kararlar bu kapsamda gündeme gelebilir.</p>  
+<p>Yargıtay 11. Hukuk Dairesinin 12.09.2023 tarihli E. 2022/2761, K. 2023/4889 sayılı kararında, şirketin kendi paylarını iktisabına ilişkin emredici sınırların ihlali butlan yaptırımı bakımından değerlendirilmiştir.</p></section><hr/>  
+<section><h2 id="s6">6. Pay Sahiplerinin Vazgeçilmez Haklarının İhlali</h2>  
+<p>TTK m. 391/1-c, pay sahiplerinin özellikle vazgeçilmez nitelikteki haklarını ihlal eden veya bu hakların kullanılmasını kısıtlayan ya da güçleştiren yönetim kurulu kararlarını batıl sayar. Genel kurula katılma ve oy hakkı, bilgi alma ve inceleme hakkı ile kanunun vazgeçilmez biçimde koruduğu diğer pay sahipliği hakları bu değerlendirmenin merkezindedir.</p>  
+<p>Örneğin yönetim kurulunun kanunda veya esas sözleşmede bulunmayan koşullar getirerek belirli pay sahiplerinin genel kurula katılımını engellemesi yahut <a href="anonim-sirketlerde-pay-sahibinin-bilgi-alma-inceleme-hakki.html"><strong>bilgi alma ve inceleme hakkını</strong></a> fiilen kullanılamaz hâle getirmesi TTK m. 391/1-c bakımından incelenmelidir.</p>  
+<div class="note"><strong>Her Sınırlama Aynı Değildir</strong><p>Bir hakkın kullanılmasına ilişkin kanunî ve ölçülü usul düzenlemesi ile hakkı fiilen ortadan kaldıran veya kullanımını aşırı derecede güçleştiren yönetim kurulu kararı birbirinden ayrılmalıdır.</p></div></section><hr/>  
+<section><h2 id="s7">7. Diğer Organların Devredilemez Yetkilerine Müdahale</h2>  
+<p>TTK m. 391/1-d, diğer organların devredilemez yetkilerine giren ve bu yetkilerin devrine ilişkin yönetim kurulu kararlarını batıl sayar. Bu hüküm anonim şirkette organlar arası yetki ayrılığının yaptırım boyutunu oluşturur.</p>  
+<p>Genel kurulun TTK m. 408'deki devredilemez yetki alanına yönetim kurulu kararıyla müdahale edilmesi mümkün değildir. Aynı şekilde yönetim kurulunun TTK m. 375 uyarınca <a href="anonim-sirketlerde-yonetim-kurulunun-gorev-ve-yetkileri.html"><strong>devredilemez ve vazgeçilemez görev ve yetkilerini</strong></a> hukuken yetkisiz bir organa veya kişiye devretmesi de bu kapsamda değerlendirilir.</p>  
+<div class="note"><strong>Organlar Arası Yetki Ayrılığı</strong><p><span class="legal-gold">Bir organın devredilemez yetki alanı, diğer organ bakımından serbestçe kullanılabilecek bir “yedek yetki” alanı değildir.</span> Yetki sınırının ihlali TTK m. 391/1-d uyarınca butlan sonucunu doğurabilir.</p></div></section><hr/>  
+<section><h2 id="s8">8. TBK m. 27 ve Genel Butlan Sebepleri</h2>  
+<p>TTK m. 391'in örnekleyici yapısı, yönetim kurulu kararlarının yalnız maddede açıkça sayılan dört bent bakımından denetlenmesi sonucunu doğurmaz. Genel hükümler de kararın içeriğinin geçerliliğinde rol oynar.</p>  
+<p>Öğretide, kanunun mutlak emredici hükümlerine, kamu düzenine, ahlâka veya kişilik haklarına aykırı ya da konusu imkânsız yönetim kurulu kararlarının genel butlan rejimi çerçevesinde hükümsüz olduğu kabul edilmektedir. Yönetim kurulu üyelerinin kişisel haklarını ağır biçimde ihlal eden kararların butlanı da bu bağlamda ayrıca tartışılmıştır.</p></section><hr/>  
+<section><h2 id="s9">9. Yokluk, Butlan ve İptal Edilebilirlik Nasıl Ayrılır?</h2>  
+<div class="table-responsive" style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 32px 0; border-radius: 10px; box-shadow: var(--shadow-sm);"><table><thead><tr><th>Kriter</th><th>Yokluk</th><th>Butlan</th><th>İptal Edilebilirlik</th></tr></thead><tbody>  
+<tr><td><strong>Sakatlığın odağı</strong></td><td>Kurucu unsur eksikliği</td><td>Ağır içerik / emredici hukuk aykırılığı</td><td>Kanunun açıkça iptal yaptırımı öngördüğü aykırılık</td></tr>  
+<tr><td><strong>Kararın durumu</strong></td><td>Hukuken doğmamış sayılır</td><td>Baştan itibaren kesin hükümsüzdür</td><td>İptal edilinceye kadar hüküm doğurur</td></tr>  
+<tr><td><strong>Tipik dayanak</strong></td><td>TTK m. 390 ve genel ilkeler</td><td>TTK m. 391; genel butlan hükümleri</td><td>Özel kanun hükmü</td></tr>  
+<tr><td><strong>Dava</strong></td><td>Yokluğun tespiti</td><td>Butlanın tespiti</td><td>İptal davası</td></tr>  
+<tr><td><strong>Süre</strong></td><td>Kural olarak süreye bağlı değil</td><td>Kural olarak süreye bağlı değil</td><td>İlgili özel hükümdeki süre</td></tr>  
+<tr><td><strong>Mahkeme kararının niteliği</strong></td><td>Tespit edici</td><td>Tespit edici</td><td>Yenilik doğurucu</td></tr>  
+</tbody></table></div>  
+<div class="note"><strong>En Önemli Pratik Sonuç</strong><p><span class="legal-gold">Yönetim kurulu kararlarına karşı genel bir “iptal davası” rejimi bulunduğu varsayılmamalıdır.</span> Önce kararın yoklukla mı, butlanla mı sakat olduğu; yoksa kanunun istisnai olarak iptal davası öngördüğü bir karar türü mü bulunduğu belirlenmelidir.</p></div></section><hr/>  
+<section><h2 id="s10">10. Sirküler Karar ve Çağrı Eksikliklerinde Yokluk–Butlan Tartışması</h2>  
+<p>TTK m. 390/4 uyarınca toplantı yapılmaksızın karar alınabilmesi için aynı önerinin bütün yönetim kurulu üyelerine yapılmış olması açık bir geçerlilik şartıdır. Bu şartın ihlalinde kararın yaptırımı bakımından içtihatta farklı nitelendirmeler görülmektedir.</p>  
+<p>İstanbul Bölge Adliye Mahkemesi 13. Hukuk Dairesinin 27.02.2025 tarihli E. 2022/1445, K. 2025/309 sayılı kararında TTK m. 390/4'e aykırı kararlar yoklukla malul kabul edilmiştir. Buna karşılık bazı ilk derece mahkemesi kararlarında aynı eksiklik butlan kavramıyla nitelendirilmiştir. Benzer tartışma, bir veya birkaç yönetim kurulu üyesinin toplantıdan haberdar edilmemesi bakımından da mevcuttur.</p>  
+<p>Bu nedenle <a href="anonim-sirketlerde-yonetim-kurulu-toplanti-karar-nisaplari.html"><strong>toplantı ve karar alma usulündeki</strong></a> her eksiklik için yaptırımın otomatik olarak adlandırılması yerine, eksikliğin kurul iradesinin kurucu unsurunu ortadan kaldırıp kaldırmadığı ve somut içtihat çizgisi birlikte değerlendirilmelidir.</p></section><hr/>  
+<section><h2 id="s11">11. Yönetim Kurulu Kararının Butlanının veya Yokluğunun Tespiti Davası</h2>  
+<p>TTK m. 391, yönetim kurulu kararının batıl olduğunun tespitinin mahkemeden istenebileceğini açıkça düzenler. Tespit hükmü geçersizliği sonradan yaratan inşaî bir karar değil, kararın başlangıçtan itibaren taşıdığı hükümsüzlüğü açıklayan niteliktedir.</p>  
+<p>Yönetim kurulu kararlarına karşı genel bir iptal davası bulunmadığından, dava talebinin “iptal” şeklinde mekanik biçimde kurulması önemli bir usul riski yaratabilir. Uyuşmazlığın niteliğine göre talep sonucu yokluğun veya butlanın tespiti biçiminde oluşturulmalıdır. Kanunun açıkça iptal davası tanıdığı istisnai karar türleri ise ayrıca değerlendirilmelidir.</p>  
+<p>Dava anonim şirket tüzel kişiliğine yöneltilir. Davacının ise kararın hükümsüzlüğünün tespitinde güncel ve korunmaya değer hukukî yararının bulunması gerekir.</p></section><hr/>  
+<section><h2 id="s12">12. Dava Süresi, Hukukî Yarar ve Dürüstlük Kuralı</h2>  
+<p>Yokluk ve butlan, niteliği gereği kural olarak hak düşürücü süreye veya zamanaşımına bağlı olmaksızın ileri sürülebilir. Hâkim de koşulları oluştuğunda bu tür ağır hükümsüzlük hâllerini re'sen dikkate alabilir.</p>  
+<p>Bununla birlikte “süre yoktur” önermesi, butlan iddiasının her durumda sınırsız biçimde kullanılabileceği anlamına gelmez. TMK m. 2'deki dürüstlük kuralı ve hakkın kötüye kullanılması yasağı özellikle karara katılan, kararın icrasından uzun süre yararlanan veya sonradan salt zarar verme amacıyla hükümsüzlük ileri süren kişiler bakımından sınır oluşturabilir.</p>  
+<div class="note"><strong>Süre ile Dürüstlük Kuralını Ayırmak Gerekir</strong><p><span class="legal-gold">Butlan tespiti için özel bir hak düşürücü sürenin bulunmaması, TMK m. 2 denetimini ortadan kaldırmaz.</span> Somut davranışın çelişkili veya açıkça kötüye kullanım niteliğinde olup olmadığı ayrıca incelenir.</p></div></section><hr/>  
+<section><h2 id="s13">13. Hükümsüz Kararın İcra, Tescil ve Genel Kurul Kararlarına Etkisi</h2>  
+<p>Yok veya batıl yönetim kurulu kararı kural olarak geçerli bir şirket içi hukukî dayanak oluşturmaz. Batıl kararın tespitine ilişkin mahkeme hükmü açıklayıcı olduğundan, hükümsüzlük kararın alındığı andan itibaren söz konusudur.</p>  
+<p>Ticaret siciline tescil edilmiş olması da her durumda hükümsüz bir yönetim kurulu kararına maddî hukuk bakımından geçerlilik kazandırmaz. Bununla birlikte kararın üçüncü kişilerle yapılan dış işlemlere etkisi, temsil hükümleri ve üçüncü kişinin korunması gibi ayrı meseleler doğurabileceğinden her olayda otomatik bir “zincirleme hükümsüzlük” sonucu çıkarılmamalıdır.</p>  
+<p>Geçersiz bir yönetim kurulu kararına dayanılarak genel kurulun toplantıya çağrılması ise ayrı bir risk alanıdır. Öğretide bu ilişkinin genel kurul kararlarının geçerliliğine etkisi özel olarak incelenmekte; yönetim kurulu kararındaki sakatlığın genel kurul kararına hangi ölçüde yansıyacağı çağrının ve genel kurul kararının niteliğine göre değerlendirilmektedir. Genel kurul kararlarının kendi hükümsüzlük rejimi için ayrıca <a href="anonim-sirketlerde-genel-kurul-kararinin-iptali.html"><strong>Genel Kurul Kararının İptali</strong></a> başlıklı çalışmaya bakılabilir.</p></section><hr/>  
+<section><h2 id="s14">14. Yönetim Kurulu Kararı Geçerlilik Kontrolü</h2>  
+<div class="table-responsive" style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 32px 0; border-radius: 10px; box-shadow: var(--shadow-sm);"><table><thead><tr><th>Kontrol Aşaması</th><th>Sorulacak Soru</th><th>Muhtemel Sonuç</th></tr></thead><tbody>  
+<tr><td><strong>1. Kurucu unsurlar</strong></td><td>Toplantı/karar nisabı, kişisel katılım, sirküler öneri ve yazılı şekil koşulları gerçekleşmiş mi?</td><td>Esaslı eksiklik varsa yokluk gündeme gelebilir.</td></tr>  
+<tr><td><strong>2. Organ yetkisi</strong></td><td>Karar başka organın devredilemez yetkisine mi giriyor veya yönetim kurulu kendi devredilemez yetkisini hukuka aykırı mı devrediyor?</td><td>TTK m. 391/1-d kapsamında butlan.</td></tr>  
+<tr><td><strong>3. TTK m. 391</strong></td><td>Eşit işlem, temel yapı, sermayenin korunması veya vazgeçilmez pay sahipliği hakkı ihlali var mı?</td><td>Butlan gündeme gelir.</td></tr>  
+<tr><td><strong>4. Genel hükümler</strong></td><td>Emredici hukuk, kamu düzeni, kişilik hakkı veya imkânsızlık sorunu var mı?</td><td>Genel butlan rejimi değerlendirilir.</td></tr>  
+<tr><td><strong>5. Özel iptal hükmü</strong></td><td>Kanun bu karar türü için açıkça iptal davası öngörüyor mu?</td><td>Varsa özel iptal rejimi uygulanır.</td></tr>  
+<tr><td><strong>6. Dava stratejisi</strong></td><td>Talep sonucu doğru hükümsüzlük türüne göre kurulmuş mu; hukukî yarar ve tedbir ihtiyacı var mı?</td><td>Tespit/iptal talebi ve ihtiyatî tedbir somutlaştırılır.</td></tr>  
+</tbody></table></div></section><hr/>  
+<section><h2 id="s15">15. Değerlendirme ve Sonuç</h2>  
+<p>Anonim şirketlerde yönetim kurulu kararlarının geçerliliği incelenirken “kanuna aykırı karar = batıl karar” biçimindeki basit eşitlikten kaçınılmalıdır. Sakatlığın önce kararın kurucu unsurlarına mı, kararın içeriğine mi, yoksa kanunun özel olarak iptal yaptırımına bağladığı bir alana mı ilişkin olduğu belirlenmelidir.</p>  
+<p>TTK m. 390 kurul iradesinin oluşum şartlarını; TTK m. 391 ise yönetim kurulu kararlarının ağır içerik sakatlıklarının önemli bir bölümünü düzenler. Bu iki hüküm arasındaki ayrım, yokluk ile butlanın doğru nitelendirilmesinde merkezî önemdedir.</p>  
+<p><span class="legal-gold">Uygulamada güvenli yöntem, önce kararın hukuk âleminde geçerli biçimde oluşup oluşmadığını; ardından organ yetkisini ve karar içeriğinin TTK m. 391 ile genel emredici hukuk karşısındaki durumunu; son olarak da doğru dava ve talep türünü ayrı ayrı incelemektir.</span></p></section><hr/>  
+<section id="sss"><h2>16. Sık Sorulan Sorular</h2>  
+<h3>Yönetim kurulu kararına karşı iptal davası açılabilir mi?</h3><p>Kural olarak yönetim kurulu kararlarına karşı genel bir iptal davası rejimi yoktur. Yokluk veya butlan söz konusuysa tespit davası gündeme gelir; kanunun açıkça iptal davası öngördüğü istisnai hâller saklıdır.</p>  
+<h3>Yönetim kurulu kararının butlanı için dava açma süresi var mı?</h3><p>Butlanın tespiti kural olarak özel bir hak düşürücü süreye bağlı değildir. Bununla birlikte TMK m. 2 kapsamındaki dürüstlük kuralı ve hakkın kötüye kullanılması yasağı somut olayda ayrıca değerlendirilir.</p>  
+<h3>Yokluk ile butlan arasındaki fark nedir?</h3><p>Yoklukta kararın kurucu unsurları oluşmadığından hukukî işlem hiç doğmamış sayılır. Butlanda ise karar şeklen oluşmuştur fakat ağır bir hukukî sakatlık nedeniyle başlangıçtan itibaren kesin hükümsüzdür.</p>  
+<h3>TTK m. 391'deki butlan sebepleri sınırlı sayıda mıdır?</h3><p>Madde “özellikle” ifadesini kullanır. Öğretide baskın yaklaşım sayımın örnekleyici olduğu yönündedir; genel butlan sebepleri de ayrıca gündeme gelebilir.</p>  
+<h3>Sirküler karar önerisi bütün üyelere gönderilmezse ne olur?</h3><p>TTK m. 390/4 aynı önerinin bütün üyelere yapılmasını açık bir geçerlilik şartı olarak düzenler. Yaptırımın yokluk veya butlan olarak nitelendirilmesi konusunda içtihatta farklı yaklaşımlar bulunduğundan somut olay ayrıca değerlendirilmelidir.</p>  
+<h3>Batıl yönetim kurulu kararı sonradan onaylanarak geçerli hâle getirilebilir mi?</h3><p>Kesin hükümsüzlük niteliğindeki karar kural olarak sonradan icazet veya onayla geçerli hâle getirilemez.</p></section><hr/>  
+<section id="kaynaklar"><h2>17. Mevzuat, İçtihat ve Yararlanılan Kaynaklar</h2>  
+<h3>Mevzuat</h3><ul><li>6102 sayılı Türk Ticaret Kanunu, özellikle m. 357, 375, 390, 391, 408, 460 ve ilgili hükümler.</li><li>6098 sayılı Türk Borçlar Kanunu, özellikle m. 27.</li><li>4721 sayılı Türk Medeni Kanunu, özellikle m. 2.</li></ul>  
+<h3>Seçilmiş İçtihat</h3><ul><li>Yargıtay 11. Hukuk Dairesi, 12.09.2023, E. 2022/2761, K. 2023/4889.</li><li>İstanbul Bölge Adliye Mahkemesi 13. Hukuk Dairesi, 27.02.2025, E. 2022/1445, K. 2025/309.</li><li>İstanbul Bölge Adliye Mahkemesi 14. Hukuk Dairesi, 26.09.2024, E. 2021/1230, K. 2024/1306.</li><li>Sakarya Bölge Adliye Mahkemesi 7. Hukuk Dairesi, 27.09.2024, E. 2023/597, K. 2024/1261.</li><li>Yargıtay Hukuk Genel Kurulu, 12.03.2008, E. 2008/11-246, K. 2008/239.</li></ul>  
+<h3>Seçilmiş Literatür</h3><ul>  
+<li>TURANLI, Hüsnü, “Yeni Türk Ticaret Kanunu Işığında Anonim Şirket Yönetim Kurulu Kararlarının Hükümsüzlüğü”, <em>Gazi Üniversitesi Hukuk Fakültesi Dergisi</em>, C. XVII, S. 2, 2013, s. 939–960.</li>  
+<li>YAVUZ, Mustafa, “Anonim Şirketlerde Yönetim Kurulu Kararlarının Hükümsüzlüğü”, <em>Gümrük ve Ticaret Dergisi</em>, C. 7, S. 20, 2020, s. 10–19.</li>  
+<li>ŞEKER, Hakan, “Anonim Şirket Yönetim Kurulu Kararlarının Hükümsüzlüğü”, <em>Türkiye Barolar Birliği Dergisi</em>, S. 149, 2020.</li>  
+<li>PEKDİNÇER, Tamer, “Anonim Şirketlerde Yönetim Kurulu Kararlarının Geçerliliği (Özellikle Batıl Yönetim Kurulu Kararları) (TTK m. 391)”, <em>Marmara Üniversitesi Hukuk Fakültesi Hukuk Araştırmaları Dergisi</em>, C. 18, S. 2, 2012.</li>  
+<li>SAYIN, Hediye Bahar, “Yönetim Kurulu Üyelerinin Kişisel Haklarının Kurul Kararı ile İhlal Edilmesi ve İlgili Kararların Butlanı”, <em>Anadolu Üniversitesi Hukuk Fakültesi Dergisi</em>, C. 2, S. 3, 2016, s. 201–210.</li>  
+<li>ÖZTÜRK, Alperen, “Anonim Şirketlerde Geçersiz Yönetim Kurulu Kararına Dayanılarak Toplanan Genel Kurulun Durumu”, <em>Marmara Üniversitesi Hukuk Fakültesi Hukuk Araştırmaları Dergisi</em>, C. 29, S. 1, 2023.</li>  
+<li>ÖZDİN, Funda, “Anonim Şirket Yönetim Kurulu Üyelerinin Seçimine İlişkin Genel Kurul Kararının Hükümsüzlüğünün Yönetim Kurulunca Alınan Kararlara ve Bu Kararlara Dayanılarak Yapılan İşlemlere Etkisi”, <em>Ticaret ve Fikri Mülkiyet Hukuku Dergisi</em>, C. 9, S. 2, 2023.</li>  
+</ul></section><hr/>  
+<section id="ilgili"><h2>İlgili Makaleler</h2><ul class="related-articles">
+<li><a href="anonim-sirketlerde-yonetim-kurulunun-gorev-ve-yetkileri.html"><strong>Anonim Şirketlerde Yönetim Kurulunun Görev ve Yetkileri: Devredilemez Görev ve Yetkiler Nelerdir? (Seri - 1)</strong></a></li>
+<li><a href="anonim-sirketlerde-yonetim-kurulu-toplanti-karar-nisaplari.html"><strong>Anonim Şirketlerde Yönetim Kurulu Toplantı ve Karar Nisapları: Yönetim Kurulu Nasıl Toplanır ve Karar Alır? (Seri - 2)</strong></a></li>
+<li><a href="anonim-sirketlerde-yonetim-yetkisinin-devri.html"><strong>Anonim Şirketlerde Yönetim Yetkisi Nasıl Devredilir? İç Yönerge, Murahhas Üyeler ve Müdürler (Seri - 4)</strong></a></li>
+<li><a href="anonim-sirketlerde-yonetim-kurulunun-temsil-yetkisi.html"><strong>Anonim Şirketlerde Yönetim Kurulunun Temsil Yetkisi: Şirketi Kim, Nasıl Temsil Eder? (Seri - 5)</strong></a></li>
+<li><a href="anonim-sirketlerde-yonetim-kurulu-uyelerinin-hukuki-sorumlulugu.html"><strong>Anonim Şirketlerde Yönetim Kurulu Üyelerinin Hukuki Sorumluluğu: Kusur, Zarar ve Tazminat Rejimi (Seri - 6)</strong></a></li>
+<li><a href="anonim-sirketlerde-yonetim-kurulu-uyelerinin-ibrasi.html"><strong>Anonim Şirketlerde Yönetim Kurulu Üyelerinin İbrası: Hukukî Niteliği, Kapsamı ve İbranın İptali (Seri - 7)</strong></a></li>
+<li><a href="anonim-sirketlerde-olaganustu-genel-kurul-nasil-yapilir.html"><strong>Olağanüstü Genel Kurul Nasıl Yapılır? (TTK 410-416 Çağrı)</strong></a></li>
+<li><a href="anonim-sirketlerde-genel-kurul-suresinde-yapilmazsa-ne-olur.html"><strong>Anonim Şirketlerde Olağan Genel Kurul Süresinde Yapılmazsa Ne Olur?</strong></a></li>
+</ul></section><hr/>  
+<section><div class="note"><strong>Bilgilendirme</strong><p>Bu çalışma genel bilgilendirme amacıyla hazırlanmıştır. Yönetim kurulu kararının yokluğu, butlanı veya kanunun öngördüğü istisnai iptal edilebilirliği; kararın oluşum biçimi, ihlal edilen hüküm, şirketin esas sözleşmesi, kararın içeriği ve somut uyuşmazlığın özelliklerine göre farklı hukukî değerlendirmeler gerektirebilir.</p></div>  
+<div class="note" style="margin-top:32px;"><strong>Hukukî Danışmanlık</strong><p>Anonim şirket yönetim kurulu kararlarının geçerliliği, yokluk ve butlanın tespiti, ihtiyatî tedbir, ticaret sicili ve genel kurul kararlarına etkileri hakkında hukukî danışmanlık almak için bizimle iletişime geçebilirsiniz.</p><a class="btn primary" href="index.html#iletisim" style="margin-top:16px;">Hukukî Danışmanlık Talep Edin</a></div></section>  
+<hr/>
+<section class="article-closing-advisory">
+<div class="note"><strong>Bilgilendirme</strong><p>Bu çalışma genel akademik ve uygulamaya dönük bilgilendirme amacıyla hazırlanmıştır. Anonim ortaklıklarda yönetim kurulu yapılanması, görev ve yetki dağılımı, temsil ve iç yönerge süreçleri, yöneticilerin hukuki sorumluluğu ve genel kurul ibra uyuşmazlıkları; her somut şirketin esas sözleşmesi, organizasyonel yapısı ve sektörel mevzuatı ışığında profesyonel şirketler hukuku avukatı eşliğinde değerlendirilmelidir.</p></div>
+<div class="note" style="margin-top:32px;"><strong>Hukukî Danışmanlık</strong><p>Anonim şirketinizde yönetim ve temsil yapısının kurgulanması, iç yönergelerin tanzimi, yönetim kurulu kararlarının geçerliliği, yöneticilerin sorumluluğuna ve ibrasına ilişkin risklerin denetimi hususlarında profesyonel hukukî danışmanlık almak için bizimle iletişime geçebilirsiniz.</p><a class="btn primary" href="index.html#iletisim" style="margin-top:16px;">Hukukî Danışmanlık Talep Edin</a></div>
+</section>
+</article>  
+<!-- FOOTER -->  
+<footer class="site-footer">  
+<div class="footer-inner">  
+<div class="footer-mark"><img alt="DLC Derinpınar Law &amp; Consultancy logosu" src="dlc-logo.png"/></div>  
+<div class="footer-logo-note">Derinpınar Law &amp; Consultancy</div>  
+<div class="footer-copy">© 2026 Av. Dr. İbrahim Nuri Derinpınar</div>  
+</div>  
 </footer>
 <script>
-        // Mobile menu
-        (function () {
-            var menu = document.getElementById("mobileMenu");
-            var overlay = document.getElementById("mobileOverlay");
-
-            var menuToggle = document.getElementById("menuToggle");
-
-            menuToggle.onclick = function () {
-                menu.classList.add("active");
-                overlay.classList.add("active");
-                document.body.style.overflow = "hidden";
-                menuToggle.setAttribute("aria-expanded", "true");
-                menu.setAttribute("aria-hidden", "false");
-            };
-
-            function closeMenu() {
-                menu.classList.remove("active");
-                overlay.classList.remove("active");
-                document.body.style.overflow = "";
-                menuToggle.setAttribute("aria-expanded", "false");
-                menu.setAttribute("aria-hidden", "true");
-            }
-
-            document.getElementById("closeMenu").onclick = closeMenu;
-            overlay.onclick = closeMenu;
-            document.querySelectorAll(".mobile-menu a").forEach(function (item) {
-                item.onclick = closeMenu;
-            });
-        })();
-
-    // View counter (Firebase Realtime Database — persistent, atomic, cross-device)
-    // Setup: https://github.com/ibrahimderinpinar/ibrahimderinpinar.github.io/blob/master/docs/firebase-setup.md
-    (function () {
-        var FIREBASE_DB_URL = "https://ibrahimderinpinar-1c681-default-rtdb.europe-west1.firebasedatabase.app";
-        var articleId = "yk-kararlari-gecerlilik";
-        var el = document.getElementById("viewsChip");
-
-        fetch(FIREBASE_DB_URL + "/views/" + articleId + ".json", {
-            method: "PATCH",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ count: { ".sv": { "increment": 1 } } })
-        })
-        .then(function (r) {
-            if (!r.ok) throw new Error("status " + r.status);
-            return r.json();
-        })
-        .then(function (data) {
-            var count = (data && typeof data.count === "number") ? data.count : 0;
-            if (el) el.textContent = "👁 " + count.toLocaleString("tr-TR");
-        })
-        .catch(function () {
-            if (el) el.textContent = "👁 —";
-        });
-    })();
-    </script>
+ (function () {
+ var menu = document.getElementById("mobileMenu");
+ var overlay = document.getElementById("mobileOverlay");
+ var menuToggle = document.getElementById("menuToggle");
+ 
+ menuToggle.onclick = function () {
+ menu.classList.add("active");
+ overlay.classList.add("active");
+ document.body.style.overflow = "hidden";
+ menuToggle.setAttribute("aria-expanded", "true");
+ menu.setAttribute("aria-hidden", "false");
+ };
+ 
+ function closeMenu() {
+ menu.classList.remove("active");
+ overlay.classList.remove("active");
+ document.body.style.overflow = "";
+ menuToggle.setAttribute("aria-expanded", "false");
+ menu.setAttribute("aria-hidden", "true");
+ }
+ 
+ document.getElementById("closeMenu").onclick = closeMenu;
+ overlay.onclick = closeMenu;
+ document.querySelectorAll(".mobile-menu a").forEach(function (item) {
+ item.onclick = closeMenu;
+ });
+ })();
+ 
+ // Firebase View Counter
+ (function () {
+ var FIREBASE_DB_URL = "https://ibrahimderinpinar-1c681-default-rtdb.europe-west1.firebasedatabase.app";
+ var articleId = "yk-kararlari-gecerlilik";
+ var el = document.getElementById("viewsChip");
+ 
+ fetch(FIREBASE_DB_URL + "/views/" + articleId + ".json", {
+ method: "PATCH",
+ headers: { "Content-Type": "application/json" },
+ body: JSON.stringify({ count: { ".sv": { "increment": 1 } } })
+ })
+ .then(function (r) {
+ if (!r.ok) throw new Error("status " + r.status);
+ return r.json();
+ })
+ .then(function (data) {
+ var count = (data && typeof data.count === "number") ? data.count : 0;
+ if (el) el.textContent = "👁 " + count.toLocaleString("tr-TR");
+ })
+ .catch(function () {
+ if (el) el.textContent = "👁 —";
+ });
+ })();
+</script>
 </body>
 </html>
