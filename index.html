@@ -1344,10 +1344,10 @@ main p, #hakkimda .text-panel, #iletisim .section-intro, #iletisim .contact-card
 <div class="contact-layout">
 <div class="contact-form-card">
 <div class="contact-card-kicker">İlk İletişim</div>
-<h3 class="contact-card-title">Hukuki Danışmanlık Talebi</h3>
-<p class="contact-card-copy">Aşağıdaki kısa form aracılığıyla hukuki danışmanlık talebinizi doğrudan iletebilirsiniz.</p>
+<h3 class="contact-card-title">Bize Ulaşın</h3>
+<p class="contact-card-copy">Aşağıdaki kısa form aracılığıyla Bize Ulaşınnizi doğrudan iletebilirsiniz.</p>
 <form action="https://formspree.io/f/myegjrwo" class="contact-form" id="consultationForm" method="POST">
-<input name="_subject" type="hidden" value="Hukuki Danışmanlık Talebi | derinpinar.av.tr"/>
+<input name="_subject" type="hidden" value="Bize Ulaşın | derinpinar.av.tr"/>
 <input name="language" type="hidden" value="tr"/>
 <div class="contact-form-grid">
 <div class="form-field"><label for="contactName">Ad Soyad</label><input autocomplete="name" id="contactName" name="name" placeholder="Adınız ve soyadınız" required="" type="text"/></div>
@@ -1356,7 +1356,7 @@ main p, #hakkimda .text-panel, #iletisim .section-intro, #iletisim .contact-card
 <div class="form-field"><label for="contactMatter">Hukuki Konu</label><select id="contactMatter" name="matter" required=""><option disabled="" selected="" value="">Konu seçin</option><option>Şirketler Hukuku</option><option>Sözleşmeler Hukuku</option><option>Gayrimenkul / Kira Hukuku</option><option>Milli ve Milletlerarası Tahkim</option><option>Spor Hukuku</option><option>E-Spor Hukuku</option><option>Taşıma Hukuku</option><option>Diğer</option></select></div>
 <div class="form-field full"><label for="contactMessage">Konunuzu Kısaca Açıklayın</label><textarea id="contactMessage" name="message" placeholder="Hukuki meselenizin genel çerçevesini ve talebinizi kısaca belirtin." required=""></textarea></div>
 </div>
-<button class="contact-submit" type="submit"><span class="submit-label">Hukuki Danışmanlık Talebi Gönder</span> <span aria-hidden="true">→</span></button>
+<button class="contact-submit" type="submit"><span class="submit-label">Bize Ulaşın Gönder</span> <span aria-hidden="true">→</span></button>
 <div aria-live="polite" class="form-status" hidden="" id="consultationStatus" role="status"></div>
 <p class="contact-notice"><strong>Bilgilendirme:</strong> Bu formun gönderilmesi tek başına avukat–müvekkil ilişkisi kurmaz. İlk iletişim aşamasında özel nitelikli kişisel verileri, gizli belgeleri veya süreye tabi işlemlere ilişkin belgeleri paylaşmamanız önerilir.</p>
 </form>
@@ -1464,14 +1464,14 @@ main p, #hakkimda .text-panel, #iletisim .section-intro, #iletisim .contact-card
       if(!response.ok || (Array.isArray(result.errors) && result.errors.length)) throw new Error("Form gönderilemedi");
       form.reset();
       status.classList.add("success");
-      status.innerHTML="<strong>✓ Talebiniz Alındı</strong><span>Hukuki danışmanlık talebiniz başarıyla iletilmiştir. İletişim bilgileriniz üzerinden tarafınıza dönüş sağlanacaktır.</span>";
+      status.innerHTML="<strong>✓ Talebiniz Alındı</strong><span>Bize Ulaşınniz başarıyla iletilmiştir. İletişim bilgileriniz üzerinden tarafınıza dönüş sağlanacaktır.</span>";
       status.hidden=false;
       label.textContent="Talebiniz Alındı";
     }catch(error){
       status.classList.add("error");
       status.innerHTML="<strong>Talebiniz iletilemedi.</strong><span>Lütfen bağlantınızı kontrol ederek yeniden deneyin veya doğrudan e-posta yoluyla iletişime geçin.</span>";
       status.hidden=false;
-      label.textContent="Hukuki Danışmanlık Talebi Gönder";
+      label.textContent="Bize Ulaşın Gönder";
     }finally{
       button.disabled=false;
     }
