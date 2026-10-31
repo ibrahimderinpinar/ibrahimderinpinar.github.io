@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://derinpinar.av.tr/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <xhtml:link rel="alternate" hreflang="tr" href="https://derinpinar.av.tr/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://derinpinar.av.tr/en/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://derinpinar.av.tr/de/" />
@@ -24,11 +24,11 @@
   </url>
   <url>
     <loc>https://derinpinar.av.tr/makaleler.html</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://derinpinar.av.tr/e-spor-hukuku.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://derinpinar.av.tr/e-spor-nedir-hukuki-acidan-e-spor-kavrami-ve-unsurlari.html</loc>
@@ -219,5 +219,41 @@
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://derinpinar.av.tr/profesyonel-sporcu-sozlesmelerinde-fesih-ve-tazminat-rejimi.html</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://derinpinar.av.tr/e-sporcunun-sosyal-medya-ve-basin-aciklamalari-kulup-itibari-ifade-ozgurlugu-ve-sozlesmesel-sinirlar.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://derinpinar.av.tr/e-sporcu-sozlesmelerinde-sponsorluk-reklam-ve-tanitim-yukumlulukleri.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://derinpinar.av.tr/e-sporcunun-imaj-haklari-ad-goruntu-ve-kisilik-haklarinin-kulup-tarafindan-kullanilmasi.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://derinpinar.av.tr/e-sporcu-sozlesmelerinde-dijital-icerik-canli-yayin-ve-fikri-haklar.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://derinpinar.av.tr/e-sporcunun-talimatlara-uyma-borcu-kulubun-yonetim-hakkinin-kapsami-ve-sinirlari.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
